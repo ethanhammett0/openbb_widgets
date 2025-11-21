@@ -1,5 +1,7 @@
 {
   "revista_market_kpis": {
+    "name": "Market KPIs",
+    "description": "Key Performance Indicators for the selected CBSA",
     "type": "metric",
     "endpoint": "revista/kpis",
     "params": [
@@ -13,6 +15,8 @@
     ]
   },
   "revista_map": {
+      "name": "Property Map",
+      "description": "Geospatial view of medical properties",
       "type": "chart",
       "endpoint": "revista/map",
       "params": [
@@ -26,6 +30,8 @@
       ]
   },
   "revista_summary": {
+      "name": "Market Analysis",
+      "description": "AI-generated narrative summary of the market",
       "type": "markdown",
       "endpoint": "revista/summary",
       "params": [
@@ -39,6 +45,8 @@
       ]
   },
   "revista_property_table": {
+    "name": "Property Details",
+    "description": "Detailed list of properties in the market",
     "type": "table",
     "endpoint": "revista/table",
     "params": [
