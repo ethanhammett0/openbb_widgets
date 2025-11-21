@@ -76,7 +76,7 @@
   "revista_property_overview": {
     "name": "Property Overview",
     "description": "General information and Occupancy",
-    "type": "metric",
+    "type": "markdown",
     "endpoint": "revista/property_overview",
     "params": [
       {

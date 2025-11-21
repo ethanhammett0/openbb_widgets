@@ -22,7 +22,7 @@ class PropertyRecord(BaseModel):
     property_name: str
     address: str
     city: str
-    construction_status: str
+    construction_status: Literal["Planned", "Under Construction", "Completed", "Delayed"]
     completion_date: str
 
 class PropertyOverviewModel(BaseModel):

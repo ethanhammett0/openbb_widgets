@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 load_dotenv()
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, HTMLResponse
-from openbb_revista.router import kpis, map as map_router, summary, table
-from openbb_revista.models import KPIModel, PropertyRecord
+from openbb_revista.router import kpis, map as map_router, summary, table, property_overview, property_transactions, property_owner
+from openbb_revista.models import KPIModel, PropertyRecord, PropertyOverviewModel, TransactionModel, OwnerModel
 
 # Initialize FastAPI
 app = FastAPI(
@@ -35,19 +35,9 @@ app.add_middleware(
 )
 
 # Load Widgets Config
-# We load the static widgets.json we created earlier, but modify the endpoint URLs
-# to match the hosted paths (which are relative to this server)
 WIDGETS_FILE = Path("workspace_config/widgets.json")
 with open(WIDGETS_FILE, "r") as f:
     WIDGETS_CONFIG = json.load(f)
-
-# Helper to strip "revista/" prefix from endpoints in widgets.json if needed,
-# or map them to our FastAPI routes.
-# In widgets.json we defined endpoints like "revista/kpis".
-# FastAPI will serve them at /revista/kpis naturally if we include the router,
-# OR we can define them explicitly here.
-# Since we have logic in router.py that uses OpenBB Router, we can try to adapt it
-# or just wrap the functions.
 
 @app.get("/")
 def read_root():
@@ -55,9 +45,6 @@ def read_root():
 
 @app.get("/widgets.json")
 def get_widgets():
-    # Return the loaded widgets config
-    # Ensure the structure matches what OpenBB expects.
-    # The file workspace_config/widgets.json is a dict of widget_id -> config.
     return WIDGETS_CONFIG
 
 @app.get("/apps.json")
@@ -67,44 +54,44 @@ def get_apps():
     )
 
 # Wrapper endpoints to expose router logic via FastAPI
-# Note: The original router functions are async and return OBBject.
-# We need to unwrap OBBject and return JSONResponse or dict.
 
 @app.get("/revista/kpis")
 async def get_kpis(cbsa_code: str = "34980", property_type: str = "MOB"):
     result = await kpis(cbsa_code=cbsa_code, property_type=property_type)
-    # result is OBBject. results is List[KPIModel].
-    # Pydantic models can be returned directly in FastAPI, but OBBject wrapper might need handling.
     return result.results
 
 @app.get("/revista/map")
 async def get_map(cbsa_code: str = "34980"):
     result = await map_router(cbsa_code=cbsa_code)
-    # result.results is a JSON string (Plotly).
-    # We should parse it back to dict so FastAPI sends it as JSON,
-    # OR return it as raw string if widget expects it (but usually widget expects JSON object).
-    # The router logic returned `fig.to_json()`.
-    return json.loads(result.results)
+    if isinstance(result.results, str):
+        return json.loads(result.results)
+    return result.results
 
 @app.get("/revista/summary")
 async def get_summary(cbsa_code: str = "34980"):
     result = await summary(cbsa_code=cbsa_code)
-    # result.results is a Markdown string.
-    # The widget type is "markdown", so it expects a string or {content: str}?
-    # Usually markdown widgets expect just the text or a wrapper.
-    # Let's check the reference: It returns HTMLResponse for HTML widgets.
-    # For markdown, simple string or JSON with a specific key is common.
-    # OpenBB standard markdown widget often expects raw text or a specific field.
-    # We will return it as a plain string response or wrapped in JSON.
-    # Returning just the string usually works for text/markdown endpoints in some contexts,
-    # but standard JSON API practice is `{"data": ...}`.
-    # However, OpenBB widget config might specify `dataKey` if it's nested.
-    # Let's return the string directly for now, or strictly follow the return type.
     return result.results
 
 @app.get("/revista/table")
 async def get_table(cbsa_code: str = "34980"):
     result = await table(cbsa_code=cbsa_code)
+    return result.results
+
+@app.get("/revista/property_overview")
+async def get_property_overview(address: str = "1000 Physicians Way, Franklin, TN"):
+    result = await property_overview(address=address)
+    # result.results is now a Markdown string
+    return result.results
+
+@app.get("/revista/property_transactions")
+async def get_property_transactions(address: str = "1000 Physicians Way, Franklin, TN"):
+    result = await property_transactions(address=address)
+    return result.results
+
+@app.get("/revista/property_owner")
+async def get_property_owner(address: str = "1000 Physicians Way, Franklin, TN"):
+    result = await property_owner(address=address)
+    # result.results is now a Markdown string
     return result.results
 
 if __name__ == "__main__":
