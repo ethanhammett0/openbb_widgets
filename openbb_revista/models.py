@@ -22,5 +22,6 @@ class PropertyRecord(BaseModel):
     property_name: str
     address: str
     city: str
-    construction_status: Literal["Planned", "Under Construction", "Completed", "Delayed"]
+    # Relaxed to str to handle API variations like "In Progress"
+    construction_status: str
     completion_date: str
