@@ -1,0 +1,68 @@
+{
+  "revista_market_kpis": {
+    "type": "metric",
+    "endpoint": "revista/kpis",
+    "params": [
+      {
+        "paramName": "cbsa_code",
+        "label": "CBSA Code",
+        "type": "text",
+        "default": "34980",
+        "group": "global_location"
+      }
+    ]
+  },
+  "revista_map": {
+      "type": "chart",
+      "endpoint": "revista/map",
+      "params": [
+        {
+          "paramName": "cbsa_code",
+          "label": "CBSA Code",
+          "type": "text",
+          "default": "34980",
+          "group": "global_location"
+        }
+      ]
+  },
+  "revista_summary": {
+      "type": "markdown",
+      "endpoint": "revista/summary",
+      "params": [
+        {
+          "paramName": "cbsa_code",
+          "label": "CBSA Code",
+          "type": "text",
+          "default": "34980",
+          "group": "global_location"
+        }
+      ]
+  },
+  "revista_property_table": {
+    "type": "table",
+    "endpoint": "revista/table",
+    "params": [
+      {
+        "paramName": "cbsa_code",
+        "label": "CBSA Code",
+        "type": "text",
+        "default": "34980",
+        "group": "global_location"
+      }
+    ],
+    "data": {
+      "columns": [
+        {
+          "field": "construction_status",
+          "headerName": "Status",
+          "cellStyle": {
+            "conditions": [
+              { "condition": "value == 'Delayed'", "style": { "color": "#FF0000", "fontWeight": "bold" } },
+              { "condition": "value == 'Under Construction'", "style": { "color": "#008000" } }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

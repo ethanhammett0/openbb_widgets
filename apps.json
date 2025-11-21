@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Revista Narrative Dashboard",
+    "description": "Real-time synchronized dashboard for Revista Real Estate Data",
+    "img": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=250&h=200&fit=crop",
+    "tabs": {
+      "dashboard": {
+        "id": "dashboard",
+        "name": "Market Overview",
+        "layout": [
+          {
+            "i": "revista_market_kpis",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 4,
+            "groups": ["global_location"]
+          },
+          {
+            "i": "revista_summary",
+            "x": 0,
+            "y": 4,
+            "w": 12,
+            "h": 16,
+            "groups": ["global_location"]
+          },
+          {
+            "i": "revista_map",
+            "x": 12,
+            "y": 4,
+            "w": 28,
+            "h": 16,
+            "groups": ["global_location"]
+          },
+          {
+            "i": "revista_property_table",
+            "x": 0,
+            "y": 20,
+            "w": 40,
+            "h": 12,
+            "groups": ["global_location"]
+          }
+        ]
+      }
+    },
+    "groups": [
+      {
+        "name": "global_location",
+        "type": "param",
+        "paramName": "cbsa_code",
+        "label": "CBSA Code",
+        "defaultValue": "34980"
+      }
+    ]
+  }
+]
