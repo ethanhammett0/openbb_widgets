@@ -5,3 +5,4 @@ plotly
 pydantic
 aiohttp
 openbb-core
+python-dotenv

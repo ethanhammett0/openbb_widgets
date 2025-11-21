@@ -3,6 +3,9 @@ import json
 import asyncio
 from pathlib import Path
 from fastapi import FastAPI
+from dotenv import load_dotenv
+
+load_dotenv()
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, HTMLResponse
 from openbb_revista.router import kpis, map as map_router, summary, table

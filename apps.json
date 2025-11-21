@@ -41,6 +41,36 @@
             "groups": ["global_location"]
           }
         ]
+      },
+      "property": {
+        "id": "property",
+        "name": "Property Deep Dive",
+        "layout": [
+          {
+            "i": "revista_property_overview",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 6,
+            "groups": ["property_focus"]
+          },
+          {
+            "i": "revista_property_owner",
+            "x": 0,
+            "y": 6,
+            "w": 16,
+            "h": 14,
+            "groups": ["property_focus"]
+          },
+          {
+            "i": "revista_property_trans",
+            "x": 16,
+            "y": 6,
+            "w": 24,
+            "h": 14,
+            "groups": ["property_focus"]
+          }
+        ]
       }
     },
     "groups": [
@@ -50,6 +80,13 @@
         "paramName": "cbsa_code",
         "label": "CBSA Code",
         "defaultValue": "34980"
+      },
+      {
+        "name": "property_focus",
+        "type": "param",
+        "paramName": "address",
+        "label": "Property Address",
+        "defaultValue": "1000 Physicians Way, Franklin, TN"
       }
     ]
   }

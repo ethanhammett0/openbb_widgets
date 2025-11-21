@@ -72,5 +72,50 @@
         }
       ]
     }
+  },
+  "revista_property_overview": {
+    "name": "Property Overview",
+    "description": "General information and Occupancy",
+    "type": "metric",
+    "endpoint": "revista/property_overview",
+    "params": [
+      {
+        "paramName": "address",
+        "label": "Property Address",
+        "type": "text",
+        "default": "1000 Physicians Way, Franklin, TN",
+        "group": "property_focus"
+      }
+    ]
+  },
+  "revista_property_trans": {
+    "name": "Transaction History",
+    "description": "List of historical transactions",
+    "type": "table",
+    "endpoint": "revista/property_transactions",
+    "params": [
+      {
+        "paramName": "address",
+        "label": "Property Address",
+        "type": "text",
+        "default": "1000 Physicians Way, Franklin, TN",
+        "group": "property_focus"
+      }
+    ]
+  },
+  "revista_property_owner": {
+    "name": "Ownership",
+    "description": "Owner and Stakeholder details",
+    "type": "markdown",
+    "endpoint": "revista/property_owner",
+    "params": [
+      {
+        "paramName": "address",
+        "label": "Property Address",
+        "type": "text",
+        "default": "1000 Physicians Way, Franklin, TN",
+        "group": "property_focus"
+      }
+    ]
   }
 }
