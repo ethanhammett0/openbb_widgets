@@ -1,0 +1,20 @@
+[project]
+name = "openbb-revista"
+version = "0.1.0"
+description = "Revista Real Estate Extension for OpenBB"
+authors = [{name = "Jules", email = "jules@example.com"}]
+dependencies = [
+    "openbb-core",
+    "pandas",
+    "plotly",
+    "pydantic",
+    "aiohttp"
+]
+requires-python = ">=3.8"
+
+[project.entry-points.openbb_core_extension]
+revista = "openbb_revista.router:router"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

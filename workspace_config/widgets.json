@@ -1,0 +1,121 @@
+{
+  "revista_market_kpis": {
+    "name": "Market KPIs",
+    "description": "Key Performance Indicators for the selected CBSA",
+    "type": "metric",
+    "endpoint": "revista/kpis",
+    "params": [
+      {
+        "paramName": "cbsa_code",
+        "label": "CBSA Code",
+        "type": "text",
+        "default": "34980",
+        "group": "global_location"
+      }
+    ]
+  },
+  "revista_map": {
+      "name": "Property Map",
+      "description": "Geospatial view of medical properties",
+      "type": "chart",
+      "endpoint": "revista/map",
+      "params": [
+        {
+          "paramName": "cbsa_code",
+          "label": "CBSA Code",
+          "type": "text",
+          "default": "34980",
+          "group": "global_location"
+        }
+      ]
+  },
+  "revista_summary": {
+      "name": "Market Analysis",
+      "description": "AI-generated narrative summary of the market",
+      "type": "markdown",
+      "endpoint": "revista/summary",
+      "params": [
+        {
+          "paramName": "cbsa_code",
+          "label": "CBSA Code",
+          "type": "text",
+          "default": "34980",
+          "group": "global_location"
+        }
+      ]
+  },
+  "revista_property_table": {
+    "name": "Property Details",
+    "description": "Detailed list of properties in the market",
+    "type": "table",
+    "endpoint": "revista/table",
+    "params": [
+      {
+        "paramName": "cbsa_code",
+        "label": "CBSA Code",
+        "type": "text",
+        "default": "34980",
+        "group": "global_location"
+      }
+    ],
+    "data": {
+      "columns": [
+        {
+          "field": "construction_status",
+          "headerName": "Status",
+          "cellStyle": {
+            "conditions": [
+              { "condition": "value == 'Delayed'", "style": { "color": "#FF0000", "fontWeight": "bold" } },
+              { "condition": "value == 'Under Construction'", "style": { "color": "#008000" } }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "revista_property_overview": {
+    "name": "Property Overview",
+    "description": "General information and Occupancy",
+    "type": "markdown",
+    "endpoint": "revista/property_overview",
+    "params": [
+      {
+        "paramName": "address",
+        "label": "Property Address",
+        "type": "text",
+        "default": "1000 Physicians Way, Franklin, TN",
+        "group": "property_focus"
+      }
+    ]
+  },
+  "revista_property_trans": {
+    "name": "Transaction History",
+    "description": "List of historical transactions",
+    "type": "table",
+    "endpoint": "revista/property_transactions",
+    "params": [
+      {
+        "paramName": "address",
+        "label": "Property Address",
+        "type": "text",
+        "default": "1000 Physicians Way, Franklin, TN",
+        "group": "property_focus"
+      }
+    ]
+  },
+  "revista_property_owner": {
+    "name": "Ownership",
+    "description": "Owner and Stakeholder details",
+    "type": "markdown",
+    "endpoint": "revista/property_owner",
+    "params": [
+      {
+        "paramName": "address",
+        "label": "Property Address",
+        "type": "text",
+        "default": "1000 Physicians Way, Franklin, TN",
+        "group": "property_focus"
+      }
+    ]
+  }
+}
