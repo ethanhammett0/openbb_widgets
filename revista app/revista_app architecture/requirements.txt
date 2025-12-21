@@ -1,0 +1,9 @@
+pandas
+requests
+plotly
+pydantic
+python-dotenv
+fastapi
+uvicorn
+aiohttp
+openbb-core

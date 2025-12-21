@@ -1,0 +1,70 @@
+{
+    "aiContextScraper": {
+        "name": "AI Context Scraper",
+        "description": "Scrapes context based on a prompt",
+        "category": "AI",
+        "type": "omni",
+        "endpoint": "agent/scrape_context",
+        "staleTime": 60000,
+        "params": [
+            {
+                "paramName": "prompt",
+                "type": "text",
+                "label": "Prompt",
+                "description": "The search query",
+                "required": true,
+                "value": ""
+            },
+            {
+                "paramName": "limit",
+                "type": "number",
+                "label": "Limit",
+                "description": "Max number of results",
+                "required": false,
+                "value": 5
+            }
+        ],
+        "grid": {
+            "columns": [
+                {
+                    "field": "Title",
+                    "pinned": "left",
+                    "width": 250
+                },
+                {
+                    "field": "Source",
+                    "width": 100
+                },
+                {
+                    "field": "Relevance",
+                    "renderFn": "columnColor",
+                    "renderFnParams": {
+                        "colorRules": [
+                            {
+                                "condition": "params.value == 'High'",
+                                "color": "green"
+                            },
+                            {
+                                "condition": "params.value == 'Medium'",
+                                "color": "yellow"
+                            },
+                            {
+                                "condition": "params.value == 'Low'",
+                                "color": "grey"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "field": "Summary",
+                    "width": 400,
+                    "wrapText": true
+                },
+                {
+                    "field": "URL",
+                    "cellRenderer": "link"
+                }
+            ]
+        }
+    }
+}

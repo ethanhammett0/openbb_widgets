@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: openbb-revista
+Version: 0.1.0
+Summary: Revista Property Intelligence App for OpenBB Workspace
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: plotly
+Requires-Dist: pydantic
+Requires-Dist: python-dotenv
+Requires-Dist: aiohttp
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: openbb-core
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+
+# OpenBB Revista Workspace Extension
+
+This extension integrates Revista Property Intelligence into the OpenBB Workspace.
+
+## Components
+
+- **Search**: `openbb_revista.search`
+- **Scorecard**: `openbb_revista.scorecard`
+- **Interactive Earth**: `openbb_revista.interactive_earth`
+- **Market Trends**: `openbb_revista.market_trends`
+- **Market Balance**: `openbb_revista.market_balance`
+- **Activity Proxy**: `openbb_revista.activity_proxy`
+- **Benchmarker**: `openbb_revista.benchmarker`
+- **Stakeholders**: `openbb_revista.stakeholders`
+- **Models**: `openbb_revista.models`
+
+## Installation
+
+```bash
+pip install .
+```

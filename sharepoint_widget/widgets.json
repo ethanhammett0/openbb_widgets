@@ -1,0 +1,53 @@
+{
+    "sharepoint_viewer": {
+        "name": "SharePoint Multi-PDF Viewer",
+        "description": "View and manage PDFs from SharePoint deals and folders.",
+        "category": "SharePoint",
+        "type": "multi_file_viewer",
+        "endpoint": "documents",
+        "gridData": {
+            "w": 30,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "deal_id",
+                "label": "Deal",
+                "type": "endpoint",
+                "optionsEndpoint": "deals",
+                "value": "deal_alpha",
+                "description": "Select the Deal"
+            },
+            {
+                "paramName": "folder_ids",
+                "label": "Folders",
+                "type": "endpoint",
+                "optionsEndpoint": "folders",
+                "optionsParams": {
+                    "deal_id": "$deal_id"
+                },
+                "multiSelect": true,
+                "value": [
+                    "financials"
+                ],
+                "description": "Select Folders to pull data from"
+            },
+            {
+                "paramName": "filename",
+                "label": "Files",
+                "type": "endpoint",
+                "optionsEndpoint": "files_list",
+                "optionsParams": {
+                    "deal_id": "$deal_id",
+                    "folder_ids": "$folder_ids"
+                },
+                "multiSelect": true,
+                "roles": [
+                    "fileSelector"
+                ],
+                "value": [],
+                "description": "Select Files to View"
+            }
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Rent Roll Analysis",
+        "description": "Dashboard for analyzing rent roll cashflow decay and exposure.",
+        "allowCustomization": true,
+        "tabs": {
+            "overview": {
+                "id": "overview",
+                "name": "Overview",
+                "layout": [
+                    {
+                        "i": "rentRollAnalysis",
+                        "x": 0,
+                        "y": 0,
+                        "w": 40,
+                        "h": 12,
+                        "state": {
+                            "params": {
+                                "group_by_tenant": true
+                            }
+                        }
+                    },
+                    {
+                        "i": "rentRollTable",
+                        "x": 0,
+                        "y": 12,
+                        "w": 40,
+                        "h": 10
+                    }
+                ]
+            }
+        },
+        "tokens": [
+            {
+                "token": "portfolio",
+                "defaultValue": null
+            },
+            {
+                "token": "buildings",
+                "defaultValue": []
+            }
+        ]
+    }
+]

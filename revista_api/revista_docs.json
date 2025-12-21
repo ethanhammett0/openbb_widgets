@@ -1,0 +1,856 @@
+{
+  "nodes": [
+    {
+      "id": "GET /ConstructionByLatLon/{Lat}/{Lon}/{Radius}",
+      "type": "endpoint",
+      "label": "GET /ConstructionByLatLon/{Lat}/{Lon}/{Radius}",
+      "data": {
+        "path": "/ConstructionByLatLon/{Lat}/{Lon}/{Radius}",
+        "method": "GET",
+        "summary": "Returns Construction properties within the radius(miles) of the lat/lon provided in.",
+        "description": "",
+        "tags": [
+          "Construction"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /ConstructionByProperty/{PropertyID}",
+      "type": "endpoint",
+      "label": "GET /ConstructionByProperty/{PropertyID}",
+      "data": {
+        "path": "/ConstructionByProperty/{PropertyID}",
+        "method": "GET",
+        "summary": "Summary Construction data for a provided property(ID).",
+        "description": "",
+        "tags": [
+          "Construction"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /ConstructionByCBSA/{CBSACode}",
+      "type": "endpoint",
+      "label": "GET /ConstructionByCBSA/{CBSACode}",
+      "data": {
+        "path": "/ConstructionByCBSA/{CBSACode}",
+        "method": "GET",
+        "summary": "Construction data for a given CBSA from the provided CBSA Code.",
+        "description": "",
+        "tags": [
+          "Construction"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /MetroList",
+      "type": "endpoint",
+      "label": "GET /MetroList",
+      "data": {
+        "path": "/MetroList",
+        "method": "GET",
+        "summary": "List of the top 125 Metros by population",
+        "description": "",
+        "tags": [
+          "Lists"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /StakeholdersList",
+      "type": "endpoint",
+      "label": "GET /StakeholdersList",
+      "data": {
+        "path": "/StakeholdersList",
+        "method": "GET",
+        "summary": "List of Owner Stakeholders",
+        "description": "",
+        "tags": [
+          "Lists"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /SpecialtyDemand/{lat}/{lon}/{radius}",
+      "type": "endpoint",
+      "label": "GET /SpecialtyDemand/{lat}/{lon}/{radius}",
+      "data": {
+        "path": "/SpecialtyDemand/{lat}/{lon}/{radius}",
+        "method": "GET",
+        "summary": "Returns Specialty Demand data for a given location, radius and Benchmark (optional; defaults to 'Top100') ex: 41.8849101, -87.6670655, 3, 'MD'.",
+        "description": "",
+        "tags": [
+          "MarketData"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /Demographics/{lat}/{lon}/{radius}",
+      "type": "endpoint",
+      "label": "GET /Demographics/{lat}/{lon}/{radius}",
+      "data": {
+        "path": "/Demographics/{lat}/{lon}/{radius}",
+        "method": "GET",
+        "summary": "Returns Demographics data for a given location and radius. ex: 39.299236, -76.609383, 3.",
+        "description": "",
+        "tags": [
+          "MarketData"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /FundamentalsByCBSA/{CBSACode}/{trend}",
+      "type": "endpoint",
+      "label": "GET /FundamentalsByCBSA/{CBSACode}/{trend}",
+      "data": {
+        "path": "/FundamentalsByCBSA/{CBSACode}/{trend}",
+        "method": "GET",
+        "summary": "Retrieves MOB Fundamentals by CBSA code.",
+        "description": "",
+        "tags": [
+          "MarketData"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /FundamentalsByRadius/{lat}/{lon}/{radius}/{trend}",
+      "type": "endpoint",
+      "label": "GET /FundamentalsByRadius/{lat}/{lon}/{radius}/{trend}",
+      "data": {
+        "path": "/FundamentalsByRadius/{lat}/{lon}/{radius}/{trend}",
+        "method": "GET",
+        "summary": "Retrieves MOB Fundamentals by geographic radius.",
+        "description": "",
+        "tags": [
+          "MarketData"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /MarketTrends/{CBSACode}",
+      "type": "endpoint",
+      "label": "GET /MarketTrends/{CBSACode}",
+      "data": {
+        "path": "/MarketTrends/{CBSACode}",
+        "method": "GET",
+        "summary": "MOB Trend data for a CBSA. Valid values are CBSA Codes for the top 125 metros and 'Top100' and 'Top50'",
+        "description": "",
+        "tags": [
+          "MarketData"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /Property/Search/{Lat}/{Lon}",
+      "type": "endpoint",
+      "label": "GET /Property/Search/{Lat}/{Lon}",
+      "data": {
+        "path": "/Property/Search/{Lat}/{Lon}",
+        "method": "GET",
+        "summary": "Returns properties within 10 miles of the lat/lon passed in.",
+        "description": "",
+        "tags": [
+          "Property"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /Property/{PropertyID}",
+      "type": "endpoint",
+      "label": "GET /Property/{PropertyID}",
+      "data": {
+        "path": "/Property/{PropertyID}",
+        "method": "GET",
+        "summary": "Summary data for a single property.",
+        "description": "",
+        "tags": [
+          "Property"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /Property/Stakeholders/{PropertyID}",
+      "type": "endpoint",
+      "label": "GET /Property/Stakeholders/{PropertyID}",
+      "data": {
+        "path": "/Property/Stakeholders/{PropertyID}",
+        "method": "GET",
+        "summary": "Stakeholders for a single property.",
+        "description": "",
+        "tags": [
+          "Property"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /Property/NewProperties/{StartDate}",
+      "type": "endpoint",
+      "label": "GET /Property/NewProperties/{StartDate}",
+      "data": {
+        "path": "/Property/NewProperties/{StartDate}",
+        "method": "GET",
+        "summary": "List of new properties in Revista added after the start date. Max history is 120 days. Date format is mm-dd-yyyy.",
+        "description": "",
+        "tags": [
+          "Property"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /Property/UpdatedProperties/{StartDate}",
+      "type": "endpoint",
+      "label": "GET /Property/UpdatedProperties/{StartDate}",
+      "data": {
+        "path": "/Property/UpdatedProperties/{StartDate}",
+        "method": "GET",
+        "summary": "List of properties updated in Revista after the start date. Max history is 60 days. Date format is mm-dd-yyyy. \r\nNote that Revista updates thousands of properties per month. Limit testing with this page to 2 weeks of history.",
+        "description": "",
+        "tags": [
+          "Property"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /TransactionsByProperty/{PropertyID}",
+      "type": "endpoint",
+      "label": "GET /TransactionsByProperty/{PropertyID}",
+      "data": {
+        "path": "/TransactionsByProperty/{PropertyID}",
+        "method": "GET",
+        "summary": "Gets Transactions by PropertyID (ex: 146507)",
+        "description": "",
+        "tags": [
+          "Transactions"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /TransactionsByStakeholder/{StakeholderID}",
+      "type": "endpoint",
+      "label": "GET /TransactionsByStakeholder/{StakeholderID}",
+      "data": {
+        "path": "/TransactionsByStakeholder/{StakeholderID}",
+        "method": "GET",
+        "summary": "Gets Transactions by Stakeholder (ex: 50)",
+        "description": "",
+        "tags": [
+          "Transactions"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "GET /TransactionsByMetro/{CBSACode}",
+      "type": "endpoint",
+      "label": "GET /TransactionsByMetro/{CBSACode}",
+      "data": {
+        "path": "/TransactionsByMetro/{CBSACode}",
+        "method": "GET",
+        "summary": "Gets Transactions by Metro (ex: 12060)",
+        "description": "",
+        "tags": [
+          "Transactions"
+        ],
+        "operationId": ""
+      }
+    },
+    {
+      "id": "Construction",
+      "type": "model",
+      "label": "Construction",
+      "data": {
+        "description": "",
+        "properties": [
+          "constructionID",
+          "propertyID",
+          "propertyType",
+          "propertyStatus",
+          "propertyName",
+          "constructionSF",
+          "constructionStatus",
+          "inactive",
+          "unentitled",
+          "projectedOpenDate",
+          "constructionStartDate",
+          "constructionType",
+          "constructionStatus2",
+          "constructionValue",
+          "valuePerSF",
+          "expectedYield",
+          "preleasePercent",
+          "contractor_StakeholderID",
+          "contractorName",
+          "developer_StakeholderID",
+          "developerName",
+          "description",
+          "address",
+          "city",
+          "stateProvince",
+          "zip5",
+          "countyName",
+          "countyFIPS",
+          "cbsA_Code",
+          "cbsA_Name",
+          "cbsA_RANK",
+          "region_Name",
+          "lat",
+          "lon",
+          "propertySF",
+          "yearBuilt",
+          "hospitalAffiliationName",
+          "systemName",
+          "isAffiliated",
+          "onCampus",
+          "surgeryCenter",
+          "owner_StakeholderID",
+          "owner",
+          "ownershipType",
+          "ownershipCategory",
+          "beds",
+          "link",
+          "dateUpdated"
+        ]
+      }
+    },
+    {
+      "id": "DateOnly",
+      "type": "model",
+      "label": "DateOnly",
+      "data": {
+        "description": "",
+        "properties": [
+          "year",
+          "month",
+          "day",
+          "dayOfWeek",
+          "dayOfYear",
+          "dayNumber"
+        ]
+      }
+    },
+    {
+      "id": "DayOfWeek",
+      "type": "model",
+      "label": "DayOfWeek",
+      "data": {
+        "description": "",
+        "properties": []
+      }
+    },
+    {
+      "id": "Demographics",
+      "type": "model",
+      "label": "Demographics",
+      "data": {
+        "description": "Demographics Model",
+        "properties": [
+          "metric",
+          "censusYear",
+          "censusYearValue",
+          "acS_Year",
+          "acS_YearValue",
+          "cagr",
+          "currentYear",
+          "currentYearValue",
+          "acS_Current_Change"
+        ]
+      }
+    },
+    {
+      "id": "MarketFundamentals",
+      "type": "model",
+      "label": "MarketFundamentals",
+      "data": {
+        "description": "",
+        "properties": [
+          "cbsA_CODE",
+          "cbsaShortName",
+          "cbsaTitle",
+          "cbsA_Rank",
+          "quarterEndDate",
+          "quarterLabel",
+          "onCampus",
+          "totalSF",
+          "constructionSF_InProgress",
+          "constructionSF_Completed",
+          "constructionSF_Completed_TTM",
+          "completedVsInventory",
+          "absorptionSF_YoY",
+          "occupancy_TTM",
+          "avg_NNN_Rent",
+          "yoYGrowthSS",
+          "rent_Base_10th_Percentile",
+          "rent_Base_50th_Percentile",
+          "rent_Base_90th_Percentile",
+          "transaction_Volume_TTM",
+          "ppsF_Avg_TTM",
+          "capRate_Avg_TTM"
+        ]
+      }
+    },
+    {
+      "id": "Metro",
+      "type": "model",
+      "label": "Metro",
+      "data": {
+        "description": "",
+        "properties": [
+          "cbsA_CODE",
+          "cbsaShortName",
+          "cbsaTitle",
+          "cbsA_Rank"
+        ]
+      }
+    },
+    {
+      "id": "MOBFundamentals",
+      "type": "model",
+      "label": "MOBFundamentals",
+      "data": {
+        "description": "",
+        "properties": [
+          "cbsA_Name",
+          "quarterLabel",
+          "occupancy_ttm_Current",
+          "geographyType",
+          "occupancy_ttm_PriorQ",
+          "occupancy_ttm_PriorY",
+          "rent_Base_10th_Percentile",
+          "rent_Base_50th_Percentile",
+          "rent_Base_90th_Percentile",
+          "rent_NNN_Avg",
+          "sampleCount_NNN",
+          "sampleCount_BaseRent",
+          "yoyGrowthSS",
+          "sampleCount_YOYGrowth"
+        ]
+      }
+    },
+    {
+      "id": "Property",
+      "type": "model",
+      "label": "Property",
+      "data": {
+        "description": "",
+        "properties": [
+          "propertyID",
+          "propertyName",
+          "propertyType",
+          "propertyStatus",
+          "address",
+          "city",
+          "stateProvince",
+          "zip5",
+          "lat",
+          "lon",
+          "tenancy",
+          "onCampus",
+          "owner",
+          "ownershipType",
+          "yearBuilt",
+          "squareFeet"
+        ]
+      }
+    },
+    {
+      "id": "PropertySummary",
+      "type": "model",
+      "label": "PropertySummary",
+      "data": {
+        "description": "",
+        "properties": [
+          "propertyID",
+          "cmS_ProviderNumber",
+          "propertyName",
+          "propertyType",
+          "propertyStatus",
+          "address",
+          "city",
+          "stateProvince",
+          "zip5",
+          "countyName",
+          "countyFips",
+          "cbsA_Code",
+          "cbsA_Name",
+          "cbsA_Rank",
+          "region_Name",
+          "lat",
+          "lon",
+          "hospitalAffiliationName",
+          "hospitalAffiliationCMSProviderNumber",
+          "systemName",
+          "isHospitalAffiliated",
+          "isSystemAffiliated",
+          "isAffiliated",
+          "providerCount",
+          "practiceCount",
+          "tenancy",
+          "onCampus",
+          "milesToNearestHospital",
+          "nearestHospitalPropertyID",
+          "deedOwner",
+          "ownershipType",
+          "owner_StakeholderID",
+          "owner",
+          "ownerAddress",
+          "ownerCity",
+          "ownerState",
+          "ownerZip",
+          "yearBuilt",
+          "age",
+          "stories",
+          "squareFeet",
+          "squareFeet_Estimated",
+          "squareFeet_All",
+          "lotSize",
+          "beds",
+          "buildingQuality",
+          "askingRent_DateVerified",
+          "askingRent",
+          "askingRentType",
+          "totalSpaceAvailable",
+          "leasingBroker",
+          "leasingBrokerEmail",
+          "leasingBrokerCompany",
+          "lastTransactionDate",
+          "price_Property_Allocated",
+          "ppsf",
+          "buyerName",
+          "buyerType",
+          "sellerName",
+          "mostRecentTransfer",
+          "mostRecentMortgage",
+          "mostRecentActivity",
+          "lastTransactionActivity",
+          "link"
+        ]
+      }
+    },
+    {
+      "id": "PropertyUpdate",
+      "type": "model",
+      "label": "PropertyUpdate",
+      "data": {
+        "description": "",
+        "properties": [
+          "propertyID",
+          "dateUpdated"
+        ]
+      }
+    },
+    {
+      "id": "SpecialtyDemand",
+      "type": "model",
+      "label": "SpecialtyDemand",
+      "data": {
+        "description": "",
+        "properties": [
+          "physicianTypeID",
+          "physicianType",
+          "docCount",
+          "impliedDocDemand",
+          "impliedDocGap",
+          "popPerDoc",
+          "localPopulation",
+          "popPerDoc_Benchmark",
+          "localPopulation65",
+          "pop65PerDoc",
+          "docPerPop10000",
+          "docCount_Benchmark",
+          "docPerPop10000_Benchmark"
+        ]
+      }
+    },
+    {
+      "id": "Stakeholder",
+      "type": "model",
+      "label": "Stakeholder",
+      "data": {
+        "description": "",
+        "properties": [
+          "stakeholderID",
+          "stakeholderType",
+          "primaryOwner",
+          "stakeholderName",
+          "ownershipType",
+          "ownershipCategory",
+          "contactName",
+          "contactEmail",
+          "phone",
+          "fax",
+          "url",
+          "address",
+          "city",
+          "state",
+          "zip5",
+          "propertyCount"
+        ]
+      }
+    },
+    {
+      "id": "Transactions",
+      "type": "model",
+      "label": "Transactions",
+      "data": {
+        "description": "",
+        "properties": [
+          "transactionID",
+          "propertyID",
+          "propertyTypeID",
+          "propertyType",
+          "isPortfolio",
+          "portfolioName",
+          "propertyName",
+          "propertyStatus",
+          "tenancy",
+          "fullAddress",
+          "city",
+          "stateProvince",
+          "zip5",
+          "countyName",
+          "cbsA_Code",
+          "cbsA_Name",
+          "metroRank",
+          "lat",
+          "lon",
+          "hospitalAffiliationName",
+          "onCampus",
+          "surgeryCenter",
+          "yearBuilt",
+          "squareFeet",
+          "propertySize",
+          "owner",
+          "ownerType",
+          "transactionDate",
+          "quarterID",
+          "seller_StakeholderID",
+          "sellerName",
+          "sellerType",
+          "sellerBroker",
+          "buyer_StakeholderID",
+          "buyerName",
+          "buyerType",
+          "buyer2_StakeholderID",
+          "buyer2Name",
+          "buyer2Type",
+          "buyerBroker",
+          "price_Portfolio",
+          "price_Property_Allocated",
+          "pricePerSF",
+          "pricePerSF_Portfolio",
+          "pricePerBed",
+          "priceType",
+          "leaseYield",
+          "rentPerSF",
+          "occupancy",
+          "noi",
+          "beds_Portfolio",
+          "beds_Property",
+          "squareFeet_Property",
+          "squareFeet_Portfolio",
+          "notes",
+          "isHospitalAffiliated",
+          "isSystemAffiliated",
+          "anyAffiliation",
+          "dateUpdated"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "GET /ConstructionByLatLon/{Lat}/{Lon}/{Radius}",
+      "target": "Construction",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /ConstructionByProperty/{PropertyID}",
+      "target": "Construction",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /ConstructionByCBSA/{CBSACode}",
+      "target": "Construction",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /MetroList",
+      "target": "Metro",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /StakeholdersList",
+      "target": "Stakeholder",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /SpecialtyDemand/{lat}/{lon}/{radius}",
+      "target": "SpecialtyDemand",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /Demographics/{lat}/{lon}/{radius}",
+      "target": "Demographics",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /FundamentalsByCBSA/{CBSACode}/{trend}",
+      "target": "MOBFundamentals",
+      "relationship": "returns",
+      "data": {
+        "status": "200",
+        "is_list": true
+      }
+    },
+    {
+      "source": "GET /FundamentalsByRadius/{lat}/{lon}/{radius}/{trend}",
+      "target": "MOBFundamentals",
+      "relationship": "returns",
+      "data": {
+        "status": "200",
+        "is_list": true
+      }
+    },
+    {
+      "source": "GET /MarketTrends/{CBSACode}",
+      "target": "MarketFundamentals",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /Property/Search/{Lat}/{Lon}",
+      "target": "Property",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /Property/{PropertyID}",
+      "target": "PropertySummary",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /Property/Stakeholders/{PropertyID}",
+      "target": "Stakeholder",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /Property/NewProperties/{StartDate}",
+      "target": "Property",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /Property/UpdatedProperties/{StartDate}",
+      "target": "PropertyUpdate",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /TransactionsByProperty/{PropertyID}",
+      "target": "Transactions",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /TransactionsByStakeholder/{StakeholderID}",
+      "target": "Transactions",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "GET /TransactionsByMetro/{CBSACode}",
+      "target": "Transactions",
+      "relationship": "returns",
+      "data": {
+        "status": "200"
+      }
+    },
+    {
+      "source": "Construction",
+      "target": "DateOnly",
+      "relationship": "has_property",
+      "data": {
+        "property": "projectedOpenDate"
+      }
+    },
+    {
+      "source": "Construction",
+      "target": "DateOnly",
+      "relationship": "has_property",
+      "data": {
+        "property": "constructionStartDate"
+      }
+    },
+    {
+      "source": "Construction",
+      "target": "DateOnly",
+      "relationship": "has_property",
+      "data": {
+        "property": "dateUpdated"
+      }
+    },
+    {
+      "source": "DateOnly",
+      "target": "DayOfWeek",
+      "relationship": "has_property",
+      "data": {
+        "property": "dayOfWeek"
+      }
+    }
+  ]
+}

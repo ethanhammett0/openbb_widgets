@@ -1,0 +1,1913 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RevistaMed API",
+    "description": "Access to this API requires Revista Pro or Partner level access.<br><br>\r\n                        A valid 'ApiKey' query parameter is required for all requests. Missing or invalid keys will return 401 - Unauthorized.<br><br>\r\n                        API not intended for bulk data. Revista provides bulk data through FTP services.<br><br>\r\n                        Location based requests outside subscription access will not return data.",
+    "termsOfService": "https://data.revistamed.com/terms-of-use",
+    "contact": {
+      "name": "Contact Revista",
+      "url": "https://www.revistamed.com/contact"
+    },
+    "version": "v1"
+  },
+  "paths": {
+    "/ConstructionByLatLon/{Lat}/{Lon}/{Radius}": {
+      "get": {
+        "tags": [
+          "Construction"
+        ],
+        "summary": "Returns Construction properties within the radius(miles) of the lat/lon provided in.",
+        "parameters": [
+          {
+            "name": "Lat",
+            "in": "path",
+            "description": "ex: 39.299236",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "Lon",
+            "in": "path",
+            "description": "ex: -76.609383",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "Radius",
+            "in": "path",
+            "description": "Radius in miles, ex: 3",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Construction"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ConstructionByProperty/{PropertyID}": {
+      "get": {
+        "tags": [
+          "Construction"
+        ],
+        "summary": "Summary Construction data for a provided property(ID).",
+        "parameters": [
+          {
+            "name": "PropertyID",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 99
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Construction"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ConstructionByCBSA/{CBSACode}": {
+      "get": {
+        "tags": [
+          "Construction"
+        ],
+        "summary": "Construction data for a given CBSA from the provided CBSA Code.",
+        "parameters": [
+          {
+            "name": "CBSACode",
+            "in": "path",
+            "description": "Ex: \"12060\"",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Construction"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MetroList": {
+      "get": {
+        "tags": [
+          "Lists"
+        ],
+        "summary": "List of the top 125 Metros by population",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Metro"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/StakeholdersList": {
+      "get": {
+        "tags": [
+          "Lists"
+        ],
+        "summary": "List of Owner Stakeholders",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Stakeholder"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SpecialtyDemand/{lat}/{lon}/{radius}": {
+      "get": {
+        "tags": [
+          "MarketData"
+        ],
+        "summary": "Returns Specialty Demand data for a given location, radius and Benchmark (optional; defaults to 'Top100') ex: 41.8849101, -87.6670655, 3, 'MD'.",
+        "parameters": [
+          {
+            "name": "lat",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "lon",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "radius",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Benchmark",
+            "in": "query",
+            "description": "Allowable inputs: CBSACodes, State Abbreviation (MD, CA, etc), Aggregates: 'Top100', 'Top50' etc.",
+            "schema": {
+              "type": "string",
+              "default": "Top100"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SpecialtyDemand"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Demographics/{lat}/{lon}/{radius}": {
+      "get": {
+        "tags": [
+          "MarketData"
+        ],
+        "summary": "Returns Demographics data for a given location and radius. ex: 39.299236, -76.609383, 3.",
+        "parameters": [
+          {
+            "name": "lat",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "lon",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "radius",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Demographics"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/FundamentalsByCBSA/{CBSACode}/{trend}": {
+      "get": {
+        "tags": [
+          "MarketData"
+        ],
+        "summary": "Retrieves MOB Fundamentals by CBSA code.",
+        "parameters": [
+          {
+            "name": "CBSACode",
+            "in": "path",
+            "description": "The CBSA Code.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "trend",
+            "in": "path",
+            "description": "Indicates whether to include trend data.",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MOBFundamentals"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/FundamentalsByRadius/{lat}/{lon}/{radius}/{trend}": {
+      "get": {
+        "tags": [
+          "MarketData"
+        ],
+        "summary": "Retrieves MOB Fundamentals by geographic radius.",
+        "parameters": [
+          {
+            "name": "lat",
+            "in": "path",
+            "description": "The latitude of the center point.",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "lon",
+            "in": "path",
+            "description": "The longitude of the center point.",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          {
+            "name": "radius",
+            "in": "path",
+            "description": "The radius in miles.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "trend",
+            "in": "path",
+            "description": "Indicates whether to include trend data.",
+            "required": true,
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MOBFundamentals"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MarketTrends/{CBSACode}": {
+      "get": {
+        "tags": [
+          "MarketData"
+        ],
+        "summary": "MOB Trend data for a CBSA. Valid values are CBSA Codes for the top 125 metros and 'Top100' and 'Top50'",
+        "parameters": [
+          {
+            "name": "CBSACode",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "12060"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MarketFundamentals"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Property/Search/{Lat}/{Lon}": {
+      "get": {
+        "tags": [
+          "Property"
+        ],
+        "summary": "Returns properties within 10 miles of the lat/lon passed in.",
+        "parameters": [
+          {
+            "name": "Lat",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "39.28"
+            }
+          },
+          {
+            "name": "Lon",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "-76.69"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Property"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Property/{PropertyID}": {
+      "get": {
+        "tags": [
+          "Property"
+        ],
+        "summary": "Summary data for a single property.",
+        "parameters": [
+          {
+            "name": "PropertyID",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PropertySummary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Property/Stakeholders/{PropertyID}": {
+      "get": {
+        "tags": [
+          "Property"
+        ],
+        "summary": "Stakeholders for a single property.",
+        "parameters": [
+          {
+            "name": "PropertyID",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 100
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Stakeholder"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Property/NewProperties/{StartDate}": {
+      "get": {
+        "tags": [
+          "Property"
+        ],
+        "summary": "List of new properties in Revista added after the start date. Max history is 120 days. Date format is mm-dd-yyyy.",
+        "parameters": [
+          {
+            "name": "StartDate",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Property"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Property/UpdatedProperties/{StartDate}": {
+      "get": {
+        "tags": [
+          "Property"
+        ],
+        "summary": "List of properties updated in Revista after the start date. Max history is 60 days. Date format is mm-dd-yyyy. \r\nNote that Revista updates thousands of properties per month. Limit testing with this page to 2 weeks of history.",
+        "parameters": [
+          {
+            "name": "StartDate",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PropertyUpdate"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/TransactionsByProperty/{PropertyID}": {
+      "get": {
+        "tags": [
+          "Transactions"
+        ],
+        "summary": "Gets Transactions by PropertyID (ex: 146507)",
+        "parameters": [
+          {
+            "name": "PropertyID",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Transactions"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/TransactionsByStakeholder/{StakeholderID}": {
+      "get": {
+        "tags": [
+          "Transactions"
+        ],
+        "summary": "Gets Transactions by Stakeholder (ex: 50)",
+        "parameters": [
+          {
+            "name": "StakeholderID",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Transactions"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/TransactionsByMetro/{CBSACode}": {
+      "get": {
+        "tags": [
+          "Transactions"
+        ],
+        "summary": "Gets Transactions by Metro (ex: 12060)",
+        "parameters": [
+          {
+            "name": "CBSACode",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Transactions"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Construction": {
+        "type": "object",
+        "properties": {
+          "constructionID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "propertyID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "propertyType": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "constructionSF": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "constructionStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "inactive": {
+            "type": "boolean"
+          },
+          "unentitled": {
+            "type": "boolean"
+          },
+          "projectedOpenDate": {
+            "$ref": "#/components/schemas/DateOnly"
+          },
+          "constructionStartDate": {
+            "$ref": "#/components/schemas/DateOnly"
+          },
+          "constructionType": {
+            "type": "string",
+            "nullable": true
+          },
+          "constructionStatus2": {
+            "type": "string",
+            "nullable": true
+          },
+          "constructionValue": {
+            "type": "number",
+            "format": "double"
+          },
+          "valuePerSF": {
+            "type": "number",
+            "format": "double"
+          },
+          "expectedYield": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "preleasePercent": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "contractor_StakeholderID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "contractorName": {
+            "type": "string",
+            "nullable": true
+          },
+          "developer_StakeholderID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "developerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateProvince": {
+            "type": "string",
+            "nullable": true
+          },
+          "zip5": {
+            "type": "string",
+            "nullable": true
+          },
+          "countyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "countyFIPS": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsA_Code": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsA_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsA_RANK": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "region_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "lat": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "lon": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "propertySF": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "yearBuilt": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "hospitalAffiliationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "systemName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isAffiliated": {
+            "type": "string",
+            "nullable": true
+          },
+          "onCampus": {
+            "type": "string",
+            "nullable": true
+          },
+          "surgeryCenter": {
+            "type": "string",
+            "nullable": true
+          },
+          "owner_StakeholderID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "owner": {
+            "type": "string",
+            "nullable": true
+          },
+          "ownershipType": {
+            "type": "string",
+            "nullable": true
+          },
+          "ownershipCategory": {
+            "type": "string",
+            "nullable": true
+          },
+          "beds": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "link": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateUpdated": {
+            "$ref": "#/components/schemas/DateOnly"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DateOnly": {
+        "type": "object",
+        "properties": {
+          "year": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "month": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "day": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dayOfWeek": {
+            "$ref": "#/components/schemas/DayOfWeek"
+          },
+          "dayOfYear": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "dayNumber": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DayOfWeek": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Demographics": {
+        "type": "object",
+        "properties": {
+          "metric": {
+            "type": "string",
+            "description": "Metric Description",
+            "nullable": true
+          },
+          "censusYear": {
+            "type": "number",
+            "description": "Year of the last full Census",
+            "format": "double"
+          },
+          "censusYearValue": {
+            "type": "number",
+            "description": "Data for the last full Census",
+            "format": "double"
+          },
+          "acS_Year": {
+            "type": "number",
+            "description": "Most recent American Community Survey 5 year estimate",
+            "format": "double"
+          },
+          "acS_YearValue": {
+            "type": "number",
+            "description": "Data for most recent American Community Survey 5 year estimate",
+            "format": "double"
+          },
+          "cagr": {
+            "type": "number",
+            "description": "Census Data: Compound Annual Growth Rate from Census year Data to ACS Year Data\r\n<br /> \r\nRevista Data: Calculated from current year to Census year",
+            "format": "double"
+          },
+          "currentYear": {
+            "type": "number",
+            "description": "Current Year",
+            "format": "double"
+          },
+          "currentYearValue": {
+            "type": "number",
+            "description": "Current Year estimated data based on CAGR",
+            "format": "double"
+          },
+          "acS_Current_Change": {
+            "type": "number",
+            "description": "Difference between 'ACS_YearValue' and 'CurrentYearValue'",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Demographics Model"
+      },
+      "MarketFundamentals": {
+        "type": "object",
+        "properties": {
+          "cbsA_CODE": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsaShortName": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsaTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsA_Rank": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "quarterEndDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "quarterLabel": {
+            "type": "string",
+            "nullable": true
+          },
+          "onCampus": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalSF": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "constructionSF_InProgress": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "constructionSF_Completed": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "constructionSF_Completed_TTM": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "completedVsInventory": {
+            "type": "number",
+            "format": "double"
+          },
+          "absorptionSF_YoY": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "occupancy_TTM": {
+            "type": "number",
+            "format": "double"
+          },
+          "avg_NNN_Rent": {
+            "type": "number",
+            "format": "double"
+          },
+          "yoYGrowthSS": {
+            "type": "number",
+            "format": "double"
+          },
+          "rent_Base_10th_Percentile": {
+            "type": "number",
+            "format": "double"
+          },
+          "rent_Base_50th_Percentile": {
+            "type": "number",
+            "format": "double"
+          },
+          "rent_Base_90th_Percentile": {
+            "type": "number",
+            "format": "double"
+          },
+          "transaction_Volume_TTM": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ppsF_Avg_TTM": {
+            "type": "number",
+            "format": "double"
+          },
+          "capRate_Avg_TTM": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Metro": {
+        "type": "object",
+        "properties": {
+          "cbsA_CODE": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsaShortName": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsaTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsA_Rank": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MOBFundamentals": {
+        "type": "object",
+        "properties": {
+          "cbsA_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "quarterLabel": {
+            "type": "string",
+            "nullable": true
+          },
+          "occupancy_ttm_Current": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "geographyType": {
+            "type": "string",
+            "nullable": true
+          },
+          "occupancy_ttm_PriorQ": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "occupancy_ttm_PriorY": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "rent_Base_10th_Percentile": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "rent_Base_50th_Percentile": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "rent_Base_90th_Percentile": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "rent_NNN_Avg": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "sampleCount_NNN": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sampleCount_BaseRent": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "yoyGrowthSS": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "sampleCount_YOYGrowth": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Property": {
+        "type": "object",
+        "properties": {
+          "propertyID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "propertyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyType": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateProvince": {
+            "type": "string",
+            "nullable": true
+          },
+          "zip5": {
+            "type": "string",
+            "nullable": true
+          },
+          "lat": {
+            "type": "number",
+            "format": "float"
+          },
+          "lon": {
+            "type": "number",
+            "format": "float"
+          },
+          "tenancy": {
+            "type": "string",
+            "nullable": true
+          },
+          "onCampus": {
+            "type": "string",
+            "nullable": true
+          },
+          "owner": {
+            "type": "string",
+            "nullable": true
+          },
+          "ownershipType": {
+            "type": "string",
+            "nullable": true
+          },
+          "yearBuilt": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "squareFeet": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PropertySummary": {
+        "type": "object",
+        "properties": {
+          "propertyID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cmS_ProviderNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyType": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateProvince": {
+            "type": "string",
+            "nullable": true
+          },
+          "zip5": {
+            "type": "string",
+            "nullable": true
+          },
+          "countyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "countyFips": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsA_Code": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsA_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsA_Rank": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "region_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "lat": {
+            "type": "number",
+            "format": "float"
+          },
+          "lon": {
+            "type": "number",
+            "format": "float"
+          },
+          "hospitalAffiliationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "hospitalAffiliationCMSProviderNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "systemName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isHospitalAffiliated": {
+            "type": "string",
+            "nullable": true
+          },
+          "isSystemAffiliated": {
+            "type": "string",
+            "nullable": true
+          },
+          "isAffiliated": {
+            "type": "string",
+            "nullable": true
+          },
+          "providerCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "practiceCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tenancy": {
+            "type": "string",
+            "nullable": true
+          },
+          "onCampus": {
+            "type": "string",
+            "nullable": true
+          },
+          "milesToNearestHospital": {
+            "type": "number",
+            "format": "double"
+          },
+          "nearestHospitalPropertyID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "deedOwner": {
+            "type": "string",
+            "nullable": true
+          },
+          "ownershipType": {
+            "type": "string",
+            "nullable": true
+          },
+          "owner_StakeholderID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "owner": {
+            "type": "string",
+            "nullable": true
+          },
+          "ownerAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "ownerCity": {
+            "type": "string",
+            "nullable": true
+          },
+          "ownerState": {
+            "type": "string",
+            "nullable": true
+          },
+          "ownerZip": {
+            "type": "string",
+            "nullable": true
+          },
+          "yearBuilt": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "age": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "stories": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "squareFeet": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "squareFeet_Estimated": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "squareFeet_All": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lotSize": {
+            "type": "string",
+            "nullable": true
+          },
+          "beds": {
+            "type": "string",
+            "nullable": true
+          },
+          "buildingQuality": {
+            "type": "string",
+            "nullable": true
+          },
+          "askingRent_DateVerified": {
+            "type": "string",
+            "nullable": true
+          },
+          "askingRent": {
+            "type": "string",
+            "nullable": true
+          },
+          "askingRentType": {
+            "type": "string",
+            "nullable": true
+          },
+          "totalSpaceAvailable": {
+            "type": "string",
+            "nullable": true
+          },
+          "leasingBroker": {
+            "type": "string",
+            "nullable": true
+          },
+          "leasingBrokerEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "leasingBrokerCompany": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastTransactionDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "price_Property_Allocated": {
+            "type": "string",
+            "nullable": true
+          },
+          "ppsf": {
+            "type": "number",
+            "format": "double"
+          },
+          "buyerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "buyerType": {
+            "type": "string",
+            "nullable": true
+          },
+          "sellerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "mostRecentTransfer": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mostRecentMortgage": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mostRecentActivity": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "lastTransactionActivity": {
+            "type": "string",
+            "nullable": true
+          },
+          "link": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PropertyUpdate": {
+        "type": "object",
+        "properties": {
+          "propertyID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dateUpdated": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SpecialtyDemand": {
+        "type": "object",
+        "properties": {
+          "physicianTypeID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "physicianType": {
+            "type": "string",
+            "nullable": true
+          },
+          "docCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "impliedDocDemand": {
+            "type": "number",
+            "format": "double"
+          },
+          "impliedDocGap": {
+            "type": "number",
+            "format": "double"
+          },
+          "popPerDoc": {
+            "type": "number",
+            "format": "double"
+          },
+          "localPopulation": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "popPerDoc_Benchmark": {
+            "type": "number",
+            "format": "double"
+          },
+          "localPopulation65": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pop65PerDoc": {
+            "type": "number",
+            "format": "double"
+          },
+          "docPerPop10000": {
+            "type": "number",
+            "format": "double"
+          },
+          "docCount_Benchmark": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "docPerPop10000_Benchmark": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Stakeholder": {
+        "type": "object",
+        "properties": {
+          "stakeholderID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "stakeholderType": {
+            "type": "string",
+            "nullable": true
+          },
+          "primaryOwner": {
+            "type": "boolean"
+          },
+          "stakeholderName": {
+            "type": "string",
+            "nullable": true
+          },
+          "ownershipType": {
+            "type": "string",
+            "nullable": true
+          },
+          "ownershipCategory": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactName": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "fax": {
+            "type": "string",
+            "nullable": true
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "string",
+            "nullable": true
+          },
+          "zip5": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyCount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Transactions": {
+        "type": "object",
+        "properties": {
+          "transactionID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "propertyID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "propertyTypeID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "propertyType": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPortfolio": {
+            "type": "string",
+            "nullable": true
+          },
+          "portfolioName": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "propertyStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "tenancy": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateProvince": {
+            "type": "string",
+            "nullable": true
+          },
+          "zip5": {
+            "type": "string",
+            "nullable": true
+          },
+          "countyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsA_Code": {
+            "type": "string",
+            "nullable": true
+          },
+          "cbsA_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "metroRank": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lat": {
+            "type": "number",
+            "format": "double"
+          },
+          "lon": {
+            "type": "number",
+            "format": "double"
+          },
+          "hospitalAffiliationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "onCampus": {
+            "type": "string",
+            "nullable": true
+          },
+          "surgeryCenter": {
+            "type": "string",
+            "nullable": true
+          },
+          "yearBuilt": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "squareFeet": {
+            "type": "number",
+            "format": "double"
+          },
+          "propertySize": {
+            "type": "string",
+            "nullable": true
+          },
+          "owner": {
+            "type": "string",
+            "nullable": true
+          },
+          "ownerType": {
+            "type": "string",
+            "nullable": true
+          },
+          "transactionDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "quarterID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "seller_StakeholderID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sellerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "sellerType": {
+            "type": "string",
+            "nullable": true
+          },
+          "sellerBroker": {
+            "type": "string",
+            "nullable": true
+          },
+          "buyer_StakeholderID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "buyerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "buyerType": {
+            "type": "string",
+            "nullable": true
+          },
+          "buyer2_StakeholderID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "buyer2Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "buyer2Type": {
+            "type": "string",
+            "nullable": true
+          },
+          "buyerBroker": {
+            "type": "string",
+            "nullable": true
+          },
+          "price_Portfolio": {
+            "type": "number",
+            "format": "double"
+          },
+          "price_Property_Allocated": {
+            "type": "number",
+            "format": "double"
+          },
+          "pricePerSF": {
+            "type": "number",
+            "format": "double"
+          },
+          "pricePerSF_Portfolio": {
+            "type": "number",
+            "format": "double"
+          },
+          "pricePerBed": {
+            "type": "number",
+            "format": "double"
+          },
+          "priceType": {
+            "type": "string",
+            "nullable": true
+          },
+          "leaseYield": {
+            "type": "number",
+            "format": "double"
+          },
+          "rentPerSF": {
+            "type": "number",
+            "format": "double"
+          },
+          "occupancy": {
+            "type": "string",
+            "nullable": true
+          },
+          "noi": {
+            "type": "number",
+            "format": "double"
+          },
+          "beds_Portfolio": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "beds_Property": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "squareFeet_Property": {
+            "type": "number",
+            "format": "double"
+          },
+          "squareFeet_Portfolio": {
+            "type": "number",
+            "format": "double"
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "isHospitalAffiliated": {
+            "type": "string",
+            "nullable": true
+          },
+          "isSystemAffiliated": {
+            "type": "string",
+            "nullable": true
+          },
+          "anyAffiliation": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateUpdated": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "ApiKey": {
+        "type": "apiKey",
+        "name": "ApiKey",
+        "in": "query"
+      }
+    }
+  },
+  "security": [
+    {
+      "ApiKey": [ ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+property_name,property_address,property_type,square_footage,market_value,occupancy_rate,acquisition_date,asset_notes
+Gateway Plaza,123 Main Street New York NY 10001,Office,485000,$275000000,92%,2024-06-15,"Prime Class A office tower anchor tenant is Goldman Sachs 15-year lease"
+Riverside Apartments,456 River Road Boston MA 02108,Multifamily,325000,$185000000,96%,2024-03-20,"250-unit luxury apartments strong demographics avg rent $3200/mo"
+Industrial Park West,789 Industrial Blvd Chicago IL 60601,Industrial,750000,$95000000,88%,2023-11-10,"Amazon distribution center 10-year NNN lease recently renewed"
+Downtown Retail Center,321 Commerce Ave Miami FL 33101,Retail,125000,$68000000,85%,2024-08-05,"Mixed-use retail ground floor residential above waterfront location"

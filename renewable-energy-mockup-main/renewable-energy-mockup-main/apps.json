@@ -1,0 +1,349 @@
+[
+  {
+    "name": "Renewable Energy Dashboard",
+    "img": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=250&h=200&fit=crop",
+    "img_dark": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=250&h=200&fit=crop",
+    "img_light": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=250&h=200&fit=crop",
+    "description": "Dashboard for renewable energy project finance and analytics",
+    "allowCustomization": true,
+    "tabs": {
+      "overview": {
+        "id": "overview",
+        "name": "Overview",
+        "layout": [
+          {
+            "i": "renewable_energy_metrics",
+            "x": 0,
+            "y": 2,
+            "w": 40,
+            "h": 11,
+            "state": {
+              "chartView": {
+                "enabled": false,
+                "chartType": "line"
+              },
+              "columnState": {
+                "default": {
+                  "columnPinning": {
+                    "leftColIds": [
+                      "metric"
+                    ],
+                    "rightColIds": []
+                  },
+                  "columnOrder": {
+                    "orderedColIds": [
+                      "metric",
+                      "value",
+                      "requirement",
+                      "status"
+                    ]
+                  }
+                }
+              }
+            },
+            "groups": []
+          },
+          {
+            "i": "commercial_financing",
+            "x": 0,
+            "y": 13,
+            "w": 14,
+            "h": 15,
+            "groups": []
+          },
+          {
+            "i": "project_specifications",
+            "x": 14,
+            "y": 13,
+            "w": 13,
+            "h": 15,
+            "groups": []
+          },
+          {
+            "i": "resource_performance",
+            "x": 27,
+            "y": 13,
+            "w": 13,
+            "h": 15,
+            "groups": []
+          }
+        ]
+      },
+      "energy-analysis": {
+        "id": "energy-analysis",
+        "name": "Energy Analysis",
+        "layout": [
+          {
+            "i": "power_curve_analysis",
+            "x": 0,
+            "y": 2,
+            "w": 18,
+            "h": 15,
+            "state": {
+              "chartModel": {
+                "modelType": "range",
+                "chartType": "line",
+                "chartOptions": {},
+                "suppressChartRanges": true
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            },
+            "groups": []
+          },
+          {
+            "i": "loss_factor_waterfall",
+            "x": 18,
+            "y": 2,
+            "w": 22,
+            "h": 15,
+            "state": {
+              "chartView": {
+                "enabled": false,
+                "chartType": "line"
+              },
+              "columnState": {
+                "default": {
+                  "rowGroup": {
+                    "groupColIds": [
+                      "category"
+                    ]
+                  },
+                  "columnVisibility": {
+                    "hiddenColIds": [
+                      "category"
+                    ]
+                  },
+                  "columnOrder": {
+                    "orderedColIds": [
+                      "ag-Grid-AutoColumn",
+                      "category",
+                      "item",
+                      "value"
+                    ]
+                  },
+                  "rowGroupExpansion": {
+                    "expandedRowGroupIds": [
+                      "row-group-category-Gross Output",
+                      "row-group-category-"
+                    ]
+                  },
+                  "rowSelection": [
+                    "row-group-category-Gross Output"
+                  ]
+                }
+              }
+            },
+            "groups": []
+          }
+        ]
+      },
+      "financial-projections": {
+        "id": "financial-projections",
+        "name": "Financial Projections",
+        "layout": [
+          {
+            "i": "financial_metrics_time",
+            "x": 0,
+            "y": 2,
+            "w": 19,
+            "h": 13,
+            "state": {
+              "chartModel": {
+                "modelType": "range",
+                "chartType": "line",
+                "chartOptions": {},
+                "suppressChartRanges": true
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            },
+            "groups": []
+          },
+          {
+            "i": "revenue_noi_progression",
+            "x": 19,
+            "y": 2,
+            "w": 21,
+            "h": 13,
+            "groups": []
+          },
+          {
+            "i": "loan_sizing_analysis",
+            "x": 0,
+            "y": 15,
+            "w": 40,
+            "h": 25,
+            "state": {
+              "chartView": {
+                "enabled": false,
+                "chartType": "line"
+              },
+              "columnState": {
+                "default": {
+                  "rowGroup": {
+                    "groupColIds": [
+                      "constraint_type"
+                    ]
+                  },
+                  "columnVisibility": {
+                    "hiddenColIds": [
+                      "constraint_type"
+                    ]
+                  },
+                  "columnOrder": {
+                    "orderedColIds": [
+                      "ag-Grid-AutoColumn",
+                      "constraint_type",
+                      "metric",
+                      "value"
+                    ]
+                  },
+                  "rowGroupExpansion": {
+                    "expandedRowGroupIds": [
+                      "row-group-constraint_type-By Debt Yield Constraint",
+                      "row-group-constraint_type-By LTC Constraint",
+                      "row-group-constraint_type-Final Loan Size"
+                    ]
+                  },
+                  "rowSelection": [
+                    "2"
+                  ]
+                }
+              }
+            },
+            "groups": []
+          }
+        ]
+      },
+      "sensitivity-analysis": {
+        "id": "sensitivity-analysis",
+        "name": "Sensitivity Analysis",
+        "layout": [
+          {
+            "i": "sensitivity_analysis",
+            "x": 0,
+            "y": 2,
+            "w": 40,
+            "h": 12,
+            "state": {
+              "params": {
+                "scenario": [
+                  "P50 (Base Case)",
+                  "P90 (Stress)",
+                  "P75 (Conservative)",
+                  "P75 (Conservative)"
+                ]
+              },
+              "chartView": {
+                "enabled": false,
+                "chartType": "line"
+              },
+              "columnState": {
+                "default": {
+                  "columnPinning": {
+                    "leftColIds": [
+                      "metric"
+                    ],
+                    "rightColIds": []
+                  },
+                  "columnOrder": {
+                    "orderedColIds": [
+                      "metric",
+                      "p50_base_case",
+                      "p90_stress",
+                      "p75_conservative"
+                    ]
+                  }
+                }
+              }
+            },
+            "groups": [
+              "Group 1"
+            ]
+          },
+          {
+            "i": "sensitivity_analysis_chart",
+            "x": 0,
+            "y": 14,
+            "w": 40,
+            "h": 15,
+            "state": {
+              "params": {
+                "scenario": [
+                  "P50 (Base Case)",
+                  "P90 (Stress)",
+                  "P75 (Conservative)",
+                  "P75 (Conservative)"
+                ]
+              }
+            },
+            "groups": [
+              "Group 1"
+            ]
+          }
+        ]
+      },
+      "summary-table": {
+        "id": "summary-table",
+        "name": "Summary Table",
+        "layout": [
+          {
+            "i": "longitudinal_financial_summary",
+            "x": 0,
+            "y": 2,
+            "w": 40,
+            "h": 24,
+            "state": {
+              "chartView": {
+                "enabled": false,
+                "chartType": "line"
+              },
+              "columnState": {
+                "default": {
+                  "columnPinning": {
+                    "leftColIds": [
+                      "year"
+                    ],
+                    "rightColIds": []
+                  },
+                  "columnOrder": {
+                    "orderedColIds": [
+                      "year",
+                      "net_mwh",
+                      "revenue",
+                      "opex",
+                      "noi",
+                      "debt_service",
+                      "dscr",
+                      "debt_yield",
+                      "ltv"
+                    ]
+                  }
+                }
+              }
+            },
+            "groups": []
+          }
+        ]
+      }
+    },
+    "groups": [
+      {
+        "name": "Group 1",
+        "type": "param",
+        "paramName": "scenario",
+        "defaultValue": [
+          "P50 (Base Case)",
+          "P90 (Stress)",
+          "P75 (Conservative)",
+          "P75 (Conservative)"
+        ]
+      }
+    ]
+  }
+]

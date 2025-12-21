@@ -1,0 +1,85 @@
+{
+  "widgets": [
+    {
+      "name": "Revista Search",
+      "description": "Finds IDs via Fuzzy Address Search.",
+      "category": "Revista",
+      "endpoint": "search",
+      "params": {
+        "query": "string"
+      },
+      "type": "table"
+    },
+    {
+      "name": "Scorecard",
+      "description": "Toggleable KPI views (Valuation/Ops/Physical).",
+      "category": "Revista",
+      "endpoint": "scorecard",
+      "params": {
+        "property_id": "integer",
+        "metric_view": "string"
+      },
+      "type": "markdown"
+    },
+    {
+      "name": "Interactive Earth",
+      "description": "3D Click-and-Drag satellite exploration.",
+      "category": "Revista",
+      "endpoint": "earth",
+      "params": {
+        "property_id": "integer"
+      },
+      "type": "html"
+    },
+    {
+      "name": "Market Trends",
+      "description": "Dynamic Zoomable 5-Mile Trends.",
+      "category": "Revista",
+      "endpoint": "market_trends",
+      "params": {
+        "property_id": "integer"
+      },
+      "type": "chart"
+    },
+    {
+      "name": "Market Balance",
+      "description": "Supply vs. Demand gauge.",
+      "category": "Revista",
+      "endpoint": "market_balance",
+      "params": {
+        "property_id": "integer"
+      },
+      "type": "chart"
+    },
+    {
+      "name": "Activity Proxy",
+      "description": "Provider Density analysis.",
+      "category": "Revista",
+      "endpoint": "activity_proxy",
+      "params": {
+        "property_id": "integer"
+      },
+      "type": "markdown"
+    },
+    {
+      "name": "Benchmarker",
+      "description": "Subject vs. Market Rent & Occupancy.",
+      "category": "Revista",
+      "endpoint": "benchmarker",
+      "params": {
+        "property_id": "integer"
+      },
+      "type": "chart"
+    },
+    {
+      "name": "Stakeholders",
+      "description": "Owner, Sponsor & Developer details.",
+      "category": "Revista",
+      "endpoint": "stakeholders",
+      "params": {
+        "property_id": "integer"
+      },
+      "type": "table"
+    }
+  ]
+}

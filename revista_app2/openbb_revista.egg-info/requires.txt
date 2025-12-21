@@ -1,0 +1,12 @@
+pandas
+requests
+plotly
+pydantic
+python-dotenv
+aiohttp
+fastapi
+uvicorn
+openbb-core
+
+[dev]
+pytest

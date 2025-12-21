@@ -1,0 +1,2 @@
+[openbb_core_extension]
+revista = openbb_revista.router:router
