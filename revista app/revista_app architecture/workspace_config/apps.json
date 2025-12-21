@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Revista Intelligence",
+    "description": "Comprehensive healthcare property intelligence dashboard.",
+    "tabs": {
+      "overview": {
+        "id": "overview",
+        "name": "Property Overview",
+        "layout": [
+          {
+            "i": "revista_search",
+            "widget": "revista_search",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 6
+          },
+          {
+            "i": "scorecard",
+            "widget": "scorecard",
+            "x": 0,
+            "y": 6,
+            "w": 20,
+            "h": 8
+          },
+          {
+            "i": "interactive_earth",
+            "widget": "interactive_earth",
+            "x": 20,
+            "y": 6,
+            "w": 20,
+            "h": 8
+          }
+        ]
+      },
+      "market": {
+        "id": "market",
+        "name": "Market Analysis",
+        "layout": [
+          {
+            "i": "market_trends",
+            "widget": "market_trends",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 8
+          },
+          {
+            "i": "market_balance",
+            "widget": "market_balance",
+            "x": 0,
+            "y": 8,
+            "w": 20,
+            "h": 6
+          },
+          {
+            "i": "benchmarker",
+            "widget": "benchmarker",
+            "x": 20,
+            "y": 8,
+            "w": 20,
+            "h": 6
+          }
+        ]
+      },
+      "stakeholders": {
+        "id": "stakeholders",
+        "name": "Stakeholders",
+        "layout": [
+          {
+            "i": "stakeholders",
+            "widget": "stakeholders",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 10
+          }
+        ]
+      }
+    }
+  }
+]

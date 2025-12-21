@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Salesforce App",
+        "img": "https://repository-images.githubusercontent.com/323048702/4659bbdb-ae11-4f51-8a16-860fa9dfc551",
+        "img_dark": "https://repository-images.githubusercontent.com/323048702/4659bbdb-ae11-4f51-8a16-860fa9dfc551",
+        "img_light": "https://repository-images.githubusercontent.com/323048702/4659bbdb-ae11-4f51-8a16-860fa9dfc551",
+        "description": "App for Salesforce Deal Entry, Tranche Tracking, Real Estate Assets, and Account Lookup",
+        "allowCustomization": true,
+        "tabs": {
+            "salesforce": {
+                "id": "salesforce",
+                "name": "Salesforce",
+                "layout": [
+                    {
+                        "i": "salesforce/deals",
+                        "x": 0,
+                        "y": 0,
+                        "w": 20,
+                        "h": 10,
+                        "groups": []
+                    },
+                    {
+                        "i": "salesforce/tranches",
+                        "x": 0,
+                        "y": 10,
+                        "w": 20,
+                        "h": 12,
+                        "groups": []
+                    },
+                    {
+                        "i": "salesforce/realestate",
+                        "x": 0,
+                        "y": 22,
+                        "w": 20,
+                        "h": 10,
+                        "groups": []
+                    },
+                    {
+                        "i": "salesforce/accounts",
+                        "x": 20,
+                        "y": 0,
+                        "w": 25,
+                        "h": 12,
+                        "groups": []
+                    },
+                    {
+                        "i": "salesforce/accounts/lookup",
+                        "x": 20,
+                        "y": 12,
+                        "w": 30,
+                        "h": 14,
+                        "groups": []
+                    }
+                ]
+            }
+        }
+    }
+]

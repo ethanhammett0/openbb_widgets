@@ -1,0 +1,28 @@
+[
+    {
+        "name": "AI Context Scraper App",
+        "description": "An app for scraping context based on a prompt.",
+        "allowCustomization": true,
+        "tabs": {
+            "search": {
+                "id": "search",
+                "name": "Search",
+                "layout": [
+                    {
+                        "i": "aiContextScraper",
+                        "x": 0,
+                        "y": 0,
+                        "w": 40,
+                        "h": 20,
+                        "state": {
+                            "params": {
+                                "prompt": "Latest regulatory changes for private credit in EU",
+                                "limit": 5
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+]

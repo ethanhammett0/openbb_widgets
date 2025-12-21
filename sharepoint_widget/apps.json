@@ -1,0 +1,26 @@
+[
+    {
+        "name": "SharePoint Viewer App",
+        "description": "App to view SharePoint documents.",
+        "email": "user@example.com",
+        "license": "MIT",
+        "website": "https://openbb.co",
+        "git": "https://github.com/OpenBB-finance",
+        "tabs": {
+            "main": {
+                "id": "main",
+                "name": "Main",
+                "layout": [
+                    {
+                        "i": "sharepoint_viewer",
+                        "x": 0,
+                        "y": 0,
+                        "w": 40,
+                        "h": 20,
+                        "groups": []
+                    }
+                ]
+            }
+        }
+    }
+]

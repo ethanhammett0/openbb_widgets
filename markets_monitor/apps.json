@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Markets Monitor Dashboard",
+        "description": "Dashboard for monitoring real estate deal flow distribution.",
+        "allowCustomization": true,
+        "tabs": {
+            "overview": {
+                "id": "overview",
+                "name": "Overview",
+                "layout": [
+                    {
+                        "i": "dealFlowDistribution",
+                        "x": 0,
+                        "y": 0,
+                        "w": 40,
+                        "h": 20,
+                        "state": {
+                            "params": {
+                                "interval": "3 month",
+                                "metric": "spread"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "tokens": [
+            {
+                "token": "interval",
+                "defaultValue": "3 month"
+            }
+        ]
+    }
+]
