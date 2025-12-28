@@ -62,6 +62,22 @@ def main():
     # Create the FastMCP server wrapper
     mcp_server = create_mcp_server(settings, app)
     
+    # Register Resources
+    @mcp_server.resource("revista://metros/list", mime_type="application/json")
+    async def get_metro_list() -> str:
+        """Returns the cached list of Metros (CBSA codes) as a JSON string."""
+        import json
+        import os
+        try:
+            # Look for cached file in the same directory as main.py
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            cache_path = os.path.join(current_dir, "cbsa_list.json")
+            
+            with open(cache_path, "r", encoding="utf-8") as f:
+                return f.read()
+        except FileNotFoundError:
+            return json.dumps({"error": "Cache file cbsa_list.json not found. Run fetch_cbsa_list.py first."})
+    
     if args.transport == "stdio":
         asyncio.run(stdio_main(mcp_server))
     elif args.transport in ["http", "sse"]:

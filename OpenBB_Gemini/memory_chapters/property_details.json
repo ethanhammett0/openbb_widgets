@@ -1,0 +1,18 @@
+[
+  {
+    "metadata": {
+      "unique_id": "mem_02953d48",
+      "timestamp": 1766804531.942915,
+      "source_tool": "revista",
+      "source_args": {
+        "id": "123"
+      },
+      "topic": "Property Details",
+      "summary": "[Revista, Kindred, Beds: 100]"
+    },
+    "value": {
+      "name": "Kindred Hospital",
+      "beds": 100
+    }
+  }
+]

@@ -110,20 +110,24 @@ def build_widget_tool_def(
 class WidgetToolset(ExternalToolset[OpenBBDeps]):
     """External toolset that exposes widgets as deferred tools."""
 
-    def __init__(self, widgets: Sequence[Widget]):
+    def __init__(self, widgets: Sequence[Widget], reserved_names: set[str] | None = None):
         self.widgets_by_tool: dict[str, Widget] = {}
-        used_names: set[str] = set()
+        # We start with reserved_names, but we want to track NEW names we add to avoid internal collisions too.
+        # So 'used_names' tracks everything.
+        self.used_names: set[str] = set(reserved_names) if reserved_names else set()
+        
         tool_defs: list[ToolDefinition] = []
 
         for widget in widgets:
             base_name = build_widget_tool_name(widget)
             name = base_name
             counter = 1
-            while name in used_names:
+            # Check against ALL used/reserved names
+            while name in self.used_names:
                 counter += 1
                 name = f"{base_name}_{counter}"
 
-            used_names.add(name)
+            self.used_names.add(name)
 
             tool_def = build_widget_tool_def(widget, tool_name_override=name)
             tool_defs.append(tool_def)
@@ -139,23 +143,36 @@ def build_widget_toolsets(
 
     Widgets are organized into separate toolsets by priority (primary, secondary, extra)
     to allow control over tool selection.
-
-    Parameters
-    ----------
-    collection : WidgetCollection | None
-        Widget collection with priority groups, or None
-
-    Returns
-    -------
-    tuple[AbstractToolset[OpenBBDeps], ...]
-        Toolsets including widget toolsets
     """
     if collection is None:
         collection = WidgetCollection()
 
     toolsets: list[AbstractToolset[OpenBBDeps]] = []
+    
+    # Track which IDs we've seen to prevent duplicate processing of the SAME widget object across groups
+    seen_ids: set[str] = set()
+    # Track reserved names across toolsets to prevent Slug collisions
+    global_used_names: set[str] = set()
+
     for widgets in (collection.primary, collection.secondary, collection.extra):
-        if widgets:
-            toolsets.append(WidgetToolset(widgets))
+        if not widgets:
+            continue
+            
+        # 1. Deduplicate by Widget ID first
+        unique_widgets = []
+        for w in widgets:
+            if w.widget_id not in seen_ids:
+                unique_widgets.append(w)
+                seen_ids.add(w.widget_id)
+        
+        if not unique_widgets:
+            continue
+
+        # 2. Create toolset with awareness of previously used names
+        ts = WidgetToolset(unique_widgets, reserved_names=global_used_names)
+        toolsets.append(ts)
+        
+        # 3. Update global registry with names this toolset claimed
+        global_used_names.update(ts.used_names)
 
     return tuple(toolsets)

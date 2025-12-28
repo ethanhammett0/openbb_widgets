@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenBB Chat Widget</title>
+
+    <!-- INLINE CSS (Zinc Palette / Shadcn Dark) -->
+    <style>
+        :root {
+            /* Zinc Palette (Dark) */
+            --bg-background: #09090b;
+            /* Zinc 950 */
+            --bg-card: #09090b;
+            --bg-sidebar: #000000;
+            /* Sidebar is often darker/black */
+            --bg-muted: #27272a;
+            /* Zinc 800 */
+            --bg-accent: #27272a;
+            --bg-popover: #09090b;
+
+            --text-foreground: #fafafa;
+            /* Zinc 50 */
+            --text-muted: #a1a1aa;
+            /* Zinc 400 */
+            --text-primary-fg: #18181b;
+            /* Zinc 900 */
+
+            --border: #27272a;
+            /* Zinc 800 */
+            --input: #27272a;
+
+            --primary: #fafafa;
+            --secondary: #27272a;
+
+            /* Accents */
+            --blue-500: #3b82f6;
+            --blue-600: #2563eb;
+            --blue-900: #1e3a8a;
+
+            /* Pill Colors (Matches Screenshot) */
+            --pill-orange-bg: rgba(67, 20, 7, 0.6);
+            --pill-orange-border: #7c2d12;
+            --pill-orange-text: #fb923c;
+
+            --pill-blue-bg: rgba(30, 58, 138, 0.5);
+            --pill-blue-border: #1e40af;
+            --pill-blue-text: #60a5fa;
+
+            --pill-green-bg: rgba(6, 78, 59, 0.5);
+            --pill-green-border: #064e3b;
+            --pill-green-text: #34d399;
+        }
+
+        /* RESET */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-background);
+            color: var(--text-foreground);
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* ICONS */
+        .icon {
+            width: 16px;
+            height: 16px;
+            stroke-width: 2px;
+        }
+
+        .icon-sm {
+            width: 14px;
+            height: 14px;
+            stroke-width: 2px;
+        }
+
+        .icon-xs {
+            width: 12px;
+            height: 12px;
+            stroke-width: 2px;
+        }
+
+        /* LAYOUT */
+        .app-container {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        /* HEADER */
+        .header {
+            height: 52px;
+            background-color: var(--bg-background);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            flex-shrink: 0;
+        }
+
+        .header-title {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        .search-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar {
+            width: 400px;
+            background-color: var(--bg-muted);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            color: var(--text-muted);
+            font-size: 13px;
+            gap: 8px;
+        }
+
+        .kbd {
+            font-size: 10px;
+            font-family: monospace;
+            background: #3f3f46;
+            padding: 2px 4px;
+            rounded: 3px;
+            border-radius: 4px;
+            color: #d4d4d8;
+            margin-left: auto;
+        }
+
+        /* MAIN BODY */
+        .workspace {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 260px;
+            background-color: var(--bg-sidebar);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+
+        /* Sidebar Tabs */
+        .sb-tabs {
+            display: flex;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sb-tab {
+            flex: 1;
+            text-align: center;
+            padding: 10px 0;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            transition: color 0.1s;
+        }
+
+        .sb-tab:hover {
+            color: var(--text-foreground);
+        }
+
+        .sb-tab.active {
+            color: var(--text-foreground);
+            border-bottom-color: var(--blue-500);
+        }
+
+        /* Sidebar Search */
+        .sb-actions {
+            padding: 12px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .sb-input {
+            flex: 1;
+            background: var(--bg-muted);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 6px 10px;
+            color: var(--text-foreground);
+            font-size: 13px;
+            outline: none;
+        }
+
+        .btn-icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            cursor: pointer;
+            color: var(--text-muted);
+            background: var(--bg-muted);
+            border: 1px solid var(--border);
+        }
+
+        .btn-icon:hover {
+            background: #3f3f46;
+            color: var(--text-foreground);
+        }
+
+        .btn-primary {
+            background: var(--blue-600);
+            border-color: var(--blue-600);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--blue-500);
+        }
+
+        /* Tree */
+        .tree {
+            flex: 1;
+            overflow-y: auto;
+            padding-bottom: 20px;
+        }
+
+        .tree-item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 16px;
+            cursor: pointer;
+            color: var(--text-muted);
+            font-size: 13px;
+            user-select: none;
+        }
+
+        .tree-item:hover {
+            background-color: var(--bg-muted);
+            color: var(--text-foreground);
+        }
+
+        .tree-item.active {
+            background-color: transparent;
+            color: var(--text-foreground);
+            font-weight: 600;
+        }
+
+        .tree-sub {
+            padding-left: 32px;
+            padding-right: 16px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .tree-sub:hover {
+            color: var(--text-foreground);
+        }
+
+        .tree-sub.active {
+            background-color: var(--bg-muted);
+            color: var(--text-foreground);
+        }
+
+        .badge {
+            background: var(--bg-muted);
+            color: var(--text-muted);
+            padding: 1px 6px;
+            border-radius: 10px;
+            font-size: 11px;
+            min-width: 20px;
+            text-align: center;
+        }
+
+        .badge.active {
+            background: var(--blue-600);
+            color: white;
+        }
+
+        /* CONTENT AREA */
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--bg-background);
+            min-width: 0;
+        }
+
+        .content-header {
+            padding: 16px 20px 0 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .content-title {
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+        }
+
+        .title-main {
+            color: var(--text-foreground);
+            font-weight: 600;
+        }
+
+        .content-tabs {
+            display: flex;
+            gap: 20px;
+            margin-top: 4px;
+        }
+
+        .c-tab {
+            padding-bottom: 10px;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+        }
+
+        .c-tab:hover {
+            color: var(--text-foreground);
+        }
+
+        .c-tab.active {
+            color: var(--text-foreground);
+            border-bottom-color: var(--text-foreground);
+        }
+
+        /* MESSAGES */
+        .messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .msg-group {
+            display: flex;
+            gap: 12px;
+        }
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--bg-muted);
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .msg-body {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .msg-meta {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .sender {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-foreground);
+        }
+
+        .time {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .text {
+            font-size: 14px;
+            color: #d4d4d8;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        /* PILLS */
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 0 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            background: var(--bg-muted);
+            border: 1px solid var(--border);
+            color: var(--text-foreground);
+            vertical-align: middle;
+            margin: 0 2px;
+            height: 20px;
+            white-space: nowrap;
+        }
+
+        .pill.file {
+            background: var(--pill-orange-bg);
+            border-color: var(--pill-orange-border);
+            color: var(--pill-orange-text);
+        }
+
+        .pill.folder {
+            background: var(--pill-orange-bg);
+            border-color: var(--pill-orange-border);
+            color: var(--pill-orange-text);
+        }
+
+        .pill.deal {
+            background: var(--pill-blue-bg);
+            border-color: var(--pill-blue-border);
+            color: var(--pill-blue-text);
+        }
+
+        .pill.task {
+            background: var(--pill-green-bg);
+            border-color: var(--pill-green-border);
+            color: var(--pill-green-text);
+        }
+
+        /* REACTIONS */
+        .reactions {
+            display: flex;
+            gap: 6px;
+            margin-top: 6px;
+        }
+
+        .reaction {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: var(--bg-muted);
+            border: 1px solid transparent;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .reaction.active {
+            background: rgba(59, 130, 246, 0.15);
+            border-color: rgba(59, 130, 246, 0.3);
+            color: var(--blue-500);
+        }
+
+        /* INPUT AREA */
+        .input-region {
+            padding: 20px;
+            border-top: 1px solid var(--border);
+            background-color: var(--bg-background);
+        }
+
+        .input-box {
+            background: var(--bg-muted);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.2s;
+        }
+
+        .input-box:focus-within {
+            border-color: var(--text-muted);
+        }
+
+        .chat-input {
+            width: 100%;
+            background: transparent;
+            border: none;
+            padding: 12px;
+            font-family: inherit;
+            font-size: 14px;
+            color: var(--text-foreground);
+            resize: none;
+            min-height: 50px;
+            outline: none;
+        }
+
+        .input-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 8px 8px 8px;
+        }
+
+        .send-btn {
+            background: var(--blue-600);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .send-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* MODAL */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 50;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal {
+            background: var(--bg-background);
+            border: 1px solid var(--border);
+            width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+    </style>
+
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-title">
+                <i data-lucide="layout-grid" class="icon"></i>
+                <span>Chat</span>
+            </div>
+            <div class="search-container">
+                <div class="search-bar">
+                    <i data-lucide="search" class="icon-xs" style="color: grey;"></i>
+                    <span>Search messages, people, topics...</span>
+                    <span class="kbd">⌘K</span>
+                </div>
+            </div>
+            <div>
+                <i data-lucide="x" class="icon" style="color: var(--text-muted); cursor: pointer;"></i>
+            </div>
+        </header>
+
+        <!-- Workspace -->
+        <div class="workspace">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sb-tabs">
+                    <div class="sb-tab active" data-tab="deals" onclick="switchTab('deals')">Deals</div>
+                    <div class="sb-tab" data-tab="people" onclick="switchTab('people')">People</div>
+                    <div class="sb-tab" data-tab="topics" onclick="switchTab('topics')">Topics</div>
+                </div>
+
+                <div class="sb-actions">
+                    <input class="sb-input" placeholder="Search deals...">
+                    <button class="btn-icon"><i data-lucide="filter" class="icon-sm"></i></button>
+                    <button class="btn-icon btn-primary" onclick="openModal()"><i data-lucide="plus"
+                            class="icon-sm"></i></button>
+                </div>
+
+                <div id="tree-root" class="tree">
+                    <!-- Tree rendered by JS -->
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="content">
+                <div class="content-header">
+                    <div class="content-title">
+                        <span class="title-main">Project Northstar</span>
+                        <span>:</span>
+                        <span>Deal Room</span>
+                    </div>
+                    <div class="content-tabs">
+                        <div class="c-tab active">Deal Room</div>
+                        <div class="c-tab">People</div>
+                        <div class="c-tab">Topics</div>
+                    </div>
+                </div>
+
+                <div id="chat-feed" class="messages">
+                    <!-- Messages will be injected here -->
+                </div>
+
+                <div class="input-region">
+                    <div class="input-box">
+                        <textarea id="msg-input" class="chat-input"
+                            placeholder="Message the deal room... (+ for deals/files, @ for people, # for topics)"></textarea>
+                        <div class="input-footer">
+                            <div
+                                style="font-size:11px; color:var(--text-muted); display:flex; align-items:center; gap:4px;">
+                                <!-- Helper text or icons could go here -->
+                            </div>
+                            <button class="send-btn" onclick="sendMsg()"><i data-lucide="send"
+                                    class="icon-sm"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="new-chat-modal" class="modal-backdrop" onclick="if(event.target===this) closeModal()">
+        <div class="modal">
+            <h2 class="modal-title">New Conversation</h2>
+            <input class="sb-input" style="width:100%; margin-bottom:20px;" placeholder="Search people..." autofocus>
+            <div style="display:flex; justify-content:flex-end; gap:8px;">
+                <button class="btn-icon" style="width:auto; padding:0 12px;" onclick="closeModal()">Cancel</button>
+                <button class="btn-icon btn-primary" style="width:auto; padding:0 12px;">Start Chat</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // --- DATA ---
+        const deals = [
+            { id: 1, name: "Project Northstar", unread: 5, expanded: true, active: true },
+            { id: 2, name: "Riverside Apartments", unread: 2, expanded: false },
+            { id: 3, name: "Metro Office Tower", unread: 0, expanded: false },
+            { id: 4, name: "Phoenix Tech Acquisition", unread: 3, expanded: false },
+            { id: 5, name: "Sierra Energy Project", unread: 0, expanded: false },
+            { id: 6, name: "Coastal Manufacturing", unread: 7, expanded: false },
+        ];
+
+        const messages = [
+            {
+                id: 1, sender: "Sarah Chen", initial: "SC", time: "12:54 AM",
+                text: "The latest property appraisal came in at $127M, which is within our expected range. Ready to move forward with financing discussions.",
+                reactions: [{ emoji: "👍", count: 2 }, { emoji: "💡", count: 1 }]
+            },
+            {
+                id: 2, sender: "Michael Rodriguez", initial: "MR", time: "01:09 AM",
+                html: 'Great news! I\'ve reviewed <span class="pill file"><i data-lucide="file" class="icon-xs"></i> Financial_Model.xlsx</span> and the cash flow projections look solid. Cap rate analysis supports the valuation.',
+                reactions: [{ emoji: "👍", count: 2 }, { emoji: "💡", count: 1 }]
+            },
+            {
+                id: 3, sender: "Emily Zhang", initial: "EZ", time: "01:19 AM",
+                html: 'Environmental due diligence report is complete in <span class="pill folder"><i data-lucide="folder" class="icon-xs"></i> Due Diligence</span>. No major issues found, just minor remediation items totaling ~$45K.',
+                reactions: [{ emoji: "👍", count: 2 }, { emoji: "💡", count: 1 }]
+            },
+            {
+                id: 4, sender: "David Kim", initial: "DK", time: "01:22 AM",
+                html: 'I uploaded the final contract to <span class="pill file"><i data-lucide="file" class="icon-xs"></i> Purchase_Agreement.pdf</span> - please review the <span class="pill folder"><i data-lucide="folder" class="icon-xs"></i> Legal Documents</span> folder for supporting docs.',
+                reactions: [{ emoji: "👍", count: 2 }, { emoji: "💡", count: 1 }]
+            }
+        ];
+
+        // --- RENDER FUNCTIONS ---
+        function renderSidebar() {
+            const root = document.getElementById('tree-root');
+            root.innerHTML = '';
+
+            deals.forEach(deal => {
+                // Parent Item
+                const div = document.createElement('div');
+                div.className = `tree-item ${deal.active ? 'active' : ''}`;
+                div.onclick = () => toggleDeal(deal.id);
+                div.innerHTML = `
+                    <div style="font-weight:600;">${deal.name}</div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        ${deal.unread > 0 ? `<span class="badge ${deal.active ? 'active' : ''}">${deal.unread}</span>` : ''}
+                        <i data-lucide="${deal.expanded ? 'chevron-up' : 'chevron-down'}" class="icon-xs"></i>
+                    </div>
+                `;
+                root.appendChild(div);
+
+                // Children
+                if (deal.expanded) {
+                    const room = document.createElement('div');
+                    room.className = 'tree-sub active'; // Hardcoded active for demo
+                    room.innerHTML = `
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <i data-lucide="building-2" class="icon-xs" style="color:var(--blue-500)"></i>
+                            <span>Deal Room</span>
+                        </div>
+                        <span class="badge">${deal.unread}</span>
+                    `;
+                    root.appendChild(room);
+
+                    const people = document.createElement('div');
+                    people.className = 'tree-sub';
+                    people.innerHTML = `
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <i data-lucide="users" class="icon-xs" style="color:#22c55e"></i>
+                            <span>People</span>
+                        </div>
+                    `;
+                    root.appendChild(people);
+
+                    const topics = document.createElement('div');
+                    topics.className = 'tree-sub';
+                    topics.innerHTML = `
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <i data-lucide="hash" class="icon-xs" style="color:#f97316"></i>
+                            <span>Topics</span>
+                        </div>
+                    `;
+                    root.appendChild(topics);
+                }
+            });
+            refreshIcons();
+        }
+
+        function renderMessages() {
+            const feed = document.getElementById('chat-feed');
+            feed.innerHTML = '';
+            messages.forEach(msg => {
+                const div = document.createElement('div');
+                div.className = 'msg-group';
+
+                let rxHtml = '';
+                if (msg.reactions) {
+                    rxHtml = `<div class="reactions">` +
+                        msg.reactions.map(r => `<span class="reaction active">${r.emoji} ${r.count}</span>`).join('') +
+                        `</div>`;
+                }
+
+                div.innerHTML = `
+                    <div class="avatar">${msg.initial}</div>
+                    <div class="msg-body">
+                        <div class="msg-meta">
+                            <span class="sender">${msg.sender}</span>
+                            <span class="time">${msg.time}</span>
+                        </div>
+                        <div class="text">
+                            ${msg.html || msg.text}
+                        </div>
+                        ${rxHtml}
+                    </div>
+                `;
+                feed.appendChild(div);
+            });
+            refreshIcons();
+            feed.scrollTop = feed.scrollHeight;
+        }
+
+        // --- ACTIONS ---
+        function toggleDeal(id) {
+            const deal = deals.find(d => d.id === id);
+            if (deal) {
+                deal.expanded = !deal.expanded;
+                renderSidebar();
+            }
+        }
+
+        function switchTab(tab) {
+            document.querySelectorAll('.sb-tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`.sb-tab[data-tab="${tab}"]`).classList.add('active');
+            // Simplified logic: just re-render sidebar mostly the same for now
+        }
+
+        function sendMsg() {
+            const input = document.getElementById('msg-input');
+            const text = input.value.trim();
+            if (!text) return;
+
+            messages.push({
+                id: Date.now(),
+                sender: "You",
+                initial: "YO",
+                time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+                text: text
+            });
+
+            renderMessages();
+            input.value = '';
+        }
+
+        function openModal() { document.getElementById('new-chat-modal').style.display = 'flex'; }
+        function closeModal() { document.getElementById('new-chat-modal').style.display = 'none'; }
+
+        function refreshIcons() {
+            if (window.lucide) lucide.createIcons();
+        }
+
+        // Init
+        document.addEventListener('DOMContentLoaded', () => {
+            renderSidebar();
+            renderMessages();
+
+            // Enter key to send
+            document.getElementById('msg-input').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMsg(); }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

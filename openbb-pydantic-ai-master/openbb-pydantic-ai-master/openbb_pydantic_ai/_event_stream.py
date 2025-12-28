@@ -400,7 +400,7 @@ class OpenBBAIEventStream(UIEventStream[QueryRequest, SSE, OpenBBDeps, Any]):
                 cached_result = self._get_mcp_cached_result(call.tool_name, args)
                 if cached_result is not None:
                     # Use cached result instead of making new MCP call
-                    print(f"🔄 CACHE HIT: {call.tool_name} - using cached result")
+                    print(f"[CACHE HIT]: {call.tool_name} - using cached result")
                     self._state.register_tool_call(
                         tool_call_id=call.tool_call_id,
                         tool_name=call.tool_name,

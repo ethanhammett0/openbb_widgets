@@ -1,0 +1,764 @@
+[
+  {
+    "cbsA_CODE": "Top50",
+    "cbsaShortName": "Top50",
+    "cbsaTitle": "Top50",
+    "cbsA_Rank": 0
+  },
+  {
+    "cbsA_CODE": "Top100",
+    "cbsaShortName": "Top100",
+    "cbsaTitle": "Top100",
+    "cbsA_Rank": 0
+  },
+  {
+    "cbsA_CODE": "35620",
+    "cbsaShortName": "New York",
+    "cbsaTitle": "New York-Newark-Jersey City, NY-NJ-PA",
+    "cbsA_Rank": 1
+  },
+  {
+    "cbsA_CODE": "31080",
+    "cbsaShortName": "Los Angeles",
+    "cbsaTitle": "Los Angeles-Long Beach-Anaheim, CA",
+    "cbsA_Rank": 2
+  },
+  {
+    "cbsA_CODE": "16980",
+    "cbsaShortName": "Chicago",
+    "cbsaTitle": "Chicago-Naperville-Elgin, IL-IN-WI",
+    "cbsA_Rank": 3
+  },
+  {
+    "cbsA_CODE": "19100",
+    "cbsaShortName": "Dallas",
+    "cbsaTitle": "Dallas-Fort Worth-Arlington, TX",
+    "cbsA_Rank": 4
+  },
+  {
+    "cbsA_CODE": "26420",
+    "cbsaShortName": "Houston",
+    "cbsaTitle": "Houston-The Woodlands-Sugar Land, TX",
+    "cbsA_Rank": 5
+  },
+  {
+    "cbsA_CODE": "47900",
+    "cbsaShortName": "Washington DC",
+    "cbsaTitle": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+    "cbsA_Rank": 6
+  },
+  {
+    "cbsA_CODE": "37980",
+    "cbsaShortName": "Philadelphia",
+    "cbsaTitle": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+    "cbsA_Rank": 7
+  },
+  {
+    "cbsA_CODE": "33100",
+    "cbsaShortName": "Miami",
+    "cbsaTitle": "Miami-Fort Lauderdale-Pompano Beach, FL",
+    "cbsA_Rank": 8
+  },
+  {
+    "cbsA_CODE": "12060",
+    "cbsaShortName": "Atlanta",
+    "cbsaTitle": "Atlanta-Sandy Springs-Alpharetta, GA",
+    "cbsA_Rank": 9
+  },
+  {
+    "cbsA_CODE": "14460",
+    "cbsaShortName": "Boston",
+    "cbsaTitle": "Boston-Cambridge-Newton, MA-NH",
+    "cbsA_Rank": 10
+  },
+  {
+    "cbsA_CODE": "38060",
+    "cbsaShortName": "Phoenix",
+    "cbsaTitle": "Phoenix-Mesa-Chandler, AZ",
+    "cbsA_Rank": 11
+  },
+  {
+    "cbsA_CODE": "41860",
+    "cbsaShortName": "San Francisco",
+    "cbsaTitle": "San Francisco-Oakland-Berkeley, CA",
+    "cbsA_Rank": 12
+  },
+  {
+    "cbsA_CODE": "40140",
+    "cbsaShortName": "Riverside",
+    "cbsaTitle": "Riverside-San Bernardino-Ontario, CA",
+    "cbsA_Rank": 13
+  },
+  {
+    "cbsA_CODE": "19820",
+    "cbsaShortName": "Detroit",
+    "cbsaTitle": "Detroit-Warren-Dearborn, MI",
+    "cbsA_Rank": 14
+  },
+  {
+    "cbsA_CODE": "42660",
+    "cbsaShortName": "Seattle",
+    "cbsaTitle": "Seattle-Tacoma-Bellevue, WA",
+    "cbsA_Rank": 15
+  },
+  {
+    "cbsA_CODE": "33460",
+    "cbsaShortName": "Minneapolis",
+    "cbsaTitle": "Minneapolis-St. Paul-Bloomington, MN-WI",
+    "cbsA_Rank": 16
+  },
+  {
+    "cbsA_CODE": "41740",
+    "cbsaShortName": "San Diego",
+    "cbsaTitle": "San Diego-Chula Vista-Carlsbad, CA",
+    "cbsA_Rank": 17
+  },
+  {
+    "cbsA_CODE": "45300",
+    "cbsaShortName": "Tampa",
+    "cbsaTitle": "Tampa-St. Petersburg-Clearwater, FL",
+    "cbsA_Rank": 18
+  },
+  {
+    "cbsA_CODE": "19740",
+    "cbsaShortName": "Denver",
+    "cbsaTitle": "Denver-Aurora-Lakewood, CO",
+    "cbsA_Rank": 19
+  },
+  {
+    "cbsA_CODE": "12580",
+    "cbsaShortName": "Baltimore",
+    "cbsaTitle": "Baltimore-Columbia-Towson, MD",
+    "cbsA_Rank": 20
+  },
+  {
+    "cbsA_CODE": "41180",
+    "cbsaShortName": "St Louis",
+    "cbsaTitle": "St. Louis, MO-IL",
+    "cbsA_Rank": 21
+  },
+  {
+    "cbsA_CODE": "36740",
+    "cbsaShortName": "Orlando",
+    "cbsaTitle": "Orlando-Kissimmee-Sanford, FL",
+    "cbsA_Rank": 22
+  },
+  {
+    "cbsA_CODE": "16740",
+    "cbsaShortName": "Charlotte",
+    "cbsaTitle": "Charlotte-Concord-Gastonia, NC-SC",
+    "cbsA_Rank": 23
+  },
+  {
+    "cbsA_CODE": "41700",
+    "cbsaShortName": "San Antonio",
+    "cbsaTitle": "San Antonio-New Braunfels, TX",
+    "cbsA_Rank": 24
+  },
+  {
+    "cbsA_CODE": "38900",
+    "cbsaShortName": "Portland",
+    "cbsaTitle": "Portland-Vancouver-Hillsboro, OR-WA",
+    "cbsA_Rank": 25
+  },
+  {
+    "cbsA_CODE": "40900",
+    "cbsaShortName": "Sacramento",
+    "cbsaTitle": "Sacramento-Roseville-Folsom, CA",
+    "cbsA_Rank": 26
+  },
+  {
+    "cbsA_CODE": "38300",
+    "cbsaShortName": "Pittsburgh",
+    "cbsaTitle": "Pittsburgh, PA",
+    "cbsA_Rank": 27
+  },
+  {
+    "cbsA_CODE": "17140",
+    "cbsaShortName": "Cincinnati",
+    "cbsaTitle": "Cincinnati, OH-KY-IN",
+    "cbsA_Rank": 28
+  },
+  {
+    "cbsA_CODE": "12420",
+    "cbsaShortName": "Austin",
+    "cbsaTitle": "Austin-Round Rock-Georgetown, TX",
+    "cbsA_Rank": 29
+  },
+  {
+    "cbsA_CODE": "29820",
+    "cbsaShortName": "Las Vegas",
+    "cbsaTitle": "Las Vegas-Henderson-Paradise, NV",
+    "cbsA_Rank": 30
+  },
+  {
+    "cbsA_CODE": "28140",
+    "cbsaShortName": "Kansas City",
+    "cbsaTitle": "Kansas City, MO-KS",
+    "cbsA_Rank": 31
+  },
+  {
+    "cbsA_CODE": "18140",
+    "cbsaShortName": "Columbus",
+    "cbsaTitle": "Columbus, OH",
+    "cbsA_Rank": 32
+  },
+  {
+    "cbsA_CODE": "26900",
+    "cbsaShortName": "Indianapolis",
+    "cbsaTitle": "Indianapolis-Carmel-Anderson, IN",
+    "cbsA_Rank": 33
+  },
+  {
+    "cbsA_CODE": "17410",
+    "cbsaShortName": "Cleveland",
+    "cbsaTitle": "Cleveland-Elyria, OH",
+    "cbsA_Rank": 34
+  },
+  {
+    "cbsA_CODE": "41940",
+    "cbsaShortName": "San Jose",
+    "cbsaTitle": "San Jose-Sunnyvale-Santa Clara, CA",
+    "cbsA_Rank": 35
+  },
+  {
+    "cbsA_CODE": "34980",
+    "cbsaShortName": "Nashville",
+    "cbsaTitle": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+    "cbsA_Rank": 36
+  },
+  {
+    "cbsA_CODE": "47260",
+    "cbsaShortName": "Virginia Beach",
+    "cbsaTitle": "Virginia Beach-Norfolk-Newport News, VA-NC",
+    "cbsA_Rank": 37
+  },
+  {
+    "cbsA_CODE": "39300",
+    "cbsaShortName": "Providence",
+    "cbsaTitle": "Providence-Warwick, RI-MA",
+    "cbsA_Rank": 38
+  },
+  {
+    "cbsA_CODE": "27260",
+    "cbsaShortName": "Jacksonville",
+    "cbsaTitle": "Jacksonville, FL",
+    "cbsA_Rank": 39
+  },
+  {
+    "cbsA_CODE": "33340",
+    "cbsaShortName": "Milwaukee",
+    "cbsaTitle": "Milwaukee-Waukesha, WI",
+    "cbsA_Rank": 40
+  },
+  {
+    "cbsA_CODE": "36420",
+    "cbsaShortName": "Oklahoma City",
+    "cbsaTitle": "Oklahoma City, OK",
+    "cbsA_Rank": 41
+  },
+  {
+    "cbsA_CODE": "39580",
+    "cbsaShortName": "Raleigh",
+    "cbsaTitle": "Raleigh-Cary, NC",
+    "cbsA_Rank": 42
+  },
+  {
+    "cbsA_CODE": "32820",
+    "cbsaShortName": "Memphis",
+    "cbsaTitle": "Memphis, TN-MS-AR",
+    "cbsA_Rank": 43
+  },
+  {
+    "cbsA_CODE": "40060",
+    "cbsaShortName": "Richmond",
+    "cbsaTitle": "Richmond, VA",
+    "cbsA_Rank": 44
+  },
+  {
+    "cbsA_CODE": "31140",
+    "cbsaShortName": "Louisville",
+    "cbsaTitle": "Louisville/Jefferson County, KY-IN",
+    "cbsA_Rank": 45
+  },
+  {
+    "cbsA_CODE": "35380",
+    "cbsaShortName": "New Orleans",
+    "cbsaTitle": "New Orleans-Metairie, LA",
+    "cbsA_Rank": 46
+  },
+  {
+    "cbsA_CODE": "41620",
+    "cbsaShortName": "Salt Lake City",
+    "cbsaTitle": "Salt Lake City, UT",
+    "cbsA_Rank": 47
+  },
+  {
+    "cbsA_CODE": "25540",
+    "cbsaShortName": "Hartford",
+    "cbsaTitle": "Hartford-East Hartford-Middletown, CT",
+    "cbsA_Rank": 48
+  },
+  {
+    "cbsA_CODE": "15380",
+    "cbsaShortName": "Buffalo",
+    "cbsaTitle": "Buffalo-Cheektowaga, NY",
+    "cbsA_Rank": 49
+  },
+  {
+    "cbsA_CODE": "13820",
+    "cbsaShortName": "Birmingham",
+    "cbsaTitle": "Birmingham-Hoover, AL",
+    "cbsA_Rank": 50
+  },
+  {
+    "cbsA_CODE": "40380",
+    "cbsaShortName": "Rochester",
+    "cbsaTitle": "Rochester, NY",
+    "cbsA_Rank": 51
+  },
+  {
+    "cbsA_CODE": "24340",
+    "cbsaShortName": "Grand Rapids",
+    "cbsaTitle": "Grand Rapids-Kentwood, MI",
+    "cbsA_Rank": 52
+  },
+  {
+    "cbsA_CODE": "46060",
+    "cbsaShortName": "Tucson",
+    "cbsaTitle": "Tucson, AZ",
+    "cbsA_Rank": 53
+  },
+  {
+    "cbsA_CODE": "46140",
+    "cbsaShortName": "Tulsa",
+    "cbsaTitle": "Tulsa, OK",
+    "cbsA_Rank": 54
+  },
+  {
+    "cbsA_CODE": "23420",
+    "cbsaShortName": "Fresno",
+    "cbsaTitle": "Fresno, CA",
+    "cbsA_Rank": 55
+  },
+  {
+    "cbsA_CODE": "49340",
+    "cbsaShortName": "Worcester",
+    "cbsaTitle": "Worcester, MA-CT",
+    "cbsA_Rank": 56
+  },
+  {
+    "cbsA_CODE": "36540",
+    "cbsaShortName": "Omaha",
+    "cbsaTitle": "Omaha-Council Bluffs, NE-IA",
+    "cbsA_Rank": 57
+  },
+  {
+    "cbsA_CODE": "14860",
+    "cbsaShortName": "Bridgeport",
+    "cbsaTitle": "Bridgeport-Stamford-Norwalk, CT",
+    "cbsA_Rank": 58
+  },
+  {
+    "cbsA_CODE": "24860",
+    "cbsaShortName": "Greenville",
+    "cbsaTitle": "Greenville-Anderson, SC",
+    "cbsA_Rank": 59
+  },
+  {
+    "cbsA_CODE": "10740",
+    "cbsaShortName": "Albuquerque",
+    "cbsaTitle": "Albuquerque, NM",
+    "cbsA_Rank": 60
+  },
+  {
+    "cbsA_CODE": "12540",
+    "cbsaShortName": "Bakersfield",
+    "cbsaTitle": "Bakersfield, CA",
+    "cbsA_Rank": 61
+  },
+  {
+    "cbsA_CODE": "10580",
+    "cbsaShortName": "Albany",
+    "cbsaTitle": "Albany-Schenectady-Troy, NY",
+    "cbsA_Rank": 62
+  },
+  {
+    "cbsA_CODE": "28940",
+    "cbsaShortName": "Knoxville",
+    "cbsaTitle": "Knoxville, TN",
+    "cbsA_Rank": 63
+  },
+  {
+    "cbsA_CODE": "12940",
+    "cbsaShortName": "Baton Rouge",
+    "cbsaTitle": "Baton Rouge, LA",
+    "cbsA_Rank": 64
+  },
+  {
+    "cbsA_CODE": "32580",
+    "cbsaShortName": "McAllen",
+    "cbsaTitle": "McAllen-Edinburg-Mission, TX",
+    "cbsA_Rank": 65
+  },
+  {
+    "cbsA_CODE": "35300",
+    "cbsaShortName": "New Haven",
+    "cbsaTitle": "New Haven-Milford, CT",
+    "cbsA_Rank": 66
+  },
+  {
+    "cbsA_CODE": "21340",
+    "cbsaShortName": "El Paso",
+    "cbsaTitle": "El Paso, TX",
+    "cbsA_Rank": 67
+  },
+  {
+    "cbsA_CODE": "10900",
+    "cbsaShortName": "Allentown",
+    "cbsaTitle": "Allentown-Bethlehem-Easton, PA-NJ",
+    "cbsA_Rank": 68
+  },
+  {
+    "cbsA_CODE": "37100",
+    "cbsaShortName": "Oxnard",
+    "cbsaTitle": "Oxnard-Thousand Oaks-Ventura, CA",
+    "cbsA_Rank": 69
+  },
+  {
+    "cbsA_CODE": "17900",
+    "cbsaShortName": "Columbia",
+    "cbsaTitle": "Columbia, SC",
+    "cbsA_Rank": 70
+  },
+  {
+    "cbsA_CODE": "35840",
+    "cbsaShortName": "Sarasota",
+    "cbsaTitle": "North Port-Sarasota-Bradenton, FL",
+    "cbsA_Rank": 71
+  },
+  {
+    "cbsA_CODE": "19430",
+    "cbsaShortName": "Dayton",
+    "cbsaTitle": "Dayton-Kettering, OH",
+    "cbsA_Rank": 72
+  },
+  {
+    "cbsA_CODE": "16700",
+    "cbsaShortName": "Charleston",
+    "cbsaTitle": "Charleston-North Charleston, SC",
+    "cbsA_Rank": 73
+  },
+  {
+    "cbsA_CODE": "24660",
+    "cbsaShortName": "Greensboro-High Point",
+    "cbsaTitle": "Greensboro-High Point, NC",
+    "cbsA_Rank": 74
+  },
+  {
+    "cbsA_CODE": "44700",
+    "cbsaShortName": "Stockton",
+    "cbsaTitle": "Stockton, CA",
+    "cbsA_Rank": 75
+  },
+  {
+    "cbsA_CODE": "15980",
+    "cbsaShortName": "Cape Coral-Fort Myers",
+    "cbsaTitle": "Cape Coral-Fort Myers, FL",
+    "cbsA_Rank": 76
+  },
+  {
+    "cbsA_CODE": "14260",
+    "cbsaShortName": "Boise City",
+    "cbsaTitle": "Boise City, ID",
+    "cbsA_Rank": 77
+  },
+  {
+    "cbsA_CODE": "17820",
+    "cbsaShortName": "Colorado Springs",
+    "cbsaTitle": "Colorado Springs, CO",
+    "cbsA_Rank": 78
+  },
+  {
+    "cbsA_CODE": "30780",
+    "cbsaShortName": "Little Rock",
+    "cbsaTitle": "Little Rock-North Little Rock-Conway, AR",
+    "cbsA_Rank": 79
+  },
+  {
+    "cbsA_CODE": "29460",
+    "cbsaShortName": "Lakeland",
+    "cbsaTitle": "Lakeland-Winter Haven, FL",
+    "cbsA_Rank": 80
+  },
+  {
+    "cbsA_CODE": "10420",
+    "cbsaShortName": "Akron",
+    "cbsaTitle": "Akron, OH",
+    "cbsA_Rank": 81
+  },
+  {
+    "cbsA_CODE": "19780",
+    "cbsaShortName": "Des Moines",
+    "cbsaTitle": "Des Moines-West Des Moines, IA",
+    "cbsA_Rank": 82
+  },
+  {
+    "cbsA_CODE": "44140",
+    "cbsaShortName": "Springfield, MA",
+    "cbsaTitle": "Springfield, MA",
+    "cbsA_Rank": 83
+  },
+  {
+    "cbsA_CODE": "28880",
+    "cbsaShortName": "Poughkeepsie",
+    "cbsaTitle": "Poughkeepsie-Newburgh-Middletown, NY",
+    "cbsA_Rank": 84
+  },
+  {
+    "cbsA_CODE": "36260",
+    "cbsaShortName": "Ogden",
+    "cbsaTitle": "Ogden-Clearfield, UT",
+    "cbsA_Rank": 85
+  },
+  {
+    "cbsA_CODE": "31540",
+    "cbsaShortName": "Madison",
+    "cbsaTitle": "Madison, WI",
+    "cbsA_Rank": 86
+  },
+  {
+    "cbsA_CODE": "49180",
+    "cbsaShortName": "Winston-Salem",
+    "cbsaTitle": "Winston-Salem, NC",
+    "cbsA_Rank": 87
+  },
+  {
+    "cbsA_CODE": "19660",
+    "cbsaShortName": "Daytona Beach",
+    "cbsaTitle": "Deltona-Daytona Beach-Ormond Beach, FL",
+    "cbsA_Rank": 88
+  },
+  {
+    "cbsA_CODE": "45060",
+    "cbsaShortName": "Syracuse",
+    "cbsaTitle": "Syracuse, NY",
+    "cbsA_Rank": 89
+  },
+  {
+    "cbsA_CODE": "39340",
+    "cbsaShortName": "Provo-Orem",
+    "cbsaTitle": "Provo-Orem, UT",
+    "cbsA_Rank": 90
+  },
+  {
+    "cbsA_CODE": "45780",
+    "cbsaShortName": "Toledo",
+    "cbsaTitle": "Toledo, OH",
+    "cbsA_Rank": 91
+  },
+  {
+    "cbsA_CODE": "48620",
+    "cbsaShortName": "Wichita",
+    "cbsaTitle": "Wichita, KS",
+    "cbsA_Rank": 92
+  },
+  {
+    "cbsA_CODE": "20500",
+    "cbsaShortName": "Durham-Chapel Hill",
+    "cbsaTitle": "Durham-Chapel Hill, NC",
+    "cbsA_Rank": 93
+  },
+  {
+    "cbsA_CODE": "12260",
+    "cbsaShortName": "Augusta",
+    "cbsaTitle": "Augusta-Richmond County, GA-SC",
+    "cbsA_Rank": 94
+  },
+  {
+    "cbsA_CODE": "37340",
+    "cbsaShortName": "Palm Bay",
+    "cbsaTitle": "Palm Bay-Melbourne-Titusville, FL",
+    "cbsA_Rank": 95
+  },
+  {
+    "cbsA_CODE": "27140",
+    "cbsaShortName": "Jackson",
+    "cbsaTitle": "Jackson, MS",
+    "cbsA_Rank": 96
+  },
+  {
+    "cbsA_CODE": "25420",
+    "cbsaShortName": "Harrisburg",
+    "cbsaTitle": "Harrisburg-Carlisle, PA",
+    "cbsA_Rank": 97
+  },
+  {
+    "cbsA_CODE": "44060",
+    "cbsaShortName": "Spokane",
+    "cbsaTitle": "Spokane-Spokane Valley, WA",
+    "cbsA_Rank": 98
+  },
+  {
+    "cbsA_CODE": "42540",
+    "cbsaShortName": "Scranton",
+    "cbsaTitle": "Scranton--Wilkes-Barre, PA",
+    "cbsA_Rank": 99
+  },
+  {
+    "cbsA_CODE": "16860",
+    "cbsaShortName": "Chattanooga",
+    "cbsaTitle": "Chattanooga, TN-GA",
+    "cbsA_Rank": 100
+  },
+  {
+    "cbsA_CODE": "33700",
+    "cbsaShortName": "Modesto",
+    "cbsaTitle": "Modesto, CA",
+    "cbsA_Rank": 101
+  },
+  {
+    "cbsA_CODE": "29540",
+    "cbsaShortName": "Lancaster",
+    "cbsaTitle": "Lancaster, PA",
+    "cbsA_Rank": 102
+  },
+  {
+    "cbsA_CODE": "38860",
+    "cbsaShortName": "Portland-South Portland",
+    "cbsaTitle": "Portland-South Portland, ME",
+    "cbsA_Rank": 103
+  },
+  {
+    "cbsA_CODE": "49660",
+    "cbsaShortName": "Youngstown",
+    "cbsaTitle": "Youngstown-Warren-Boardman, OH-PA",
+    "cbsA_Rank": 104
+  },
+  {
+    "cbsA_CODE": "29620",
+    "cbsaShortName": "Lansing",
+    "cbsaTitle": "Lansing-East Lansing, MI",
+    "cbsA_Rank": 105
+  },
+  {
+    "cbsA_CODE": "22220",
+    "cbsaShortName": "Fayetteville, AR",
+    "cbsaTitle": "Fayetteville-Springdale-Rogers, AR",
+    "cbsA_Rank": 106
+  },
+  {
+    "cbsA_CODE": "22180",
+    "cbsaShortName": "Fayetteville, NC",
+    "cbsaTitle": "Fayetteville, NC",
+    "cbsA_Rank": 107
+  },
+  {
+    "cbsA_CODE": "30460",
+    "cbsaShortName": "Lexington",
+    "cbsaTitle": "Lexington-Fayette, KY",
+    "cbsA_Rank": 108
+  },
+  {
+    "cbsA_CODE": "37860",
+    "cbsaShortName": "Pensacola",
+    "cbsaTitle": "Pensacola-Ferry Pass-Brent, FL",
+    "cbsA_Rank": 109
+  },
+  {
+    "cbsA_CODE": "42220",
+    "cbsaShortName": "Santa Rosa",
+    "cbsaTitle": "Santa Rosa-Petaluma, CA",
+    "cbsA_Rank": 110
+  },
+  {
+    "cbsA_CODE": "39900",
+    "cbsaShortName": "Reno",
+    "cbsaTitle": "Reno, NV",
+    "cbsA_Rank": 111
+  },
+  {
+    "cbsA_CODE": "26620",
+    "cbsaShortName": "Huntsville",
+    "cbsaTitle": "Huntsville, AL",
+    "cbsA_Rank": 112
+  },
+  {
+    "cbsA_CODE": "38940",
+    "cbsaShortName": "Port St. Lucie",
+    "cbsaTitle": "Port St. Lucie, FL",
+    "cbsA_Rank": 113
+  },
+  {
+    "cbsA_CODE": "29180",
+    "cbsaShortName": "Lafayette",
+    "cbsaTitle": "Lafayette, LA",
+    "cbsA_Rank": 114
+  },
+  {
+    "cbsA_CODE": "34820",
+    "cbsaShortName": "Myrtle Beach",
+    "cbsaTitle": "Myrtle Beach-Conway-North Myrtle Beach, SC-NC",
+    "cbsA_Rank": 115
+  },
+  {
+    "cbsA_CODE": "44180",
+    "cbsaShortName": "Springfield, MO",
+    "cbsaTitle": "Springfield, MO",
+    "cbsA_Rank": 116
+  },
+  {
+    "cbsA_CODE": "47300",
+    "cbsaShortName": "Visalia",
+    "cbsaTitle": "Visalia, CA",
+    "cbsA_Rank": 117
+  },
+  {
+    "cbsA_CODE": "28660",
+    "cbsaShortName": "Killeen",
+    "cbsaTitle": "Killeen-Temple, TX",
+    "cbsA_Rank": 118
+  },
+  {
+    "cbsA_CODE": "11700",
+    "cbsaShortName": "Asheville",
+    "cbsaTitle": "Asheville, NC",
+    "cbsA_Rank": 119
+  },
+  {
+    "cbsA_CODE": "49620",
+    "cbsaShortName": "York",
+    "cbsaTitle": "York-Hanover, PA",
+    "cbsA_Rank": 120
+  },
+  {
+    "cbsA_CODE": "46700",
+    "cbsaShortName": "Vallejo",
+    "cbsaTitle": "Vallejo, CA",
+    "cbsA_Rank": 121
+  },
+  {
+    "cbsA_CODE": "42200",
+    "cbsaShortName": "Santa Maria",
+    "cbsaTitle": "Santa Maria-Santa Barbara, CA",
+    "cbsA_Rank": 122
+  },
+  {
+    "cbsA_CODE": "41500",
+    "cbsaShortName": "Salinas",
+    "cbsaTitle": "Salinas, CA",
+    "cbsA_Rank": 123
+  },
+  {
+    "cbsA_CODE": "41420",
+    "cbsaShortName": "Salem",
+    "cbsaTitle": "Salem, OR",
+    "cbsA_Rank": 124
+  },
+  {
+    "cbsA_CODE": "33660",
+    "cbsaShortName": "Mobile",
+    "cbsaTitle": "Mobile, AL",
+    "cbsA_Rank": 125
+  }
+]

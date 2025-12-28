@@ -1,0 +1,47 @@
+{
+	"folders": [
+		{
+			"path": "../form_widgets"
+		},
+		{
+			"path": "../openbb_documentation"
+		},
+		{
+			"path": "../congress-main"
+		},
+		{
+			"path": "../sponsor_dashboard"
+		},
+		{
+			"path": "../../../../../../../openbb_docs/OpenBB-develop"
+		},
+		{
+			"path": "../../../../../../../openbb_docs/backends-for-openbb-main"
+		},
+		{
+			"path": "../sharepoint_widget"
+		},
+		{
+			"path": "../OpenBB_Gemini"
+		},
+		{
+			"path": "../openbb-pydantic-ai-master/openbb-pydantic-ai-master"
+		},
+		{
+			"path": "../dummy_data"
+		},
+		{
+			"path": "../markets_monitor"
+		},
+		{
+			"path": "../portfolio_review"
+		},
+		{
+			"path": "../revista_api"
+		},
+		{
+			"path": "../mcp_projects"
+		}
+	],
+	"settings": {}
+}

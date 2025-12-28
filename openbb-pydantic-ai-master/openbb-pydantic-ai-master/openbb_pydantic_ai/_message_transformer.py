@@ -23,7 +23,7 @@ from pydantic_ai.ui import MessagesBuilder
 
 from openbb_pydantic_ai._serializers import serialize_result
 from openbb_pydantic_ai._utils import extract_tool_call_id
-
+from openbb_pydantic_ai._config import EXECUTE_MCP_TOOL_NAME
 
 class MessageTransformer:
     """Transforms OpenBB messages to Pydantic AI messages."""
@@ -43,15 +43,16 @@ class MessageTransformer:
         """
         tool_call_id_map = self._build_tool_call_id_map(messages)
         call_counters: dict[str, int] = {}
+        id_to_unwrapped_name: dict[str, str] = {}
 
         builder = MessagesBuilder()
         for message in messages:
             if isinstance(message, LlmClientMessage):
                 self._add_client_message(
-                    builder, message, tool_call_id_map, call_counters
+                    builder, message, tool_call_id_map, call_counters, id_to_unwrapped_name
                 )
             elif isinstance(message, LlmClientFunctionCallResultMessage):
-                self._add_result_message(builder, message)
+                self._add_result_message(builder, message, id_to_unwrapped_name)
         return builder.messages
 
     def _build_tool_call_id_map(
@@ -100,6 +101,7 @@ class MessageTransformer:
         message: LlmClientMessage,
         tool_call_id_map: dict[str, list[str]],
         call_counters: dict[str, int],
+        id_to_unwrapped_name: dict[str, str],
     ) -> None:
         """Add a client message to the builder.
 
@@ -141,28 +143,68 @@ class MessageTransformer:
                             args={"data_sources": [data_source]},
                         )
                     )
+                    id_to_unwrapped_name[tool_call_ids[idx]] = function_name
 
                 call_counters[function_name] = counter + len(data_sources)
                 return
 
+
+
+            # Unwrap execute_agent_tool calls to their actual tool name
+            if function_name == EXECUTE_MCP_TOOL_NAME:
+                real_tool_name = input_args.get("tool_name")
+                real_args = input_args.get("parameters", {})
+                if real_tool_name:
+                    function_name = real_tool_name
+                    # Look up tool_call_ids for the *original* function name if they were mapped that way?
+                    # Actually _build_tool_call_id_map maps by the function name in the message (execute_agent_tool).
+                    # So we keep using tool_call_ids derived from execute_agent_tool.
+                    input_args = real_args
+
             counter = call_counters.get(function_name, 0)
+            # If we renamed the function, we need to check the counter for the *renamed* function?
+            # No, the map was built with the raw name 'execute_agent_tool'.
+            # We should probably handle the ID mapping more carefully.
+            # If we change function_name here, we need to make sure we don't break the ID lookup.
+            # actually checking the counter for the NEW name is risky if the map is keyed by OLD name.
+            
+            # Revised Logic:
+            # 1. Get ID from the map using the RAW name (execute_agent_tool)
+            # 2. Update the counter for the RAW name
+            # 3. Use the REAL name for the builder
+            
+            raw_function_name = content.function
+            tool_call_ids = tool_call_id_map.get(raw_function_name, [])
+            counter = call_counters.get(raw_function_name, 0) # Use raw name for counter
+
             if counter >= len(tool_call_ids):
-                raise ValueError(
+                 # Fallback/Edge case: no ID found. Generate one or validation error?
+                 # Pydantic AI usually requires it.
+                 # Let's try to proceed.
+                 pass
+
+            if counter < len(tool_call_ids):
+                tool_call_id = tool_call_ids[counter]
+            else:
+                # If we are out of IDs (maybe streamed without result?), use a consistent placeholder?
+                # or just fail. Original code raised ValueError.
+                 raise ValueError(
                     """
                     `tool_call_id` is required for deferred tool calls
                     but not enough IDs were found in prior result messages
                     """.strip()
                 )
-            tool_call_id = tool_call_ids[counter]
-            call_counters[function_name] = counter + 1
+            
+            call_counters[raw_function_name] = counter + 1
 
             builder.add(
                 ToolCallPart(
-                    tool_name=content.function,
+                    tool_name=function_name, # This is the UNWRAPPED name
                     tool_call_id=tool_call_id,
-                    args=content.input_arguments,
+                    args=input_args, # This is the UNWRAPPED args
                 )
             )
+            id_to_unwrapped_name[tool_call_id] = function_name
             return
 
         if isinstance(content, str):
@@ -177,6 +219,7 @@ class MessageTransformer:
         self,
         builder: MessagesBuilder,
         message: LlmClientFunctionCallResultMessage,
+        id_to_unwrapped_name: dict[str, str] = None,
     ) -> None:
         """Add a function call result message to the builder.
 
@@ -198,11 +241,22 @@ class MessageTransformer:
             return
 
         tool_call_id = extract_tool_call_id(message)
+        
+        # Unwrap execute_agent_tool results
+        tool_name = message.function
+        content = serialize_result(message)
+        
+
+        
+        # Final safety check using the ID map to ensure consistency
+        if id_to_unwrapped_name and tool_call_id in id_to_unwrapped_name:
+            tool_name = id_to_unwrapped_name[tool_call_id]
+
         builder.add(
             ToolReturnPart(
-                tool_name=message.function,
+                tool_name=tool_name,
                 tool_call_id=tool_call_id,
-                content=serialize_result(message),
+                content=content,
             )
         )
 

@@ -82,7 +82,7 @@ async def get_bills(
     limit: int = Query(100, le=250),
     fromDateTime: Optional[str] = Query(None),
     toDateTime: Optional[str] = Query(None),
-    sort: str = Query("updateDate+desc", regex="^(updateDate\\+asc|updateDate\\+desc)$")
+    sort: str = Query("updateDate desc", regex="^(updateDate asc|updateDate desc)$")
 ) -> List[Bill]:
     """Get filtered list of bills from Congress API"""
     url = f"{CONGRESS_API_HOST}/bill"
@@ -351,7 +351,7 @@ async def get_filtered_bill_summaries(
     limit: int = Query(100, le=250),
     fromDateTime: Optional[str] = Query(None),
     toDateTime: Optional[str] = Query(None),
-    sort: str = Query("updateDate+desc", regex="^(updateDate\\+asc|updateDate\\+desc)$")
+    sort: str = Query("updateDate desc", regex="^(updateDate asc|updateDate desc)$")
 ) -> List[BillSummary]:
 
 
@@ -452,7 +452,7 @@ async def get_bill_numbers(
     limit: int = Query(250, le=250),
     fromDateTime: Optional[str] = Query(None),
     toDateTime: Optional[str] = Query(None),
-    sort: str = Query("updateDate+desc", regex="^(updateDate\\+asc|updateDate\\+desc)$")
+    sort: str = Query("updateDate desc", regex="^(updateDate asc|updateDate desc)$")
 ) -> List[str]:
     """Get list of bill numbers from Congress API"""
     url = f"{CONGRESS_API_HOST}/bill"

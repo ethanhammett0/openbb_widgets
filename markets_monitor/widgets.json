@@ -214,6 +214,198 @@
                 "value": "",
                 "optionsEndpoint": "/deals/list",
                 "description": "Select a deal to highlight on the chart."
+            },
+            {
+                "paramName": "maturity_start",
+                "type": "date",
+                "value": "2024-01-01",
+                "label": "Maturity Start"
+            },
+            {
+                "paramName": "maturity_end",
+                "type": "date",
+                "value": "2027-12-31",
+                "label": "Maturity End"
+            }
+        ]
+    },
+    "profitabilityRaincloud": {
+        "type": "chart",
+        "name": "Profitability Raincloud",
+        "description": "Distribution density (cloud) with individual deal placement (rain).",
+        "category": "Real Estate",
+        "endpoint": "raincloud",
+        "gridData": {
+            "w": 30,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "start_date",
+                "label": "Start Date",
+                "type": "date",
+                "value": "2024-01-01"
+            },
+            {
+                "paramName": "end_date",
+                "label": "End Date",
+                "type": "date",
+                "value": "2025-12-31"
+            },
+            {
+                "paramName": "deal_type",
+                "label": "Deal Type",
+                "value": "",
+                "options": [
+                    {
+                        "label": "All",
+                        "value": ""
+                    },
+                    {
+                        "label": "Acquisition",
+                        "value": "Acquisition"
+                    },
+                    {
+                        "label": "Refinance",
+                        "value": "Refinance"
+                    },
+                    {
+                        "label": "Construction",
+                        "value": "Construction"
+                    }
+                ],
+                "type": "text"
+            },
+            {
+                "paramName": "metric",
+                "label": "Metric",
+                "value": "spread",
+                "options": [
+                    {
+                        "label": "Spread",
+                        "value": "spread"
+                    },
+                    {
+                        "label": "LTV",
+                        "value": "ltv"
+                    },
+                    {
+                        "label": "Cap Rate",
+                        "value": "cap_rate"
+                    },
+                    {
+                        "label": "LTC",
+                        "value": "ltc"
+                    },
+                    {
+                        "label": "Debt Yield",
+                        "value": "debt_yield"
+                    },
+                    {
+                        "label": "DSCR",
+                        "value": "dscr"
+                    }
+                ],
+                "type": "text"
+            },
+            {
+                "paramName": "highlight_deal",
+                "label": "Highlight Deal",
+                "type": "endpoint",
+                "value": "",
+                "optionsEndpoint": "/deals/list",
+                "description": "Select a deal to overlay on the distribution."
+            }
+        ]
+    },
+    "dealRadar": {
+        "type": "chart",
+        "name": "Deal vs Market Radar",
+        "description": "Compare a specific deal against market median across up to 8 metrics.",
+        "category": "Real Estate",
+        "endpoint": "radar",
+        "gridData": {
+            "w": 20,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "start_date",
+                "label": "Start Date",
+                "type": "date",
+                "value": "2024-01-01"
+            },
+            {
+                "paramName": "end_date",
+                "label": "End Date",
+                "type": "date",
+                "value": "2025-12-31"
+            },
+            {
+                "paramName": "deal_type",
+                "label": "Deal Type Filter",
+                "type": "text",
+                "value": "",
+                "options": [
+                    {
+                        "label": "All Types",
+                        "value": ""
+                    },
+                    {
+                        "label": "Acquisition",
+                        "value": "Acquisition"
+                    },
+                    {
+                        "label": "Refinance",
+                        "value": "Refinance"
+                    },
+                    {
+                        "label": "Construction",
+                        "value": "Construction"
+                    }
+                ]
+            },
+            {
+                "paramName": "metrics",
+                "label": "Metrics (Max 8)",
+                "type": "text",
+                "value": "spread,ltv,dscr,debt_yield,cap_rate",
+                "multiSelect": true,
+                "options": [
+                    {
+                        "label": "Spread",
+                        "value": "spread"
+                    },
+                    {
+                        "label": "LTV",
+                        "value": "ltv"
+                    },
+                    {
+                        "label": "Cap Rate",
+                        "value": "cap_rate"
+                    },
+                    {
+                        "label": "LTC",
+                        "value": "ltc"
+                    },
+                    {
+                        "label": "Debt Yield",
+                        "value": "debt_yield"
+                    },
+                    {
+                        "label": "DSCR",
+                        "value": "dscr"
+                    }
+                ],
+                "description": "Select metrics to compare."
+            },
+            {
+                "paramName": "highlight_deal",
+                "label": "Select Deal",
+                "type": "endpoint",
+                "value": "",
+                "optionsEndpoint": "/deals/list",
+                "description": "The deal to compare against the market."
             }
         ]
     }

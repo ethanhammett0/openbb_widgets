@@ -1,0 +1,21 @@
+[
+  {
+    "metadata": {
+      "unique_id": "mem_e2eeb944",
+      "timestamp": 1766852225.4059827,
+      "source_tool": "Revista_get_property",
+      "source_args": {
+        "PropertyID": 738432
+      },
+      "topic": "Property Data",
+      "summary": "Property details for TSAOG ORTHOPAEDICS (ID 738432) in San Antonio, TX. Built in 2020, 97k SF, Class A MOB, owned by Anchor Health Properties."
+    },
+    "value": {
+      "propertyType": "Medical Office Building",
+      "propertyName": "TSAOG ORTHOPAEDICS",
+      "propertyID": 738432,
+      "squareFeet": 97000,
+      "yearBuilt": 2020
+    }
+  }
+]

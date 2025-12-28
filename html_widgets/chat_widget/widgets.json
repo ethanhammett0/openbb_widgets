@@ -1,0 +1,13 @@
+{
+    "chatWidget": {
+        "name": "Floating Chat Widget",
+        "description": "Interactive HTML chat widget with context-aware tagging",
+        "type": "html",
+        "endpoint": "http://localhost:8010",
+        "gridData": {
+            "w": 40,
+            "h": 20
+        },
+        "category": "Collaboration"
+    }
+}

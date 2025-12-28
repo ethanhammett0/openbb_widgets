@@ -1,0 +1,220 @@
+{
+    "dealFlowDistribution": {
+        "type": "chart",
+        "name": "Deal Flow Distribution",
+        "description": "Distribution of deal flow metrics over time.",
+        "category": "Real Estate",
+        "endpoint": "distribution",
+        "gridData": {
+            "w": 30,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "start_date",
+                "label": "Start Date",
+                "type": "date",
+                "value": "2024-01-01"
+            },
+            {
+                "paramName": "end_date",
+                "label": "End Date",
+                "type": "date",
+                "value": "2025-12-31"
+            },
+            {
+                "paramName": "interval",
+                "label": "Interval",
+                "value": "3 month",
+                "options": [
+                    {
+                        "label": "1 month",
+                        "value": "1 month"
+                    },
+                    {
+                        "label": "3 month",
+                        "value": "3 month"
+                    },
+                    {
+                        "label": "6 month",
+                        "value": "6 month"
+                    },
+                    {
+                        "label": "9 month",
+                        "value": "9 month"
+                    },
+                    {
+                        "label": "12 month",
+                        "value": "12 month"
+                    }
+                ],
+                "type": "text"
+            },
+            {
+                "paramName": "deal_type",
+                "label": "Deal Type",
+                "value": "",
+                "options": [
+                    {
+                        "label": "All",
+                        "value": ""
+                    },
+                    {
+                        "label": "Acquisition",
+                        "value": "Acquisition"
+                    },
+                    {
+                        "label": "Refinance",
+                        "value": "Refinance"
+                    },
+                    {
+                        "label": "Construction",
+                        "value": "Construction"
+                    }
+                ],
+                "type": "text"
+            },
+            {
+                "paramName": "metric",
+                "label": "Metric",
+                "value": "spread",
+                "options": [
+                    {
+                        "label": "Spread",
+                        "value": "spread"
+                    },
+                    {
+                        "label": "LTV",
+                        "value": "ltv"
+                    },
+                    {
+                        "label": "Cap Rate",
+                        "value": "cap_rate"
+                    }
+                ],
+                "type": "text"
+            }
+        ]
+    },
+    "dealFlowScatter": {
+        "type": "chart",
+        "name": "Deal Flow Scatter Plot",
+        "description": "Scatter plot comparison of deal metrics.",
+        "category": "Real Estate",
+        "endpoint": "scatter",
+        "gridData": {
+            "w": 30,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "start_date",
+                "label": "Start Date",
+                "type": "date",
+                "value": "2024-01-01"
+            },
+            {
+                "paramName": "end_date",
+                "label": "End Date",
+                "type": "date",
+                "value": "2025-12-31"
+            },
+            {
+                "paramName": "x_metric",
+                "label": "X Axis Metric",
+                "type": "text",
+                "value": "ltv",
+                "options": [
+                    {
+                        "label": "Spread",
+                        "value": "spread"
+                    },
+                    {
+                        "label": "LTV",
+                        "value": "ltv"
+                    },
+                    {
+                        "label": "Cap Rate",
+                        "value": "cap_rate"
+                    },
+                    {
+                        "label": "LTC",
+                        "value": "ltc"
+                    },
+                    {
+                        "label": "Debt Yield",
+                        "value": "debt_yield"
+                    },
+                    {
+                        "label": "DSCR",
+                        "value": "dscr"
+                    }
+                ]
+            },
+            {
+                "paramName": "y_metric",
+                "label": "Y Axis Metric",
+                "type": "text",
+                "value": "spread",
+                "options": [
+                    {
+                        "label": "Spread",
+                        "value": "spread"
+                    },
+                    {
+                        "label": "LTV",
+                        "value": "ltv"
+                    },
+                    {
+                        "label": "Cap Rate",
+                        "value": "cap_rate"
+                    },
+                    {
+                        "label": "LTC",
+                        "value": "ltc"
+                    },
+                    {
+                        "label": "Debt Yield",
+                        "value": "debt_yield"
+                    },
+                    {
+                        "label": "DSCR",
+                        "value": "dscr"
+                    }
+                ]
+            },
+            {
+                "paramName": "deal_type",
+                "label": "Deal Type Filter",
+                "type": "text",
+                "value": "",
+                "options": [
+                    {
+                        "label": "All Types",
+                        "value": ""
+                    },
+                    {
+                        "label": "Acquisition",
+                        "value": "Acquisition"
+                    },
+                    {
+                        "label": "Refinance",
+                        "value": "Refinance"
+                    },
+                    {
+                        "label": "Construction",
+                        "value": "Construction"
+                    }
+                ]
+            },
+            {
+                "paramName": "highlight_deal",
+                "label": "Highlight Deal",
+                "type": "endpoint",
+                "value": "",
+                "optionsEndpoint": "/deals/list",
+                "description": "Select a deal to highlight on the chart."
+            }
+        ]
+    }
+}

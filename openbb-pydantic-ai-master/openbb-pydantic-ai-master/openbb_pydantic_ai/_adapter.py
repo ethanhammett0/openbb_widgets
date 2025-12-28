@@ -169,6 +169,15 @@ class OpenBBAIAdapter(UIAdapter[QueryRequest, LlmMessage, SSE, OpenBBDeps, Any])
         """Build runtime instructions with workspace context and dashboard info."""
         lines: list[str] = []
 
+        # Critical instruction for reasoning models (Gemini Deep Think, etc.)
+        lines.append(
+            "SYSTEM REMINDER:\n"
+            "1. **STOP LOOPING**: If you have tool results, output your answer. Do not re-verify.\n"
+            "2. **TOOL RESULTS**: Data is delivered in the message history immediately after your tool call.\n"
+            "3. **DUAL-MODE**: Identify if this is a Chat or a Task. If Task -> Plan -> Execute -> Stop."
+        )
+        lines.append("")
+
         lines.append("Following is context about the current active OpenBB Workspace:")
 
         if self.deps.timezone:

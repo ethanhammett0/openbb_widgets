@@ -1,0 +1,21 @@
+[
+  {
+    "metadata": {
+      "unique_id": "mem_7e35efc7",
+      "timestamp": 1766852252.2099676,
+      "source_tool": "Revista_get_transactions_by_property",
+      "source_args": {
+        "PropertyID": 738432
+      },
+      "topic": "Transaction Data",
+      "summary": "Transaction history for Property 738432 confirms a sale on 2021-04-01 for $57,000,000. Seller: TSAOG Orthopaedics. Buyers: Anchor Health Properties and Carlyle Group. Price per SF: $588.00."
+    },
+    "value": [
+      {
+        "price_Property_Allocated": 57000000,
+        "transactionDate": "2021-04-01T00:00:00",
+        "pricePerSF": 588
+      }
+    ]
+  }
+]

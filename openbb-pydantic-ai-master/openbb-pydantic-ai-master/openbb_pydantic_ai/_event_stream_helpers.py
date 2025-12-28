@@ -237,12 +237,45 @@ def tool_result_events_from_content(
         artifacts.extend(entry_artifacts)
         events.extend(entry_events)
 
-    if artifacts:
+        # User-requested fix: Explicitly tell the model to stop calling the tool
+        # AND provide the data directly in the message history (dynamic tools don't update workspace_context)
+        tool_name = content.get('input_arguments', {}).get('tool_name', 'tool')
+        
+        # Phase 2.2: Deterministic Error Handling
+        # Check for error signals
+        is_error = False
+        if isinstance(content, dict):
+            if content.get("statusCode") and content.get("statusCode") >= 400:
+                is_error = True
+            if "error" in content:
+                is_error = True
+        
+        if is_error:
+            message = (
+                f"Error retrieving data for {tool_name}. "
+                "The tool failed gracefully. DO NOT RETRY THIS TOOL. "
+                "Proceed with available data or skip this metric.\n\n"
+                f"Error Details: {json.dumps(content, default=str)[:1000]}"
+            )
+        else:
+            # Success Path
+            message = (
+                f"Data retrieved successfully for {tool_name}. "
+                "DO NOT CALL THIS TOOL AGAIN. Use the data below:\n\n"
+            )
+            try:
+                # Use a very large limit (50k chars) to ensure full data is visible for deep dive analysis
+                message += json.dumps(content, default=str)[:50000]
+                if len(str(content)) > 50000:
+                    message += "... (truncated)"
+            except Exception:
+                message += str(content)[:50000] + "..."
+
         events.append(
             StatusUpdateSSE(
                 data=StatusUpdateSSEData(
                     eventType="INFO",
-                    message="Data retrieved",
+                    message=message,
                     group="reasoning",
                     artifacts=artifacts,
                 )

@@ -41,6 +41,15 @@
 		},
 		{
 			"path": "../mcp_projects"
+		},
+		{
+			"path": "../deal_comparison"
+		},
+		{
+			"path": "../Global Application Shell Design 3"
+		},
+		{
+			"path": "../html_widgets"
 		}
 	],
 	"settings": {}

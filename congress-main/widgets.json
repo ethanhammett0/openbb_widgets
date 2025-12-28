@@ -591,7 +591,7 @@
       },
       {
         "paramName": "sort",
-        "value": "updateDate+desc",
+        "value": "updateDate desc",
         "description": "Sort order",
         "label": "Sort",
         "type": "text",

@@ -98,7 +98,18 @@ def register_route(app: FastAPI, endpoint: Dict[str, Any]):
         # Remove any lingering braces if optional parameters were missing (safety check)
         # But for now assume all generated args are required path params
         
-        return await client_instance.make_request(formatted_path, method, params=query_params)
+        try:
+            return await client_instance.make_request(formatted_path, method, params=query_params)
+        except Exception as e:
+            # Phase 2.3: Graceful Failure
+            # Catch backend errors (e.g. SQL Arithmetic overflow) and return structured error
+            # This allows the agent to see "Tool Failed" instead of the whole server crashing/500ing
+            return {
+                "error": "Backend processing failed", 
+                "details": str(e),
+                "statusCode": 500,
+                "message": "Data unavailable for this query likely due to backend limits (e.g. high density area). Skip this metric."
+            }
 
     # Dynamic function signature generation is tricky in pure Python without makefun.
     # However, FastAPI inspects the function signature.

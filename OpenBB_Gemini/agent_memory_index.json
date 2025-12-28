@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "id": "mem_c5137a8a",
+      "topic": "Market Data",
+      "summary": "[HRE, Trends, 2024, Cap-Rates]",
+      "timestamp": 1766804531.935159,
+      "tool": "google_search"
+    },
+    {
+      "id": "mem_02953d48",
+      "topic": "Property Details",
+      "summary": "[Revista, Kindred, Beds: 100]",
+      "timestamp": 1766804531.942915,
+      "tool": "revista"
+    }
+  ],
+  "stats": {
+    "total_items": 2,
+    "total_chapters": 2,
+    "topics": [
+      "Property Details",
+      "Market Data"
+    ]
+  }
+}
