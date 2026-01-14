@@ -1,0 +1,68 @@
+{
+    "nodes": [
+        {
+            "id": "GET /search.json",
+            "type": "endpoint",
+            "label": "GET /search.json",
+            "data": {
+                "path": "/search.json",
+                "method": "GET",
+                "summary": "Returns a list of organizations matching the given search terms. Params: q (keyword), page (0-indexed), state[id] (e.g. NY), ntee[id] (1-10 major groups), c_code[id] (subsection code).",
+                "description": "Returns a list of organizations matching the given search terms.\nParameters (all optional):\n- q: Keyword search string (org name, alternate name, city).\n- page: Page number (0-indexed).\n- state[id]: State abbreviation (e.g. 'NY').\n- ntee[id]: NTEE Major Group ID (1-10, e.g. 1=Arts, 7=Health).\n- c_code[id]: Subsection code (e.g. 3 for 501(c)(3)).",
+                "tags": [
+                    "Search"
+                ],
+                "parameters": [
+                    {
+                        "name": "q",
+                        "type": "string",
+                        "description": "A keyword search string. Searches organization name, organization alternate name, city."
+                    },
+                    {
+                        "name": "page",
+                        "type": "integer",
+                        "description": "Page number (0-indexed). Default is 0."
+                    },
+                    {
+                        "name": "state_id",
+                        "type": "string",
+                        "description": "State abbreviation code (e.g. 'NY', 'CA'). Maps to state[id] parameter."
+                    },
+                    {
+                        "name": "ntee_id",
+                        "type": "integer",
+                        "description": "National Taxonomy of Exempt Entities (NTEE) Major Group ID (1-10). Maps to ntee[id] parameter."
+                    },
+                    {
+                        "name": "c_code_id",
+                        "type": "integer",
+                        "description": "Subsection code ID (e.g. 3 for 501(c)(3)). Maps to c_code[id] parameter."
+                    }
+                ],
+                "operationId": "search_organizations"
+            }
+        },
+        {
+            "id": "GET /organizations/{ein}.json",
+            "type": "endpoint",
+            "label": "GET /organizations/{ein}.json",
+            "data": {
+                "path": "/organizations/{ein}.json",
+                "method": "GET",
+                "summary": "Returns all available data for a given organization, by the organization's integer EIN.",
+                "description": "Returns all available data for a given organization including filings.",
+                "tags": [
+                    "Organization"
+                ],
+                "parameters": [
+                    {
+                        "name": "ein",
+                        "type": "integer",
+                        "description": "The organization's Employer Identification Number (EIN)."
+                    }
+                ],
+                "operationId": "get_organization"
+            }
+        }
+    ]
+}

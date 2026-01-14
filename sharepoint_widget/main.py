@@ -68,14 +68,18 @@ def get_apps_config():
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/deals")
-def get_deals():
-    """Returns list of available deals for the dropdown."""
-    # Mock Deals
-    return [
+def get_deals(q: Optional[str] = Query(None)):
+    """Returns list of available deals for the dropdown, supporting search."""
+    deals = [
         {"label": "Project Alpha (Tech M&A)", "value": "deal_alpha"},
         {"label": "Project Beta (Real Estate)", "value": "deal_beta"},
         {"label": "Project Gamma (Energy)", "value": "deal_gamma"},
+        {"label": "Project Healthcare (Medical Office)", "value": "deal_healthcare"},
+        {"label": "Project Hospital (Acute Care)", "value": "deal_hospital"}
     ]
+    if q:
+        deals = [d for d in deals if q.lower() in d["label"].lower()]
+    return deals
 
 @app.get("/folders")
 def get_folders(deal_id: str = "deal_alpha"):
@@ -95,32 +99,36 @@ def get_folders(deal_id: str = "deal_alpha"):
     return folders
 
 @app.get("/files_list")
-def get_files_list(deal_id: str = "deal_alpha", folder_ids: Optional[List[str]] = Query(None)):
+def get_files_list(
+    deal_id: str = "deal_alpha", 
+    portfolio: Optional[List[str]] = Query(None)
+):
     """
-    Returns list of filenames in the selected folders.
+    Returns list of filenames based on deal and portfolio.
     """
-    if not folder_ids:
-        return []
-        
+    print(f"DEBUG: get_files_list called for deal_id: {deal_id}, portfolio: {portfolio}")
+    
     all_files = []
     
-    # helper to normalize list input that might contain csv strings
-    actual_folder_ids = []
-    for item in folder_ids:
-        if "," in item:
-            actual_folder_ids.extend([x.strip() for x in item.split(",")])
-        else:
-            actual_folder_ids.append(item)
+    # 1. Check deal-specific folder if it exists
+    deal_folder = os.path.join(DUMMY_PDF_DIR, deal_id)
+    if os.path.exists(deal_folder):
+        all_files.extend([f for f in os.listdir(deal_folder) if f.lower().endswith('.pdf')])
     
-    for folder_name in actual_folder_ids:
-        folder_path = os.path.join(DUMMY_PDF_DIR, folder_name)
-        if os.path.exists(folder_path):
-            files = [
-                f for f in os.listdir(folder_path) 
-                if f.lower().endswith('.pdf')
-            ]
-            all_files.extend(files)
-            
+    # 2. Check portfolio-specific folders
+    if portfolio:
+        for p in portfolio:
+            # handle csv strings
+            p_list = [x.strip() for x in p.split(",")] if "," in p else [p]
+            for p_name in p_list:
+                p_folder = os.path.join(DUMMY_PDF_DIR, p_name)
+                if os.path.exists(p_folder):
+                    all_files.extend([f for f in os.listdir(p_folder) if f.lower().endswith('.pdf')])
+    
+    # 3. If no filters or empty, just show root files
+    if not all_files:
+        all_files = [f for f in os.listdir(DUMMY_PDF_DIR) if f.lower().endswith('.pdf') and os.path.isfile(os.path.join(DUMMY_PDF_DIR, f))]
+
     # Deduplicate and sort
     unique_files = sorted(list(set(all_files)))
     return [{"label": f, "value": f} for f in unique_files]

@@ -11,35 +11,45 @@
         },
         "params": [
             {
-                "paramName": "deal_id",
-                "label": "Deal",
-                "type": "endpoint",
-                "optionsEndpoint": "deals",
-                "value": "deal_alpha",
-                "description": "Select the Deal"
+                "paramName": "portfolio",
+                "label": "Portfolio",
+                "type": "text",
+                "multiSelect": true,
+                "options": [
+                    {
+                        "label": "Real Estate",
+                        "value": "real_estate"
+                    },
+                    {
+                        "label": "Corporate",
+                        "value": "corporate"
+                    },
+                    {
+                        "label": "Project Finance",
+                        "value": "project_finance"
+                    }
+                ],
+                "value": [
+                    "real_estate"
+                ],
+                "description": "Select Portfolio(s)"
             },
             {
-                "paramName": "folder_ids",
-                "label": "Folders",
-                "type": "endpoint",
-                "optionsEndpoint": "folders",
-                "optionsParams": {
-                    "deal_id": "$deal_id"
-                },
-                "multiSelect": true,
-                "value": [
-                    "financials"
-                ],
-                "description": "Select Folders to pull data from"
+                "paramName": "deal_id",
+                "label": "Deal",
+                "type": "search",
+                "optionsEndpoint": "deals",
+                "value": "deal_alpha",
+                "description": "Search for a Deal"
             },
             {
                 "paramName": "filename",
-                "label": "Files",
+                "label": "Widgets (Files)",
                 "type": "endpoint",
                 "optionsEndpoint": "files_list",
                 "optionsParams": {
                     "deal_id": "$deal_id",
-                    "folder_ids": "$folder_ids"
+                    "portfolio": "$portfolio"
                 },
                 "multiSelect": true,
                 "roles": [
