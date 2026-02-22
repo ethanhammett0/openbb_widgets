@@ -109,12 +109,12 @@ class MCPToolset(ExternalToolset[OpenBBDeps]):
         # Check session cache (cross-request)
         cached = get_session_cached_result(tool_name, args)
         if cached is not None:
-            # FORCE STOP: If checking cache, it means the agent is looping.
-            # Return the data, but yell at it.
+            # Return summarized cached data to save tokens
+            from ._event_stream_helpers import summarize_for_context
+            summary = summarize_for_context(cached, max_chars=1500)
             return (
-                f"SYSTEM MONITOR: LOOP DETECTED. You have already called '{tool_name}' with these exact arguments.\n"
-                f"DO NOT CALL THIS TOOL AGAIN. Synthesize the data below:\n\n"
-                f"{cached}"
+                f"[CACHED] Data already retrieved. Proceed with your task.\n\n"
+                f"{summary}"
             )
         return None
 

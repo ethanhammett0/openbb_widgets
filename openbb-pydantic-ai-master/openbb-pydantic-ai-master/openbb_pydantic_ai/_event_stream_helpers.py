@@ -30,6 +30,64 @@ from ._utils import (
 )
 
 
+def summarize_for_context(content: Any, max_chars: int = 2000) -> str:
+    """Summarize large responses for model context without flooding tokens.
+    
+    For arrays: Returns count, keys, and a sample item.
+    For objects: Truncates long string values, keeps structure.
+    """
+    try:
+        if isinstance(content, list):
+            if not content:
+                return "Empty array (no data returned)"
+            
+            count = len(content)
+            sample = content[0]
+            
+            if isinstance(sample, dict):
+                keys = list(sample.keys())[:15]  # First 15 keys
+                sample_str = json.dumps(sample, default=str)[:500]
+                return (
+                    f"Array of {count} items.\n"
+                    f"Keys: {keys}\n"
+                    f"Sample item: {sample_str}{'...' if len(json.dumps(sample)) > 500 else ''}"
+                )
+            else:
+                return f"Array of {count} items. First: {str(sample)[:200]}"
+        
+        if isinstance(content, dict):
+            # Check for nested data array (common in API responses)
+            if 'data' in content and isinstance(content.get('data'), list):
+                data = content['data']
+                return summarize_for_context(data, max_chars)
+            
+            # Truncate long string values, keep structure readable
+            summary = {}
+            for k, v in list(content.items())[:25]:  # First 25 keys
+                if isinstance(v, str) and len(v) > 100:
+                    summary[k] = v[:100] + "..."
+                elif isinstance(v, list) and len(v) > 3:
+                    summary[k] = f"[array of {len(v)} items]"
+                elif isinstance(v, dict):
+                    summary[k] = "{...}"  # Nested object
+                else:
+                    summary[k] = v
+            
+            result = json.dumps(summary, default=str, indent=2)
+            if len(result) > max_chars:
+                return result[:max_chars] + "...(truncated)"
+            return result
+        
+        # Fallback for other types
+        result = str(content)
+        if len(result) > max_chars:
+            return result[:max_chars] + "...(truncated)"
+        return result
+        
+    except Exception as e:
+        return f"[Summary error: {e}] Content length: {len(str(content))} chars"
+
+
 @dataclass(slots=True)
 class ToolCallInfo:
     """Metadata captured when a tool call event is received.
@@ -148,6 +206,59 @@ def handle_generic_tool_result(
             artifact,
         ]
 
+    # NEW: Handle raw arrays or wrapped MCP arrays
+    target_data = None
+    
+    # Case 1: Raw array of dicts
+    if isinstance(content, list):
+        target_data = content
+        
+    # Case 2: Standard OpenBB/MCP Envelope
+    elif isinstance(content, dict):
+        try:
+            # Drilling down: content['data'][0]['items'][0]['content']
+            # This handles the specific double-stringified structure seen in Revista logs
+            data_list = content.get("data", [])
+            if data_list and isinstance(data_list, list):
+                first_entry = data_list[0]
+                if isinstance(first_entry, dict):
+                    items = first_entry.get("items", [])
+                    if items and isinstance(items, list):
+                        first_item = items[0]
+                        if isinstance(first_item, dict):
+                            raw_content = first_item.get("content")
+                            if isinstance(raw_content, str):
+                                # Unwrap layer 1: "[\"...\", ...]" -> ["..."]
+                                import json
+                                layer1 = json.loads(raw_content)
+                                if isinstance(layer1, list) and layer1:
+                                    # Unwrap layer 2: "{\"value\": [...]}" -> {"value": [...]}
+                                    layer2_str = layer1[0]
+                                    if isinstance(layer2_str, str):
+                                        layer2 = json.loads(layer2_str)
+                                        if isinstance(layer2, dict):
+                                            target_data = layer2.get("value")
+        except Exception:
+            # If unwrapping fails, fall back to default
+            pass
+
+    # Process if we found a valid data array
+    if isinstance(target_data, list) and target_data and all(isinstance(x, dict) for x in target_data):
+        # Create table artifact from array
+        table_artifact = table(
+            data=target_data[:100],  # Limit to first 100 rows for display
+            name=info.tool_name,
+            description=f"Results from {info.tool_name}",
+        )
+        summary = summarize_for_context(target_data, max_chars=1500)
+        return [
+            reasoning_step(
+                f"Tool '{info.tool_name}' returned {len(target_data)} items",
+                details={"Summary": summary},
+            ),
+            table_artifact,
+        ]
+
     details: dict[str, Any] | None = None
     if info.args:
         formatted = format_args(info.args)
@@ -258,18 +369,12 @@ def tool_result_events_from_content(
                 f"Error Details: {json.dumps(content, default=str)[:1000]}"
             )
         else:
-            # Success Path
+            # Success Path - use smart summarization instead of 50k char dump
             message = (
-                f"Data retrieved successfully for {tool_name}. "
-                "DO NOT CALL THIS TOOL AGAIN. Use the data below:\n\n"
+                f"Data retrieved for {tool_name}. "
+                "Use the data below for your response:\n\n"
             )
-            try:
-                # Use a very large limit (50k chars) to ensure full data is visible for deep dive analysis
-                message += json.dumps(content, default=str)[:50000]
-                if len(str(content)) > 50000:
-                    message += "... (truncated)"
-            except Exception:
-                message += str(content)[:50000] + "..."
+            message += summarize_for_context(content, max_chars=2000)
 
         events.append(
             StatusUpdateSSE(

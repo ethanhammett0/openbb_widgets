@@ -1,2 +1,2 @@
 @echo off
-python -m uvicorn main:app --reload --port 8010
+python -m uvicorn main:app --reload --port 8015

@@ -50,6 +50,12 @@
 		},
 		{
 			"path": "../html_widgets"
+		},
+		{
+			"path": "../propublica_api"
+		},
+		{
+			"path": "../openbb_developer_skills"
 		}
 	],
 	"settings": {}

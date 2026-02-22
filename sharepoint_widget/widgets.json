@@ -37,7 +37,7 @@
             {
                 "paramName": "deal_id",
                 "label": "Deal",
-                "type": "search",
+                "type": "text",
                 "optionsEndpoint": "deals",
                 "value": "deal_alpha",
                 "description": "Search for a Deal"

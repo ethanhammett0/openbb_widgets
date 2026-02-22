@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.responses import JSONResponse
 from typing import List, Dict, Any, Optional
-from .data import REVISTA_DATA
+from data import REVISTA_DATA
 
 app = FastAPI()
 

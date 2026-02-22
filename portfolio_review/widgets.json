@@ -1,71 +1,376 @@
 {
-    "rentRollAnalysis": {
-        "type": "chart",
-        "name": "Rent Roll Expiration",
-        "description": "Visualize lease expirations and cashflow decay over time for selected portfolios.",
-        "category": "Portfolio Review",
-        "endpoint": "cashflow",
-        "gridData": {
-            "w": 30,
-            "h": 15
-        },
-        "params": [
-            {
-                "paramName": "portfolio",
-                "label": "Select Portfolio",
-                "type": "endpoint",
-                "value": null,
-                "optionsEndpoint": "/portfolios",
-                "multiSelect": false,
-                "description": "Choose a portfolio to analyze."
-            },
-            {
-                "paramName": "buildings",
-                "label": "Select Buildings",
-                "type": "endpoint",
-                "value": [],
-                "optionsEndpoint": "/buildings",
-                "multiSelect": true,
-                "description": "Select specific buildings within the portfolio."
-            },
-            {
-                "paramName": "group_by_tenant",
-                "label": "Group by Tenant",
-                "type": "boolean",
-                "value": true,
-                "description": "Toggle to group cashflows by Tenant (True) or Building (False)."
-            }
-        ]
-    },
-    "rentRollTable": {
+    "portfolio_grid": {
+        "name": "Portfolio Review",
+        "description": "Hierarchical view: Deal → Property → Tenant with 350 deals",
+        "category": "Healthcare RE",
         "type": "table",
-        "name": "Rent Roll Data",
-        "description": "Detailed lease data table for deep analysis.",
-        "category": "Portfolio Review",
-        "endpoint": "rent_roll",
-        "gridData": {
-            "w": 30,
-            "h": 15
-        },
+        "endpoint": "portfolio",
+        "gridData": { "w": 40, "h": 20 },
         "params": [
             {
-                "paramName": "portfolio",
-                "label": "Select Portfolio",
-                "type": "endpoint",
-                "value": null,
-                "optionsEndpoint": "/portfolios",
-                "multiSelect": false,
-                "description": "Choose a portfolio."
+                "paramName": "view_mode",
+                "type": "text",
+                "label": "View Mode",
+                "value": "Overview",
+                "options": [
+                    { "label": "Overview", "value": "Overview" },
+                    { "label": "Financials", "value": "Financials" },
+                    { "label": "Lease Details", "value": "Lease Details" }
+                ]
+            }
+        ],
+        "data": {
+            "table": {
+                "showAll": true,
+                "columnsDefs": [
+                    {
+                        "field": "Deal_Name",
+                        "headerName": "Portfolio / Deal",
+                        "cellDataType": "text",
+                        "rowGroup": true,
+                        "hide": true
+                    },
+                    {
+                        "field": "Property_Name",
+                        "headerName": "Property / Asset",
+                        "cellDataType": "text",
+                        "rowGroup": true,
+                        "hide": true
+                    },
+                    {
+                        "field": "Tenant_Name",
+                        "headerName": "Tenant",
+                        "cellDataType": "text",
+                        "width": 200,
+                        "pinned": "left"
+                    },
+                    {
+                        "field": "Sponsor",
+                        "headerName": "Sponsor",
+                        "cellDataType": "text",
+                        "width": 140,
+                        "aggFunc": "first"
+                    },
+                    {
+                        "field": "Strategy",
+                        "headerName": "Strategy",
+                        "cellDataType": "text",
+                        "width": 100,
+                        "aggFunc": "first",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                { "condition": "eq", "value": "Core", "color": "#4CAF50", "fill": false },
+                                { "condition": "eq", "value": "Core+", "color": "#81C784", "fill": false },
+                                { "condition": "eq", "value": "Value-Add", "color": "#FFA500", "fill": false },
+                                { "condition": "eq", "value": "Lease-Up", "color": "#EF5350", "fill": false }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Credit",
+                        "headerName": "Credit",
+                        "cellDataType": "text",
+                        "width": 75,
+                        "aggFunc": "first",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                { "condition": "eq", "value": "AAA", "color": "#4CAF50", "fill": false },
+                                { "condition": "eq", "value": "AA+", "color": "#4CAF50", "fill": false },
+                                { "condition": "eq", "value": "AA", "color": "#66BB6A", "fill": false },
+                                { "condition": "eq", "value": "A+", "color": "#81C784", "fill": false },
+                                { "condition": "eq", "value": "A", "color": "#81C784", "fill": false },
+                                { "condition": "eq", "value": "BBB+", "color": "#FFA500", "fill": false },
+                                { "condition": "eq", "value": "BBB", "color": "#FFA500", "fill": false },
+                                { "condition": "eq", "value": "BB+", "color": "#EF5350", "fill": false },
+                                { "condition": "eq", "value": "BB", "color": "#EF5350", "fill": false }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Condition",
+                        "headerName": "Condition",
+                        "cellDataType": "text",
+                        "width": 105,
+                        "aggFunc": "first",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                { "condition": "eq", "value": "Stabilized", "color": "#4CAF50", "fill": false },
+                                { "condition": "eq", "value": "Below-Market", "color": "#FFA500", "fill": false },
+                                { "condition": "eq", "value": "Transitional", "color": "#EF5350", "fill": false },
+                                { "condition": "eq", "value": "Lease-Up", "color": "#E91E63", "fill": false }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Type",
+                        "headerName": "Type",
+                        "cellDataType": "text",
+                        "width": 115,
+                        "aggFunc": "first"
+                    },
+                    {
+                        "field": "Location",
+                        "headerName": "Location",
+                        "cellDataType": "text",
+                        "width": 145,
+                        "aggFunc": "first"
+                    },
+                    {
+                        "field": "Lease_Type",
+                        "headerName": "Lease",
+                        "cellDataType": "text",
+                        "width": 75,
+                        "aggFunc": "first"
+                    },
+                    {
+                        "field": "Deal_Occ",
+                        "headerName": "Deal Occ%",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 85,
+                        "aggFunc": "max",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                { "condition": "lt", "value": 85, "color": "#EF5350", "fill": false },
+                                { "condition": "lt", "value": 93, "color": "#FFA500", "fill": false },
+                                { "condition": "gte", "value": 93, "color": "#4CAF50", "fill": false }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Deal_WALT",
+                        "headerName": "Deal WALT",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 90,
+                        "aggFunc": "max",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                { "condition": "lt", "value": 3.0, "color": "#EF5350", "fill": false },
+                                { "condition": "lt", "value": 5.0, "color": "#FFA500", "fill": false },
+                                { "condition": "gte", "value": 5.0, "color": "#4CAF50", "fill": false }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Deal_Loan",
+                        "headerName": "Deal Loan",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "prefix": "$",
+                        "width": 120,
+                        "aggFunc": "max"
+                    },
+                    {
+                        "field": "Deal_Value",
+                        "headerName": "Deal Value",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "prefix": "$",
+                        "width": 120,
+                        "aggFunc": "max"
+                    },
+                    {
+                        "field": "Deal_LTV",
+                        "headerName": "Deal LTV%",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 85,
+                        "aggFunc": "max",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                { "condition": "gte", "value": 75, "color": "#EF5350", "fill": false },
+                                { "condition": "gte", "value": 65, "color": "#FFA500", "fill": false },
+                                { "condition": "lt", "value": 65, "color": "#4CAF50", "fill": false }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "DSCR",
+                        "headerName": "DSCR",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 75,
+                        "aggFunc": "max",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                { "condition": "lt", "value": 1.20, "color": "#EF5350", "fill": false },
+                                { "condition": "lt", "value": 1.35, "color": "#FFA500", "fill": false },
+                                { "condition": "gte", "value": 1.35, "color": "#4CAF50", "fill": false }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Debt_Yield",
+                        "headerName": "Yield%",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 75,
+                        "aggFunc": "max",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                { "condition": "lt", "value": 8, "color": "#EF5350", "fill": false },
+                                { "condition": "lt", "value": 10, "color": "#FFA500", "fill": false },
+                                { "condition": "gte", "value": 10, "color": "#4CAF50", "fill": false }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Prop_Occ",
+                        "headerName": "Prop Occ%",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 85,
+                        "aggFunc": "max",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                { "condition": "lt", "value": 85, "color": "#EF5350", "fill": false },
+                                { "condition": "lt", "value": 93, "color": "#FFA500", "fill": false },
+                                { "condition": "gte", "value": 93, "color": "#4CAF50", "fill": false }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Prop_WALT",
+                        "headerName": "Prop WALT",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 90,
+                        "aggFunc": "max",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                { "condition": "lt", "value": 3.0, "color": "#EF5350", "fill": false },
+                                { "condition": "lt", "value": 5.0, "color": "#FFA500", "fill": false },
+                                { "condition": "gte", "value": 5.0, "color": "#4CAF50", "fill": false }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Prop_Loan",
+                        "headerName": "Prop Loan",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "prefix": "$",
+                        "width": 110,
+                        "aggFunc": "sum"
+                    },
+                    {
+                        "field": "Prop_Value",
+                        "headerName": "Prop Value",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "prefix": "$",
+                        "width": 110,
+                        "aggFunc": "sum"
+                    },
+                    {
+                        "field": "Prop_LTV",
+                        "headerName": "Prop LTV%",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 85,
+                        "aggFunc": "max",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                { "condition": "gte", "value": 75, "color": "#EF5350", "fill": false },
+                                { "condition": "gte", "value": 65, "color": "#FFA500", "fill": false },
+                                { "condition": "lt", "value": 65, "color": "#4CAF50", "fill": false }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Annual_Rent",
+                        "headerName": "Ann Rent",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "prefix": "$",
+                        "width": 110,
+                        "aggFunc": "sum"
+                    },
+                    {
+                        "field": "SF",
+                        "headerName": "SF",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "width": 90,
+                        "aggFunc": "sum"
+                    },
+                    {
+                        "field": "Rent_PSF",
+                        "headerName": "Rent/SF",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "prefix": "$",
+                        "width": 80
+                    },
+                    {
+                        "field": "Pct_RSF",
+                        "headerName": "% RSF",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 70
+                    },
+                    {
+                        "field": "Term",
+                        "headerName": "Term (Yrs)",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 90
+                    },
+                    {
+                        "field": "Lease_Expiry",
+                        "headerName": "Lease Expiry",
+                        "cellDataType": "text",
+                        "width": 105
+                    }
+                ]
+            }
+        }
+    },
+    "key_metrics": {
+        "name": "Key Statistics",
+        "description": "High-level portfolio metrics",
+        "category": "Healthcare RE",
+        "type": "metric",
+        "endpoint": "metrics",
+        "gridData": { "w": 40, "h": 6 }
+    },
+    "portfolio_history": {
+        "name": "Maturity Schedule",
+        "description": "Loan maturities over time",
+        "category": "Healthcare RE",
+        "type": "chart",
+        "endpoint": "portfolio_history",
+        "gridData": { "w": 20, "h": 14 },
+        "params": [
+            {
+                "paramName": "interval",
+                "label": "Interval",
+                "type": "text",
+                "value": "Quarter",
+                "options": [
+                    { "label": "Month", "value": "Month" },
+                    { "label": "Quarter", "value": "Quarter" },
+                    { "label": "Year", "value": "Year" }
+                ]
             },
             {
-                "paramName": "buildings",
-                "label": "Select Buildings",
-                "type": "endpoint",
-                "value": [],
-                "optionsEndpoint": "/buildings",
-                "multiSelect": true,
-                "description": "Select specific buildings within the portfolio."
-            },
+                "paramName": "show_composition",
+                "label": "Show Deal Stack",
+                "type": "boolean",
+                "value": false
+            }
         ]
     }
 }
