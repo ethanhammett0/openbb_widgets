@@ -1,0 +1,172 @@
+[
+    {
+        "name": "HRE Unified Dashboard",
+        "description": "Consolidated Healthcare Real Estate dashboard: Markets Monitor, Portfolio Review, Deal Entry, and Document Viewer.",
+        "allowCustomization": true,
+        "tabs": {
+            "markets-monitor": {
+                "id": "markets-monitor",
+                "name": "Markets Monitor",
+                "layout": [
+                    {
+                        "i": "dealFlowDistribution",
+                        "x": 0,
+                        "y": 0,
+                        "w": 40,
+                        "h": 18,
+                        "state": {
+                            "params": {
+                                "interval": "3 month",
+                                "metric": "spread"
+                            }
+                        },
+                        "groups": ["Group 1"]
+                    },
+                    {
+                        "i": "dealFlowScatter",
+                        "x": 0,
+                        "y": 18,
+                        "w": 40,
+                        "h": 18,
+                        "state": {
+                            "params": {
+                                "x_metric": "ltv",
+                                "y_metric": "spread"
+                            }
+                        },
+                        "groups": ["Group 1"]
+                    },
+                    {
+                        "i": "profitabilityRaincloud",
+                        "x": 0,
+                        "y": 36,
+                        "w": 40,
+                        "h": 18,
+                        "state": {
+                            "params": {
+                                "metric": "spread"
+                            }
+                        },
+                        "groups": ["Group 1"]
+                    },
+                    {
+                        "i": "dealRadar",
+                        "x": 0,
+                        "y": 54,
+                        "w": 40,
+                        "h": 18,
+                        "state": {
+                            "params": {
+                                "metrics": "spread,ltv,dscr,debt_yield,cap_rate"
+                            }
+                        },
+                        "groups": ["Group 1"]
+                    }
+                ]
+            },
+            "portfolio-review": {
+                "id": "portfolio-review",
+                "name": "Portfolio Review",
+                "layout": [
+                    {
+                        "i": "rentRollAnalysis",
+                        "x": 0,
+                        "y": 0,
+                        "w": 40,
+                        "h": 14,
+                        "state": {
+                            "params": {
+                                "group_by_tenant": true
+                            }
+                        },
+                        "groups": ["Group 2"]
+                    },
+                    {
+                        "i": "rentRollTable",
+                        "x": 0,
+                        "y": 14,
+                        "w": 40,
+                        "h": 12,
+                        "groups": ["Group 2"]
+                    }
+                ]
+            },
+            "deal-entry": {
+                "id": "deal-entry",
+                "name": "Deal Entry",
+                "layout": [
+                    {
+                        "i": "salesforce/deals",
+                        "x": 0,
+                        "y": 0,
+                        "w": 20,
+                        "h": 10
+                    },
+                    {
+                        "i": "salesforce/tranches",
+                        "x": 20,
+                        "y": 0,
+                        "w": 20,
+                        "h": 12
+                    },
+                    {
+                        "i": "salesforce/realestate",
+                        "x": 0,
+                        "y": 12,
+                        "w": 20,
+                        "h": 10
+                    },
+                    {
+                        "i": "salesforce/accounts",
+                        "x": 0,
+                        "y": 22,
+                        "w": 20,
+                        "h": 12
+                    },
+                    {
+                        "i": "salesforce/accounts/lookup",
+                        "x": 20,
+                        "y": 12,
+                        "w": 20,
+                        "h": 14
+                    }
+                ]
+            },
+            "documents": {
+                "id": "documents",
+                "name": "Documents",
+                "layout": [
+                    {
+                        "i": "sharepoint_viewer",
+                        "x": 0,
+                        "y": 0,
+                        "w": 40,
+                        "h": 22
+                    }
+                ]
+            }
+        },
+        "groups": [
+            {
+                "name": "Group 1",
+                "type": "param",
+                "paramName": "start_date",
+                "defaultValue": "2024-01-01",
+                "widgetIds": ["dealFlowDistribution", "dealFlowScatter", "profitabilityRaincloud", "dealRadar"]
+            },
+            {
+                "name": "Group 2",
+                "type": "endpointParam",
+                "paramName": "portfolio",
+                "defaultValue": null,
+                "widgetIds": ["rentRollAnalysis", "rentRollTable"]
+            }
+        ],
+        "prompts": [
+            "What is the current spread distribution for acquisitions?",
+            "Show me the portfolio with the highest lease expiration risk",
+            "Compare LTV vs DSCR for recent deals",
+            "Which tenants have leases expiring in the next 12 months?"
+        ]
+    }
+]
