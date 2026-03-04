@@ -1,0 +1,724 @@
+Property_ID,Deal_ID,Property_Name,Address,City,State,Asset_Type,Property_Condition,Appraised_Value,Property_Loan,Property_LTV,Cap_Rate,Total_Area_SF
+HRE-2024-100-P1,HRE-2024-100,442 Jones Wall (Medical Office),442 Jones Wall,New Brian,WI,Medical Office,Below-Market,12430000,8680000,0.6984,0.0996,70817
+HRE-2024-100-P2,HRE-2024-100,671 Collier Lake (Medical Office),671 Collier Lake,Lake Heather,OH,Medical Office,Stabilized,8620000,5320000,0.6168,0.0887,32591
+HRE-2024-100-P3,HRE-2024-100,824 Carrie Trace (Medical Office),824 Carrie Trace,New Amanda,NC,Medical Office,Stabilized,1600000,1010000,0.634,0.0911,7753
+HRE-2024-100-P4,HRE-2024-100,306 Shannon Valleys (Medical Office),306 Shannon Valleys,South Patrickmouth,TX,Medical Office,Stabilized,1600000,1050000,0.6553,0.0891,8027
+HRE-2024-100-P5,HRE-2024-100,54 King Walk (Medical Office),54 King Walk,West Juliefurt,WA,Medical Office,Transitional,1000000,690000,0.6928,0.0984,7735
+HRE-2024-100-P6,HRE-2024-100,725 Stephanie Junctions (Medical Office),725 Stephanie Junctions,Port Keith,CA,Medical Office,Transitional,18990000,13860000,0.7297,0.1116,134751
+HRE-2024-100-P7,HRE-2024-100,708 Henry Square (Medical Office),708 Henry Square,Micheleberg,MN,Medical Office,Stabilized,8680000,5750000,0.6627,0.0907,36906
+HRE-2024-100-P8,HRE-2024-100,894 Justin Track (Medical Office),894 Justin Track,North Jeremyshire,VA,Medical Office,Stabilized,11620000,7740000,0.6659,0.0919,51777
+HRE-2024-101-P1,HRE-2024-101,971 Robert Locks (Medical Office),971 Robert Locks,Christopherfurt,MD,Medical Office,Stabilized,16800000,8300000,0.4938,0.0684,54680
+HRE-2024-102-P1,HRE-2024-102,235 Jonathan Village (Skilled Nursing),235 Jonathan Village,Coffeyside,MD,Skilled Nursing,Stabilized,58270000,33990000,0.5834,0.1065,154245
+HRE-2024-102-P2,HRE-2024-102,186 Rodriguez Heights (Skilled Nursing),186 Rodriguez Heights,New John,MN,Skilled Nursing,Stabilized,3040000,1790000,0.5873,0.1081,8072
+HRE-2024-102-P3,HRE-2024-102,879 Robert Underpass (Skilled Nursing),879 Robert Underpass,Jamesfurt,TN,Skilled Nursing,Below-Market,17530000,10910000,0.6223,0.1134,89901
+HRE-2024-102-P4,HRE-2024-102,994 Crystal Ports (Skilled Nursing),994 Crystal Ports,North Terrance,CO,Skilled Nursing,Stabilized,4860000,2800000,0.5753,0.1045,12786
+HRE-2024-103-P1,HRE-2024-103,566 Smith Knoll (Medical Office),566 Smith Knoll,North Scott,TN,Medical Office,Stabilized,28700000,13150000,0.4582,0.061,76015
+HRE-2024-104-P1,HRE-2024-104,539 Li Extensions (Senior Housing),539 Li Extensions,Jamesfurt,TN,Senior Housing,Transitional,25270000,18160000,0.7187,0.1073,146294
+HRE-2024-104-P2,HRE-2024-104,710 Bryan Trail (Senior Housing),710 Bryan Trail,New Stephanie,TX,Senior Housing,Transitional,19050000,13030000,0.6839,0.1175,155162
+HRE-2024-104-P3,HRE-2024-104,765 Nina Island (Senior Housing),765 Nina Island,Davidstad,IL,Senior Housing,Stabilized,1000000,670000,0.6707,0.0994,5545
+HRE-2024-104-P4,HRE-2024-104,333 King Terrace (Senior Housing),333 King Terrace,East Karenbury,MD,Senior Housing,Transitional,3900000,2820000,0.7222,0.1162,24855
+HRE-2024-105-P1,HRE-2024-105,453 Nelson Union (Medical Office),453 Nelson Union,Tuckerfurt,NC,Medical Office,Transitional,39400000,28070000,0.7125,0.0957,227967
+HRE-2024-106-P1,HRE-2024-106,991 Jackson Mills (Medical Office),991 Jackson Mills,Jeremyburgh,MA,Medical Office,Lease-Up,35800000,26590000,0.7427,0.1605,1089015
+HRE-2024-106-P2,HRE-2024-106,932 Cox Unions (Medical Office),932 Cox Unions,Lake Leeton,NY,Medical Office,Lease-Up,28400000,21690000,0.7639,0.1576,648047
+HRE-2024-107-P1,HRE-2024-107,995 Reyes Port (Life Science),995 Reyes Port,Scottmouth,NJ,Life Science,Stabilized,32100000,14560000,0.4537,0.067,43995
+HRE-2024-108-P1,HRE-2024-108,764 Rush Landing (Senior Housing),764 Rush Landing,Lake Debbie,IL,Senior Housing,Stabilized,94170000,50960000,0.5411,0.0771,396477
+HRE-2024-108-P2,HRE-2024-108,309 Sanders Run (Senior Housing),309 Sanders Run,Ramirezstad,CA,Senior Housing,Stabilized,1000000,570000,0.5686,0.0753,3537
+HRE-2024-109-P1,HRE-2024-109,441 Victor Loaf (Senior Housing),441 Victor Loaf,Carsonstad,MD,Senior Housing,Stabilized,1810000,860000,0.4748,0.0738,6111
+HRE-2024-109-P2,HRE-2024-109,977 Wendy Heights (Senior Housing),977 Wendy Heights,Marshallshire,AZ,Senior Housing,Stabilized,1000000,440000,0.4444,0.071,3818
+HRE-2024-109-P3,HRE-2024-109,601 Shannon Station (Senior Housing),601 Shannon Station,New Reneetown,CO,Senior Housing,Stabilized,2970000,1330000,0.4462,0.0742,8618
+HRE-2024-109-P4,HRE-2024-109,992 Contreras Station (Senior Housing),992 Contreras Station,East Joshuaport,MO,Senior Housing,Stabilized,20650000,8810000,0.4264,0.0752,76027
+HRE-2024-109-P5,HRE-2024-109,377 York Station (Senior Housing),377 York Station,West Juliefurt,WA,Senior Housing,Stabilized,2820000,1310000,0.4638,0.0729,11474
+HRE-2024-109-P6,HRE-2024-109,27 David Flats (Senior Housing),27 David Flats,Port Colleenhaven,TX,Senior Housing,Stabilized,5280000,2430000,0.4596,0.0743,17224
+HRE-2024-109-P7,HRE-2024-109,72 Michael Ports (Senior Housing),72 Michael Ports,South Christopherview,VA,Senior Housing,Stabilized,8760000,4130000,0.4719,0.072,33387
+HRE-2024-110-P1,HRE-2024-110,540 Cheryl Corners (Senior Housing),540 Cheryl Corners,Lake John,WA,Senior Housing,Stabilized,9430000,4640000,0.4923,0.0702,29391
+HRE-2024-110-P2,HRE-2024-110,297 Fox Trafficway (Senior Housing),297 Fox Trafficway,Wallport,TN,Senior Housing,Stabilized,1000000,500000,0.501,0.0696,3568
+HRE-2024-110-P3,HRE-2024-110,74 Day Mission (Senior Housing),74 Day Mission,North Markton,CO,Senior Housing,Stabilized,4410000,2250000,0.5097,0.0716,15291
+HRE-2024-110-P4,HRE-2024-110,297 Katrina Curve (Senior Housing),297 Katrina Curve,Roseport,MO,Senior Housing,Stabilized,32240000,16640000,0.5161,0.071,121306
+HRE-2024-110-P5,HRE-2024-110,250 April Hollow (Senior Housing),250 April Hollow,Elizabethfurt,NC,Senior Housing,Stabilized,3700000,1860000,0.5033,0.0715,12534
+HRE-2024-110-P6,HRE-2024-110,544 Michael Path (Senior Housing),544 Michael Path,Stevenland,NY,Senior Housing,Stabilized,2110000,1090000,0.5174,0.0692,6574
+HRE-2024-111-P1,HRE-2024-111,318 Martinez Hollow (Medical Office),318 Martinez Hollow,Michaelburgh,MO,Medical Office,Stabilized,11350000,6280000,0.5536,0.0781,39015
+HRE-2024-111-P2,HRE-2024-111,895 Marshall Junctions (Medical Office),895 Marshall Junctions,Shelleyfort,MA,Medical Office,Stabilized,3990000,2110000,0.5299,0.0775,12924
+HRE-2024-111-P3,HRE-2024-111,197 Dougherty Way (Medical Office),197 Dougherty Way,New Williamberg,WI,Medical Office,Stabilized,8710000,4700000,0.5395,0.0759,27278
+HRE-2024-111-P4,HRE-2024-111,926 Williams Haven (Medical Office),926 Williams Haven,North Cynthiaview,IL,Medical Office,Below-Market,8740000,5070000,0.5796,0.0814,38254
+HRE-2024-111-P5,HRE-2024-111,242 Duran Harbors (Medical Office),242 Duran Harbors,North Markton,CO,Medical Office,Below-Market,6680000,3910000,0.5859,0.0832,30629
+HRE-2024-111-P6,HRE-2024-111,806 Micheal Spring (Medical Office),806 Micheal Spring,Teresaburgh,TX,Medical Office,Stabilized,1000000,530000,0.5265,0.079,3966
+HRE-2024-112-P1,HRE-2024-112,293 Jennifer Prairie (Medical Office),293 Jennifer Prairie,Richardport,OH,Medical Office,Stabilized,1000000,500000,0.4979,0.0671,4600
+HRE-2024-112-P2,HRE-2024-112,976 Ann Shore (Medical Office),976 Ann Shore,Wilkersonmouth,TX,Medical Office,Stabilized,3160000,1590000,0.502,0.0666,10894
+HRE-2024-112-P3,HRE-2024-112,543 Bishop Fields (Medical Office),543 Bishop Fields,East Joycetown,MO,Medical Office,Stabilized,14360000,7110000,0.4949,0.0641,36715
+HRE-2024-112-P4,HRE-2024-112,813 Michael Mills (Medical Office),813 Michael Mills,South Matthew,WI,Medical Office,Stabilized,21240000,9900000,0.4661,0.0637,60189
+HRE-2024-112-P5,HRE-2024-112,531 Santos Throughway (Medical Office),531 Santos Throughway,Elizabethstad,MA,Medical Office,Stabilized,19040000,9460000,0.497,0.0628,57214
+HRE-2024-113-P1,HRE-2024-113,305 Lopez Summit (Life Science),305 Lopez Summit,Grimesmouth,WA,Life Science,Stabilized,12600000,6840000,0.5426,0.0718,16228
+HRE-2024-114-P1,HRE-2024-114,479 Nelson Valleys (Medical Office),479 Nelson Valleys,Sheilaville,PA,Medical Office,Transitional,11800000,8080000,0.6844,0.1041,65485
+HRE-2024-115-P1,HRE-2024-115,486 Jose Lake (Medical Office),486 Jose Lake,New Jessica,CA,Medical Office,Stabilized,8400000,5260000,0.6266,0.0772,28099
+HRE-2024-116-P1,HRE-2024-116,325 Kathleen Springs (Medical Office),325 Kathleen Springs,Julieburgh,TN,Medical Office,Stabilized,21000000,11370000,0.5412,0.0667,62774
+HRE-2024-117-P1,HRE-2024-117,898 Beth Cape (Senior Housing),898 Beth Cape,Daviston,TX,Senior Housing,Stabilized,20500000,14720000,0.7181,0.1024,115691
+HRE-2024-118-P1,HRE-2024-118,847 Sarah Cliff (Skilled Nursing),847 Sarah Cliff,Jeremyburgh,MA,Skilled Nursing,Below-Market,57300000,39760000,0.6939,0.1341,302004
+HRE-2024-119-P1,HRE-2024-119,377 Katie Stream (Medical Office),377 Katie Stream,Daviston,TX,Medical Office,Stabilized,8000000,4090000,0.5107,0.0586,19917
+HRE-2024-120-P1,HRE-2024-120,741 Nunez Plains (Senior Housing),741 Nunez Plains,Daviston,TX,Senior Housing,Stabilized,23700000,15790000,0.6663,0.1106,150115
+HRE-2024-121-P1,HRE-2024-121,83 Steven Drives (Medical Office),83 Steven Drives,Grimesmouth,WA,Medical Office,Transitional,9500000,6920000,0.7289,0.1199,69017
+HRE-2024-122-P1,HRE-2024-122,792 John Cape (Medical Office),792 John Cape,New Stephanie,TX,Medical Office,Stabilized,30400000,17120000,0.5632,0.0725,97689
+HRE-2024-123-P1,HRE-2024-123,765 David Skyway (Medical Office),765 David Skyway,North Jessicaland,FL,Medical Office,Stabilized,4950000,2180000,0.4408,0.0719,15755
+HRE-2024-123-P2,HRE-2024-123,472 Morgan Field (Medical Office),472 Morgan Field,Jeffreyborough,OH,Medical Office,Stabilized,8380000,3760000,0.4489,0.0712,24832
+HRE-2024-123-P3,HRE-2024-123,543 Randy Garden (Medical Office),543 Randy Garden,South Joshuaville,MN,Medical Office,Stabilized,23180000,10460000,0.4514,0.0697,72928
+HRE-2024-124-P1,HRE-2024-124,487 Phillips Flat (Senior Housing),487 Phillips Flat,South David,NY,Senior Housing,Lease-Up,8000000,5680000,0.7096,0.1608,206055
+HRE-2024-125-P1,HRE-2024-125,788 Victor Shoal (Medical Office),788 Victor Shoal,Gilmorefort,VA,Medical Office,Stabilized,1000000,640000,0.6354,0.0653,5346
+HRE-2024-125-P2,HRE-2024-125,612 William Landing (Medical Office),612 William Landing,Johnfurt,IL,Medical Office,Stabilized,5570000,3480000,0.624,0.0668,16854
+HRE-2024-125-P3,HRE-2024-125,140 Chung Mount (Medical Office),140 Chung Mount,Shieldston,FL,Medical Office,Stabilized,11670000,7380000,0.6328,0.067,33101
+HRE-2024-125-P4,HRE-2024-125,76 Patricia Canyon (Medical Office),76 Patricia Canyon,East Paigeberg,MD,Medical Office,Stabilized,8300000,5210000,0.6275,0.0661,25540
+HRE-2024-126-P1,HRE-2024-126,164 Connor Fort (Senior Housing),164 Connor Fort,South Dana,CO,Senior Housing,Stabilized,1000000,490000,0.494,0.0812,4055
+HRE-2024-126-P2,HRE-2024-126,905 Novak Islands (Senior Housing),905 Novak Islands,Shelleyfort,MA,Senior Housing,Stabilized,4690000,2250000,0.4794,0.0839,21093
+HRE-2024-126-P3,HRE-2024-126,117 Perez Plaza (Senior Housing),117 Perez Plaza,West Elizabeth,FL,Senior Housing,Stabilized,5560000,2610000,0.4692,0.0845,24421
+HRE-2024-126-P4,HRE-2024-126,633 Miller River (Senior Housing),633 Miller River,Hudsonfurt,AZ,Senior Housing,Stabilized,15740000,7330000,0.4659,0.0827,69511
+HRE-2024-126-P5,HRE-2024-126,188 Joseph Light (Senior Housing),188 Joseph Light,Adamsborough,TX,Senior Housing,Stabilized,1800000,850000,0.4749,0.0841,7291
+HRE-2024-126-P6,HRE-2024-126,569 Rodriguez Avenue (Senior Housing),569 Rodriguez Avenue,Port Katelynfort,VA,Senior Housing,Stabilized,1570000,750000,0.4804,0.0828,6864
+HRE-2024-126-P7,HRE-2024-126,835 David Ferry (Senior Housing),835 David Ferry,Michellechester,NJ,Senior Housing,Stabilized,5060000,2550000,0.5037,0.085,20579
+HRE-2024-126-P8,HRE-2024-126,32 Garcia Corners (Senior Housing),32 Garcia Corners,West Robin,TN,Senior Housing,Stabilized,1410000,680000,0.4795,0.0843,4894
+HRE-2024-127-P1,HRE-2024-127,305 Shields Bridge (Life Science),305 Shields Bridge,Micheleberg,MN,Life Science,Stabilized,27900000,12350000,0.4427,0.0651,31567
+HRE-2024-128-P1,HRE-2024-128,297 Ashley Extension (Medical Office),297 Ashley Extension,North Marieland,WI,Medical Office,Below-Market,16000000,10550000,0.6592,0.1047,94176
+HRE-2024-129-P1,HRE-2024-129,17 Alexander Meadows (Skilled Nursing),17 Alexander Meadows,West Carolinestad,WI,Skilled Nursing,Below-Market,27600000,18800000,0.6812,0.1359,150470
+HRE-2024-130-P1,HRE-2024-130,232 Timothy Fall (Skilled Nursing),232 Timothy Fall,New Stacyland,AZ,Skilled Nursing,Stabilized,32900000,19810000,0.602,0.1268,121425
+HRE-2024-131-P1,HRE-2024-131,942 Faulkner Tunnel (Senior Housing),942 Faulkner Tunnel,West Amandamouth,MD,Senior Housing,Below-Market,18350000,11760000,0.6409,0.1089,130227
+HRE-2024-131-P2,HRE-2024-131,254 Diaz Port (Senior Housing),254 Diaz Port,South Shannon,WI,Senior Housing,Stabilized,1130000,680000,0.6057,0.1041,6113
+HRE-2024-131-P3,HRE-2024-131,211 Erin Plaza (Senior Housing),211 Erin Plaza,North Noahstad,CA,Senior Housing,Below-Market,8030000,5300000,0.66,0.1132,54995
+HRE-2024-132-P1,HRE-2024-132,786 Samuel Highway (Medical Office),786 Samuel Highway,Ramirezstad,CA,Medical Office,Stabilized,19110000,10520000,0.5505,0.077,71095
+HRE-2024-132-P2,HRE-2024-132,344 Rasmussen Isle (Medical Office),344 Rasmussen Isle,East Joshuashire,WI,Medical Office,Stabilized,23690000,13190000,0.5568,0.0812,83104
+HRE-2024-133-P1,HRE-2024-133,804 Alvarez Mill (Senior Housing),804 Alvarez Mill,New Stacyland,AZ,Senior Housing,Lease-Up,26900000,17950000,0.6674,0.1413,441630
+HRE-2024-134-P1,HRE-2024-134,919 Andrew Junctions (Medical Office),919 Andrew Junctions,Lake Jesustown,MD,Medical Office,Stabilized,13550000,8550000,0.6311,0.0801,52773
+HRE-2024-134-P2,HRE-2024-134,162 Wilson Skyway (Medical Office),162 Wilson Skyway,Robinsonhaven,GA,Medical Office,Below-Market,1000000,680000,0.6792,0.0847,7214
+HRE-2024-134-P3,HRE-2024-134,965 Barnes Dam (Medical Office),965 Barnes Dam,West Andrea,WA,Medical Office,Stabilized,3880000,2470000,0.6378,0.0773,14297
+HRE-2024-135-P1,HRE-2024-135,590 Amanda Extension (Medical Office),590 Amanda Extension,Lake Roymouth,NC,Medical Office,Transitional,39500000,30490000,0.7718,0.0974,199054
+HRE-2024-136-P1,HRE-2024-136,747 Callahan Ridge (Life Science),747 Callahan Ridge,Stephaniemouth,GA,Life Science,Transitional,11800000,7770000,0.6586,0.125,28653
+HRE-2024-137-P1,HRE-2024-137,50 Linda Port (Skilled Nursing),50 Linda Port,Lake Thomas,MA,Skilled Nursing,Stabilized,13300000,7740000,0.5821,0.1333,54006
+HRE-2024-138-P1,HRE-2024-138,165 Mario Squares (Senior Housing),165 Mario Squares,Tashatown,TX,Senior Housing,Lease-Up,21400000,15290000,0.7147,0.1402,413159
+HRE-2024-139-P1,HRE-2024-139,861 Derek Terrace (Skilled Nursing),861 Derek Terrace,South Melaniechester,MN,Skilled Nursing,Below-Market,46000000,31070000,0.6754,0.1253,248097
+HRE-2024-140-P1,HRE-2024-140,88 Jacqueline Curve (Medical Office),88 Jacqueline Curve,North Jeremyshire,VA,Medical Office,Below-Market,5430000,3930000,0.7237,0.0989,32925
+HRE-2024-140-P2,HRE-2024-140,116 Reid Square (Medical Office),116 Reid Square,Murphyland,PA,Medical Office,Stabilized,4040000,2860000,0.7079,0.0935,17688
+HRE-2024-140-P3,HRE-2024-140,620 Nicole Hollow (Medical Office),620 Nicole Hollow,Jasminemouth,NJ,Medical Office,Transitional,1000000,760000,0.7574,0.1136,7733
+HRE-2024-140-P4,HRE-2024-140,281 Barber Throughway (Medical Office),281 Barber Throughway,Chavezburgh,MO,Medical Office,Stabilized,1000000,680000,0.6832,0.0914,5042
+HRE-2024-140-P5,HRE-2024-140,730 Casey Port (Medical Office),730 Casey Port,North Donna,MN,Medical Office,Below-Market,1000000,730000,0.7313,0.0963,6783
+HRE-2024-140-P6,HRE-2024-140,726 John Rapid (Medical Office),726 John Rapid,Gomezchester,FL,Medical Office,Stabilized,3350000,2320000,0.6919,0.0937,15639
+HRE-2024-140-P7,HRE-2024-140,302 Allison Bridge (Medical Office),302 Allison Bridge,Port Nicoleshire,GA,Medical Office,Transitional,8780000,6700000,0.7636,0.1145,56796
+HRE-2024-140-P8,HRE-2024-140,19 Kyle Mews (Medical Office),19 Kyle Mews,Lisatown,CA,Medical Office,Stabilized,1000000,670000,0.6738,0.0913,4545
+HRE-2024-140-P9,HRE-2024-140,351 David Station (Medical Office),351 David Station,Stewartland,IL,Medical Office,Stabilized,1810000,1280000,0.705,0.0948,9194
+HRE-2024-140-P10,HRE-2024-140,524 Jeremy Pass (Medical Office),524 Jeremy Pass,Valentineberg,WA,Medical Office,Below-Market,1000000,730000,0.7267,0.1023,6535
+HRE-2024-141-P1,HRE-2024-141,437 Walker Gateway (Medical Office),437 Walker Gateway,Jacksonport,CO,Medical Office,Stabilized,45000000,23100000,0.5133,0.0587,125904
+HRE-2024-142-P1,HRE-2024-142,627 Cline Trail (Life Science),627 Cline Trail,Rodneyside,NY,Life Science,Stabilized,11000000,5030000,0.4572,0.0737,12020
+HRE-2024-143-P1,HRE-2024-143,860 Miguel Highway (Medical Office),860 Miguel Highway,East Joycetown,MO,Medical Office,Stabilized,23200000,15300000,0.6595,0.0807,89445
+HRE-2024-144-P1,HRE-2024-144,974 Edward Lodge (Senior Housing),974 Edward Lodge,Port Keith,CA,Senior Housing,Stabilized,17100000,9550000,0.5586,0.074,64392
+HRE-2024-145-P1,HRE-2024-145,110 Stephanie Alley (Life Science),110 Stephanie Alley,Lake Brycemouth,MN,Life Science,Stabilized,10700000,5040000,0.4711,0.0698,13678
+HRE-2024-146-P1,HRE-2024-146,904 Jennifer Course (Senior Housing),904 Jennifer Course,Lake Michaelstad,MD,Senior Housing,Stabilized,12700000,6270000,0.4938,0.0878,56615
+HRE-2024-147-P1,HRE-2024-147,516 Haynes Landing (Skilled Nursing),516 Haynes Landing,Lake Alyssafurt,MO,Skilled Nursing,Below-Market,1730000,1200000,0.6933,0.1264,8468
+HRE-2024-147-P2,HRE-2024-147,293 William Route (Skilled Nursing),293 William Route,Matthewview,AZ,Skilled Nursing,Stabilized,8890000,5560000,0.6259,0.1176,25711
+HRE-2024-147-P3,HRE-2024-147,294 Bates Curve (Skilled Nursing),294 Bates Curve,Hayesmouth,NJ,Skilled Nursing,Stabilized,44990000,27150000,0.6034,0.1177,144123
+HRE-2024-148-P1,HRE-2024-148,990 Haynes Street (Medical Office),990 Haynes Street,Christinaside,AZ,Medical Office,Transitional,15700000,12050000,0.7676,0.1105,101321
+HRE-2024-149-P1,HRE-2024-149,980 Russell Plain (Life Science),980 Russell Plain,Kristopherbury,MA,Life Science,Stabilized,1000000,560000,0.5607,0.0795,1530
+HRE-2024-149-P2,HRE-2024-149,487 Eric Spur (Life Science),487 Eric Spur,Teresaburgh,TX,Life Science,Stabilized,2910000,1520000,0.5207,0.0795,4695
+HRE-2024-149-P3,HRE-2024-149,396 Jason Walks (Life Science),396 Jason Walks,New Hannahbury,AZ,Life Science,Stabilized,12510000,6690000,0.535,0.0789,15655
+HRE-2024-150-P1,HRE-2024-150,765 Stephanie Walk (Skilled Nursing),765 Stephanie Walk,Davisville,WA,Skilled Nursing,Stabilized,12000000,7240000,0.6037,0.1155,35842
+HRE-2024-151-P1,HRE-2024-151,391 Steven Unions (Medical Office),391 Steven Unions,East Randallton,MO,Medical Office,Stabilized,12080000,5600000,0.4632,0.0657,38190
+HRE-2024-151-P2,HRE-2024-151,688 Underwood Locks (Medical Office),688 Underwood Locks,Martinezbury,FL,Medical Office,Stabilized,7380000,3440000,0.4666,0.0621,20769
+HRE-2024-151-P3,HRE-2024-151,173 Deborah Parks (Medical Office),173 Deborah Parks,Lake Nicoleview,TX,Medical Office,Stabilized,12330000,5890000,0.4778,0.0619,34950
+HRE-2024-152-P1,HRE-2024-152,565 Crystal Unions (Medical Office),565 Crystal Unions,East Karenbury,MD,Medical Office,Below-Market,8900000,5200000,0.5848,0.0894,51085
+HRE-2024-153-P1,HRE-2024-153,837 Craig Shoals (Skilled Nursing),837 Craig Shoals,Elainefurt,VA,Skilled Nursing,Lease-Up,4090000,2950000,0.7209,0.1827,53304
+HRE-2024-153-P2,HRE-2024-153,154 Kathryn Forges (Skilled Nursing),154 Kathryn Forges,Michellechester,NJ,Skilled Nursing,Lease-Up,36370000,26450000,0.7272,0.1661,764112
+HRE-2024-153-P3,HRE-2024-153,605 Gregory Ramp (Skilled Nursing),605 Gregory Ramp,Brandtside,FL,Skilled Nursing,Lease-Up,25840000,18580000,0.719,0.1742,285124
+HRE-2024-154-P1,HRE-2024-154,639 Jade Knoll (Skilled Nursing),639 Jade Knoll,Port Markside,CO,Skilled Nursing,Transitional,1250000,930000,0.7412,0.1522,6565
+HRE-2024-154-P2,HRE-2024-154,112 Weaver Extensions (Skilled Nursing),112 Weaver Extensions,Rodriguezfurt,TN,Skilled Nursing,Transitional,7390000,5280000,0.7146,0.1413,47569
+HRE-2024-154-P3,HRE-2024-154,771 Andrew Neck (Skilled Nursing),771 Andrew Neck,Walkerville,WI,Skilled Nursing,Below-Market,17740000,12480000,0.7033,0.1357,107485
+HRE-2024-154-P4,HRE-2024-154,715 Lindsay Junctions (Skilled Nursing),715 Lindsay Junctions,South David,PA,Skilled Nursing,Stabilized,5440000,3530000,0.6489,0.1337,19815
+HRE-2024-154-P5,HRE-2024-154,436 Andrew Radial (Skilled Nursing),436 Andrew Radial,Williamsbury,GA,Skilled Nursing,Stabilized,5670000,3820000,0.6741,0.134,25163
+HRE-2024-155-P1,HRE-2024-155,627 Yu Landing (Medical Office),627 Yu Landing,North Ricky,NJ,Medical Office,Stabilized,26300000,17840000,0.6782,0.0949,102301
+HRE-2024-156-P1,HRE-2024-156,207 Rosales Trail (Life Science),207 Rosales Trail,Hollyview,VA,Life Science,Stabilized,13000000,5640000,0.4335,0.0704,17904
+HRE-2024-157-P1,HRE-2024-157,823 Michael Island (Senior Housing),823 Michael Island,Williamsbury,GA,Senior Housing,Stabilized,3420000,2430000,0.7104,0.1051,16449
+HRE-2024-157-P2,HRE-2024-157,776 Griffin Greens (Senior Housing),776 Griffin Greens,East Robert,OH,Senior Housing,Below-Market,14600000,10990000,0.7528,0.117,104843
+HRE-2024-157-P3,HRE-2024-157,694 Scott Coves (Senior Housing),694 Scott Coves,New Caseyport,CO,Senior Housing,Below-Market,2590000,1970000,0.7618,0.1111,16192
+HRE-2024-157-P4,HRE-2024-157,224 Nicole Park (Senior Housing),224 Nicole Park,Elainefurt,VA,Senior Housing,Stabilized,10060000,7360000,0.7315,0.1035,40410
+HRE-2024-157-P5,HRE-2024-157,894 Kramer Ports (Senior Housing),894 Kramer Ports,Lake Roberto,CA,Senior Housing,Below-Market,12560000,9270000,0.7383,0.1123,95939
+HRE-2024-157-P6,HRE-2024-157,629 Kenneth Island (Senior Housing),629 Kenneth Island,North Cynthiaview,IL,Senior Housing,Below-Market,7960000,6120000,0.7685,0.1081,65860
+HRE-2024-158-P1,HRE-2024-158,13 Pamela Estates (Senior Housing),13 Pamela Estates,South Joshuaville,MN,Senior Housing,Stabilized,21700000,11600000,0.5345,0.0695,65405
+HRE-2024-159-P1,HRE-2024-159,485 Wheeler Ridges (Medical Office),485 Wheeler Ridges,West Kimberlychester,PA,Medical Office,Stabilized,1000000,580000,0.5798,0.073,3905
+HRE-2024-159-P2,HRE-2024-159,763 Terry Stravenue (Medical Office),763 Terry Stravenue,West Carolinestad,WI,Medical Office,Stabilized,11710000,6640000,0.5668,0.0737,36963
+HRE-2024-159-P3,HRE-2024-159,728 Davis Plains (Medical Office),728 Davis Plains,Bassport,IL,Medical Office,Stabilized,7400000,4160000,0.5625,0.0706,22297
+HRE-2024-159-P4,HRE-2024-159,235 Sheppard Spur (Medical Office),235 Sheppard Spur,Katiehaven,GA,Medical Office,Stabilized,15980000,9640000,0.6032,0.071,46453
+HRE-2024-159-P5,HRE-2024-159,375 Rodney Springs (Medical Office),375 Rodney Springs,East Nicholasfurt,NY,Medical Office,Stabilized,1300000,730000,0.5607,0.0726,5602
+HRE-2024-160-P1,HRE-2024-160,129 Kristi Ways (Medical Office),129 Kristi Ways,Ericmouth,CA,Medical Office,Lease-Up,14300000,9630000,0.6734,0.1365,255113
+HRE-2024-161-P1,HRE-2024-161,163 Williams Isle (Medical Office),163 Williams Isle,Saramouth,NY,Medical Office,Below-Market,11800000,8080000,0.6846,0.1025,76801
+HRE-2024-162-P1,HRE-2024-162,808 Teresa Forks (Life Science),808 Teresa Forks,Margaretland,NJ,Life Science,Below-Market,39660000,26730000,0.6739,0.095,85833
+HRE-2024-162-P2,HRE-2024-162,937 Robin Lodge (Life Science),937 Robin Lodge,Lake Rebeccaside,IL,Life Science,Below-Market,4040000,2830000,0.6993,0.0984,10400
+HRE-2024-163-P1,HRE-2024-163,183 Larry Parkways (Life Science),183 Larry Parkways,Transtad,MA,Life Science,Below-Market,11000000,7100000,0.6455,0.1037,31340
+HRE-2024-164-P1,HRE-2024-164,855 Glenn Wells (Medical Office),855 Glenn Wells,Davisville,WA,Medical Office,Below-Market,10600000,7980000,0.7526,0.101,70522
+HRE-2024-165-P1,HRE-2024-165,23 Justin Lights (Senior Housing),23 Justin Lights,Wilsonton,MD,Senior Housing,Transitional,37970000,26450000,0.6965,0.1114,241216
+HRE-2024-165-P2,HRE-2024-165,95 Mercedes Rue (Senior Housing),95 Mercedes Rue,Bassport,IL,Senior Housing,Stabilized,1000000,650000,0.646,0.0987,4538
+HRE-2024-166-P1,HRE-2024-166,43 Palmer Way (Senior Housing),43 Palmer Way,Garciatown,MA,Senior Housing,Stabilized,43900000,20350000,0.4636,0.0859,187995
+HRE-2024-167-P1,HRE-2024-167,493 Jeffrey Rest (Skilled Nursing),493 Jeffrey Rest,Jasonfort,TX,Skilled Nursing,Stabilized,24200000,11790000,0.4871,0.0905,62782
+HRE-2024-168-P1,HRE-2024-168,639 Coleman Lane (Medical Office),639 Coleman Lane,East Randallton,MO,Medical Office,Below-Market,9200000,5550000,0.6029,0.0783,48115
+HRE-2024-169-P1,HRE-2024-169,886 Matthew Harbor (Senior Housing),886 Matthew Harbor,South Patrickmouth,TX,Senior Housing,Stabilized,46200000,23830000,0.5158,0.0855,223694
+HRE-2024-170-P1,HRE-2024-170,242 Lopez Path (Skilled Nursing),242 Lopez Path,Lake Madisonport,MD,Skilled Nursing,Stabilized,64100000,30380000,0.474,0.097,148792
+HRE-2024-171-P1,HRE-2024-171,587 Guerrero Springs (Skilled Nursing),587 Guerrero Springs,Waltersfort,VA,Skilled Nursing,Lease-Up,23400000,15100000,0.6452,0.1902,302299
+HRE-2024-172-P1,HRE-2024-172,985 Bright Green (Skilled Nursing),985 Bright Green,North Beth,NY,Skilled Nursing,Lease-Up,27600000,17660000,0.64,0.1824,273827
+HRE-2024-173-P1,HRE-2024-173,486 Matthew Station (Medical Office),486 Matthew Station,Julieburgh,TN,Medical Office,Stabilized,8000000,4540000,0.5677,0.0775,28939
+HRE-2024-174-P1,HRE-2024-174,195 Stacey Isle (Life Science),195 Stacey Isle,Port Michelleville,GA,Life Science,Below-Market,17900000,12490000,0.698,0.1048,38883
+HRE-2024-175-P1,HRE-2024-175,627 Thomas Way (Medical Office),627 Thomas Way,North Susan,NY,Medical Office,Stabilized,9300000,5210000,0.56,0.0812,31221
+HRE-2024-176-P1,HRE-2024-176,51 Thomas Wall (Skilled Nursing),51 Thomas Wall,Chavezburgh,MO,Skilled Nursing,Lease-Up,12100000,8070000,0.6671,0.1724,136258
+HRE-2024-177-P1,HRE-2024-177,483 Lawrence Centers (Medical Office),483 Lawrence Centers,Daviston,TX,Medical Office,Stabilized,16070000,9750000,0.6069,0.0765,61866
+HRE-2024-177-P2,HRE-2024-177,828 Smith Place (Medical Office),828 Smith Place,New David,FL,Medical Office,Stabilized,1230000,750000,0.6125,0.079,4521
+HRE-2024-177-P3,HRE-2024-177,117 Jackson View (Medical Office),117 Jackson View,Port Loriport,AZ,Medical Office,Stabilized,24620000,15050000,0.6114,0.0777,84602
+HRE-2024-177-P4,HRE-2024-177,723 Nicholas Route (Medical Office),723 Nicholas Route,East Javier,MA,Medical Office,Stabilized,4180000,2530000,0.6041,0.0791,14267
+HRE-2024-178-P1,HRE-2024-178,329 William River (Senior Housing),329 William River,North Sarabury,NY,Senior Housing,Below-Market,12700000,8240000,0.649,0.096,86318
+HRE-2024-179-P1,HRE-2024-179,30 Gonzalez Flats (Medical Office),30 Gonzalez Flats,Lake Kendraville,AZ,Medical Office,Stabilized,12500000,5540000,0.4432,0.0663,36096
+HRE-2024-180-P1,HRE-2024-180,424 Simmons Crescent (Medical Office),424 Simmons Crescent,South David,NY,Medical Office,Below-Market,10500000,7260000,0.691,0.0937,59289
+HRE-2024-181-P1,HRE-2024-181,941 Marsh Run (Life Science),941 Marsh Run,North Marieland,WI,Life Science,Stabilized,24500000,15350000,0.6265,0.0742,27840
+HRE-2024-182-P1,HRE-2024-182,138 Carr Wall (Skilled Nursing),138 Carr Wall,Rodriguezfurt,TN,Skilled Nursing,Stabilized,12700000,8840000,0.6958,0.1231,55756
+HRE-2024-183-P1,HRE-2024-183,730 Knapp Creek (Medical Office),730 Knapp Creek,New Caseyport,CO,Medical Office,Lease-Up,8900000,6350000,0.7132,0.1451,212586
+HRE-2024-184-P1,HRE-2024-184,37 Stone Spurs (Medical Office),37 Stone Spurs,Emilyview,MD,Medical Office,Stabilized,20000000,12170000,0.6087,0.0747,69556
+HRE-2024-185-P1,HRE-2024-185,700 William Plaza (Medical Office),700 William Plaza,Carterbury,NJ,Medical Office,Stabilized,1750000,910000,0.5192,0.0703,7077
+HRE-2024-185-P2,HRE-2024-185,258 Castro River (Medical Office),258 Castro River,Daviston,TX,Medical Office,Stabilized,4360000,2200000,0.5035,0.0667,14139
+HRE-2024-185-P3,HRE-2024-185,264 Jacob Walk (Medical Office),264 Jacob Walk,Kathleenfurt,NC,Medical Office,Stabilized,5620000,2730000,0.4858,0.068,15612
+HRE-2024-185-P4,HRE-2024-185,73 Alyssa Causeway (Medical Office),73 Alyssa Causeway,Taylorburgh,NY,Medical Office,Stabilized,1670000,850000,0.5115,0.0712,5730
+HRE-2024-185-P5,HRE-2024-185,83 Devon Rapids (Medical Office),83 Devon Rapids,Davisstad,WI,Medical Office,Stabilized,1000000,480000,0.4826,0.0714,5392
+HRE-2024-185-P6,HRE-2024-185,754 Thomas Skyway (Medical Office),754 Thomas Skyway,West Natashaport,FL,Medical Office,Stabilized,10080000,5370000,0.5324,0.0673,30360
+HRE-2024-185-P7,HRE-2024-185,333 Julia Points (Medical Office),333 Julia Points,West Matthew,GA,Medical Office,Stabilized,23280000,11490000,0.4937,0.0669,60672
+HRE-2024-186-P1,HRE-2024-186,147 Harris Ways (Medical Office),147 Harris Ways,Rossville,WI,Medical Office,Lease-Up,8000000,5970000,0.7466,0.131,97356
+HRE-2024-187-P1,HRE-2024-187,258 Cole Springs (Skilled Nursing),258 Cole Springs,Johnsonstad,TN,Skilled Nursing,Stabilized,29500000,17200000,0.5829,0.0939,83374
+HRE-2024-188-P1,HRE-2024-188,600 Nicholas Meadow (Medical Office),600 Nicholas Meadow,New Kellyberg,MA,Medical Office,Stabilized,8300000,3900000,0.4704,0.0604,24248
+HRE-2024-189-P1,HRE-2024-189,772 Barajas View (Life Science),772 Barajas View,West Juliefurt,WA,Life Science,Stabilized,2750000,1490000,0.543,0.0776,3287
+HRE-2024-189-P2,HRE-2024-189,879 Susan Springs (Life Science),879 Susan Springs,Matthewsberg,MD,Life Science,Stabilized,10470000,5690000,0.5439,0.074,10916
+HRE-2024-189-P3,HRE-2024-189,882 Paul Plains (Life Science),882 Paul Plains,Hollyview,VA,Life Science,Stabilized,27680000,15380000,0.5556,0.0779,39234
+HRE-2024-190-P1,HRE-2024-190,142 Robertson Pass (Life Science),142 Robertson Pass,Finleyfort,CO,Life Science,Stabilized,27300000,14650000,0.5365,0.0687,29995
+HRE-2024-191-P1,HRE-2024-191,193 Courtney Fords (Medical Office),193 Courtney Fords,Michaelburgh,MO,Medical Office,Below-Market,22600000,16140000,0.7141,0.1039,130822
+HRE-2024-192-P1,HRE-2024-192,460 Katelyn Prairie (Life Science),460 Katelyn Prairie,Karenchester,NC,Life Science,Stabilized,31700000,18790000,0.5928,0.0821,43834
+HRE-2024-193-P1,HRE-2024-193,366 Obrien Haven (Senior Housing),366 Obrien Haven,North Renee,TN,Senior Housing,Stabilized,17300000,10620000,0.614,0.0941,89188
+HRE-2024-194-P1,HRE-2024-194,360 Thomas Place (Medical Office),360 Thomas Place,South Patrickmouth,TX,Medical Office,Stabilized,14500000,7900000,0.5446,0.06,39227
+HRE-2024-195-P1,HRE-2024-195,505 Eugene Forges (Medical Office),505 Eugene Forges,Yumouth,AZ,Medical Office,Stabilized,3650000,2210000,0.606,0.0782,11595
+HRE-2024-195-P2,HRE-2024-195,430 Lynn Knolls (Medical Office),430 Lynn Knolls,Ericaberg,TN,Medical Office,Stabilized,9360000,5710000,0.6096,0.0783,32386
+HRE-2024-195-P3,HRE-2024-195,867 Humphrey Mountain (Medical Office),867 Humphrey Mountain,North Susan,NY,Medical Office,Stabilized,20670000,13040000,0.6308,0.0793,67778
+HRE-2024-195-P4,HRE-2024-195,129 Patricia Vista (Medical Office),129 Patricia Vista,West Scottchester,MO,Medical Office,Stabilized,9110000,5730000,0.6295,0.0754,31508
+HRE-2024-196-P1,HRE-2024-196,176 Elaine Vista (Medical Office),176 Elaine Vista,North Marieland,WI,Medical Office,Lease-Up,13570000,10270000,0.7571,0.1306,152242
+HRE-2024-196-P2,HRE-2024-196,722 Williams Trace (Medical Office),722 Williams Trace,New Jeffrey,FL,Medical Office,Lease-Up,10270000,7480000,0.7281,0.1222,223671
+HRE-2024-196-P3,HRE-2024-196,962 Hughes Motorway (Medical Office),962 Hughes Motorway,Shawhaven,NY,Medical Office,Lease-Up,1660000,1200000,0.7248,0.1238,16017
+HRE-2024-197-P1,HRE-2024-197,257 Nicholas Lane (Medical Office),257 Nicholas Lane,New Diane,MO,Medical Office,Below-Market,11400000,7570000,0.6638,0.0802,59858
+HRE-2024-198-P1,HRE-2024-198,390 Deborah Loop (Senior Housing),390 Deborah Loop,Davisstad,WI,Senior Housing,Lease-Up,20800000,14600000,0.7017,0.1601,547809
+HRE-2024-199-P1,HRE-2024-199,325 Dennis Passage (Senior Housing),325 Dennis Passage,North Teresabury,WA,Senior Housing,Lease-Up,61400000,41390000,0.6741,0.1323,1097856
+HRE-2024-200-P1,HRE-2024-200,345 Gabriel Falls (Medical Office),345 Gabriel Falls,New Staciemouth,NC,Medical Office,Stabilized,13100000,7180000,0.548,0.0601,37767
+HRE-2024-201-P1,HRE-2024-201,245 Carlson Cliff (Skilled Nursing),245 Carlson Cliff,New Thomas,OH,Skilled Nursing,Transitional,35370000,24540000,0.6938,0.144,219184
+HRE-2024-201-P2,HRE-2024-201,164 Allen Pike (Skilled Nursing),164 Allen Pike,Sanchezside,WA,Skilled Nursing,Stabilized,4960000,2960000,0.5965,0.1352,21012
+HRE-2024-201-P3,HRE-2024-201,888 Thomas Ridges (Skilled Nursing),888 Thomas Ridges,Jasonmouth,NC,Skilled Nursing,Stabilized,50260000,31790000,0.6326,0.1334,230267
+HRE-2024-202-P1,HRE-2024-202,148 Christopher Shoals (Medical Office),148 Christopher Shoals,Michaelmouth,MA,Medical Office,Below-Market,39000000,27180000,0.697,0.0884,189915
+HRE-2024-203-P1,HRE-2024-203,938 Bell Unions (Senior Housing),938 Bell Unions,Robinsonshire,CA,Senior Housing,Below-Market,44350000,28750000,0.6483,0.0934,262699
+HRE-2024-203-P2,HRE-2024-203,845 Anderson Neck (Senior Housing),845 Anderson Neck,North Jeremyshire,VA,Senior Housing,Stabilized,28200000,16540000,0.5864,0.0879,129379
+HRE-2024-203-P3,HRE-2024-203,657 George Plains (Senior Housing),657 George Plains,South Jeffrey,NC,Senior Housing,Stabilized,23600000,13670000,0.5793,0.0881,89070
+HRE-2024-203-P4,HRE-2024-203,868 Becky Crest (Senior Housing),868 Becky Crest,Lake Kendraville,AZ,Senior Housing,Stabilized,15160000,9210000,0.6078,0.087,57960
+HRE-2024-203-P5,HRE-2024-203,819 Ortiz Coves (Senior Housing),819 Ortiz Coves,West Andrewside,FL,Senior Housing,Below-Market,11390000,7260000,0.6376,0.0921,81176
+HRE-2024-204-P1,HRE-2024-204,446 Green Plain (Medical Office),446 Green Plain,Teresaburgh,TX,Medical Office,Stabilized,11800000,7340000,0.6224,0.0703,36945
+HRE-2024-205-P1,HRE-2024-205,505 Frost Mews (Senior Housing),505 Frost Mews,Lake Edward,NJ,Senior Housing,Transitional,17900000,11740000,0.6556,0.1171,107100
+HRE-2024-206-P1,HRE-2024-206,236 Miller Camp (Medical Office),236 Miller Camp,West Andrea,WA,Medical Office,Stabilized,15650000,8460000,0.5407,0.0717,51078
+HRE-2024-206-P2,HRE-2024-206,539 Christina Spring (Medical Office),539 Christina Spring,Port Mikeside,PA,Medical Office,Stabilized,16630000,9110000,0.548,0.0713,49493
+HRE-2024-206-P3,HRE-2024-206,133 Andrea Stream (Medical Office),133 Andrea Stream,Jackton,MA,Medical Office,Stabilized,10140000,5680000,0.5598,0.0685,29646
+HRE-2024-206-P4,HRE-2024-206,368 Benson Lane (Medical Office),368 Benson Lane,Rodriguezfurt,TN,Medical Office,Stabilized,14930000,7870000,0.5271,0.0725,47846
+HRE-2024-206-P5,HRE-2024-206,540 Lauren Loop (Medical Office),540 Lauren Loop,North Cynthiaview,IL,Medical Office,Stabilized,9840000,5400000,0.5483,0.0696,30809
+HRE-2024-207-P1,HRE-2024-207,602 Patricia Grove (Senior Housing),602 Patricia Grove,East Lisa,PA,Senior Housing,Below-Market,31300000,20550000,0.6567,0.0904,164098
+HRE-2024-208-P1,HRE-2024-208,833 Victor Flats (Medical Office),833 Victor Flats,Coffeyport,TN,Medical Office,Stabilized,23600000,13650000,0.5785,0.0661,66627
+HRE-2024-209-P1,HRE-2024-209,606 Sanders Terrace (Senior Housing),606 Sanders Terrace,Walkerville,WI,Senior Housing,Lease-Up,18400000,13150000,0.7145,0.1418,169228
+HRE-2024-210-P1,HRE-2024-210,944 Wayne Lock (Senior Housing),944 Wayne Lock,Christinaside,AZ,Senior Housing,Lease-Up,32700000,23010000,0.7036,0.1581,571270
+HRE-2024-211-P1,HRE-2024-211,19 Stewart Branch (Life Science),19 Stewart Branch,East Joshuaport,MO,Life Science,Stabilized,8400000,5150000,0.6127,0.0813,10407
+HRE-2024-212-P1,HRE-2024-212,625 Ruiz Ridge (Skilled Nursing),625 Ruiz Ridge,New Stephanie,TX,Skilled Nursing,Below-Market,39400000,27520000,0.6986,0.1216,143236
+HRE-2024-213-P1,HRE-2024-213,156 Robert Terrace (Skilled Nursing),156 Robert Terrace,South James,WA,Skilled Nursing,Stabilized,1700000,830000,0.4901,0.09,4076
+HRE-2024-213-P2,HRE-2024-213,454 White Curve (Skilled Nursing),454 White Curve,North Judithbury,CA,Skilled Nursing,Stabilized,31160000,14990000,0.4811,0.0927,96269
+HRE-2024-213-P3,HRE-2024-213,60 Angela Walks (Skilled Nursing),60 Angela Walks,Port Nicoleshire,GA,Skilled Nursing,Stabilized,2960000,1450000,0.4913,0.0897,6541
+HRE-2024-213-P4,HRE-2024-213,922 Thomas Branch (Skilled Nursing),922 Thomas Branch,Wallport,TN,Skilled Nursing,Stabilized,3200000,1510000,0.4725,0.0916,8021
+HRE-2024-213-P5,HRE-2024-213,909 Floyd Hills (Skilled Nursing),909 Floyd Hills,Tinaborough,MA,Skilled Nursing,Stabilized,1000000,490000,0.4853,0.0912,2243
+HRE-2024-213-P6,HRE-2024-213,533 Garcia Estates (Skilled Nursing),533 Garcia Estates,Stewartland,IL,Skilled Nursing,Stabilized,8430000,3960000,0.4698,0.0908,18770
+HRE-2024-214-P1,HRE-2024-214,49 Combs Court (Life Science),49 Combs Court,Christopherfurt,MD,Life Science,Lease-Up,24900000,17790000,0.7143,0.1418,112786
+HRE-2024-215-P1,HRE-2024-215,436 Castro Valleys (Medical Office),436 Castro Valleys,New Crystalton,NJ,Medical Office,Lease-Up,17100000,11880000,0.6947,0.149,237933
+HRE-2024-216-P1,HRE-2024-216,485 Dillon Rest (Skilled Nursing),485 Dillon Rest,East Gregory,CO,Skilled Nursing,Below-Market,17600000,11810000,0.671,0.1182,104326
+HRE-2024-217-P1,HRE-2024-217,3 Tiffany Haven (Medical Office),3 Tiffany Haven,North Cynthiaview,IL,Medical Office,Stabilized,20300000,12950000,0.6378,0.0858,71691
+HRE-2024-218-P1,HRE-2024-218,591 Welch Ports (Medical Office),591 Welch Ports,Matthewview,AZ,Medical Office,Below-Market,23200000,17320000,0.7465,0.0805,106912
+HRE-2024-219-P1,HRE-2024-219,731 Nelson Mills (Senior Housing),731 Nelson Mills,South Dianeshire,IL,Senior Housing,Stabilized,20630000,10730000,0.5203,0.0734,85223
+HRE-2024-219-P2,HRE-2024-219,246 Gutierrez Ferry (Senior Housing),246 Gutierrez Ferry,South Angel,PA,Senior Housing,Stabilized,15850000,8330000,0.5256,0.0745,50015
+HRE-2024-219-P3,HRE-2024-219,68 Shepard Squares (Senior Housing),68 Shepard Squares,Lake Amberstad,NC,Senior Housing,Stabilized,10900000,5390000,0.4948,0.0732,37272
+HRE-2024-219-P4,HRE-2024-219,668 Sharon Mountains (Senior Housing),668 Sharon Mountains,Leeville,FL,Senior Housing,Stabilized,1560000,810000,0.5219,0.0774,5073
+HRE-2024-219-P5,HRE-2024-219,801 Dalton River (Senior Housing),801 Dalton River,Lake Alyssafurt,MO,Senior Housing,Stabilized,1000000,540000,0.5352,0.0736,3734
+HRE-2024-220-P1,HRE-2024-220,743 Perez Street (Senior Housing),743 Perez Street,West Kimberlychester,PA,Senior Housing,Below-Market,43140000,31310000,0.7257,0.1258,352330
+HRE-2024-220-P2,HRE-2024-220,771 Anthony Shore (Senior Housing),771 Anthony Shore,New John,MN,Senior Housing,Transitional,17160000,13060000,0.7613,0.137,136737
+HRE-2024-221-P1,HRE-2024-221,362 Mcdonald Ways (Medical Office),362 Mcdonald Ways,Jamesfurt,TN,Medical Office,Stabilized,12300000,7090000,0.5765,0.0774,38733
+HRE-2024-222-P1,HRE-2024-222,630 Evans Trafficway (Senior Housing),630 Evans Trafficway,Priceshire,GA,Senior Housing,Below-Market,30000000,18630000,0.6209,0.111,233817
+HRE-2024-223-P1,HRE-2024-223,756 Amy Field (Skilled Nursing),756 Amy Field,Rossberg,GA,Skilled Nursing,Stabilized,10400000,5960000,0.5729,0.1073,35877
+HRE-2024-224-P1,HRE-2024-224,998 Frank Street (Medical Office),998 Frank Street,East Lydiamouth,TX,Medical Office,Stabilized,25770000,13320000,0.5169,0.0728,74733
+HRE-2024-224-P2,HRE-2024-224,633 Gutierrez Walk (Medical Office),633 Gutierrez Walk,Elizabethstad,MA,Medical Office,Stabilized,1000000,500000,0.5007,0.0718,5464
+HRE-2024-224-P3,HRE-2024-224,151 Collins Union (Medical Office),151 Collins Union,West Amandamouth,MD,Medical Office,Stabilized,4120000,2120000,0.5139,0.0708,15251
+HRE-2024-224-P4,HRE-2024-224,211 Moore Stream (Medical Office),211 Moore Stream,West Matthew,GA,Medical Office,Stabilized,5750000,3030000,0.5267,0.0727,19647
+HRE-2024-224-P5,HRE-2024-224,903 Gina Junction (Medical Office),903 Gina Junction,Shieldston,FL,Medical Office,Stabilized,7240000,3710000,0.5127,0.0699,22245
+HRE-2024-225-P1,HRE-2024-225,911 Casey Drives (Senior Housing),911 Casey Drives,Morganchester,WI,Senior Housing,Stabilized,14700000,9010000,0.6128,0.0876,60580
+HRE-2024-226-P1,HRE-2024-226,660 Gibson Trail (Medical Office),660 Gibson Trail,Wolfborough,VA,Medical Office,Stabilized,17000000,8190000,0.4815,0.0663,49110
+HRE-2024-226-P2,HRE-2024-226,776 Chloe Islands (Medical Office),776 Chloe Islands,Jacquelineland,CA,Medical Office,Stabilized,10900000,5320000,0.4879,0.0656,30594
+HRE-2024-226-P3,HRE-2024-226,440 Todd Courts (Medical Office),440 Todd Courts,South Angel,PA,Medical Office,Stabilized,12820000,6250000,0.4876,0.0659,36953
+HRE-2024-226-P4,HRE-2024-226,182 Craig Fort (Medical Office),182 Craig Fort,South Dana,CO,Medical Office,Stabilized,20080000,9760000,0.486,0.0634,62969
+HRE-2024-226-P5,HRE-2024-226,133 Craig Squares (Medical Office),133 Craig Squares,Williamsbury,GA,Medical Office,Stabilized,4100000,2090000,0.5094,0.0634,12085
+HRE-2024-227-P1,HRE-2024-227,904 Smith Forges (Medical Office),904 Smith Forges,Stephaniefort,WI,Medical Office,Lease-Up,13500000,10510000,0.7785,0.1328,131565
+HRE-2024-228-P1,HRE-2024-228,731 Moore Greens (Medical Office),731 Moore Greens,Davidstad,IL,Medical Office,Lease-Up,22000000,14170000,0.644,0.1255,375166
+HRE-2024-229-P1,HRE-2024-229,786 Carroll Forge (Senior Housing),786 Carroll Forge,Mooreport,NY,Senior Housing,Below-Market,12800000,8380000,0.655,0.124,117898
+HRE-2024-230-P1,HRE-2024-230,366 Petersen Spurs (Medical Office),366 Petersen Spurs,Port Anne,MN,Medical Office,Stabilized,17800000,10680000,0.6,0.0693,51363
+HRE-2024-231-P1,HRE-2024-231,62 Fernandez Drive (Medical Office),62 Fernandez Drive,New Roberttown,CA,Medical Office,Stabilized,32400000,16580000,0.5116,0.0638,106056
+HRE-2024-232-P1,HRE-2024-232,54 Duncan Causeway (Medical Office),54 Duncan Causeway,Carsonstad,MD,Medical Office,Lease-Up,8300000,6410000,0.7728,0.1284,93022
+HRE-2024-233-P1,HRE-2024-233,157 John Grove (Skilled Nursing),157 John Grove,West Michael,CA,Skilled Nursing,Lease-Up,33050000,22300000,0.6747,0.1802,767497
+HRE-2024-233-P2,HRE-2024-233,201 Daniel Loop (Skilled Nursing),201 Daniel Loop,Brownhaven,VA,Skilled Nursing,Lease-Up,10550000,7030000,0.6666,0.1635,138441
+HRE-2024-234-P1,HRE-2024-234,714 Wheeler Burg (Medical Office),714 Wheeler Burg,Maryshire,WA,Medical Office,Stabilized,11800000,6660000,0.564,0.0625,35400
+HRE-2024-235-P1,HRE-2024-235,513 Katherine Walk (Medical Office),513 Katherine Walk,Martinezbury,FL,Medical Office,Below-Market,23400000,15070000,0.6442,0.0812,101070
+HRE-2024-236-P1,HRE-2024-236,345 Brown Shoal (Medical Office),345 Brown Shoal,Morganchester,WI,Medical Office,Stabilized,16900000,8530000,0.505,0.0559,41329
+HRE-2024-237-P1,HRE-2024-237,33 Michael Knoll (Senior Housing),33 Michael Knoll,Cindyfort,VA,Senior Housing,Below-Market,10700000,7460000,0.6968,0.1306,93734
+HRE-2024-238-P1,HRE-2024-238,682 Cain Road (Skilled Nursing),682 Cain Road,Ericmouth,CA,Skilled Nursing,Transitional,29600000,22120000,0.7472,0.1319,153235
+HRE-2024-239-P1,HRE-2024-239,131 Sherry Harbors (Skilled Nursing),131 Sherry Harbors,Alfredview,MN,Skilled Nursing,Stabilized,8000000,3930000,0.4914,0.1005,20458
+HRE-2024-240-P1,HRE-2024-240,291 Christopher Light (Life Science),291 Christopher Light,Santanaside,CO,Life Science,Stabilized,31300000,18220000,0.582,0.0791,39748
+HRE-2024-241-P1,HRE-2024-241,695 Ronald Inlet (Senior Housing),695 Ronald Inlet,Murphyland,PA,Senior Housing,Stabilized,10700000,6360000,0.5945,0.0973,49157
+HRE-2024-242-P1,HRE-2024-242,224 Bianca Spur (Medical Office),224 Bianca Spur,New Deborahtown,AZ,Medical Office,Stabilized,30800000,17210000,0.5587,0.0827,110405
+HRE-2024-243-P1,HRE-2024-243,231 Ali Hollow (Senior Housing),231 Ali Hollow,Port Andrew,NC,Senior Housing,Lease-Up,16600000,12040000,0.7251,0.1632,615156
+HRE-2024-244-P1,HRE-2024-244,552 Hernandez Field (Medical Office),552 Hernandez Field,Andreaport,VA,Medical Office,Stabilized,31300000,17240000,0.5508,0.0832,107139
+HRE-2024-245-P1,HRE-2024-245,679 Joseph Landing (Senior Housing),679 Joseph Landing,Port Anne,MN,Senior Housing,Stabilized,32600000,15010000,0.4604,0.0855,113822
+HRE-2024-246-P1,HRE-2024-246,578 Taylor Fields (Skilled Nursing),578 Taylor Fields,New Jeffrey,FL,Skilled Nursing,Stabilized,19900000,12120000,0.6092,0.099,51853
+HRE-2024-246-P2,HRE-2024-246,254 Clements Forges (Skilled Nursing),254 Clements Forges,Katieburgh,NC,Skilled Nursing,Below-Market,10920000,6970000,0.6381,0.1069,59260
+HRE-2024-246-P3,HRE-2024-246,281 Sara Mill (Skilled Nursing),281 Sara Mill,South James,WA,Skilled Nursing,Stabilized,17500000,10450000,0.597,0.0958,58732
+HRE-2024-246-P4,HRE-2024-246,98 Ronald Trail (Skilled Nursing),98 Ronald Trail,North Cynthiaview,IL,Skilled Nursing,Stabilized,27510000,16820000,0.6114,0.0949,71212
+HRE-2024-246-P5,HRE-2024-246,565 Long Summit (Skilled Nursing),565 Long Summit,Carrland,OH,Skilled Nursing,Stabilized,6760000,4130000,0.6108,0.0956,18324
+HRE-2024-247-P1,HRE-2024-247,313 Abigail Mission (Senior Housing),313 Abigail Mission,New Caseyport,CO,Senior Housing,Below-Market,15900000,11160000,0.702,0.1097,110787
+HRE-2024-248-P1,HRE-2024-248,251 April Locks (Life Science),251 April Locks,Ericaberg,TN,Life Science,Stabilized,1000000,480000,0.4771,0.0758,1195
+HRE-2024-248-P2,HRE-2024-248,976 James Mill (Life Science),976 James Mill,West Wendyville,MD,Life Science,Stabilized,6850000,3110000,0.4546,0.073,8498
+HRE-2024-248-P3,HRE-2024-248,298 Murray Manors (Life Science),298 Murray Manors,Port Anne,MN,Life Science,Stabilized,7970000,3690000,0.4629,0.0733,9363
+HRE-2024-248-P4,HRE-2024-248,472 Kimberly Square (Life Science),472 Kimberly Square,New Brooke,NY,Life Science,Stabilized,8810000,4040000,0.4581,0.0752,11332
+HRE-2024-248-P5,HRE-2024-248,307 Nguyen Run (Life Science),307 Nguyen Run,Elainefurt,VA,Life Science,Stabilized,20770000,9270000,0.4464,0.0767,30871
+HRE-2024-248-P6,HRE-2024-248,165 Nicholas Light (Life Science),165 Nicholas Light,East Jill,CA,Life Science,Stabilized,8590000,3850000,0.448,0.0731,9553
+HRE-2024-249-P1,HRE-2024-249,289 Harold Station (Senior Housing),289 Harold Station,Katiehaven,GA,Senior Housing,Stabilized,10800000,7090000,0.6566,0.0769,38892
+HRE-2024-250-P1,HRE-2024-250,136 Roberts Falls (Life Science),136 Roberts Falls,New Diane,MO,Life Science,Lease-Up,9000000,5730000,0.6372,0.1424,42016
+HRE-2024-251-P1,HRE-2024-251,370 Brianna Mountains (Medical Office),370 Brianna Mountains,East Andrea,NJ,Medical Office,Stabilized,8000000,5170000,0.6463,0.0753,27606
+HRE-2024-252-P1,HRE-2024-252,507 Tammy Summit (Senior Housing),507 Tammy Summit,West Juan,IL,Senior Housing,Stabilized,12300000,7650000,0.6216,0.0843,44227
+HRE-2024-253-P1,HRE-2024-253,844 Richardson Light (Senior Housing),844 Richardson Light,Merrittfort,GA,Senior Housing,Stabilized,4700000,2730000,0.581,0.0967,24479
+HRE-2024-253-P2,HRE-2024-253,302 Kelly Dale (Senior Housing),302 Kelly Dale,Lake Richard,AZ,Senior Housing,Stabilized,5150000,3100000,0.6022,0.0971,23924
+HRE-2024-253-P3,HRE-2024-253,551 Rose Pine (Senior Housing),551 Rose Pine,Karenchester,NC,Senior Housing,Below-Market,22780000,14490000,0.6363,0.1102,142732
+HRE-2024-253-P4,HRE-2024-253,226 Daniel Stream (Senior Housing),226 Daniel Stream,Lake Leeton,NY,Senior Housing,Stabilized,10860000,6700000,0.6169,0.0999,53112
+HRE-2024-254-P1,HRE-2024-254,931 Simmons Vista (Life Science),931 Simmons Vista,Hudsonfurt,AZ,Life Science,Stabilized,3960000,1720000,0.434,0.0731,4975
+HRE-2024-254-P2,HRE-2024-254,874 Andrew Road (Life Science),874 Andrew Road,East Lisa,PA,Life Science,Stabilized,22670000,10570000,0.4664,0.0752,31793
+HRE-2024-254-P3,HRE-2024-254,22 Gutierrez Isle (Life Science),22 Gutierrez Isle,Port Jacquelineside,WI,Life Science,Stabilized,3970000,1840000,0.4633,0.0739,6063
+HRE-2024-255-P1,HRE-2024-255,439 Danielle Spurs (Medical Office),439 Danielle Spurs,North Deniseside,NY,Medical Office,Stabilized,9390000,5140000,0.5479,0.0614,24040
+HRE-2024-255-P2,HRE-2024-255,617 Ford Via (Medical Office),617 Ford Via,East Edwardfurt,GA,Medical Office,Stabilized,23310000,11980000,0.5141,0.0627,67152
+HRE-2024-255-P3,HRE-2024-255,58 Tyler Freeway (Medical Office),58 Tyler Freeway,Larrymouth,MO,Medical Office,Stabilized,11360000,5900000,0.5196,0.0655,33695
+HRE-2024-255-P4,HRE-2024-255,716 Matthew Orchard (Medical Office),716 Matthew Orchard,South Jason,AZ,Medical Office,Stabilized,1000000,520000,0.5213,0.0646,4537
+HRE-2024-256-P1,HRE-2024-256,246 Johnson Trace (Life Science),246 Johnson Trace,Port Cameronfort,NJ,Life Science,Stabilized,69140000,43490000,0.629,0.0791,107419
+HRE-2024-256-P2,HRE-2024-256,50 Eric Crescent (Life Science),50 Eric Crescent,West Andrea,WA,Life Science,Below-Market,23060000,15300000,0.6633,0.0893,56520
+HRE-2024-257-P1,HRE-2024-257,529 Andrews Extension (Medical Office),529 Andrews Extension,Perryborough,GA,Medical Office,Transitional,40500000,26310000,0.6497,0.1052,221901
+HRE-2024-258-P1,HRE-2024-258,874 Davis Inlet (Skilled Nursing),874 Davis Inlet,Transtad,MA,Skilled Nursing,Stabilized,14900000,7860000,0.5274,0.0899,45549
+HRE-2024-259-P1,HRE-2024-259,118 Douglas Ridges (Senior Housing),118 Douglas Ridges,Lake John,WA,Senior Housing,Stabilized,16300000,7570000,0.4643,0.0813,69134
+HRE-2024-260-P1,HRE-2024-260,893 Mccormick Islands (Medical Office),893 Mccormick Islands,Gibsonmouth,WA,Medical Office,Stabilized,13000000,6530000,0.5026,0.0589,34024
+HRE-2024-261-P1,HRE-2024-261,387 Mueller Mews (Skilled Nursing),387 Mueller Mews,New Stephanie,TX,Skilled Nursing,Below-Market,9800000,7540000,0.7696,0.1375,64263
+HRE-2024-262-P1,HRE-2024-262,610 Jodi Station (Medical Office),610 Jodi Station,West Juliefurt,WA,Medical Office,Stabilized,41500000,21300000,0.5132,0.0658,119048
+HRE-2024-263-P1,HRE-2024-263,8 Christopher Viaduct (Senior Housing),8 Christopher Viaduct,Mooreport,NY,Senior Housing,Lease-Up,22200000,14970000,0.6745,0.1428,208181
+HRE-2024-264-P1,HRE-2024-264,849 Katherine Shore (Senior Housing),849 Katherine Shore,Elizabethchester,WI,Senior Housing,Lease-Up,47300000,29920000,0.6326,0.1719,1416181
+HRE-2024-265-P1,HRE-2024-265,586 Gilbert Mission (Senior Housing),586 Gilbert Mission,New Saraside,OH,Senior Housing,Stabilized,5720000,2970000,0.5198,0.0736,19938
+HRE-2024-265-P2,HRE-2024-265,744 Hudson Springs (Senior Housing),744 Hudson Springs,Lake Larry,FL,Senior Housing,Stabilized,8300000,4190000,0.5043,0.0761,26758
+HRE-2024-265-P3,HRE-2024-265,96 Mooney Prairie (Senior Housing),96 Mooney Prairie,South Matthew,WI,Senior Housing,Stabilized,13710000,6860000,0.5007,0.0735,57575
+HRE-2024-265-P4,HRE-2024-265,649 Abbott Walk (Senior Housing),649 Abbott Walk,Cassandraton,CA,Senior Housing,Stabilized,1400000,730000,0.5209,0.0732,4201
+HRE-2024-265-P5,HRE-2024-265,356 Aaron Points (Senior Housing),356 Aaron Points,Loriport,WA,Senior Housing,Stabilized,2670000,1400000,0.5235,0.076,9291
+HRE-2024-266-P1,HRE-2024-266,447 Joe Squares (Skilled Nursing),447 Joe Squares,New David,FL,Skilled Nursing,Stabilized,4390000,2320000,0.528,0.104,12510
+HRE-2024-266-P2,HRE-2024-266,814 Graham Forest (Skilled Nursing),814 Graham Forest,South Christineshire,IL,Skilled Nursing,Stabilized,66250000,36070000,0.5444,0.1059,220657
+HRE-2024-266-P3,HRE-2024-266,205 Larsen Drives (Skilled Nursing),205 Larsen Drives,Lake Amberstad,NC,Skilled Nursing,Stabilized,6430000,3430000,0.5342,0.1064,18619
+HRE-2024-266-P4,HRE-2024-266,847 Alexander Rue (Skilled Nursing),847 Alexander Rue,North Marcberg,MN,Skilled Nursing,Stabilized,82320000,42420000,0.5153,0.1071,211924
+HRE-2024-267-P1,HRE-2024-267,699 Proctor Dale (Senior Housing),699 Proctor Dale,Morganchester,WI,Senior Housing,Stabilized,2740000,1790000,0.655,0.0924,10522
+HRE-2024-267-P2,HRE-2024-267,176 English Square (Senior Housing),176 English Square,West Brandon,MA,Senior Housing,Stabilized,4000000,2550000,0.638,0.089,15753
+HRE-2024-267-P3,HRE-2024-267,38 Arnold Mission (Senior Housing),38 Arnold Mission,West Matthew,GA,Senior Housing,Stabilized,1000000,610000,0.6096,0.0931,3659
+HRE-2024-267-P4,HRE-2024-267,410 Becky Vista (Senior Housing),410 Becky Vista,New Jeffrey,FL,Senior Housing,Stabilized,24770000,16160000,0.6526,0.0928,131067
+HRE-2024-267-P5,HRE-2024-267,106 Johnson Camp (Senior Housing),106 Johnson Camp,Gilmorefort,VA,Senior Housing,Stabilized,7230000,4550000,0.6291,0.0911,36817
+HRE-2024-267-P6,HRE-2024-267,196 Douglas Street (Senior Housing),196 Douglas Street,Johnfurt,IL,Senior Housing,Transitional,3270000,2280000,0.6982,0.1097,18570
+HRE-2024-267-P7,HRE-2024-267,277 Black Pike (Senior Housing),277 Black Pike,Marcusbury,AZ,Senior Housing,Stabilized,4530000,2870000,0.6333,0.0894,16913
+HRE-2024-267-P8,HRE-2024-267,535 Gabriella Plains (Senior Housing),535 Gabriella Plains,Stevenland,NY,Senior Housing,Stabilized,5310000,3400000,0.6406,0.0926,21805
+HRE-2024-267-P9,HRE-2024-267,676 Taylor Passage (Senior Housing),676 Taylor Passage,Lake Roymouth,NC,Senior Housing,Stabilized,8230000,5370000,0.653,0.0912,31986
+HRE-2024-268-P1,HRE-2024-268,526 Yu Union (Senior Housing),526 Yu Union,Lake Richard,AZ,Senior Housing,Stabilized,28500000,12700000,0.4455,0.0807,117144
+HRE-2024-269-P1,HRE-2024-269,379 Acosta Port (Skilled Nursing),379 Acosta Port,North Jorge,NC,Skilled Nursing,Stabilized,24840000,11460000,0.4612,0.1054,91112
+HRE-2024-269-P2,HRE-2024-269,532 Ashley Shoals (Skilled Nursing),532 Ashley Shoals,Shawhaven,NY,Skilled Nursing,Stabilized,5780000,2690000,0.4662,0.1049,17994
+HRE-2024-269-P3,HRE-2024-269,545 Washington Crossroad (Skilled Nursing),545 Washington Crossroad,North Kristinbury,MN,Skilled Nursing,Stabilized,1340000,600000,0.4447,0.1032,4779
+HRE-2024-269-P4,HRE-2024-269,211 Hill Glens (Skilled Nursing),211 Hill Glens,New David,FL,Skilled Nursing,Stabilized,8210000,4010000,0.4881,0.104,28197
+HRE-2024-269-P5,HRE-2024-269,175 Renee Streets (Skilled Nursing),175 Renee Streets,Ashleyton,NJ,Skilled Nursing,Stabilized,3030000,1430000,0.4731,0.1029,9731
+HRE-2024-270-P1,HRE-2024-270,581 Jose Squares (Senior Housing),581 Jose Squares,North Scott,TN,Senior Housing,Lease-Up,17800000,12720000,0.7144,0.1687,246832
+HRE-2024-271-P1,HRE-2024-271,277 Matthew Corner (Medical Office),277 Matthew Corner,Elizabethstad,MA,Medical Office,Below-Market,27100000,19060000,0.7034,0.0897,160234
+HRE-2024-272-P1,HRE-2024-272,639 Jason Street (Skilled Nursing),639 Jason Street,West Scottchester,MO,Skilled Nursing,Stabilized,1000000,600000,0.5989,0.1134,3086
+HRE-2024-272-P2,HRE-2024-272,441 Brian Mountain (Skilled Nursing),441 Brian Mountain,North Richardmouth,NY,Skilled Nursing,Stabilized,1260000,720000,0.5702,0.114,4409
+HRE-2024-272-P3,HRE-2024-272,977 Noah Squares (Skilled Nursing),977 Noah Squares,Cantuport,WA,Skilled Nursing,Stabilized,28530000,17330000,0.6075,0.116,114679
+HRE-2024-272-P4,HRE-2024-272,255 Smith Union (Skilled Nursing),255 Smith Union,North Markton,CO,Skilled Nursing,Stabilized,6890000,3960000,0.5754,0.1121,19419
+HRE-2024-273-P1,HRE-2024-273,453 Connor Place (Senior Housing),453 Connor Place,South Jason,AZ,Senior Housing,Stabilized,16400000,11340000,0.6915,0.0956,64930
+HRE-2024-274-P1,HRE-2024-274,342 Rogers Grove (Senior Housing),342 Rogers Grove,Port Jacquelineside,WI,Senior Housing,Below-Market,2410000,1790000,0.7439,0.1194,17305
+HRE-2024-274-P2,HRE-2024-274,529 Murray Spring (Senior Housing),529 Murray Spring,New Deborahtown,AZ,Senior Housing,Stabilized,2620000,1830000,0.6972,0.1173,16206
+HRE-2024-274-P3,HRE-2024-274,825 Byrd Falls (Senior Housing),825 Byrd Falls,South Noah,TX,Senior Housing,Below-Market,1000000,720000,0.7231,0.1219,7002
+HRE-2024-274-P4,HRE-2024-274,26 Alexander Courts (Senior Housing),26 Alexander Courts,Brownhaven,VA,Senior Housing,Below-Market,1000000,720000,0.7189,0.1199,6993
+HRE-2024-274-P5,HRE-2024-274,842 King Bypass (Senior Housing),842 King Bypass,East Mikeburgh,IL,Senior Housing,Below-Market,3780000,2810000,0.7446,0.1212,28728
+HRE-2024-274-P6,HRE-2024-274,206 Stephanie Route (Senior Housing),206 Stephanie Route,Carrland,OH,Senior Housing,Stabilized,1530000,1040000,0.677,0.1176,8586
+HRE-2024-274-P7,HRE-2024-274,476 Melissa Curve (Senior Housing),476 Melissa Curve,Elizabethstad,MA,Senior Housing,Transitional,1000000,750000,0.7542,0.1339,8409
+HRE-2024-274-P8,HRE-2024-274,986 Paula Square (Senior Housing),986 Paula Square,Herrerafurt,CA,Senior Housing,Stabilized,13130000,9160000,0.698,0.1168,83160
+HRE-2024-274-P9,HRE-2024-274,672 Danielle Harbor (Senior Housing),672 Danielle Harbor,Stephaniemouth,GA,Senior Housing,Stabilized,1000000,690000,0.692,0.1182,6321
+HRE-2024-274-P10,HRE-2024-274,70 Scott Tunnel (Senior Housing),70 Scott Tunnel,Maryfort,NC,Senior Housing,Below-Market,2960000,2140000,0.7228,0.1265,19993
+HRE-2024-275-P1,HRE-2024-275,108 Price Circle (Medical Office),108 Price Circle,South Todd,NY,Medical Office,Stabilized,24300000,12220000,0.5027,0.0573,60889
+HRE-2024-276-P1,HRE-2024-276,509 Baldwin Cove (Medical Office),509 Baldwin Cove,North Matthewberg,IL,Medical Office,Stabilized,4200000,1930000,0.4605,0.0714,14219
+HRE-2024-276-P2,HRE-2024-276,955 Graham Vista (Medical Office),955 Graham Vista,Ramirezstad,CA,Medical Office,Stabilized,4900000,2190000,0.4476,0.0674,15426
+HRE-2024-276-P3,HRE-2024-276,909 Gregory Canyon (Medical Office),909 Gregory Canyon,East Lisa,NJ,Medical Office,Stabilized,16100000,7490000,0.4651,0.0675,49466
+HRE-2024-277-P1,HRE-2024-277,408 Bentley Ways (Life Science),408 Bentley Ways,Samuelhaven,PA,Life Science,Stabilized,16100000,10110000,0.628,0.0813,21827
+HRE-2024-278-P1,HRE-2024-278,848 Gerald Causeway (Medical Office),848 Gerald Causeway,East Nicholasfurt,NY,Medical Office,Stabilized,7230000,4070000,0.5636,0.0843,30816
+HRE-2024-278-P2,HRE-2024-278,350 Nguyen Spur (Medical Office),350 Nguyen Spur,Port Cameronfort,NJ,Medical Office,Stabilized,10460000,6250000,0.5975,0.0866,40705
+HRE-2024-278-P3,HRE-2024-278,224 Butler Valley (Medical Office),224 Butler Valley,Evanmouth,IL,Medical Office,Stabilized,14610000,8300000,0.5679,0.0823,59605
+HRE-2024-279-P1,HRE-2024-279,934 Gina Mountains (Medical Office),934 Gina Mountains,Lake Kendraville,AZ,Medical Office,Stabilized,8000000,4660000,0.5823,0.0783,28200
+HRE-2024-280-P1,HRE-2024-280,337 Williams Streets (Skilled Nursing),337 Williams Streets,New Michelleton,TN,Skilled Nursing,Below-Market,9200000,6330000,0.6877,0.1345,51690
+HRE-2024-281-P1,HRE-2024-281,691 Kristen Oval (Life Science),691 Kristen Oval,East Edwardfurt,GA,Life Science,Transitional,11100000,8490000,0.7645,0.1108,24893
+HRE-2024-282-P1,HRE-2024-282,363 Hall Creek (Medical Office),363 Hall Creek,Lake Chad,CA,Medical Office,Lease-Up,20700000,16260000,0.7854,0.1549,577736
+HRE-2024-283-P1,HRE-2024-283,608 Kane Lane (Skilled Nursing),608 Kane Lane,South Dianeshire,IL,Skilled Nursing,Stabilized,12600000,6220000,0.4934,0.1058,36332
+HRE-2024-284-P1,HRE-2024-284,621 Brown Mews (Skilled Nursing),621 Brown Mews,North Jorge,NC,Skilled Nursing,Stabilized,7540000,4300000,0.57,0.1006,19905
+HRE-2024-284-P2,HRE-2024-284,983 Thompson Landing (Skilled Nursing),983 Thompson Landing,Oscarhaven,WI,Skilled Nursing,Stabilized,3610000,2010000,0.5573,0.1007,8911
+HRE-2024-284-P3,HRE-2024-284,437 Cantrell Flats (Skilled Nursing),437 Cantrell Flats,Jackton,MA,Skilled Nursing,Below-Market,2030000,1290000,0.6362,0.1052,7984
+HRE-2024-284-P4,HRE-2024-284,886 Juan Creek (Skilled Nursing),886 Juan Creek,Taylorburgh,NY,Skilled Nursing,Stabilized,14970000,8960000,0.5983,0.0988,47769
+HRE-2024-284-P5,HRE-2024-284,335 Robinson Hill (Skilled Nursing),335 Robinson Hill,East Lisa,NJ,Skilled Nursing,Below-Market,23360000,14190000,0.6074,0.1106,113435
+HRE-2024-284-P6,HRE-2024-284,677 Belinda Plaza (Skilled Nursing),677 Belinda Plaza,Evanmouth,IL,Skilled Nursing,Stabilized,16190000,9380000,0.5792,0.1016,42564
+HRE-2024-285-P1,HRE-2024-285,654 Atkins Forge (Skilled Nursing),654 Atkins Forge,Lake Roberto,CA,Skilled Nursing,Stabilized,27950000,17870000,0.6393,0.1048,87998
+HRE-2024-285-P2,HRE-2024-285,816 Fitzgerald Gateway (Skilled Nursing),816 Fitzgerald Gateway,Lake John,WA,Skilled Nursing,Below-Market,26500000,17970000,0.6781,0.1151,104152
+HRE-2024-285-P3,HRE-2024-285,334 Patricia Ramp (Skilled Nursing),334 Patricia Ramp,West Elizabeth,FL,Skilled Nursing,Stabilized,41840000,26910000,0.6431,0.1058,135516
+HRE-2024-286-P1,HRE-2024-286,436 Baird Canyon (Senior Housing),436 Baird Canyon,Gibsonmouth,WA,Senior Housing,Lease-Up,23800000,16910000,0.7107,0.1469,471132
+HRE-2024-287-P1,HRE-2024-287,532 Schmidt Neck (Medical Office),532 Schmidt Neck,East Jill,CA,Medical Office,Stabilized,16200000,9070000,0.5601,0.0688,44671
+HRE-2024-288-P1,HRE-2024-288,880 Tiffany Mountain (Medical Office),880 Tiffany Mountain,Lake Michaelstad,MD,Medical Office,Stabilized,21000000,9530000,0.4537,0.0708,65304
+HRE-2024-289-P1,HRE-2024-289,779 Fitzgerald Centers (Medical Office),779 Fitzgerald Centers,Perryshire,OH,Medical Office,Stabilized,27100000,15760000,0.5815,0.0723,91455
+HRE-2024-290-P1,HRE-2024-290,304 Karen Trace (Senior Housing),304 Karen Trace,North Scott,TN,Senior Housing,Stabilized,17200000,10030000,0.5832,0.0892,83219
+HRE-2024-291-P1,HRE-2024-291,551 Ramirez Circles (Senior Housing),551 Ramirez Circles,Jamesfurt,TN,Senior Housing,Stabilized,1990000,1210000,0.6084,0.0815,7325
+HRE-2024-291-P2,HRE-2024-291,951 Theodore Place (Senior Housing),951 Theodore Place,North Judithbury,CA,Senior Housing,Stabilized,5850000,3610000,0.617,0.0847,26855
+HRE-2024-291-P3,HRE-2024-291,80 Marsh Square (Senior Housing),80 Marsh Square,Michaelmouth,MA,Senior Housing,Stabilized,15230000,8960000,0.5882,0.0835,55930
+HRE-2024-291-P4,HRE-2024-291,339 Christopher Fall (Senior Housing),339 Christopher Fall,Grimesmouth,WA,Senior Housing,Stabilized,10950000,6610000,0.6036,0.0821,39975
+HRE-2024-291-P5,HRE-2024-291,332 Joshua Square (Senior Housing),332 Joshua Square,Port Mikeside,PA,Senior Housing,Stabilized,6480000,3830000,0.591,0.0823,29591
+HRE-2024-291-P6,HRE-2024-291,403 Kelly Springs (Senior Housing),403 Kelly Springs,Leeville,FL,Senior Housing,Stabilized,7400000,4450000,0.6019,0.0831,29409
+HRE-2024-292-P1,HRE-2024-292,219 Kelly Circles (Senior Housing),219 Kelly Circles,North Beth,NY,Senior Housing,Stabilized,13200000,7020000,0.5318,0.0771,44255
+HRE-2024-293-P1,HRE-2024-293,995 Jenkins Junctions (Senior Housing),995 Jenkins Junctions,South Jeffrey,NC,Senior Housing,Lease-Up,22900000,17200000,0.7511,0.1707,326056
+HRE-2024-294-P1,HRE-2024-294,341 Ellis Port (Medical Office),341 Ellis Port,Mollymouth,CO,Medical Office,Stabilized,34300000,22070000,0.6434,0.071,99730
+HRE-2024-295-P1,HRE-2024-295,766 Blake Island (Medical Office),766 Blake Island,Richardport,OH,Medical Office,Lease-Up,14600000,9680000,0.663,0.1664,196758
+HRE-2024-296-P1,HRE-2024-296,487 Amanda Crossing (Life Science),487 Amanda Crossing,Emilyview,MD,Life Science,Below-Market,1930000,1370000,0.7109,0.1048,5602
+HRE-2024-296-P2,HRE-2024-296,314 Adam Streets (Life Science),314 Adam Streets,Alfredview,MN,Life Science,Below-Market,1000000,690000,0.692,0.1126,2759
+HRE-2024-296-P3,HRE-2024-296,308 Lauren Stream (Life Science),308 Lauren Stream,Maryfort,NC,Life Science,Transitional,1770000,1280000,0.7248,0.1142,4003
+HRE-2024-296-P4,HRE-2024-296,908 Mccullough Dam (Life Science),908 Mccullough Dam,Martinezbury,FL,Life Science,Stabilized,10180000,6660000,0.6542,0.1016,15252
+HRE-2024-296-P5,HRE-2024-296,675 Brown Row (Life Science),675 Brown Row,South Rachelborough,OH,Life Science,Below-Market,27300000,18870000,0.6912,0.1082,71635
+HRE-2024-296-P6,HRE-2024-296,564 Rhodes Corners (Life Science),564 Rhodes Corners,North Cynthiaview,IL,Life Science,Transitional,2240000,1620000,0.7252,0.1158,5913
+HRE-2024-296-P7,HRE-2024-296,183 Bell Mission (Life Science),183 Bell Mission,New Brooke,NY,Life Science,Below-Market,2900000,2010000,0.6934,0.1095,7717
+HRE-2024-297-P1,HRE-2024-297,394 Chandler Mall (Medical Office),394 Chandler Mall,Crosbyview,MD,Medical Office,Stabilized,6480000,3100000,0.4787,0.0595,19310
+HRE-2024-297-P2,HRE-2024-297,333 Jose Route (Medical Office),333 Jose Route,Lake Leeton,NY,Medical Office,Stabilized,6160000,2950000,0.4796,0.0593,18718
+HRE-2024-297-P3,HRE-2024-297,189 Dustin Mountain (Medical Office),189 Dustin Mountain,Mollymouth,CO,Medical Office,Stabilized,6140000,3070000,0.4998,0.0604,16000
+HRE-2024-297-P4,HRE-2024-297,614 Davis Prairie (Medical Office),614 Davis Prairie,West Elizabeth,FL,Medical Office,Stabilized,6910000,3420000,0.4943,0.0594,19968
+HRE-2024-297-P5,HRE-2024-297,299 Collins Lake (Medical Office),299 Collins Lake,Donnaburgh,NJ,Medical Office,Stabilized,8430000,4230000,0.5022,0.0579,24058
+HRE-2024-297-P6,HRE-2024-297,681 Williams Coves (Medical Office),681 Williams Coves,Elizabethstad,MA,Medical Office,Stabilized,12210000,5880000,0.4814,0.0585,32726
+HRE-2024-297-P7,HRE-2024-297,975 Melissa Tunnel (Medical Office),975 Melissa Tunnel,Vaughnmouth,TN,Medical Office,Stabilized,2350000,1090000,0.4658,0.0585,7641
+HRE-2024-297-P8,HRE-2024-297,482 Rick Trace (Medical Office),482 Rick Trace,Teresaburgh,TX,Medical Office,Stabilized,13020000,6470000,0.4966,0.0591,36819
+HRE-2024-298-P1,HRE-2024-298,578 Randy Pike (Senior Housing),578 Randy Pike,Karenchester,NC,Senior Housing,Lease-Up,11800000,7380000,0.6256,0.1505,355226
+HRE-2024-299-P1,HRE-2024-299,322 Judith Extension (Medical Office),322 Judith Extension,Lake Edward,NJ,Medical Office,Transitional,10040000,7090000,0.7061,0.0944,53258
+HRE-2024-299-P2,HRE-2024-299,273 John Parks (Medical Office),273 John Parks,Lake Michaelstad,MD,Medical Office,Transitional,1000000,680000,0.6815,0.0955,8010
+HRE-2024-299-P3,HRE-2024-299,291 Henry Green (Medical Office),291 Henry Green,Walkerville,WI,Medical Office,Below-Market,4480000,3010000,0.6712,0.0815,21736
+HRE-2024-299-P4,HRE-2024-299,334 Ashley Overpass (Medical Office),334 Ashley Overpass,Port Katelynfort,VA,Medical Office,Stabilized,1000000,620000,0.6208,0.0767,6182
+HRE-2024-299-P5,HRE-2024-299,965 Watkins Spurs (Medical Office),965 Watkins Spurs,Julieburgh,TN,Medical Office,Stabilized,1000000,620000,0.6211,0.0772,6029
+HRE-2024-299-P6,HRE-2024-299,766 Mary Plain (Medical Office),766 Mary Plain,Hudsonfurt,AZ,Medical Office,Stabilized,15870000,9490000,0.5982,0.0783,57722
+HRE-2024-300-P1,HRE-2024-300,667 Denise Hollow (Life Science),667 Denise Hollow,Cindyville,OH,Life Science,Lease-Up,36200000,24600000,0.6796,0.1432,204353
+HRE-2024-301-P1,HRE-2024-301,554 Courtney Path (Senior Housing),554 Courtney Path,Cindyville,OH,Senior Housing,Lease-Up,18500000,14450000,0.781,0.1539,732657
+HRE-2024-302-P1,HRE-2024-302,96 Adams Route (Medical Office),96 Adams Route,West Ryan,OH,Medical Office,Stabilized,32200000,20340000,0.6318,0.0887,124649
+HRE-2024-303-P1,HRE-2024-303,182 Colon Rue (Medical Office),182 Colon Rue,New Michelleton,TN,Medical Office,Stabilized,12300000,5590000,0.4548,0.0595,36595
+HRE-2024-304-P1,HRE-2024-304,30 Marshall Points (Medical Office),30 Marshall Points,Christinaside,AZ,Medical Office,Stabilized,17500000,9890000,0.5653,0.0646,48721
+HRE-2024-305-P1,HRE-2024-305,814 Alejandra Village (Skilled Nursing),814 Alejandra Village,Westtown,MA,Skilled Nursing,Stabilized,3100000,1540000,0.4971,0.1047,10180
+HRE-2024-305-P2,HRE-2024-305,879 John Crossing (Skilled Nursing),879 John Crossing,Lake John,WA,Skilled Nursing,Stabilized,14410000,6760000,0.4694,0.1053,45076
+HRE-2024-305-P3,HRE-2024-305,947 Shaffer Summit (Skilled Nursing),947 Shaffer Summit,Lake Edward,NJ,Skilled Nursing,Stabilized,7890000,3740000,0.474,0.1058,25492
+HRE-2024-305-P4,HRE-2024-305,437 Daniel Forest (Skilled Nursing),437 Daniel Forest,East Josephville,IL,Skilled Nursing,Stabilized,9210000,4510000,0.4893,0.1068,25962
+HRE-2024-306-P1,HRE-2024-306,577 Tracy Landing (Senior Housing),577 Tracy Landing,Port Emilyview,VA,Senior Housing,Stabilized,22900000,13190000,0.5759,0.0814,73175
+HRE-2024-307-P1,HRE-2024-307,214 Sylvia Tunnel (Medical Office),214 Sylvia Tunnel,Daviston,TX,Medical Office,Stabilized,7160000,3140000,0.4382,0.0664,19747
+HRE-2024-307-P2,HRE-2024-307,779 Johnny Lights (Medical Office),779 Johnny Lights,South Michaelmouth,VA,Medical Office,Stabilized,8700000,3800000,0.4365,0.0663,24803
+HRE-2024-307-P3,HRE-2024-307,857 Love Wells (Medical Office),857 Love Wells,Anthonymouth,AZ,Medical Office,Stabilized,1190000,550000,0.465,0.0705,6018
+HRE-2024-307-P4,HRE-2024-307,356 Jorge Spur (Medical Office),356 Jorge Spur,Oscarhaven,WI,Medical Office,Stabilized,15100000,6780000,0.4493,0.0675,46926
+HRE-2024-307-P5,HRE-2024-307,632 Wilcox Park (Medical Office),632 Wilcox Park,Maryshire,WA,Medical Office,Stabilized,1000000,450000,0.4526,0.0666,3724
+HRE-2024-308-P1,HRE-2024-308,27 Kelly Greens (Medical Office),27 Kelly Greens,North Ericton,MO,Medical Office,Below-Market,10860000,7140000,0.6571,0.0815,49976
+HRE-2024-308-P2,HRE-2024-308,472 Turner Locks (Medical Office),472 Turner Locks,Oscarhaven,WI,Medical Office,Stabilized,5080000,3080000,0.6055,0.0802,19971
+HRE-2024-308-P3,HRE-2024-308,543 Angela Shoals (Medical Office),543 Angela Shoals,North John,FL,Medical Office,Stabilized,33130000,20630000,0.6228,0.079,107051
+HRE-2024-308-P4,HRE-2024-308,577 Brandy Avenue (Medical Office),577 Brandy Avenue,Jackton,MA,Medical Office,Stabilized,46530000,28330000,0.6088,0.0795,171982
+HRE-2024-309-P1,HRE-2024-309,43 Mark Cape (Skilled Nursing),43 Mark Cape,Jeremyburgh,MA,Skilled Nursing,Lease-Up,17800000,12710000,0.7142,0.1689,283355
+HRE-2024-310-P1,HRE-2024-310,504 Jason Causeway (Senior Housing),504 Jason Causeway,South Rachelborough,OH,Senior Housing,Below-Market,11100000,6980000,0.629,0.0866,70698
+HRE-2024-311-P1,HRE-2024-311,537 Davis Glens (Senior Housing),537 Davis Glens,North Brandon,OH,Senior Housing,Transitional,19400000,14540000,0.7493,0.114,129658
+HRE-2024-312-P1,HRE-2024-312,685 Andrew Fords (Medical Office),685 Andrew Fords,Samuelhaven,PA,Medical Office,Below-Market,3240000,1940000,0.5985,0.0766,14631
+HRE-2024-312-P2,HRE-2024-312,405 Davis Manors (Medical Office),405 Davis Manors,North Jeremyshire,VA,Medical Office,Stabilized,15140000,8580000,0.5669,0.0714,51232
+HRE-2024-312-P3,HRE-2024-312,350 Skinner Pike (Medical Office),350 Skinner Pike,South Dennismouth,GA,Medical Office,Below-Market,1180000,680000,0.5751,0.0754,6728
+HRE-2024-312-P4,HRE-2024-312,781 Robert Squares (Medical Office),781 Robert Squares,Ashleyton,NJ,Medical Office,Stabilized,37140000,20890000,0.5624,0.0741,119318
+HRE-2024-313-P1,HRE-2024-313,873 Savage Coves (Senior Housing),873 Savage Coves,Gregoryview,PA,Senior Housing,Stabilized,17400000,9720000,0.5587,0.0847,76532
+HRE-2024-314-P1,HRE-2024-314,373 Alexander Shoal (Senior Housing),373 Alexander Shoal,Lake Heather,OH,Senior Housing,Lease-Up,28900000,20610000,0.7132,0.1424,587880
+HRE-2024-315-P1,HRE-2024-315,589 Turner Via (Senior Housing),589 Turner Via,New Thomas,OH,Senior Housing,Lease-Up,4990000,3190000,0.6384,0.1726,76739
+HRE-2024-315-P2,HRE-2024-315,544 Ballard Corners (Senior Housing),544 Ballard Corners,Gilmorefort,VA,Senior Housing,Lease-Up,16610000,10980000,0.6612,0.171,220384
+HRE-2024-315-P3,HRE-2024-315,954 Lisa Square (Senior Housing),954 Lisa Square,East Lisa,PA,Senior Housing,Lease-Up,96000000,64640000,0.6733,0.1624,1216600
+HRE-2024-316-P1,HRE-2024-316,707 Wong Run (Senior Housing),707 Wong Run,Port Richard,NY,Senior Housing,Transitional,18600000,13280000,0.7141,0.1192,120242
+HRE-2024-317-P1,HRE-2024-317,71 Christopher Trail (Medical Office),71 Christopher Trail,Herrerafurt,CA,Medical Office,Transitional,32200000,24140000,0.7496,0.119,215155
+HRE-2024-318-P1,HRE-2024-318,927 Crystal Station (Life Science),927 Crystal Station,West Donald,TX,Life Science,Stabilized,19800000,10050000,0.5077,0.07,24202
+HRE-2024-319-P1,HRE-2024-319,597 Hall Circle (Medical Office),597 Hall Circle,New Kathybury,NJ,Medical Office,Stabilized,29700000,17140000,0.5772,0.0771,100537
+HRE-2024-320-P1,HRE-2024-320,67 Christy Haven (Life Science),67 Christy Haven,Hayesmouth,NJ,Life Science,Lease-Up,53300000,35020000,0.6571,0.1506,371171
+HRE-2024-321-P1,HRE-2024-321,420 Eric Overpass (Medical Office),420 Eric Overpass,Ericaberg,TN,Medical Office,Transitional,13770000,10000000,0.7263,0.1003,79098
+HRE-2024-321-P2,HRE-2024-321,823 Theresa Tunnel (Medical Office),823 Theresa Tunnel,South Danny,NJ,Medical Office,Below-Market,7140000,5170000,0.7245,0.0879,40097
+HRE-2024-321-P3,HRE-2024-321,801 Montes Trafficway (Medical Office),801 Montes Trafficway,Lawsonchester,MO,Medical Office,Below-Market,10170000,7210000,0.7089,0.0884,50516
+HRE-2024-321-P4,HRE-2024-321,497 Acevedo Mills (Medical Office),497 Acevedo Mills,Christinaside,AZ,Medical Office,Stabilized,1000000,670000,0.6712,0.0839,5027
+HRE-2024-321-P5,HRE-2024-321,724 Smith Harbors (Medical Office),724 Smith Harbors,Kimtown,MN,Medical Office,Stabilized,2970000,2090000,0.7044,0.0831,12789
+HRE-2024-321-P6,HRE-2024-321,712 Green Parkways (Medical Office),712 Green Parkways,North Donna,PA,Medical Office,Below-Market,4540000,3290000,0.7248,0.092,25878
+HRE-2024-321-P7,HRE-2024-321,604 Mitchell Tunnel (Medical Office),604 Mitchell Tunnel,Vargastown,NC,Medical Office,Stabilized,6470000,4410000,0.6814,0.0851,28663
+HRE-2024-322-P1,HRE-2024-322,43 Poole Common (Medical Office),43 Poole Common,North Terrance,CO,Medical Office,Stabilized,19400000,11490000,0.5922,0.0808,62147
+HRE-2024-323-P1,HRE-2024-323,124 Kennedy Summit (Skilled Nursing),124 Kennedy Summit,Sanchezside,WA,Skilled Nursing,Stabilized,13200000,8720000,0.6605,0.1094,35400
+HRE-2024-324-P1,HRE-2024-324,983 Carolyn Lodge (Senior Housing),983 Carolyn Lodge,Navarroview,VA,Senior Housing,Stabilized,33200000,16680000,0.5024,0.0705,97264
+HRE-2024-325-P1,HRE-2024-325,613 Williams Drives (Medical Office),613 Williams Drives,North Kristinbury,MN,Medical Office,Below-Market,32100000,23390000,0.7287,0.0943,175739
+HRE-2024-326-P1,HRE-2024-326,225 Harrington Mountains (Skilled Nursing),225 Harrington Mountains,Jeremyburgh,MA,Skilled Nursing,Stabilized,10200000,5890000,0.5775,0.1089,30149
+HRE-2024-327-P1,HRE-2024-327,25 Gill Shores (Medical Office),25 Gill Shores,New Deborahtown,AZ,Medical Office,Lease-Up,19000000,14770000,0.7773,0.1491,522947
+HRE-2024-328-P1,HRE-2024-328,718 Lauren Shores (Senior Housing),718 Lauren Shores,Wallport,TN,Senior Housing,Stabilized,13700000,6360000,0.4643,0.0741,46612
+HRE-2024-329-P1,HRE-2024-329,318 Susan Mills (Skilled Nursing),318 Susan Mills,Saramouth,NY,Skilled Nursing,Lease-Up,18900000,13930000,0.7373,0.1779,269628
+HRE-2024-330-P1,HRE-2024-330,204 Ashley Underpass (Skilled Nursing),204 Ashley Underpass,Coffeyside,MD,Skilled Nursing,Stabilized,29200000,14030000,0.4805,0.1024,85996
+HRE-2024-331-P1,HRE-2024-331,486 James River (Medical Office),486 James River,Roseport,MO,Medical Office,Stabilized,20580000,9580000,0.4654,0.0692,68759
+HRE-2024-331-P2,HRE-2024-331,995 Suzanne Harbor (Medical Office),995 Suzanne Harbor,Shawnchester,WI,Medical Office,Stabilized,5930000,2780000,0.4684,0.0704,19427
+HRE-2024-331-P3,HRE-2024-331,102 Scott Crescent (Medical Office),102 Scott Crescent,Lisatown,CA,Medical Office,Stabilized,6740000,3240000,0.481,0.0682,18780
+HRE-2024-331-P4,HRE-2024-331,29 Garcia Divide (Medical Office),29 Garcia Divide,Michaelchester,CO,Medical Office,Stabilized,28650000,13050000,0.4556,0.0709,84402
+HRE-2024-332-P1,HRE-2024-332,346 Joseph Radial (Medical Office),346 Joseph Radial,New Williamberg,WI,Medical Office,Transitional,18500000,14150000,0.7648,0.1053,114835
+HRE-2024-333-P1,HRE-2024-333,955 Fernandez Extension (Life Science),955 Fernandez Extension,West Erik,PA,Life Science,Transitional,5320000,3540000,0.6663,0.1069,13853
+HRE-2024-333-P2,HRE-2024-333,397 Kidd Ville (Life Science),397 Kidd Ville,North Beth,NY,Life Science,Transitional,4380000,2840000,0.6493,0.1086,9313
+HRE-2024-333-P3,HRE-2024-333,737 Maria Stream (Life Science),737 Maria Stream,Lake Richard,AZ,Life Science,Stabilized,2130000,1240000,0.5838,0.0941,3799
+HRE-2024-333-P4,HRE-2024-333,632 Nelson Shore (Life Science),632 Nelson Shore,Priceshire,GA,Life Science,Below-Market,1160000,740000,0.6381,0.106,2688
+HRE-2024-333-P5,HRE-2024-333,287 Smith Square (Life Science),287 Smith Square,East Robert,OH,Life Science,Stabilized,20820000,13090000,0.6289,0.0925,41038
+HRE-2024-333-P6,HRE-2024-333,419 Smith Branch (Life Science),419 Smith Branch,North Kristinbury,MN,Life Science,Below-Market,2850000,1790000,0.6268,0.0984,7505
+HRE-2024-333-P7,HRE-2024-333,322 Carey Knolls (Life Science),322 Carey Knolls,Moonburgh,VA,Life Science,Stabilized,5480000,3220000,0.5885,0.0947,8770
+HRE-2024-333-P8,HRE-2024-333,932 Katherine Springs (Life Science),932 Katherine Springs,West Brandon,MA,Life Science,Stabilized,1000000,580000,0.5809,0.0931,2741
+HRE-2024-333-P9,HRE-2024-333,464 Adrian View (Life Science),464 Adrian View,North Ericton,MO,Life Science,Stabilized,3130000,1840000,0.5893,0.0941,5570
+HRE-2024-333-P10,HRE-2024-333,296 Cameron Crossroad (Life Science),296 Cameron Crossroad,West Allison,FL,Life Science,Stabilized,1000000,610000,0.6114,0.0944,2240
+HRE-2024-334-P1,HRE-2024-334,140 Smith Meadow (Life Science),140 Smith Meadow,Carterbury,NJ,Life Science,Stabilized,3180000,1540000,0.4829,0.0667,3870
+HRE-2024-334-P2,HRE-2024-334,363 Reynolds Lodge (Life Science),363 Reynolds Lodge,Walkerville,WI,Life Science,Stabilized,2660000,1320000,0.4971,0.0679,3003
+HRE-2024-334-P3,HRE-2024-334,461 Miller Ports (Life Science),461 Miller Ports,Port Tanner,NC,Life Science,Stabilized,1910000,850000,0.4476,0.0697,2402
+HRE-2024-334-P4,HRE-2024-334,252 Mark Circles (Life Science),252 Mark Circles,New Reneetown,CO,Life Science,Stabilized,1000000,470000,0.4714,0.0678,1608
+HRE-2024-334-P5,HRE-2024-334,70 Pittman Gateway (Life Science),70 Pittman Gateway,Russellside,GA,Life Science,Stabilized,3710000,1790000,0.4815,0.07,4558
+HRE-2024-334-P6,HRE-2024-334,335 Duran Road (Life Science),335 Duran Road,Coffeyport,TN,Life Science,Stabilized,2790000,1380000,0.4943,0.0679,3760
+HRE-2024-334-P7,HRE-2024-334,750 Bryan Unions (Life Science),750 Bryan Unions,West Elizabeth,FL,Life Science,Stabilized,30020000,14790000,0.4926,0.0667,38558
+HRE-2024-335-P1,HRE-2024-335,746 Hall Rapid (Senior Housing),746 Hall Rapid,Santanaside,CO,Senior Housing,Stabilized,33300000,14640000,0.4397,0.0707,90968
+HRE-2024-336-P1,HRE-2024-336,53 Hobbs River (Senior Housing),53 Hobbs River,West Matthew,GA,Senior Housing,Lease-Up,20400000,14350000,0.7035,0.1622,438176
+HRE-2024-337-P1,HRE-2024-337,242 Shawn Isle (Senior Housing),242 Shawn Isle,Martinezbury,FL,Senior Housing,Stabilized,1520000,710000,0.4645,0.0783,5541
+HRE-2024-337-P2,HRE-2024-337,613 Brittany Ville (Senior Housing),613 Brittany Ville,Barajasside,MA,Senior Housing,Stabilized,16930000,8040000,0.4747,0.0748,61052
+HRE-2024-337-P3,HRE-2024-337,53 Kelly Orchard (Senior Housing),53 Kelly Orchard,Jasonfort,TX,Senior Housing,Stabilized,1440000,650000,0.4535,0.0742,6035
+HRE-2024-337-P4,HRE-2024-337,90 Bruce Inlet (Senior Housing),90 Bruce Inlet,Mcneilberg,WA,Senior Housing,Stabilized,17120000,8290000,0.4843,0.0768,74878
+HRE-2024-337-P5,HRE-2024-337,608 Silva Plains (Senior Housing),608 Silva Plains,South Michaelmouth,VA,Senior Housing,Stabilized,3490000,1700000,0.4876,0.0736,13305
+HRE-2024-337-P6,HRE-2024-337,99 Carter Branch (Senior Housing),99 Carter Branch,Crosbyview,MD,Senior Housing,Stabilized,22700000,10300000,0.4539,0.0764,82571
+HRE-2024-338-P1,HRE-2024-338,130 Robert Flat (Senior Housing),130 Robert Flat,Hudsonfurt,AZ,Senior Housing,Stabilized,8000000,5360000,0.6697,0.1105,47460
+HRE-2024-339-P1,HRE-2024-339,475 Matthew Shores (Senior Housing),475 Matthew Shores,Brownhaven,VA,Senior Housing,Stabilized,33800000,24520000,0.7253,0.1152,174307
+HRE-2024-340-P1,HRE-2024-340,739 Christian Port (Life Science),739 Christian Port,Michaelmouth,MA,Life Science,Stabilized,8000000,4400000,0.5506,0.0726,10679
+HRE-2024-341-P1,HRE-2024-341,46 Robinson Alley (Medical Office),46 Robinson Alley,Gibsonmouth,WA,Medical Office,Below-Market,86400000,59210000,0.6853,0.1077,557109
+HRE-2024-342-P1,HRE-2024-342,426 Justin Forges (Senior Housing),426 Justin Forges,Greenbury,GA,Senior Housing,Stabilized,32200000,17120000,0.5318,0.0846,149038
+HRE-2024-343-P1,HRE-2024-343,126 Gregory Brooks (Medical Office),126 Gregory Brooks,Durhamberg,CO,Medical Office,Lease-Up,45100000,34170000,0.7577,0.143,755580
+HRE-2024-344-P1,HRE-2024-344,571 Pena Creek (Skilled Nursing),571 Pena Creek,Shawhaven,NY,Skilled Nursing,Stabilized,1000000,520000,0.5215,0.1077,2767
+HRE-2024-344-P2,HRE-2024-344,665 Mike Landing (Skilled Nursing),665 Mike Landing,West Wendyville,MD,Skilled Nursing,Stabilized,10130000,4700000,0.4637,0.1071,34145
+HRE-2024-344-P3,HRE-2024-344,485 Johns Circles (Skilled Nursing),485 Johns Circles,Port Emilyview,VA,Skilled Nursing,Stabilized,18200000,8830000,0.4853,0.1078,54579
+HRE-2024-344-P4,HRE-2024-344,842 James Lane (Skilled Nursing),842 James Lane,Carrland,OH,Skilled Nursing,Stabilized,20060000,9790000,0.4882,0.1087,62522
+HRE-2024-344-P5,HRE-2024-344,288 Samantha Track (Skilled Nursing),288 Samantha Track,West Kimberlychester,PA,Skilled Nursing,Stabilized,18450000,8740000,0.4735,0.1055,57227
+HRE-2024-344-P6,HRE-2024-344,336 Mark Center (Skilled Nursing),336 Mark Center,West Scottchester,MO,Skilled Nursing,Stabilized,2260000,1090000,0.481,0.1085,7984
+HRE-2024-345-P1,HRE-2024-345,892 Clark Common (Medical Office),892 Clark Common,New Stacyland,AZ,Medical Office,Below-Market,19800000,12880000,0.6504,0.0861,90732
+HRE-2024-346-P1,HRE-2024-346,300 Randy Inlet (Medical Office),300 Randy Inlet,North Brandon,OH,Medical Office,Stabilized,13100000,5960000,0.4553,0.0692,43980
+HRE-2024-347-P1,HRE-2024-347,879 Valenzuela Hill (Senior Housing),879 Valenzuela Hill,North Sarabury,NY,Senior Housing,Stabilized,22300000,12450000,0.5583,0.0837,82041
+HRE-2024-348-P1,HRE-2024-348,485 Corey Cliffs (Senior Housing),485 Corey Cliffs,Lindamouth,MD,Senior Housing,Stabilized,16400000,10310000,0.6289,0.1137,79287
+HRE-2024-349-P1,HRE-2024-349,279 Emily Glen (Medical Office),279 Emily Glen,Jamesfurt,TN,Medical Office,Stabilized,13700000,8360000,0.6099,0.0762,44311
+HRE-2024-350-P1,HRE-2024-350,888 Michelle Forks (Medical Office),888 Michelle Forks,Alexisside,MA,Medical Office,Stabilized,16500000,9270000,0.5616,0.08,68477
+HRE-2024-351-P1,HRE-2024-351,555 Lawrence Field (Medical Office),555 Lawrence Field,North Ericton,MO,Medical Office,Below-Market,18800000,12780000,0.6799,0.0884,99509
+HRE-2024-352-P1,HRE-2024-352,112 Morgan Manor (Life Science),112 Morgan Manor,West Nicolebury,AZ,Life Science,Stabilized,3240000,1500000,0.4622,0.0718,3700
+HRE-2024-352-P2,HRE-2024-352,906 Nguyen Brooks (Life Science),906 Nguyen Brooks,West Juliefurt,WA,Life Science,Stabilized,12230000,5470000,0.447,0.074,13937
+HRE-2024-352-P3,HRE-2024-352,385 Brown Lights (Life Science),385 Brown Lights,Bassport,IL,Life Science,Stabilized,2930000,1380000,0.4702,0.0739,3845
+HRE-2024-352-P4,HRE-2024-352,521 Johnson Flat (Life Science),521 Johnson Flat,West Natashaport,FL,Life Science,Stabilized,1400000,630000,0.4516,0.0726,1918
+HRE-2024-352-P5,HRE-2024-352,503 Harris Highway (Life Science),503 Harris Highway,Murphyland,PA,Life Science,Stabilized,3300000,1480000,0.4481,0.0716,4348
+HRE-2024-353-P1,HRE-2024-353,493 Moore Creek (Senior Housing),493 Moore Creek,Lisatown,CA,Senior Housing,Stabilized,16800000,10570000,0.629,0.0812,52170
+HRE-2024-354-P1,HRE-2024-354,489 Paul Way (Life Science),489 Paul Way,Matthewview,AZ,Life Science,Lease-Up,10100000,6670000,0.6603,0.1472,61569
+HRE-2024-355-P1,HRE-2024-355,804 Matthews Parkway (Medical Office),804 Matthews Parkway,New Amanda,NC,Medical Office,Lease-Up,18600000,12980000,0.6978,0.1326,348327
+HRE-2024-356-P1,HRE-2024-356,542 Stevens Ports (Medical Office),542 Stevens Ports,Vargastown,NC,Medical Office,Stabilized,13200000,5830000,0.442,0.0731,41875
+HRE-2024-357-P1,HRE-2024-357,888 Ellis Shoals (Life Science),888 Ellis Shoals,Elizabethburgh,VA,Life Science,Stabilized,18100000,8660000,0.4787,0.0646,22452
+HRE-2024-358-P1,HRE-2024-358,715 Hale Cape (Medical Office),715 Hale Cape,Meganstad,WI,Medical Office,Stabilized,13000000,7620000,0.5864,0.0729,43443
+HRE-2024-359-P1,HRE-2024-359,232 Ortiz Expressway (Life Science),232 Ortiz Expressway,Davisstad,WI,Life Science,Lease-Up,43000000,28160000,0.6549,0.1593,199860
+HRE-2024-360-P1,HRE-2024-360,563 Charles Square (Life Science),563 Charles Square,East Jessetown,CA,Life Science,Lease-Up,60800000,46680000,0.7677,0.1513,674652
+HRE-2024-361-P1,HRE-2024-361,407 Wilson Dale (Skilled Nursing),407 Wilson Dale,South Todd,NY,Skilled Nursing,Lease-Up,17100000,12540000,0.7334,0.1622,188553
+HRE-2024-362-P1,HRE-2024-362,244 Jones Plaza (Skilled Nursing),244 Jones Plaza,Christinaside,AZ,Skilled Nursing,Stabilized,23400000,13580000,0.5805,0.103,69260
+HRE-2024-363-P1,HRE-2024-363,103 Skinner Extension (Medical Office),103 Skinner Extension,Chavezburgh,MO,Medical Office,Stabilized,12000000,6270000,0.5226,0.0647,30853
+HRE-2024-364-P1,HRE-2024-364,684 Mary Valleys (Skilled Nursing),684 Mary Valleys,Christopherfurt,MD,Skilled Nursing,Stabilized,14500000,9350000,0.6445,0.1261,56051
+HRE-2024-365-P1,HRE-2024-365,339 Vaughn Mills (Life Science),339 Vaughn Mills,East Joycetown,MO,Life Science,Stabilized,8190000,5790000,0.7072,0.0981,14542
+HRE-2024-365-P2,HRE-2024-365,860 Wang Gateway (Life Science),860 Wang Gateway,South Matthew,WI,Life Science,Transitional,6690000,5020000,0.7504,0.1078,16527
+HRE-2024-365-P3,HRE-2024-365,996 Hoover Springs (Life Science),996 Hoover Springs,Darrellfurt,VA,Life Science,Transitional,7220000,5390000,0.7461,0.1112,17065
+HRE-2024-365-P4,HRE-2024-365,930 Jennifer Cape (Life Science),930 Jennifer Cape,Lake Richard,AZ,Life Science,Transitional,2770000,2100000,0.7586,0.1143,7094
+HRE-2024-365-P5,HRE-2024-365,445 Martinez Forest (Life Science),445 Martinez Forest,Matthewfurt,CO,Life Science,Transitional,5430000,4130000,0.7606,0.1141,16923
+HRE-2024-365-P6,HRE-2024-365,816 Cameron Via (Life Science),816 Cameron Via,East Nathaniel,TX,Life Science,Stabilized,5450000,3790000,0.696,0.0958,9702
+HRE-2024-365-P7,HRE-2024-365,516 Jennifer Turnpike (Life Science),516 Jennifer Turnpike,Maryfort,NC,Life Science,Transitional,1000000,790000,0.789,0.106,3202
+HRE-2024-365-P8,HRE-2024-365,884 Martin Roads (Life Science),884 Martin Roads,South Christineshire,IL,Life Science,Below-Market,17220000,12690000,0.7372,0.1034,33174
+HRE-2024-366-P1,HRE-2024-366,946 Reyes Route (Medical Office),946 Reyes Route,East Judyhaven,MN,Medical Office,Below-Market,11500000,8400000,0.7305,0.1033,71989
+HRE-2024-367-P1,HRE-2024-367,686 Christine Circle (Medical Office),686 Christine Circle,Port Jonathan,MO,Medical Office,Lease-Up,68800000,50930000,0.7402,0.14,1446933
+HRE-2024-368-P1,HRE-2024-368,77 John Stream (Skilled Nursing),77 John Stream,North Deniseside,NY,Skilled Nursing,Below-Market,1000000,720000,0.7236,0.126,6133
+HRE-2024-368-P2,HRE-2024-368,953 Joshua Row (Skilled Nursing),953 Joshua Row,Cindyfort,VA,Skilled Nursing,Below-Market,1170000,850000,0.7245,0.1203,4609
+HRE-2024-368-P3,HRE-2024-368,896 Christensen Forks (Skilled Nursing),896 Christensen Forks,New Michelleton,TN,Skilled Nursing,Below-Market,4710000,3520000,0.7471,0.1237,20205
+HRE-2024-368-P4,HRE-2024-368,983 Laurie Square (Skilled Nursing),983 Laurie Square,East Randallton,MO,Skilled Nursing,Below-Market,5990000,4350000,0.7259,0.1196,25729
+HRE-2024-368-P5,HRE-2024-368,242 Scott Avenue (Skilled Nursing),242 Scott Avenue,North Cynthiaview,IL,Skilled Nursing,Transitional,4570000,3480000,0.7609,0.1348,20095
+HRE-2024-368-P6,HRE-2024-368,336 Brett Divide (Skilled Nursing),336 Brett Divide,North Markton,CO,Skilled Nursing,Stabilized,6680000,4580000,0.6859,0.1176,21458
+HRE-2024-369-P1,HRE-2024-369,444 Joel Common (Senior Housing),444 Joel Common,Meganstad,WI,Senior Housing,Stabilized,1360000,640000,0.4714,0.0782,4076
+HRE-2024-369-P2,HRE-2024-369,525 John Fall (Senior Housing),525 John Fall,Gilmorefort,VA,Senior Housing,Stabilized,5410000,2600000,0.4799,0.0761,18839
+HRE-2024-369-P3,HRE-2024-369,400 Joseph Tunnel (Senior Housing),400 Joseph Tunnel,East Gregory,CO,Senior Housing,Stabilized,5390000,2430000,0.4501,0.078,19346
+HRE-2024-369-P4,HRE-2024-369,66 Gray Mountains (Senior Housing),66 Gray Mountains,New Stephanie,TX,Senior Housing,Stabilized,2680000,1240000,0.4617,0.0778,8550
+HRE-2024-369-P5,HRE-2024-369,510 Wolf Viaduct (Senior Housing),510 Wolf Viaduct,Port Andrew,NC,Senior Housing,Stabilized,13560000,6820000,0.5026,0.0762,44108
+HRE-2024-370-P1,HRE-2024-370,172 Katherine Hills (Life Science),172 Katherine Hills,Christopherbury,NJ,Life Science,Stabilized,29400000,19510000,0.6637,0.0978,42485
+HRE-2024-371-P1,HRE-2024-371,780 Taylor Mountains (Medical Office),780 Taylor Mountains,Meganstad,WI,Medical Office,Stabilized,12400000,7890000,0.6359,0.0821,44849
+HRE-2024-372-P1,HRE-2024-372,335 Wise Terrace (Life Science),335 Wise Terrace,Jasonbury,PA,Life Science,Stabilized,1000000,690000,0.6903,0.0909,2055
+HRE-2024-372-P2,HRE-2024-372,37 Sandra Lake (Life Science),37 Sandra Lake,East Lydiamouth,TX,Life Science,Stabilized,1000000,720000,0.7162,0.089,2571
+HRE-2024-372-P3,HRE-2024-372,412 Alexander Trail (Life Science),412 Alexander Trail,Stevenmouth,OH,Life Science,Stabilized,1000000,710000,0.7101,0.0931,1420
+HRE-2024-372-P4,HRE-2024-372,287 April Field (Life Science),287 April Field,Matthewsberg,MD,Life Science,Stabilized,1590000,1140000,0.719,0.0914,2667
+HRE-2024-372-P5,HRE-2024-372,933 Daniel Ports (Life Science),933 Daniel Ports,Shelleyfort,MA,Life Science,Stabilized,3300000,2300000,0.6958,0.092,4269
+HRE-2024-372-P6,HRE-2024-372,382 Sarah Locks (Life Science),382 Sarah Locks,South Gregory,AZ,Life Science,Transitional,1540000,1160000,0.7547,0.0995,3791
+HRE-2024-372-P7,HRE-2024-372,756 Warren Shoal (Life Science),756 Warren Shoal,Port Jacobland,NY,Life Science,Stabilized,1000000,680000,0.6846,0.0891,1487
+HRE-2024-372-P8,HRE-2024-372,434 White Creek (Life Science),434 White Creek,Davidstad,IL,Life Science,Transitional,7600000,6050000,0.7964,0.1064,19369
+HRE-2024-372-P9,HRE-2024-372,622 Christopher Corner (Life Science),622 Christopher Corner,Lisatown,CA,Life Science,Transitional,6860000,5140000,0.7491,0.1018,14681
+HRE-2024-373-P1,HRE-2024-373,496 Chambers Courts (Life Science),496 Chambers Courts,West Erik,PA,Life Science,Lease-Up,11900000,7960000,0.6689,0.1604,96576
+HRE-2024-374-P1,HRE-2024-374,751 Nicholas Pike (Medical Office),751 Nicholas Pike,Port Jacquelineside,WI,Medical Office,Stabilized,1000000,470000,0.4741,0.063,4905
+HRE-2024-374-P2,HRE-2024-374,450 Hayes Spur (Medical Office),450 Hayes Spur,North Candacestad,PA,Medical Office,Stabilized,15850000,7840000,0.4944,0.0664,55125
+HRE-2024-374-P3,HRE-2024-374,153 Gregory Fort (Medical Office),153 Gregory Fort,Lake Debra,CA,Medical Office,Stabilized,3770000,1890000,0.5007,0.066,11862
+HRE-2024-374-P4,HRE-2024-374,449 Jessica Hill (Medical Office),449 Jessica Hill,Jackton,MA,Medical Office,Stabilized,1390000,660000,0.4751,0.0653,5947
+HRE-2024-374-P5,HRE-2024-374,670 Miranda Forges (Medical Office),670 Miranda Forges,North Ericton,MO,Medical Office,Stabilized,3470000,1610000,0.4638,0.0652,11507
+HRE-2024-374-P6,HRE-2024-374,413 Stokes Fork (Medical Office),413 Stokes Fork,Lake Crystalbury,FL,Medical Office,Stabilized,5690000,2740000,0.4819,0.0658,17106
+HRE-2024-374-P7,HRE-2024-374,467 Lance Ramp (Medical Office),467 Lance Ramp,Port Markside,CO,Medical Office,Stabilized,1000000,470000,0.4679,0.0641,4238
+HRE-2024-374-P8,HRE-2024-374,132 Carol Inlet (Medical Office),132 Carol Inlet,Marshallshire,AZ,Medical Office,Stabilized,1610000,790000,0.4898,0.0656,7029
+HRE-2024-375-P1,HRE-2024-375,378 Campbell Fields (Medical Office),378 Campbell Fields,Lake Leeton,NY,Medical Office,Stabilized,51200000,22980000,0.4489,0.0677,154122
+HRE-2024-376-P1,HRE-2024-376,504 Mccann Fall (Senior Housing),504 Mccann Fall,Lake Christopher,CO,Senior Housing,Stabilized,2640000,1350000,0.5128,0.0711,9711
+HRE-2024-376-P2,HRE-2024-376,458 Watkins Drive (Senior Housing),458 Watkins Drive,Jonesport,GA,Senior Housing,Stabilized,13120000,6470000,0.4928,0.0689,44449
+HRE-2024-376-P3,HRE-2024-376,622 Burns Spurs (Senior Housing),622 Burns Spurs,Michaelmouth,MA,Senior Housing,Stabilized,26030000,12930000,0.4969,0.0667,85532
+HRE-2024-377-P1,HRE-2024-377,603 Kimberly Way (Medical Office),603 Kimberly Way,Hudsonfurt,AZ,Medical Office,Below-Market,13000000,8120000,0.6247,0.0985,77221
+HRE-2024-378-P1,HRE-2024-378,677 April Prairie (Life Science),677 April Prairie,Robertfort,WA,Life Science,Stabilized,26500000,15130000,0.5711,0.0751,33160
+HRE-2024-378-P2,HRE-2024-378,701 Tammy Crest (Life Science),701 Tammy Crest,East Josephville,IL,Life Science,Below-Market,1140000,700000,0.6116,0.0875,4050
+HRE-2024-378-P3,HRE-2024-378,996 York Bypass (Life Science),996 York Bypass,Port Keith,CA,Life Science,Below-Market,7460000,4610000,0.6176,0.0852,17101
+HRE-2024-379-P1,HRE-2024-379,274 Kevin Path (Life Science),274 Kevin Path,New Reneetown,CO,Life Science,Below-Market,13400000,9570000,0.7141,0.1105,32090
+HRE-2024-380-P1,HRE-2024-380,187 Neal Pike (Medical Office),187 Neal Pike,West Matthew,GA,Medical Office,Below-Market,40400000,26650000,0.6597,0.1091,285171
+HRE-2024-381-P1,HRE-2024-381,732 Miller Glens (Skilled Nursing),732 Miller Glens,North Sarabury,NY,Skilled Nursing,Stabilized,19000000,8630000,0.4543,0.088,47678
+HRE-2024-382-P1,HRE-2024-382,714 Crystal Grove (Medical Office),714 Crystal Grove,New Deborahtown,AZ,Medical Office,Stabilized,9600000,6170000,0.6432,0.0914,38935
+HRE-2024-383-P1,HRE-2024-383,823 Blankenship Tunnel (Senior Housing),823 Blankenship Tunnel,Wilsonton,MD,Senior Housing,Stabilized,21600000,13160000,0.6091,0.0884,81475
+HRE-2024-384-P1,HRE-2024-384,432 Smith Lane (Life Science),432 Smith Lane,West Donald,TX,Life Science,Below-Market,33400000,22420000,0.6712,0.0837,72335
+HRE-2024-385-P1,HRE-2024-385,323 Allison Squares (Medical Office),323 Allison Squares,Morganhaven,WA,Medical Office,Lease-Up,10500000,7760000,0.7388,0.1445,161948
+HRE-2024-386-P1,HRE-2024-386,180 Michael Streets (Senior Housing),180 Michael Streets,New Hannahbury,AZ,Senior Housing,Stabilized,25400000,17060000,0.6718,0.1038,139607
+HRE-2024-387-P1,HRE-2024-387,655 Woods Crossroad (Senior Housing),655 Woods Crossroad,North Susan,NY,Senior Housing,Stabilized,8000000,3860000,0.4819,0.0696,25928
+HRE-2024-388-P1,HRE-2024-388,874 Diane Divide (Senior Housing),874 Diane Divide,Lake Christopher,CO,Senior Housing,Below-Market,10800000,6680000,0.6183,0.0857,64733
+HRE-2024-389-P1,HRE-2024-389,180 Zimmerman Gateway (Medical Office),180 Zimmerman Gateway,Stephentown,MN,Medical Office,Below-Market,12400000,8060000,0.6502,0.082,59890
+HRE-2024-390-P1,HRE-2024-390,986 Barbara Corner (Senior Housing),986 Barbara Corner,Lake Debbieport,TN,Senior Housing,Stabilized,27700000,13090000,0.4727,0.0761,106737
+HRE-2024-391-P1,HRE-2024-391,846 Suzanne Manors (Senior Housing),846 Suzanne Manors,West Natashaport,FL,Senior Housing,Stabilized,10970000,6880000,0.6271,0.0946,48031
+HRE-2024-391-P2,HRE-2024-391,658 Richard Ridges (Senior Housing),658 Richard Ridges,Hollyview,VA,Senior Housing,Below-Market,7770000,5240000,0.6741,0.1032,45993
+HRE-2024-391-P3,HRE-2024-391,753 Jennifer Squares (Senior Housing),753 Jennifer Squares,South Dana,CO,Senior Housing,Stabilized,19800000,12520000,0.6324,0.096,91422
+HRE-2024-391-P4,HRE-2024-391,323 Catherine Extension (Senior Housing),323 Catherine Extension,New Laurie,TN,Senior Housing,Below-Market,6630000,4480000,0.676,0.1038,39316
+HRE-2024-391-P5,HRE-2024-391,728 Charles Villages (Senior Housing),728 Charles Villages,Marcusbury,AZ,Senior Housing,Stabilized,2360000,1530000,0.6467,0.0931,11529
+HRE-2024-391-P6,HRE-2024-391,244 Simpson Extension (Senior Housing),244 Simpson Extension,Lake Roymouth,NC,Senior Housing,Transitional,4220000,2880000,0.6818,0.1101,26604
+HRE-2024-391-P7,HRE-2024-391,216 Marie Vista (Senior Housing),216 Marie Vista,East Nathaniel,TX,Senior Housing,Below-Market,5110000,3500000,0.6847,0.1001,26472
+HRE-2024-391-P8,HRE-2024-391,190 Baker Alley (Senior Housing),190 Baker Alley,South Rachelborough,OH,Senior Housing,Transitional,1000000,720000,0.721,0.103,7516
+HRE-2024-391-P9,HRE-2024-391,688 Savannah River (Senior Housing),688 Savannah River,Samuelhaven,PA,Senior Housing,Stabilized,3720000,2430000,0.6535,0.0918,13768
+HRE-2024-391-P10,HRE-2024-391,64 Murphy Knoll (Senior Housing),64 Murphy Knoll,West Scottchester,MO,Senior Housing,Stabilized,5840000,3600000,0.6159,0.0927,22025
+HRE-2024-392-P1,HRE-2024-392,4 Richard Branch (Senior Housing),4 Richard Branch,North Deniseside,NY,Senior Housing,Stabilized,18300000,10960000,0.5989,0.1128,98534
+HRE-2024-393-P1,HRE-2024-393,629 Allison Drives (Medical Office),629 Allison Drives,Lake Crystalbury,FL,Medical Office,Below-Market,18780000,11370000,0.6052,0.0797,94488
+HRE-2024-393-P2,HRE-2024-393,243 Daniel Haven (Medical Office),243 Daniel Haven,Woodsstad,GA,Medical Office,Below-Market,12220000,7250000,0.5931,0.0842,62702
+HRE-2024-394-P1,HRE-2024-394,167 Potter Tunnel (Medical Office),167 Potter Tunnel,Port Molly,MN,Medical Office,Stabilized,30600000,21180000,0.6923,0.0879,119174
+HRE-2024-395-P1,HRE-2024-395,626 Ryan Highway (Medical Office),626 Ryan Highway,East David,NC,Medical Office,Transitional,11800000,8440000,0.715,0.0978,62800
+HRE-2024-395-P2,HRE-2024-395,608 Mooney Drive (Medical Office),608 Mooney Drive,Lake Nicoleview,TX,Medical Office,Below-Market,4320000,2970000,0.6881,0.0904,25029
+HRE-2024-395-P3,HRE-2024-395,914 Blake Center (Medical Office),914 Blake Center,East Gregory,CO,Medical Office,Below-Market,1000000,690000,0.6926,0.0923,6296
+HRE-2024-395-P4,HRE-2024-395,344 David Summit (Medical Office),344 David Summit,Samuelhaven,PA,Medical Office,Stabilized,16250000,10520000,0.6471,0.0865,61520
+HRE-2024-395-P5,HRE-2024-395,735 Rhonda Cliff (Medical Office),735 Rhonda Cliff,New Thomas,OH,Medical Office,Stabilized,1000000,640000,0.6425,0.0885,5105
+HRE-2024-395-P6,HRE-2024-395,475 Clark Alley (Medical Office),475 Clark Alley,Cantuport,WA,Medical Office,Transitional,10820000,8090000,0.7475,0.1066,60833
+HRE-2024-395-P7,HRE-2024-395,900 Kenneth Grove (Medical Office),900 Kenneth Grove,West Natashaport,FL,Medical Office,Stabilized,31270000,20600000,0.6587,0.0857,116787
+HRE-2024-395-P8,HRE-2024-395,61 Stacey Plaza (Medical Office),61 Stacey Plaza,Evanmouth,IL,Medical Office,Below-Market,5120000,3600000,0.7024,0.0941,25869
+HRE-2024-396-P1,HRE-2024-396,63 Jennifer Spurs (Life Science),63 Jennifer Spurs,Jackton,MA,Life Science,Stabilized,15500000,9480000,0.6119,0.0715,20177
+HRE-2024-397-P1,HRE-2024-397,570 Mark Ford (Life Science),570 Mark Ford,Andreaport,VA,Life Science,Stabilized,1000000,520000,0.5215,0.0726,2119
+HRE-2024-397-P2,HRE-2024-397,475 Jacob Overpass (Life Science),475 Jacob Overpass,East Gregory,CO,Life Science,Stabilized,5440000,2750000,0.5062,0.0696,6116
+HRE-2024-397-P3,HRE-2024-397,186 Lisa Spur (Life Science),186 Lisa Spur,Rossberg,GA,Life Science,Stabilized,1470000,700000,0.4771,0.0719,1749
+HRE-2024-397-P4,HRE-2024-397,703 Jennifer Dam (Life Science),703 Jennifer Dam,South Dianeshire,IL,Life Science,Stabilized,26240000,13360000,0.5092,0.0683,29781
+HRE-2024-397-P5,HRE-2024-397,391 Thomas Road (Life Science),391 Thomas Road,East Jessetown,CA,Life Science,Stabilized,1000000,500000,0.503,0.0712,1094
+HRE-2024-397-P6,HRE-2024-397,492 Amy Viaduct (Life Science),492 Amy Viaduct,Sampsonstad,MD,Life Science,Stabilized,3840000,1950000,0.5089,0.072,4304
+HRE-2024-398-P1,HRE-2024-398,718 Ochoa Inlet (Medical Office),718 Ochoa Inlet,Brandtside,FL,Medical Office,Stabilized,17300000,8490000,0.4905,0.0603,45628
+HRE-2024-399-P1,HRE-2024-399,733 William Villages (Medical Office),733 William Villages,South Patrickmouth,TX,Medical Office,Lease-Up,19800000,13270000,0.6703,0.1501,443345
+HRE-2024-400-P1,HRE-2024-400,962 Sandra Spur (Skilled Nursing),962 Sandra Spur,Vargastown,NC,Skilled Nursing,Lease-Up,32600000,20760000,0.6368,0.1735,536648
+HRE-2024-401-P1,HRE-2024-401,452 Travis Creek (Life Science),452 Travis Creek,Kimton,VA,Life Science,Stabilized,29900000,17420000,0.5825,0.0812,45848
+HRE-2024-402-P1,HRE-2024-402,758 Moreno Rapid (Medical Office),758 Moreno Rapid,Adamsborough,TX,Medical Office,Below-Market,23700000,15630000,0.6595,0.0927,115426
+HRE-2024-403-P1,HRE-2024-403,442 Katrina Knoll (Life Science),442 Katrina Knoll,Navarroview,VA,Life Science,Transitional,21300000,17330000,0.8138,0.1075,44154
+HRE-2024-404-P1,HRE-2024-404,254 Leah Shoal (Medical Office),254 Leah Shoal,Rivasside,GA,Medical Office,Stabilized,9520000,4540000,0.4764,0.0618,26987
+HRE-2024-404-P2,HRE-2024-404,288 Victoria Brook (Medical Office),288 Victoria Brook,Margaretland,NJ,Medical Office,Stabilized,16980000,8040000,0.4733,0.0595,47436
+HRE-2024-404-P3,HRE-2024-404,948 Watson Squares (Medical Office),948 Watson Squares,East Jamesside,NY,Medical Office,Stabilized,3930000,2040000,0.5196,0.0583,10490
+HRE-2024-404-P4,HRE-2024-404,360 Rodriguez Circle (Medical Office),360 Rodriguez Circle,Karenchester,NC,Medical Office,Stabilized,2070000,980000,0.4741,0.0602,5511
+HRE-2024-405-P1,HRE-2024-405,407 Adrienne Crossroad (Medical Office),407 Adrienne Crossroad,Russellside,GA,Medical Office,Stabilized,16800000,7670000,0.4568,0.0699,51755
+HRE-2024-406-P1,HRE-2024-406,135 Martin Unions (Medical Office),135 Martin Unions,Port Chad,WA,Medical Office,Stabilized,27800000,16310000,0.5868,0.0815,99280
+HRE-2024-407-P1,HRE-2024-407,283 Andrea Route (Medical Office),283 Andrea Route,Julieburgh,TN,Medical Office,Lease-Up,28100000,17450000,0.621,0.1511,404431
+HRE-2024-408-P1,HRE-2024-408,74 Anne Turnpike (Medical Office),74 Anne Turnpike,South Michaelmouth,VA,Medical Office,Stabilized,15540000,9980000,0.6422,0.0874,65930
+HRE-2024-408-P2,HRE-2024-408,683 Jacqueline Court (Medical Office),683 Jacqueline Court,West Allison,FL,Medical Office,Transitional,6080000,4250000,0.6983,0.0937,37096
+HRE-2024-408-P3,HRE-2024-408,76 Willis Walk (Medical Office),76 Willis Walk,Michaelmouth,MA,Medical Office,Below-Market,9980000,6880000,0.6891,0.0941,54974
+HRE-2024-408-P4,HRE-2024-408,187 West Curve (Medical Office),187 West Curve,Kathleenfurt,NC,Medical Office,Stabilized,2870000,1920000,0.6688,0.085,11697
+HRE-2024-408-P5,HRE-2024-408,946 Victor Motorway (Medical Office),946 Victor Motorway,North Renee,TN,Medical Office,Below-Market,12270000,8420000,0.6861,0.0914,72650
+HRE-2024-408-P6,HRE-2024-408,307 Ortiz River (Medical Office),307 Ortiz River,Lake Chad,CA,Medical Office,Stabilized,5600000,3610000,0.6452,0.086,20093
+HRE-2024-408-P7,HRE-2024-408,283 Bennett Port (Medical Office),283 Bennett Port,West Erik,PA,Medical Office,Stabilized,5860000,3850000,0.6567,0.0863,23159
+HRE-2024-409-P1,HRE-2024-409,798 Carroll Rapid (Medical Office),798 Carroll Rapid,South Shannon,WI,Medical Office,Lease-Up,25800000,18700000,0.725,0.1431,671938
+HRE-2024-410-P1,HRE-2024-410,87 Irwin Forest (Senior Housing),87 Irwin Forest,Lake Roymouth,NC,Senior Housing,Lease-Up,16000000,12170000,0.7608,0.1706,506350
+HRE-2024-411-P1,HRE-2024-411,801 Nelson Roads (Life Science),801 Nelson Roads,Mooreport,NY,Life Science,Stabilized,11800000,5210000,0.4416,0.068,16536
+HRE-2024-412-P1,HRE-2024-412,401 Sullivan Hills (Medical Office),401 Sullivan Hills,Lake Christopher,OH,Medical Office,Stabilized,30840000,16760000,0.5436,0.0634,93728
+HRE-2024-412-P2,HRE-2024-412,769 Christian Shores (Medical Office),769 Christian Shores,Tinaborough,MA,Medical Office,Stabilized,21740000,11620000,0.5345,0.0637,61973
+HRE-2024-412-P3,HRE-2024-412,677 Horton Trail (Medical Office),677 Horton Trail,Coxberg,TX,Medical Office,Stabilized,9110000,4970000,0.5454,0.0619,25476
+HRE-2024-412-P4,HRE-2024-412,87 Walters Squares (Medical Office),87 Walters Squares,Stewartland,IL,Medical Office,Stabilized,14860000,7470000,0.5029,0.0654,38222
+HRE-2024-412-P5,HRE-2024-412,995 Cynthia Parkway (Medical Office),995 Cynthia Parkway,Port Nicoleshire,GA,Medical Office,Stabilized,2750000,1430000,0.5202,0.0651,8358
+HRE-2024-413-P1,HRE-2024-413,627 Nunez Avenue (Senior Housing),627 Nunez Avenue,New Roberttown,CA,Senior Housing,Stabilized,26780000,13280000,0.496,0.0745,83767
+HRE-2024-413-P2,HRE-2024-413,164 Randall Path (Senior Housing),164 Randall Path,Vargastown,NC,Senior Housing,Stabilized,13070000,6010000,0.46,0.0746,38750
+HRE-2024-413-P3,HRE-2024-413,934 Allen Lock (Senior Housing),934 Allen Lock,Port Markside,CO,Senior Housing,Stabilized,9960000,4690000,0.471,0.0757,37651
+HRE-2024-413-P4,HRE-2024-413,587 Laurie Ports (Senior Housing),587 Laurie Ports,Jasonhaven,MO,Senior Housing,Stabilized,1610000,780000,0.4835,0.0715,4913
+HRE-2024-413-P5,HRE-2024-413,156 Richard Island (Senior Housing),156 Richard Island,South David,PA,Senior Housing,Stabilized,12190000,6010000,0.493,0.0754,41349
+HRE-2024-414-P1,HRE-2024-414,200 William Roads (Medical Office),200 William Roads,North Jeremyshire,VA,Medical Office,Stabilized,27600000,19530000,0.7076,0.1016,131522
+HRE-2024-415-P1,HRE-2024-415,814 Tonya Roads (Senior Housing),814 Tonya Roads,Kimton,VA,Senior Housing,Lease-Up,16000000,11970000,0.7482,0.1552,237033
+HRE-2024-416-P1,HRE-2024-416,188 Kenneth Plain (Senior Housing),188 Kenneth Plain,Sanchezside,WA,Senior Housing,Stabilized,10400000,6800000,0.6542,0.0933,54717
+HRE-2024-417-P1,HRE-2024-417,527 Hopkins Harbor (Life Science),527 Hopkins Harbor,Lake Alyssafurt,MO,Life Science,Transitional,27400000,17690000,0.6458,0.1186,84460
+HRE-2024-418-P1,HRE-2024-418,547 Daniel Ranch (Life Science),547 Daniel Ranch,New Kellystad,CA,Life Science,Stabilized,2640000,1200000,0.4531,0.0635,3391
+HRE-2024-418-P2,HRE-2024-418,935 Robert Oval (Life Science),935 Robert Oval,Margaretland,NJ,Life Science,Stabilized,10210000,4900000,0.4798,0.0632,12482
+HRE-2024-418-P3,HRE-2024-418,473 David Junctions (Life Science),473 David Junctions,Port Molly,MN,Life Science,Stabilized,3910000,1830000,0.4686,0.0632,4130
+HRE-2024-418-P4,HRE-2024-418,667 Eric Streets (Life Science),667 Eric Streets,Jasonbury,PA,Life Science,Stabilized,1320000,620000,0.4701,0.0627,1427
+HRE-2024-418-P5,HRE-2024-418,254 Amanda Path (Life Science),254 Amanda Path,Port Chad,WA,Life Science,Stabilized,12580000,5670000,0.4511,0.0652,13762
+HRE-2024-418-P6,HRE-2024-418,555 Anthony Dam (Life Science),555 Anthony Dam,New Michelleton,TN,Life Science,Stabilized,13950000,6080000,0.4358,0.0632,16038
+HRE-2024-418-P7,HRE-2024-418,316 Owens Valleys (Life Science),316 Owens Valleys,Moonburgh,VA,Life Science,Stabilized,4090000,1780000,0.4346,0.0636,4535
+HRE-2024-419-P1,HRE-2024-419,262 Hayden Cove (Senior Housing),262 Hayden Cove,Julieburgh,TN,Senior Housing,Lease-Up,33200000,21870000,0.6588,0.1463,501516
+HRE-2024-420-P1,HRE-2024-420,324 Stephanie Oval (Medical Office),324 Stephanie Oval,North Donna,MN,Medical Office,Lease-Up,10500000,7800000,0.743,0.1468,207385
+HRE-2024-421-P1,HRE-2024-421,1 Cabrera Road (Life Science),1 Cabrera Road,Micheleberg,MN,Life Science,Lease-Up,12800000,7750000,0.6052,0.1446,55966
+HRE-2024-422-P1,HRE-2024-422,197 Shannon Bypass (Skilled Nursing),197 Shannon Bypass,Port Joshuabury,WI,Skilled Nursing,Stabilized,64940000,45320000,0.6978,0.1027,162339
+HRE-2024-422-P2,HRE-2024-422,484 Sanders Crescent (Skilled Nursing),484 Sanders Crescent,Lake Edward,NJ,Skilled Nursing,Stabilized,1000000,740000,0.7405,0.1055,3406
+HRE-2024-422-P3,HRE-2024-422,278 Michael Cliffs (Skilled Nursing),278 Michael Cliffs,East Robert,OH,Skilled Nursing,Below-Market,12920000,9490000,0.7347,0.1148,50974
+HRE-2024-423-P1,HRE-2024-423,787 Kimberly Crossing (Senior Housing),787 Kimberly Crossing,Alexisside,MA,Senior Housing,Lease-Up,34000000,21780000,0.6405,0.1608,709710
+HRE-2024-424-P1,HRE-2024-424,851 Lewis Port (Senior Housing),851 Lewis Port,Lake John,WA,Senior Housing,Stabilized,12500000,6320000,0.5054,0.0848,57130
+HRE-2024-425-P1,HRE-2024-425,436 Campbell Forest (Life Science),436 Campbell Forest,Baileyport,TN,Life Science,Transitional,18800000,13070000,0.6951,0.0991,39744
+HRE-2024-426-P1,HRE-2024-426,305 Brandon Park (Senior Housing),305 Brandon Park,Matthewfurt,CO,Senior Housing,Stabilized,22100000,13450000,0.6085,0.0778,81307
+HRE-2024-427-P1,HRE-2024-427,705 David Extension (Medical Office),705 David Extension,North Kristinbury,MN,Medical Office,Lease-Up,11700000,8560000,0.7313,0.1274,286362
+HRE-2024-428-P1,HRE-2024-428,747 Smith Tunnel (Life Science),747 Smith Tunnel,West Andrewside,FL,Life Science,Stabilized,20900000,12340000,0.5904,0.0976,33157
+HRE-2024-429-P1,HRE-2024-429,269 Matthew Brook (Senior Housing),269 Matthew Brook,Lake Christopher,OH,Senior Housing,Lease-Up,22700000,16060000,0.7077,0.1388,287162
+HRE-2024-430-P1,HRE-2024-430,667 Hill Terrace (Medical Office),667 Hill Terrace,North Deniseside,NY,Medical Office,Below-Market,45700000,31990000,0.6999,0.1064,270176
+HRE-2024-431-P1,HRE-2024-431,771 Cabrera Plain (Skilled Nursing),771 Cabrera Plain,Robertfort,VA,Skilled Nursing,Stabilized,31400000,18960000,0.6038,0.1072,100704
+HRE-2024-432-P1,HRE-2024-432,574 Ware Cape (Life Science),574 Ware Cape,South Shannon,WI,Life Science,Transitional,9100000,7000000,0.7687,0.1171,21649
+HRE-2024-433-P1,HRE-2024-433,44 Luis Drive (Skilled Nursing),44 Luis Drive,Port Jacquelineside,WI,Skilled Nursing,Stabilized,18300000,8670000,0.474,0.0947,54677
+HRE-2024-434-P1,HRE-2024-434,642 Barnett Pike (Skilled Nursing),642 Barnett Pike,New Sarahview,MO,Skilled Nursing,Lease-Up,10400000,6980000,0.6712,0.1671,195077
+HRE-2024-435-P1,HRE-2024-435,859 Morris Street (Medical Office),859 Morris Street,Mortonside,NY,Medical Office,Lease-Up,28100000,18820000,0.6698,0.1368,430885
+HRE-2024-436-P1,HRE-2024-436,560 Heather Club (Medical Office),560 Heather Club,Matthewview,AZ,Medical Office,Stabilized,22700000,11380000,0.5015,0.0619,64188
+HRE-2024-437-P1,HRE-2024-437,522 Lisa Trace (Senior Housing),522 Lisa Trace,New Angelica,MO,Senior Housing,Below-Market,9100000,6230000,0.6845,0.1107,69520
+HRE-2024-438-P1,HRE-2024-438,795 Rios Vista (Life Science),795 Rios Vista,New John,MN,Life Science,Below-Market,20500000,12370000,0.6036,0.0911,43000
+HRE-2024-439-P1,HRE-2024-439,358 Hester Ways (Senior Housing),358 Hester Ways,Mortonside,NY,Senior Housing,Stabilized,13700000,7430000,0.5422,0.0928,64108
+HRE-2024-440-P1,HRE-2024-440,495 Henderson Spur (Skilled Nursing),495 Henderson Spur,New Brooke,NY,Skilled Nursing,Transitional,1000000,680000,0.6785,0.1336,4872
+HRE-2024-440-P2,HRE-2024-440,262 Dylan Wells (Skilled Nursing),262 Dylan Wells,Elizabethchester,WI,Skilled Nursing,Stabilized,10240000,6510000,0.6358,0.1201,31035
+HRE-2024-440-P3,HRE-2024-440,272 Patricia Ferry (Skilled Nursing),272 Patricia Ferry,South Rachelborough,OH,Skilled Nursing,Stabilized,3640000,2340000,0.6433,0.1195,10544
+HRE-2024-440-P4,HRE-2024-440,102 Bell Crest (Skilled Nursing),102 Bell Crest,Murphyland,PA,Skilled Nursing,Stabilized,21270000,13210000,0.6212,0.1156,63551
+HRE-2024-440-P5,HRE-2024-440,401 Romero Center (Skilled Nursing),401 Romero Center,Lake Roymouth,NC,Skilled Nursing,Stabilized,20410000,13170000,0.6451,0.1188,60057
+HRE-2024-440-P6,HRE-2024-440,348 Dennis Manors (Skilled Nursing),348 Dennis Manors,Lindamouth,MD,Skilled Nursing,Below-Market,3670000,2490000,0.6774,0.1299,18975
+HRE-2024-441-P1,HRE-2024-441,123 Brooke Pines (Medical Office),123 Brooke Pines,Port Katelynfort,VA,Medical Office,Stabilized,8200000,4130000,0.5033,0.0618,21155
+HRE-2024-442-P1,HRE-2024-442,598 Amanda Harbor (Senior Housing),598 Amanda Harbor,South Dianeshire,IL,Senior Housing,Stabilized,16110000,8630000,0.536,0.0844,70345
+HRE-2024-442-P2,HRE-2024-442,97 Myers Courts (Senior Housing),97 Myers Courts,West Andrewside,FL,Senior Housing,Stabilized,49890000,26090000,0.5229,0.0849,227030
+HRE-2024-442-P3,HRE-2024-442,277 Simpson Extension (Senior Housing),277 Simpson Extension,Port Emilyview,VA,Senior Housing,Stabilized,2280000,1320000,0.5782,0.083,7331
+HRE-2024-442-P4,HRE-2024-442,596 Gross Court (Senior Housing),596 Gross Court,West Michael,CA,Senior Housing,Stabilized,1000000,530000,0.5305,0.082,3341
+HRE-2024-442-P5,HRE-2024-442,907 Stevenson Walk (Senior Housing),907 Stevenson Walk,Davidfort,MO,Senior Housing,Stabilized,4370000,2250000,0.5143,0.0853,17895
+HRE-2024-443-P1,HRE-2024-443,956 Martin Motorway (Medical Office),956 Martin Motorway,North Susan,NY,Medical Office,Stabilized,4570000,1960000,0.4299,0.0604,13256
+HRE-2024-443-P2,HRE-2024-443,465 Conley Pine (Medical Office),465 Conley Pine,Elizabethchester,WI,Medical Office,Stabilized,12940000,5790000,0.4478,0.0614,36467
+HRE-2024-443-P3,HRE-2024-443,398 Rodriguez Spur (Medical Office),398 Rodriguez Spur,Lake Mark,TX,Medical Office,Stabilized,3210000,1460000,0.4533,0.0618,7496
+HRE-2024-443-P4,HRE-2024-443,256 Howard Summit (Medical Office),256 Howard Summit,New Michelleton,TN,Medical Office,Stabilized,1000000,460000,0.4601,0.0631,5169
+HRE-2024-443-P5,HRE-2024-443,98 Ho Drive (Medical Office),98 Ho Drive,New Anthonyport,AZ,Medical Office,Stabilized,17600000,8010000,0.4549,0.0632,45796
+HRE-2024-443-P6,HRE-2024-443,513 Smith Canyon (Medical Office),513 Smith Canyon,West Wendyville,MD,Medical Office,Stabilized,11900000,5400000,0.454,0.0603,30079
+HRE-2024-443-P7,HRE-2024-443,563 Koch Turnpike (Medical Office),563 Koch Turnpike,Valentineberg,WA,Medical Office,Stabilized,17500000,7450000,0.4259,0.0617,46960
+HRE-2024-444-P1,HRE-2024-444,446 Lisa Route (Medical Office),446 Lisa Route,North Micheleland,FL,Medical Office,Stabilized,10210000,5550000,0.5436,0.085,39144
+HRE-2024-444-P2,HRE-2024-444,685 Gordon Spur (Medical Office),685 Gordon Spur,Lake Jesusview,NJ,Medical Office,Stabilized,5390000,2790000,0.518,0.0839,21924
+HRE-2024-444-P3,HRE-2024-444,38 Martinez Plains (Medical Office),38 Martinez Plains,New Sarahview,MO,Medical Office,Stabilized,32040000,17160000,0.5357,0.0831,113862
+HRE-2024-444-P4,HRE-2024-444,560 Taylor Spring (Medical Office),560 Taylor Spring,North Amandahaven,IL,Medical Office,Below-Market,29000000,17100000,0.5897,0.0944,180414
+HRE-2024-444-P5,HRE-2024-444,187 Dale Burg (Medical Office),187 Dale Burg,East Jill,CA,Medical Office,Below-Market,6270000,3780000,0.6027,0.0958,42396
+HRE-2024-445-P1,HRE-2024-445,247 Ryan Roads (Medical Office),247 Ryan Roads,Elizabethfurt,NC,Medical Office,Lease-Up,97800000,66220000,0.6771,0.1475,2833324
+HRE-2024-446-P1,HRE-2024-446,337 George Streets (Skilled Nursing),337 George Streets,Port Andrew,NC,Skilled Nursing,Lease-Up,16600000,11720000,0.7059,0.2089,253020
+HRE-2024-447-P1,HRE-2024-447,916 Susan Park (Senior Housing),916 Susan Park,Mortonside,NY,Senior Housing,Stabilized,8360000,5000000,0.5976,0.0911,39748
+HRE-2024-447-P2,HRE-2024-447,459 Steven Via (Senior Housing),459 Steven Via,West Andrea,WA,Senior Housing,Below-Market,30340000,19900000,0.6558,0.0971,156053
+HRE-2024-447-P3,HRE-2024-447,888 Anne Branch (Senior Housing),888 Anne Branch,East Randallton,MO,Senior Housing,Stabilized,1000000,610000,0.6081,0.0908,3646
+HRE-2024-447-P4,HRE-2024-447,988 Williams Knoll (Senior Housing),988 Williams Knoll,Elizabethchester,WI,Senior Housing,Stabilized,11720000,7160000,0.611,0.0882,52976
+HRE-2024-447-P5,HRE-2024-447,868 Hill Estate (Senior Housing),868 Hill Estate,Herrerafurt,CA,Senior Housing,Below-Market,5020000,3200000,0.6376,0.0989,32422
+HRE-2024-448-P1,HRE-2024-448,786 Michael Squares (Medical Office),786 Michael Squares,Cindyfort,VA,Medical Office,Transitional,48150000,37670000,0.7824,0.0879,257164
+HRE-2024-448-P2,HRE-2024-448,334 Anderson Islands (Medical Office),334 Anderson Islands,New Mariotown,FL,Medical Office,Below-Market,1540000,1090000,0.7073,0.0805,7385
+HRE-2024-448-P3,HRE-2024-448,382 Morris Fort (Medical Office),382 Morris Fort,Jacquelineland,CA,Medical Office,Stabilized,8440000,5850000,0.6928,0.0749,27633
+HRE-2024-448-P4,HRE-2024-448,861 Cervantes Valleys (Medical Office),861 Cervantes Valleys,Vaughnmouth,TN,Medical Office,Stabilized,1280000,860000,0.6691,0.0739,6166
+HRE-2024-449-P1,HRE-2024-449,403 Laurie Mill (Skilled Nursing),403 Laurie Mill,Crosbyview,MD,Skilled Nursing,Stabilized,21000000,12240000,0.5828,0.1077,62515

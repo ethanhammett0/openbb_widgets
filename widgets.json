@@ -1,0 +1,1744 @@
+{
+    "dealFlowDistribution": {
+        "type": "chart",
+        "name": "Deal Flow Distribution",
+        "description": "Distribution of deal flow metrics over time.",
+        "category": "Markets Monitor",
+        "endpoint": "distribution",
+        "gridData": {
+            "w": 30,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "start_date",
+                "label": "Start Date",
+                "type": "date",
+                "value": "2024-01-01"
+            },
+            {
+                "paramName": "end_date",
+                "label": "End Date",
+                "type": "date",
+                "value": "2025-12-31"
+            },
+            {
+                "paramName": "interval",
+                "label": "Interval",
+                "value": "3 month",
+                "type": "text",
+                "options": [
+                    {
+                        "label": "1 month",
+                        "value": "1 month"
+                    },
+                    {
+                        "label": "3 month",
+                        "value": "3 month"
+                    },
+                    {
+                        "label": "6 month",
+                        "value": "6 month"
+                    },
+                    {
+                        "label": "9 month",
+                        "value": "9 month"
+                    },
+                    {
+                        "label": "12 month",
+                        "value": "12 month"
+                    }
+                ]
+            },
+            {
+                "paramName": "deal_type",
+                "label": "Deal Type",
+                "value": "",
+                "type": "text",
+                "options": [
+                    {
+                        "label": "All",
+                        "value": ""
+                    },
+                    {
+                        "label": "Acquisition",
+                        "value": "Acquisition"
+                    },
+                    {
+                        "label": "Refinance",
+                        "value": "Refinance"
+                    },
+                    {
+                        "label": "Construction",
+                        "value": "Construction"
+                    }
+                ]
+            },
+            {
+                "paramName": "metric",
+                "label": "Metric",
+                "value": "spread",
+                "type": "text",
+                "options": [
+                    {
+                        "label": "Spread",
+                        "value": "spread"
+                    },
+                    {
+                        "label": "LTV",
+                        "value": "ltv"
+                    },
+                    {
+                        "label": "Cap Rate",
+                        "value": "cap_rate"
+                    }
+                ]
+            }
+        ]
+    },
+    "dealFlowScatter": {
+        "type": "chart",
+        "name": "Deal Flow Scatter Plot",
+        "description": "Scatter plot comparison of deal metrics.",
+        "category": "Markets Monitor",
+        "endpoint": "scatter",
+        "gridData": {
+            "w": 30,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "start_date",
+                "label": "Start Date",
+                "type": "date",
+                "value": "2024-01-01"
+            },
+            {
+                "paramName": "end_date",
+                "label": "End Date",
+                "type": "date",
+                "value": "2025-12-31"
+            },
+            {
+                "paramName": "x_metric",
+                "label": "X Axis Metric",
+                "type": "text",
+                "value": "ltv",
+                "options": [
+                    {
+                        "label": "Spread",
+                        "value": "spread"
+                    },
+                    {
+                        "label": "LTV",
+                        "value": "ltv"
+                    },
+                    {
+                        "label": "Cap Rate",
+                        "value": "cap_rate"
+                    },
+                    {
+                        "label": "LTC",
+                        "value": "ltc"
+                    },
+                    {
+                        "label": "Debt Yield",
+                        "value": "debt_yield"
+                    },
+                    {
+                        "label": "DSCR",
+                        "value": "dscr"
+                    }
+                ]
+            },
+            {
+                "paramName": "y_metric",
+                "label": "Y Axis Metric",
+                "type": "text",
+                "value": "spread",
+                "options": [
+                    {
+                        "label": "Spread",
+                        "value": "spread"
+                    },
+                    {
+                        "label": "LTV",
+                        "value": "ltv"
+                    },
+                    {
+                        "label": "Cap Rate",
+                        "value": "cap_rate"
+                    },
+                    {
+                        "label": "LTC",
+                        "value": "ltc"
+                    },
+                    {
+                        "label": "Debt Yield",
+                        "value": "debt_yield"
+                    },
+                    {
+                        "label": "DSCR",
+                        "value": "dscr"
+                    }
+                ]
+            },
+            {
+                "paramName": "deal_type",
+                "label": "Deal Type Filter",
+                "type": "text",
+                "value": "",
+                "options": [
+                    {
+                        "label": "All Types",
+                        "value": ""
+                    },
+                    {
+                        "label": "Acquisition",
+                        "value": "Acquisition"
+                    },
+                    {
+                        "label": "Refinance",
+                        "value": "Refinance"
+                    },
+                    {
+                        "label": "Construction",
+                        "value": "Construction"
+                    }
+                ]
+            },
+            {
+                "paramName": "highlight_deal",
+                "label": "Highlight Deal",
+                "type": "endpoint",
+                "value": "",
+                "optionsEndpoint": "/deals/list",
+                "description": "Select a deal to highlight."
+            },
+            {
+                "paramName": "maturity_start",
+                "type": "date",
+                "value": "2024-01-01",
+                "label": "Maturity Start"
+            },
+            {
+                "paramName": "maturity_end",
+                "type": "date",
+                "value": "2027-12-31",
+                "label": "Maturity End"
+            }
+        ]
+    },
+    "profitabilityRaincloud": {
+        "type": "chart",
+        "name": "Profitability Raincloud",
+        "description": "Distribution density (cloud) with individual deal placement (rain).",
+        "category": "Markets Monitor",
+        "endpoint": "raincloud",
+        "gridData": {
+            "w": 30,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "start_date",
+                "label": "Start Date",
+                "type": "date",
+                "value": "2024-01-01"
+            },
+            {
+                "paramName": "end_date",
+                "label": "End Date",
+                "type": "date",
+                "value": "2025-12-31"
+            },
+            {
+                "paramName": "deal_type",
+                "label": "Deal Type",
+                "value": "",
+                "type": "text",
+                "options": [
+                    {
+                        "label": "All",
+                        "value": ""
+                    },
+                    {
+                        "label": "Acquisition",
+                        "value": "Acquisition"
+                    },
+                    {
+                        "label": "Refinance",
+                        "value": "Refinance"
+                    },
+                    {
+                        "label": "Construction",
+                        "value": "Construction"
+                    }
+                ]
+            },
+            {
+                "paramName": "metric",
+                "label": "Metric",
+                "value": "spread",
+                "type": "text",
+                "options": [
+                    {
+                        "label": "Spread",
+                        "value": "spread"
+                    },
+                    {
+                        "label": "LTV",
+                        "value": "ltv"
+                    },
+                    {
+                        "label": "Cap Rate",
+                        "value": "cap_rate"
+                    },
+                    {
+                        "label": "LTC",
+                        "value": "ltc"
+                    },
+                    {
+                        "label": "Debt Yield",
+                        "value": "debt_yield"
+                    },
+                    {
+                        "label": "DSCR",
+                        "value": "dscr"
+                    }
+                ]
+            },
+            {
+                "paramName": "highlight_deal",
+                "label": "Highlight Deal",
+                "type": "endpoint",
+                "value": "",
+                "optionsEndpoint": "/deals/list"
+            }
+        ]
+    },
+    "dealRadar": {
+        "type": "chart",
+        "name": "Deal vs Market Radar",
+        "description": "Compare a specific deal against market median across up to 8 metrics.",
+        "category": "Markets Monitor",
+        "endpoint": "radar",
+        "gridData": {
+            "w": 20,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "start_date",
+                "label": "Start Date",
+                "type": "date",
+                "value": "2024-01-01"
+            },
+            {
+                "paramName": "end_date",
+                "label": "End Date",
+                "type": "date",
+                "value": "2025-12-31"
+            },
+            {
+                "paramName": "deal_type",
+                "label": "Deal Type Filter",
+                "type": "text",
+                "value": "",
+                "options": [
+                    {
+                        "label": "All Types",
+                        "value": ""
+                    },
+                    {
+                        "label": "Acquisition",
+                        "value": "Acquisition"
+                    },
+                    {
+                        "label": "Refinance",
+                        "value": "Refinance"
+                    },
+                    {
+                        "label": "Construction",
+                        "value": "Construction"
+                    }
+                ]
+            },
+            {
+                "paramName": "metrics",
+                "label": "Metrics (Max 8)",
+                "type": "text",
+                "value": "spread,ltv,dscr,debt_yield,cap_rate",
+                "multiSelect": true,
+                "options": [
+                    {
+                        "label": "Spread",
+                        "value": "spread"
+                    },
+                    {
+                        "label": "LTV",
+                        "value": "ltv"
+                    },
+                    {
+                        "label": "Cap Rate",
+                        "value": "cap_rate"
+                    },
+                    {
+                        "label": "LTC",
+                        "value": "ltc"
+                    },
+                    {
+                        "label": "Debt Yield",
+                        "value": "debt_yield"
+                    },
+                    {
+                        "label": "DSCR",
+                        "value": "dscr"
+                    }
+                ]
+            },
+            {
+                "paramName": "highlight_deal",
+                "label": "Select Deal",
+                "type": "endpoint",
+                "value": "",
+                "optionsEndpoint": "/deals/list"
+            }
+        ]
+    },
+    "portfolio_grid": {
+        "name": "Portfolio Review",
+        "description": "Hierarchical view: Deal → Property → Tenant with 350 deals",
+        "category": "Healthcare RE",
+        "type": "table",
+        "endpoint": "portfolio",
+        "gridData": {
+            "w": 40,
+            "h": 20
+        },
+        "params": [
+            {
+                "paramName": "view_mode",
+                "type": "text",
+                "label": "View Mode",
+                "value": "Overview",
+                "options": [
+                    {
+                        "label": "Overview",
+                        "value": "Overview"
+                    },
+                    {
+                        "label": "Financials",
+                        "value": "Financials"
+                    },
+                    {
+                        "label": "Lease Details",
+                        "value": "Lease Details"
+                    }
+                ]
+            },
+            {
+                "paramName": "filter_by",
+                "type": "text",
+                "label": "Filter By",
+                "value": "None",
+                "options": [
+                    {
+                        "label": "No Filter",
+                        "value": "None"
+                    },
+                    {
+                        "label": "Strategy",
+                        "value": "Strategy"
+                    },
+                    {
+                        "label": "Geography",
+                        "value": "Geography"
+                    },
+                    {
+                        "label": "Deal Type",
+                        "value": "Deal Type"
+                    },
+                    {
+                        "label": "Credit Rating",
+                        "value": "Credit Rating"
+                    },
+                    {
+                        "label": "Asset Type",
+                        "value": "Asset Type"
+                    },
+                    {
+                        "label": "Property Condition",
+                        "value": "Property Condition"
+                    },
+                    {
+                        "label": "Structure",
+                        "value": "Structure"
+                    }
+                ]
+            },
+            {
+                "paramName": "filter_value",
+                "type": "endpoint",
+                "label": "Filter Value",
+                "optionsEndpoint": "/allocation_options",
+                "optionsParams": {
+                    "dimension": "$filter_by"
+                },
+                "multiSelect": true
+            },
+            {
+                "paramName": "tenant_type",
+                "type": "text",
+                "label": "Tenancy",
+                "value": "All",
+                "options": [
+                    {
+                        "label": "All",
+                        "value": "All"
+                    },
+                    {
+                        "label": "Single Tenant",
+                        "value": "Single Tenant"
+                    },
+                    {
+                        "label": "Multi Tenant",
+                        "value": "Multi Tenant"
+                    }
+                ]
+            },
+            {
+                "paramName": "deal_structure",
+                "type": "text",
+                "label": "Structure",
+                "value": "All",
+                "options": [
+                    {
+                        "label": "All",
+                        "value": "All"
+                    },
+                    {
+                        "label": "Single Asset",
+                        "value": "Single Asset"
+                    },
+                    {
+                        "label": "Portfolio",
+                        "value": "Portfolio"
+                    }
+                ]
+            }
+        ],
+        "data": {
+            "table": {
+                "showAll": true,
+                "suppressAggFuncInHeader": true,
+                "columnsDefs": [
+                    {
+                        "field": "Deal_Name",
+                        "headerName": "Deal",
+                        "cellDataType": "text",
+                        "rowGroup": true,
+                        "hide": true
+                    },
+                    {
+                        "field": "Property_Name",
+                        "headerName": "Property",
+                        "cellDataType": "text",
+                        "rowGroup": true,
+                        "hide": true
+                    },
+                    {
+                        "field": "Tenant_Name",
+                        "headerName": "Tenant",
+                        "cellDataType": "text",
+                        "rowGroup": true,
+                        "hide": true
+                    },
+                    {
+                        "field": "Sponsor",
+                        "headerName": "Sponsor",
+                        "cellDataType": "text",
+                        "width": 130,
+                        "aggFunc": "first"
+                    },
+                    {
+                        "field": "Strategy",
+                        "headerName": "Strategy",
+                        "cellDataType": "text",
+                        "width": 120,
+                        "aggFunc": "first"
+                    },
+                    {
+                        "field": "Credit",
+                        "headerName": "Credit",
+                        "cellDataType": "text",
+                        "width": 70,
+                        "aggFunc": "first",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                {
+                                    "condition": "eq",
+                                    "value": "AAA",
+                                    "color": "#4CAF50",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "eq",
+                                    "value": "AA+",
+                                    "color": "#66BB6A",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "eq",
+                                    "value": "A",
+                                    "color": "#FFA500",
+                                    "fill": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Type",
+                        "headerName": "Type",
+                        "cellDataType": "text",
+                        "width": 110,
+                        "aggFunc": "first"
+                    },
+                    {
+                        "field": "Condition",
+                        "headerName": "Condition",
+                        "cellDataType": "text",
+                        "width": 100,
+                        "aggFunc": "first"
+                    },
+                    {
+                        "field": "Location",
+                        "headerName": "Location",
+                        "cellDataType": "text",
+                        "width": 140,
+                        "aggFunc": "first"
+                    },
+                    {
+                        "field": "Lease_Type",
+                        "headerName": "Lease",
+                        "cellDataType": "text",
+                        "width": 75,
+                        "aggFunc": "first"
+                    },
+                    {
+                        "field": "Occupancy",
+                        "headerName": "Occ%",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "width": 75,
+                        "aggFunc": "avg",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                {
+                                    "condition": "lt",
+                                    "value": 85,
+                                    "color": "#EF5350",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "lt",
+                                    "value": 93,
+                                    "color": "#FFA500",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "gte",
+                                    "value": 93,
+                                    "color": "#4CAF50",
+                                    "fill": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "WALT",
+                        "headerName": "WALT",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 75,
+                        "aggFunc": "avg",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                {
+                                    "condition": "lt",
+                                    "value": 3.0,
+                                    "color": "#EF5350",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "lt",
+                                    "value": 5.0,
+                                    "color": "#FFA500",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "gte",
+                                    "value": 5.0,
+                                    "color": "#4CAF50",
+                                    "fill": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "LTV",
+                        "headerName": "LTV%",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "width": 75,
+                        "aggFunc": "avg",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                {
+                                    "condition": "gte",
+                                    "value": 75,
+                                    "color": "#EF5350",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "gte",
+                                    "value": 65,
+                                    "color": "#FFA500",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "lt",
+                                    "value": 65,
+                                    "color": "#4CAF50",
+                                    "fill": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "DSCR",
+                        "headerName": "DSCR",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 70,
+                        "aggFunc": "avg",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                {
+                                    "condition": "lt",
+                                    "value": 1.2,
+                                    "color": "#EF5350",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "lt",
+                                    "value": 1.35,
+                                    "color": "#FFA500",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "gte",
+                                    "value": 1.35,
+                                    "color": "#4CAF50",
+                                    "fill": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Debt_Yield",
+                        "headerName": "Yield%",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "width": 75,
+                        "aggFunc": "avg",
+                        "renderFn": "columnColor",
+                        "renderFnParams": {
+                            "colorRules": [
+                                {
+                                    "condition": "lt",
+                                    "value": 8,
+                                    "color": "#EF5350",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "lt",
+                                    "value": 10,
+                                    "color": "#FFA500",
+                                    "fill": false
+                                },
+                                {
+                                    "condition": "gte",
+                                    "value": 10,
+                                    "color": "#4CAF50",
+                                    "fill": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "field": "Loan",
+                        "headerName": "Loan",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "prefix": "$",
+                        "width": 110,
+                        "aggFunc": "sum"
+                    },
+                    {
+                        "field": "Value",
+                        "headerName": "Value",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "prefix": "$",
+                        "width": 110,
+                        "aggFunc": "sum"
+                    },
+                    {
+                        "field": "Annual_Rent",
+                        "headerName": "Ann Rent",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "prefix": "$",
+                        "width": 110,
+                        "aggFunc": "sum"
+                    },
+                    {
+                        "field": "SF",
+                        "headerName": "SF",
+                        "cellDataType": "number",
+                        "formatterFn": "int",
+                        "width": 90,
+                        "aggFunc": "sum"
+                    },
+                    {
+                        "field": "Rent_PSF",
+                        "headerName": "Rent/SF",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "prefix": "$",
+                        "width": 80
+                    },
+                    {
+                        "field": "Pct_RSF",
+                        "headerName": "% RSF",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 70
+                    },
+                    {
+                        "field": "Term",
+                        "headerName": "Term (Yrs)",
+                        "cellDataType": "number",
+                        "formatterFn": "none",
+                        "width": 90
+                    },
+                    {
+                        "field": "Lease_Expiry",
+                        "headerName": "Lease Expiry",
+                        "cellDataType": "text",
+                        "width": 105
+                    },
+                    {
+                        "field": "Structure",
+                        "headerName": "Structure",
+                        "cellDataType": "text",
+                        "hide": true
+                    },
+                    {
+                        "field": "Tenant_Type",
+                        "headerName": "Tenant Type",
+                        "cellDataType": "text",
+                        "hide": true
+                    },
+                    {
+                        "field": "State",
+                        "headerName": "State",
+                        "cellDataType": "text",
+                        "hide": true
+                    },
+                    {
+                        "field": "Deal_Type",
+                        "headerName": "Deal Type",
+                        "cellDataType": "text",
+                        "hide": true
+                    }
+                ],
+                "autoGroupColumnDef": {
+                    "headerName": "Entity",
+                    "pinned": "left",
+                    "width": 280,
+                    "cellRendererParams": {
+                        "suppressCount": false
+                    }
+                }
+            }
+        }
+    },
+    "key_metrics": {
+        "name": "Key Statistics",
+        "description": "High-level portfolio metrics",
+        "category": "Healthcare RE",
+        "type": "metric",
+        "endpoint": "metrics",
+        "gridData": {
+            "w": 40,
+            "h": 6
+        }
+    },
+    "portfolio_history": {
+        "name": "Maturity Schedule",
+        "description": "Loan maturities over time",
+        "category": "Healthcare RE",
+        "type": "chart",
+        "endpoint": "portfolio_history",
+        "gridData": {
+            "w": 20,
+            "h": 14
+        },
+        "params": [
+            {
+                "paramName": "interval",
+                "label": "Interval",
+                "type": "text",
+                "value": "Quarter",
+                "options": [
+                    {
+                        "label": "Month",
+                        "value": "Month"
+                    },
+                    {
+                        "label": "Quarter",
+                        "value": "Quarter"
+                    },
+                    {
+                        "label": "Year",
+                        "value": "Year"
+                    }
+                ]
+            },
+            {
+                "paramName": "show_composition",
+                "label": "Show Deal Stack",
+                "type": "boolean",
+                "value": false
+            }
+        ]
+    },
+    "portfolio_allocation": {
+        "name": "Portfolio Allocation",
+        "description": "Interactive donut chart grouped by any dimension.",
+        "category": "Healthcare RE",
+        "type": "chart",
+        "endpoint": "allocation",
+        "gridData": {
+            "w": 20,
+            "h": 14
+        },
+        "params": [
+            {
+                "paramName": "group_by",
+                "type": "text",
+                "label": "Group By",
+                "value": "Strategy",
+                "options": [
+                    {
+                        "label": "Strategy",
+                        "value": "Strategy"
+                    },
+                    {
+                        "label": "Geography",
+                        "value": "Geography"
+                    },
+                    {
+                        "label": "Deal Type",
+                        "value": "Deal Type"
+                    },
+                    {
+                        "label": "Credit Rating",
+                        "value": "Credit Rating"
+                    },
+                    {
+                        "label": "Asset Type",
+                        "value": "Asset Type"
+                    },
+                    {
+                        "label": "Property Condition",
+                        "value": "Property Condition"
+                    },
+                    {
+                        "label": "Structure",
+                        "value": "Structure"
+                    }
+                ]
+            },
+            {
+                "paramName": "filter_by",
+                "type": "text",
+                "label": "Filter By",
+                "value": "None",
+                "options": [
+                    {
+                        "label": "No Filter",
+                        "value": "None"
+                    },
+                    {
+                        "label": "Strategy",
+                        "value": "Strategy"
+                    },
+                    {
+                        "label": "Geography",
+                        "value": "Geography"
+                    },
+                    {
+                        "label": "Deal Type",
+                        "value": "Deal Type"
+                    },
+                    {
+                        "label": "Credit Rating",
+                        "value": "Credit Rating"
+                    },
+                    {
+                        "label": "Asset Type",
+                        "value": "Asset Type"
+                    },
+                    {
+                        "label": "Property Condition",
+                        "value": "Property Condition"
+                    },
+                    {
+                        "label": "Structure",
+                        "value": "Structure"
+                    }
+                ]
+            },
+            {
+                "paramName": "filter_value",
+                "type": "endpoint",
+                "label": "Filter Value",
+                "optionsEndpoint": "/allocation_options",
+                "optionsParams": {
+                    "dimension": "$filter_by"
+                },
+                "multiSelect": true
+            },
+            {
+                "paramName": "tenant_type",
+                "type": "text",
+                "label": "Tenancy",
+                "value": "All",
+                "options": [
+                    {
+                        "label": "All",
+                        "value": "All"
+                    },
+                    {
+                        "label": "Single Tenant",
+                        "value": "Single Tenant"
+                    },
+                    {
+                        "label": "Multi Tenant",
+                        "value": "Multi Tenant"
+                    }
+                ]
+            },
+            {
+                "paramName": "deal_structure",
+                "type": "text",
+                "label": "Structure",
+                "value": "All",
+                "options": [
+                    {
+                        "label": "All",
+                        "value": "All"
+                    },
+                    {
+                        "label": "Single Asset",
+                        "value": "Single Asset"
+                    },
+                    {
+                        "label": "Portfolio",
+                        "value": "Portfolio"
+                    }
+                ]
+            },
+            {
+                "paramName": "metric",
+                "type": "text",
+                "label": "Measure",
+                "value": "Loan Amount",
+                "options": [
+                    {
+                        "label": "Loan Amount",
+                        "value": "Loan Amount"
+                    },
+                    {
+                        "label": "Valuation",
+                        "value": "Valuation"
+                    },
+                    {
+                        "label": "Deal Count",
+                        "value": "Deal Count"
+                    },
+                    {
+                        "label": "NOI",
+                        "value": "NOI"
+                    }
+                ]
+            }
+        ]
+    },
+    "salesforce/deals": {
+        "name": "Salesforce Deal Entry",
+        "description": "Submit new deals and view the SFS pipeline.",
+        "category": "Salesforce",
+        "type": "table",
+        "endpoint": "salesforce/deals",
+        "gridData": {
+            "w": 20,
+            "h": 10
+        },
+        "params": [
+            {
+                "paramName": "deal_form",
+                "type": "form",
+                "endpoint": "salesforce/deals",
+                "inputParams": [
+                    {
+                        "paramName": "opportunity_name",
+                        "type": "text",
+                        "value": "",
+                        "label": "Opportunity Name"
+                    },
+                    {
+                        "paramName": "sector",
+                        "type": "text",
+                        "value": "",
+                        "label": "Sector",
+                        "options": [
+                            {
+                                "label": "🏢 Real Estate",
+                                "value": "Real Estate"
+                            },
+                            {
+                                "label": "🏛️ Public Finance",
+                                "value": "Public Finance"
+                            }
+                        ]
+                    },
+                    {
+                        "paramName": "product",
+                        "type": "text",
+                        "value": "",
+                        "label": "Product Type",
+                        "options": [
+                            {
+                                "label": "💰 Term Loan",
+                                "value": "Term Loan"
+                            },
+                            {
+                                "label": "💵 Tax-Exempt Term Loan",
+                                "value": "Tax-Exempt Term Loan"
+                            },
+                            {
+                                "label": "📊 Bond",
+                                "value": "Bond"
+                            },
+                            {
+                                "label": "📈 Revenue Bond",
+                                "value": "Revenue Bond"
+                            }
+                        ]
+                    },
+                    {
+                        "paramName": "source",
+                        "type": "text",
+                        "value": "",
+                        "label": "Lead Source",
+                        "options": [
+                            {
+                                "label": "🤝 Broker",
+                                "value": "Broker"
+                            },
+                            {
+                                "label": "👔 Sponsor",
+                                "value": "Sponsor"
+                            },
+                            {
+                                "label": "🔄 SFS Internal Referral",
+                                "value": "SFS Internal Referral"
+                            },
+                            {
+                                "label": "👨‍💼 Agent",
+                                "value": "Agent"
+                            }
+                        ]
+                    },
+                    {
+                        "paramName": "stage",
+                        "type": "text",
+                        "value": "",
+                        "label": "Deal Stage",
+                        "options": [
+                            {
+                                "label": "DI1 - Initial Contact",
+                                "value": "DI1"
+                            },
+                            {
+                                "label": "DI2 - Qualification",
+                                "value": "DI2"
+                            },
+                            {
+                                "label": "DI3 - Proposal",
+                                "value": "DI3"
+                            },
+                            {
+                                "label": "DI4 - Negotiation",
+                                "value": "DI4"
+                            },
+                            {
+                                "label": "DI5 - Due Diligence",
+                                "value": "DI5"
+                            },
+                            {
+                                "label": "DI6 - Documentation",
+                                "value": "DI6"
+                            },
+                            {
+                                "label": "DI7 - Approval",
+                                "value": "DI7"
+                            },
+                            {
+                                "label": "DI8 - Closing",
+                                "value": "DI8"
+                            },
+                            {
+                                "label": "DI9 - Complete",
+                                "value": "DI9"
+                            }
+                        ]
+                    },
+                    {
+                        "paramName": "takedown_date",
+                        "type": "date",
+                        "value": "",
+                        "label": "Expected Takedown Date"
+                    },
+                    {
+                        "paramName": "description",
+                        "type": "text",
+                        "value": "",
+                        "label": "📋 Deal Notes"
+                    },
+                    {
+                        "paramName": "submit",
+                        "type": "button",
+                        "label": "✅ Submit Deal",
+                        "value": true
+                    }
+                ]
+            }
+        ]
+    },
+    "salesforce/tranches": {
+        "name": "💰 Tranche Participation",
+        "description": "Comprehensive tranche tracking for HRE and Public Finance deals.",
+        "category": "Salesforce",
+        "type": "table",
+        "endpoint": "salesforce/tranches",
+        "gridData": {
+            "w": 20,
+            "h": 12
+        },
+        "params": [
+            {
+                "paramName": "tranche_form",
+                "type": "form",
+                "endpoint": "salesforce/tranches",
+                "inputParams": [
+                    {
+                        "paramName": "tranche_name",
+                        "type": "text",
+                        "value": "",
+                        "label": "Tranche Name/Series"
+                    },
+                    {
+                        "paramName": "facility_type",
+                        "type": "text",
+                        "value": "",
+                        "label": "Facility Type",
+                        "options": [
+                            {
+                                "label": "Senior Debt",
+                                "value": "Senior Debt"
+                            },
+                            {
+                                "label": "Mezzanine",
+                                "value": "Mezzanine"
+                            },
+                            {
+                                "label": "Equipment Lease",
+                                "value": "Equipment Lease"
+                            },
+                            {
+                                "label": "Working Capital",
+                                "value": "Working Capital"
+                            },
+                            {
+                                "label": "Bond Issue",
+                                "value": "Bond Issue"
+                            }
+                        ]
+                    },
+                    {
+                        "paramName": "tax_status",
+                        "type": "text",
+                        "value": "",
+                        "label": "Tax Status",
+                        "options": [
+                            {
+                                "label": "Tax-Exempt",
+                                "value": "Tax-Exempt"
+                            },
+                            {
+                                "label": "Taxable",
+                                "value": "Taxable"
+                            },
+                            {
+                                "label": "AMT",
+                                "value": "AMT"
+                            }
+                        ]
+                    },
+                    {
+                        "paramName": "use_of_proceeds",
+                        "type": "text",
+                        "value": "",
+                        "label": "Use of Proceeds"
+                    },
+                    {
+                        "paramName": "original_principal",
+                        "type": "text",
+                        "value": "",
+                        "label": "💵 Original Principal Amount"
+                    },
+                    {
+                        "paramName": "current_balance",
+                        "type": "text",
+                        "value": "",
+                        "label": "Current Outstanding Balance"
+                    },
+                    {
+                        "paramName": "rate_type",
+                        "type": "text",
+                        "value": "",
+                        "label": "Rate Type",
+                        "options": [
+                            {
+                                "label": "Fixed",
+                                "value": "Fixed"
+                            },
+                            {
+                                "label": "Floating",
+                                "value": "Floating"
+                            },
+                            {
+                                "label": "Capped Floater",
+                                "value": "Capped Floater"
+                            }
+                        ]
+                    },
+                    {
+                        "paramName": "origination_date",
+                        "type": "date",
+                        "value": "",
+                        "label": "Origination Date"
+                    },
+                    {
+                        "paramName": "maturity_date",
+                        "type": "date",
+                        "value": "",
+                        "label": "Maturity Date"
+                    },
+                    {
+                        "paramName": "submit_tranche",
+                        "type": "button",
+                        "label": "✅ Submit Tranche",
+                        "value": true
+                    }
+                ]
+            }
+        ]
+    },
+    "salesforce/realestate": {
+        "name": "🏢 Real Estate Assets",
+        "description": "Track real estate asset portfolio.",
+        "category": "Salesforce",
+        "type": "table",
+        "endpoint": "salesforce/realestate",
+        "gridData": {
+            "w": 20,
+            "h": 10
+        },
+        "params": [
+            {
+                "paramName": "realestate_form",
+                "type": "form",
+                "endpoint": "salesforce/realestate",
+                "inputParams": [
+                    {
+                        "paramName": "property_name",
+                        "type": "text",
+                        "value": "",
+                        "label": "🏢 Property Name"
+                    },
+                    {
+                        "paramName": "property_address",
+                        "type": "text",
+                        "value": "",
+                        "label": "📍 Address"
+                    },
+                    {
+                        "paramName": "property_type",
+                        "type": "text",
+                        "value": "",
+                        "label": "Property Type",
+                        "options": [
+                            {
+                                "label": "🏢 Office",
+                                "value": "Office"
+                            },
+                            {
+                                "label": "🏬 Retail",
+                                "value": "Retail"
+                            },
+                            {
+                                "label": "🏭 Industrial",
+                                "value": "Industrial"
+                            },
+                            {
+                                "label": "🏘️ Multifamily",
+                                "value": "Multifamily"
+                            },
+                            {
+                                "label": "🏨 Hospitality",
+                                "value": "Hospitality"
+                            }
+                        ]
+                    },
+                    {
+                        "paramName": "square_footage",
+                        "type": "text",
+                        "value": "",
+                        "label": "Square Footage"
+                    },
+                    {
+                        "paramName": "market_value",
+                        "type": "text",
+                        "value": "",
+                        "label": "💵 Market Value"
+                    },
+                    {
+                        "paramName": "occupancy_rate",
+                        "type": "text",
+                        "value": "",
+                        "label": "📊 Occupancy Rate"
+                    },
+                    {
+                        "paramName": "acquisition_date",
+                        "type": "date",
+                        "value": "",
+                        "label": "Acquisition Date"
+                    },
+                    {
+                        "paramName": "asset_notes",
+                        "type": "text",
+                        "value": "",
+                        "label": "📋 Asset Notes"
+                    },
+                    {
+                        "paramName": "submit_asset",
+                        "type": "button",
+                        "label": "✅ Submit Asset",
+                        "value": true
+                    }
+                ]
+            }
+        ]
+    },
+    "salesforce/accounts": {
+        "name": "🤝 Involved Accounts",
+        "description": "Dynamic account lookup: Search existing sponsors/brokers or add new ones.",
+        "category": "Salesforce",
+        "type": "table",
+        "endpoint": "salesforce/accounts",
+        "gridData": {
+            "w": 25,
+            "h": 12
+        },
+        "params": [
+            {
+                "paramName": "account_form",
+                "type": "form",
+                "endpoint": "salesforce/accounts",
+                "inputParams": [
+                    {
+                        "paramName": "account_lookup",
+                        "type": "endpoint",
+                        "value": "",
+                        "label": "🔍 Search Existing Account",
+                        "optionsEndpoint": "/salesforce/accounts/list"
+                    },
+                    {
+                        "paramName": "account_name",
+                        "type": "text",
+                        "value": "",
+                        "label": "Account / Company Name"
+                    },
+                    {
+                        "paramName": "account_type",
+                        "type": "text",
+                        "value": "",
+                        "label": "Account Type",
+                        "options": [
+                            {
+                                "label": "🏢 Sponsor / Developer",
+                                "value": "Sponsor"
+                            },
+                            {
+                                "label": "🤝 Broker",
+                                "value": "Broker"
+                            },
+                            {
+                                "label": "👨‍💼 Agent",
+                                "value": "Agent"
+                            },
+                            {
+                                "label": "🏦 Lender Partner",
+                                "value": "Lender"
+                            },
+                            {
+                                "label": "⚖️ Legal Counsel",
+                                "value": "Legal"
+                            },
+                            {
+                                "label": "🏛️ Municipality",
+                                "value": "Municipality"
+                            }
+                        ]
+                    },
+                    {
+                        "paramName": "primary_contact",
+                        "type": "text",
+                        "value": "",
+                        "label": "Primary Contact Name"
+                    },
+                    {
+                        "paramName": "contact_email",
+                        "type": "text",
+                        "value": "",
+                        "label": "📧 Contact Email"
+                    },
+                    {
+                        "paramName": "contact_phone",
+                        "type": "text",
+                        "value": "",
+                        "label": "📞 Contact Phone"
+                    },
+                    {
+                        "paramName": "business_focus",
+                        "type": "text",
+                        "value": "",
+                        "label": "Primary Business Focus"
+                    },
+                    {
+                        "paramName": "relationship_status",
+                        "type": "text",
+                        "value": "",
+                        "label": "Relationship Status",
+                        "options": [
+                            {
+                                "label": "🟢 Active",
+                                "value": "Active"
+                            },
+                            {
+                                "label": "🟡 Prospective",
+                                "value": "Prospective"
+                            },
+                            {
+                                "label": "🔵 Preferred Partner",
+                                "value": "Preferred"
+                            },
+                            {
+                                "label": "⚪ Inactive",
+                                "value": "Inactive"
+                            }
+                        ]
+                    },
+                    {
+                        "paramName": "account_notes",
+                        "type": "text",
+                        "value": "",
+                        "label": "📋 Notes"
+                    },
+                    {
+                        "paramName": "submit_account",
+                        "type": "button",
+                        "label": "✅ Submit Account",
+                        "value": true
+                    }
+                ]
+            }
+        ]
+    },
+    "salesforce/accounts/lookup": {
+        "name": "Account Lookup",
+        "description": "Search and view all involved accounts with dynamic filtering.",
+        "category": "Salesforce",
+        "type": "table",
+        "endpoint": "salesforce/accounts/lookup",
+        "gridData": {
+            "w": 30,
+            "h": 14
+        },
+        "params": [
+            {
+                "paramName": "search_term",
+                "type": "text",
+                "value": "",
+                "label": "🔍 Search Accounts",
+                "description": "Search by company name, contact name, or focus"
+            },
+            {
+                "paramName": "account_type_filter",
+                "type": "text",
+                "value": "",
+                "label": "Filter by Type",
+                "options": [
+                    {
+                        "label": "All Types",
+                        "value": ""
+                    },
+                    {
+                        "label": "Sponsor",
+                        "value": "Sponsor"
+                    },
+                    {
+                        "label": "Broker",
+                        "value": "Broker"
+                    },
+                    {
+                        "label": "Agent",
+                        "value": "Agent"
+                    },
+                    {
+                        "label": "Lender",
+                        "value": "Lender"
+                    },
+                    {
+                        "label": "Legal",
+                        "value": "Legal"
+                    },
+                    {
+                        "label": "Municipality",
+                        "value": "Municipality"
+                    }
+                ]
+            },
+            {
+                "paramName": "relationship_filter",
+                "type": "text",
+                "value": "",
+                "label": "Filter by Relationship",
+                "options": [
+                    {
+                        "label": "All Statuses",
+                        "value": ""
+                    },
+                    {
+                        "label": "Active",
+                        "value": "Active"
+                    },
+                    {
+                        "label": "Prospective",
+                        "value": "Prospective"
+                    },
+                    {
+                        "label": "Preferred",
+                        "value": "Preferred"
+                    },
+                    {
+                        "label": "Inactive",
+                        "value": "Inactive"
+                    }
+                ]
+            }
+        ]
+    },
+    "sharepoint_viewer": {
+        "name": "SharePoint Multi-PDF Viewer",
+        "description": "View and manage PDFs from SharePoint deals and folders.",
+        "category": "SharePoint",
+        "type": "multi_file_viewer",
+        "endpoint": "documents",
+        "gridData": {
+            "w": 30,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "portfolio",
+                "label": "Portfolio",
+                "type": "text",
+                "multiSelect": true,
+                "options": [
+                    {
+                        "label": "Real Estate",
+                        "value": "real_estate"
+                    },
+                    {
+                        "label": "Corporate",
+                        "value": "corporate"
+                    },
+                    {
+                        "label": "Project Finance",
+                        "value": "project_finance"
+                    }
+                ],
+                "value": [
+                    "real_estate"
+                ],
+                "description": "Select Portfolio(s)"
+            },
+            {
+                "paramName": "deal_id",
+                "label": "Deal",
+                "type": "text",
+                "optionsEndpoint": "deals",
+                "value": "deal_alpha",
+                "description": "Search for a Deal"
+            },
+            {
+                "paramName": "filename",
+                "label": "Widgets (Files)",
+                "type": "endpoint",
+                "optionsEndpoint": "files_list",
+                "optionsParams": {
+                    "deal_id": "$deal_id",
+                    "portfolio": "$portfolio"
+                },
+                "multiSelect": true,
+                "roles": [
+                    "fileSelector"
+                ],
+                "value": [],
+                "description": "Select Files to View"
+            }
+        ]
+    }
+}

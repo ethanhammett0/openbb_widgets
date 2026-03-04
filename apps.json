@@ -1,0 +1,205 @@
+[
+    {
+        "name": "Markets Monitor",
+        "description": "Deal flow distribution, scatter analysis, raincloud density, and radar benchmarking.",
+        "allowCustomization": true,
+        "tabs": {
+            "overview": {
+                "id": "overview",
+                "name": "Overview",
+                "layout": [
+                    {
+                        "i": "dealFlowDistribution",
+                        "x": 0,
+                        "y": 0,
+                        "w": 40,
+                        "h": 20,
+                        "state": {
+                            "params": {
+                                "interval": "3 month",
+                                "metric": "spread"
+                            }
+                        }
+                    },
+                    {
+                        "i": "dealFlowScatter",
+                        "x": 0,
+                        "y": 20,
+                        "w": 40,
+                        "h": 20,
+                        "state": {
+                            "params": {
+                                "x_metric": "ltv",
+                                "y_metric": "spread"
+                            }
+                        }
+                    },
+                    {
+                        "i": "profitabilityRaincloud",
+                        "x": 0,
+                        "y": 40,
+                        "w": 40,
+                        "h": 20,
+                        "state": {
+                            "params": {
+                                "metric": "spread"
+                            }
+                        }
+                    },
+                    {
+                        "i": "dealRadar",
+                        "x": 0,
+                        "y": 60,
+                        "w": 40,
+                        "h": 20,
+                        "state": {
+                            "params": {
+                                "metrics": "spread,ltv,dscr,debt_yield,cap_rate"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "tokens": [
+            {
+                "token": "interval",
+                "defaultValue": "3 month"
+            }
+        ]
+    },
+    {
+        "name": "Healthcare Portfolio Manager",
+        "description": "Deep dive into healthcare real estate portfolio: assets, tenants, maturities, and allocation.",
+        "allowCustomization": true,
+        "tabs": {
+            "overview": {
+                "id": "overview",
+                "name": "Overview",
+                "layout": [
+                    {
+                        "i": "key_metrics",
+                        "x": 0,
+                        "y": 0,
+                        "w": 40,
+                        "h": 4
+                    },
+                    {
+                        "i": "portfolio_grid",
+                        "x": 0,
+                        "y": 4,
+                        "w": 40,
+                        "h": 20,
+                        "state": {
+                            "columnState": {
+                                "default": {
+                                    "rowGroup": {
+                                        "groupColIds": [
+                                            "Deal_Name",
+                                            "Property_Name"
+                                        ]
+                                    },
+                                    "columnVisibility": {
+                                        "hiddenColIds": [
+                                            "Deal_Name",
+                                            "Property_Name"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "i": "portfolio_history",
+                        "x": 0,
+                        "y": 24,
+                        "w": 20,
+                        "h": 14
+                    },
+                    {
+                        "i": "portfolio_allocation",
+                        "x": 20,
+                        "y": 24,
+                        "w": 20,
+                        "h": 14
+                    }
+                ]
+            }
+        },
+        "groups": []
+    },
+    {
+        "name": "Salesforce App",
+        "description": "Deal Entry, Tranche Tracking, Real Estate Assets, and Account Lookup — backed by SFS pipeline data.",
+        "allowCustomization": true,
+        "tabs": {
+            "salesforce": {
+                "id": "salesforce",
+                "name": "Salesforce",
+                "layout": [
+                    {
+                        "i": "salesforce/deals",
+                        "x": 0,
+                        "y": 0,
+                        "w": 20,
+                        "h": 10,
+                        "groups": []
+                    },
+                    {
+                        "i": "salesforce/tranches",
+                        "x": 0,
+                        "y": 10,
+                        "w": 20,
+                        "h": 12,
+                        "groups": []
+                    },
+                    {
+                        "i": "salesforce/realestate",
+                        "x": 0,
+                        "y": 22,
+                        "w": 20,
+                        "h": 10,
+                        "groups": []
+                    },
+                    {
+                        "i": "salesforce/accounts",
+                        "x": 20,
+                        "y": 0,
+                        "w": 25,
+                        "h": 12,
+                        "groups": []
+                    },
+                    {
+                        "i": "salesforce/accounts/lookup",
+                        "x": 20,
+                        "y": 12,
+                        "w": 30,
+                        "h": 14,
+                        "groups": []
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "name": "SharePoint Viewer",
+        "description": "Browse and view deal documents and PDFs stored in SharePoint folders.",
+        "allowCustomization": true,
+        "tabs": {
+            "documents": {
+                "id": "documents",
+                "name": "Documents",
+                "layout": [
+                    {
+                        "i": "sharepoint_viewer",
+                        "x": 0,
+                        "y": 0,
+                        "w": 40,
+                        "h": 20,
+                        "groups": []
+                    }
+                ]
+            }
+        }
+    }
+]
