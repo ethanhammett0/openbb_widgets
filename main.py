@@ -37,7 +37,7 @@ def root():
 
 @app.get("/widgets.json")
 def get_widgets():
-    with open(BASE_DIR / "widgets.json") as f:
+    with open(BASE_DIR / "widgets.json", encoding="utf-8") as f:
         return json.load(f)
 
 @app.get("/apps.json")
