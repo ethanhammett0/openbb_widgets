@@ -8,6 +8,10 @@ The `openbb-app-builder` skill is installed and ready. Use it to build new OpenB
 - Trigger: "Build an OpenBB app for X" or "Convert this Streamlit app" or "Quick mode: build X"
 - Skill location: `.claude/skills/openbb-app-builder/SKILL.md`
 - Second skill: `improve-openbb-skill` — submit fixes/improvements to the skill itself
+- Third skill: `api-discovery` — explore APIs to discover what's possible before building
+  - Trigger: "Explore this API: {url}" or "What can I build with {API}?" or "I'm a {role}, what should I build?"
+  - Skill location: `.claude/skills/api-discovery/SKILL.md`
+  - Use this **before** the app-builder when you don't know what widgets to create from an API
 
 ## Project Structure
 

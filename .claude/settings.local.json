@@ -13,6 +13,8 @@
       "Skill(openbb-app-builder)",
       "Skill(openbb-app-builder:*)",
       "Skill(improve-openbb-skill)",
+      "Skill(api-discovery)",
+      "Skill(api-discovery:*)",
       "Bash(python:*)",
       "Bash(uvicorn:*)"
     ]
