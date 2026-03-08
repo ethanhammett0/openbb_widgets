@@ -30,17 +30,68 @@ You are an expert at exploring APIs, understanding data shapes, and mapping them
 ## Pipeline Overview
 
 ```
+Phase 0: Discovery Interview   → Iterative conversation to understand user's goals and mental model
 Phase 1: API Reconnaissance    → Fetch docs, catalog endpoints, identify data shapes
 Phase 2: Data Shape Analysis   → Classify each endpoint's output type
 Phase 3: Widget Mapping        → Match data shapes to optimal OpenBB widget types
-Phase 4: Parameter Strategy    → Design user-facing params from API query options
+Phase 4: Parameter Strategy    → Design ontology-respecting params that mirror how users think about the data
 Phase 5: Persona Fit           → Tailor to user's role and workflow
-Phase 6: Possibilities Report  → Present actionable dashboard concepts
+Phase 6: Possibilities Report  → Present actionable dashboard concepts with rich param plans
 ```
 
 For detailed API exploration techniques, see [API-EXPLORER.md](references/API-EXPLORER.md).
 For widget optimization strategies, see [WIDGET-OPTIMIZER.md](references/WIDGET-OPTIMIZER.md).
 For persona-based planning, see [PERSONA-MAPPER.md](references/PERSONA-MAPPER.md).
+
+---
+
+## Phase 0: Discovery Interview
+
+**Goal**: Build a deep understanding of what the user wants through iterative conversation — NOT a one-shot dump of questions.
+
+**THIS IS NOT OPTIONAL.** Do not skip to reconnaissance. The interview shapes everything that follows.
+
+### How the Interview Works
+
+This is a **multi-round conversation**, not a checklist. Ask 2-3 questions at a time, listen to answers, then ask follow-up questions that go deeper based on what you learned. Continue until you have a clear picture.
+
+### Round 1: Intent & Mental Model
+
+Start by understanding how the user **thinks about** this data:
+
+- "What are you trying to accomplish with this API? What decisions will this dashboard help you make?"
+- "When you think about this data, what are the main dimensions you navigate by?" (e.g., time, geography, category, entity)
+- "Walk me through a typical workflow — what would you search for first, then drill into?"
+
+### Round 2: Navigation & Ontology (based on Round 1 answers)
+
+Dig into how the information is naturally structured:
+
+- "You mentioned {dimension} — how granular do you need to go? (e.g., year vs month vs day, state vs county vs city)"
+- "Are there categories or types that matter to you? What are the key distinctions?"
+- "When you're looking at a specific {entity}, what related information do you want to see alongside it?"
+- "Do you ever need to cross-reference between {dimension A} and {dimension B}?"
+
+### Round 3: Refinement & Priorities
+
+Confirm understanding and prioritize:
+
+- "So your primary workflow is: {summarize}. Is that right, or am I missing something?"
+- "If you could only have 3 filters on a widget, which would be most important?"
+- "Are there any edge cases or less-common searches you'd still want to support?"
+
+### Round 4+: Go Deeper If Needed
+
+Keep asking until the user confirms you've captured their vision. Signs you're NOT done:
+- User mentions a use case you haven't explored
+- You don't understand the ontology well enough to design params
+- You haven't discussed how different widgets should relate to each other
+
+**Output**: A clear mental model of:
+1. The user's primary workflows and decision-making needs
+2. The information ontology — what dimensions, categories, and relationships matter
+3. How granular navigation should be along each dimension
+4. Which views should link together (e.g., table click → document viewer)
 
 ---
 
@@ -188,11 +239,125 @@ def feed():
 
 ---
 
-## Phase 4: Parameter Strategy
+## Phase 4: Parameter Strategy — Ontology-Driven Design
 
-**Goal**: Translate API query options into user-friendly OpenBB widget parameters.
+**Goal**: Design params that respect how users **think about** the information — not just what the API technically accepts.
 
-### Parameter Translation Rules
+### The Core Principle
+
+**DO NOT** just map API query params 1:1 to widget params. Instead:
+1. Understand the **ontology** of the information (from Phase 0 interview)
+2. Design params that let users **navigate** the data the way they naturally think about it
+3. Build **layered specificity** — broad category → subcategory → specific item
+
+### Anti-Pattern: The Lazy Single-ID Param
+
+```json
+// BAD — forces user to know the document ID
+{
+  "paramName": "document_id",
+  "type": "text",
+  "label": "Document ID"
+}
+```
+
+This is the **worst possible UX**. The user has to go find an ID somewhere else before they can use the widget. Never do this unless there's truly no alternative.
+
+### Correct Pattern: Ontology-Respecting Navigation
+
+```json
+// GOOD — lets user navigate by how they think about the data
+[
+  {
+    "paramName": "agency",
+    "type": "endpoint",
+    "label": "Agency",
+    "optionsEndpoint": "/agencies",
+    "value": ""
+  },
+  {
+    "paramName": "document_type",
+    "type": "text",
+    "label": "Type",
+    "options": [
+      {"label": "All Types", "value": ""},
+      {"label": "Rules", "value": "RULE"},
+      {"label": "Proposed Rules", "value": "PRORULE"},
+      {"label": "Notices", "value": "NOTICE"},
+      {"label": "Presidential Documents", "value": "PRESDOCU"}
+    ],
+    "value": ""
+  },
+  {
+    "paramName": "date_start",
+    "type": "date",
+    "label": "From Date",
+    "value": "$currentDate-1M"
+  },
+  {
+    "paramName": "date_end",
+    "type": "date",
+    "label": "To Date",
+    "value": "$currentDate"
+  },
+  {
+    "paramName": "search_term",
+    "type": "text",
+    "label": "Search Keywords",
+    "value": ""
+  },
+  {
+    "paramName": "sort_by",
+    "type": "text",
+    "label": "Sort By",
+    "options": [
+      {"label": "Newest First", "value": "newest"},
+      {"label": "Relevance", "value": "relevance"},
+      {"label": "Oldest First", "value": "oldest"}
+    ],
+    "value": "newest"
+  }
+]
+```
+
+### Ontology Analysis Checklist
+
+For every API, identify these navigational dimensions and expose them as params:
+
+| Dimension | Question | Param Type |
+|-----------|----------|------------|
+| **Category/Type** | What are the main kinds of things? | `options` dropdown or `endpoint` |
+| **Source/Origin** | Who produces this data? (agency, author, org) | `endpoint` (dynamic list) |
+| **Time** | When was it created/published/effective? | `date` range (start + end) |
+| **Geography** | Where does it apply? (country, state, region) | `options` or `endpoint` |
+| **Status/State** | What stage is it in? (draft, final, archived) | `options` dropdown |
+| **Topic/Subject** | What is it about? | `text` (free search) or `options` |
+| **Relationship** | How does it connect to other entities? | `endpoint` with `optionsParams` |
+| **Magnitude** | How much/many? (size, amount, count) | `number` range |
+
+### Building Param Hierarchies
+
+When dimensions are **nested** (e.g., agency → subagency → office), use dependent params:
+
+```json
+[
+  {
+    "paramName": "agency",
+    "type": "endpoint",
+    "label": "Agency",
+    "optionsEndpoint": "/agencies"
+  },
+  {
+    "paramName": "subagency",
+    "type": "endpoint",
+    "label": "Sub-Agency",
+    "optionsEndpoint": "/subagencies",
+    "optionsParams": {"agency": "$agency"}
+  }
+]
+```
+
+### Parameter Translation Rules (Reference)
 
 | API Parameter | OpenBB Param Type | Strategy |
 |---------------|-------------------|----------|
@@ -203,28 +368,26 @@ def feed():
 | Numeric limit (`per_page`, `limit`) | `number` | Set sensible default (20-50) |
 | Boolean flag (`include_x`, `only_y`) | `boolean` | Direct mapping |
 | Sort order | `text` with `options` | Map API sort values to labels |
-| ID/identifier | `text` or `endpoint` | Text if user knows ID, endpoint if browsable |
+| ID/identifier | **AVOID** — prefer browsable navigation (see above) | Only as last resort with `endpoint` |
 
-### Param Optimization Tips
+### Param Design Principles
 
-1. **Don't expose everything** — Only surface params that change the user experience meaningfully. Hide pagination (handle server-side), internal IDs, format flags.
+1. **Never force the user to know an ID** — Always provide a way to browse/discover entities through dropdowns, search, or linked widgets. If an ID is needed internally, hide it behind a user-friendly selector.
 
-2. **Smart defaults** — Set defaults that show useful data immediately:
+2. **Mirror the ontology** — If the data is organized by agency → type → date in the real world, your params should follow that same structure.
+
+3. **Layered specificity** — Start broad (category, date range) and let users drill down. Don't make them specify everything up front.
+
+4. **Smart defaults that show data** — Never start with empty results. Set defaults that show useful data immediately:
    - Date: `$currentDate-1M` (last month)
    - Limit: 25 (not too few, not overwhelming)
-   - Type: Most common document type
+   - Type/Category: "All" or most common type
 
-3. **Dependent params** — If city depends on country, use `optionsParams`:
-   ```json
-   {
-     "paramName": "subagency",
-     "type": "endpoint",
-     "optionsEndpoint": "/subagencies",
-     "optionsParams": {"agency": "$agency"}
-   }
-   ```
+5. **Don't expose plumbing** — Hide pagination, format flags, internal IDs. Handle them server-side.
 
-4. **Group sync** — When multiple widgets share a context (e.g., all about the same document), use parameter groups so clicking one widget updates others.
+6. **Dependent params** — Use `optionsParams` when one dimension depends on another.
+
+7. **Group sync** — When multiple widgets share a context (e.g., search table + document viewer), use parameter groups so selecting in one widget updates others.
 
 For complete parameter strategy patterns, see [WIDGET-OPTIMIZER.md](references/WIDGET-OPTIMIZER.md#parameter-strategy).
 
