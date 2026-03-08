@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:didierlopes.com)",
+      "Bash(dir:*)",
+      "Bash(node --version:*)",
+      "Bash(npx:*)",
+      "Bash(where:*)",
+      "Bash(cmd /c \"node --version && npx --version\")",
+      "Bash(cmd /c \"node --version\")",
+      "Bash(echo:*)",
+      "Bash(test:*)",
+      "Skill(openbb-app-builder)",
+      "Skill(openbb-app-builder:*)",
+      "Skill(improve-openbb-skill)",
+      "Bash(python:*)",
+      "Bash(uvicorn:*)"
+    ]
+  }
+}
