@@ -1,0 +1,68 @@
+{
+  "fintech_news": {
+    "name": "Fintech News Flow",
+    "description": "Aggregated RSS news feed across 8 fintech categories with date filtering.",
+    "category": "News",
+    "type": "newsfeed",
+    "endpoint": "news",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 14 },
+    "params": [
+      {
+        "paramName": "category",
+        "label": "Category",
+        "type": "endpoint",
+        "optionsEndpoint": "/categories",
+        "value": "payments_news"
+      },
+      {
+        "paramName": "filter_type",
+        "label": "Date Filter",
+        "type": "text",
+        "value": "none",
+        "options": [
+          { "label": "No Filter",        "value": "none" },
+          { "label": "Date Range",       "value": "date_range" },
+          { "label": "Trailing Period",  "value": "trailing" }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "label": "Start Date",
+        "type": "date",
+        "value": "$currentDate-1M"
+      },
+      {
+        "paramName": "end_date",
+        "label": "End Date",
+        "type": "date",
+        "value": "$currentDate"
+      },
+      {
+        "paramName": "trailing_months",
+        "label": "Trailing Period (months)",
+        "type": "number",
+        "value": 3,
+        "min": 1,
+        "max": 24,
+        "step": 1
+      },
+      {
+        "paramName": "limit",
+        "label": "Max Articles",
+        "type": "number",
+        "value": 50,
+        "min": 10,
+        "max": 100,
+        "step": 10
+      },
+      {
+        "paramName": "source",
+        "label": "Source",
+        "type": "endpoint",
+        "optionsEndpoint": "/sources",
+        "value": "all"
+      }
+    ]
+  }
+}

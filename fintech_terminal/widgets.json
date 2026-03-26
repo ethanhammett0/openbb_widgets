@@ -1,0 +1,937 @@
+{
+  "universe_movers": {
+    "name": "Universe Pre-Market Movers",
+    "description": "Fintech universe snapshot — price changes, volume, flags",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "universe_movers",
+    "staleTime": 60000,
+    "gridData": { "w": 40, "h": 14 },
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sector",
+        "optionsEndpoint": "/sub_sectors",
+        "value": "All"
+      },
+      {
+        "paramName": "cap_tier",
+        "type": "endpoint",
+        "label": "Cap Tier",
+        "optionsEndpoint": "/cap_tiers",
+        "value": "All"
+      }
+    ]
+  },
+  "gainers_losers": {
+    "name": "Fintech Gainers / Losers",
+    "description": "Top N gainers and losers in fintech universe",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "gainers_losers",
+    "staleTime": 60000,
+    "gridData": { "w": 20, "h": 14 },
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sector",
+        "optionsEndpoint": "/sub_sectors",
+        "value": "All"
+      },
+      {
+        "paramName": "count",
+        "type": "number",
+        "label": "Top N",
+        "value": 10,
+        "min": 5,
+        "max": 25,
+        "step": 5
+      }
+    ]
+  },
+  "macro_inputs": {
+    "name": "Macro Factor Inputs",
+    "description": "Crypto, rates, credit, and fintech ETF benchmarks",
+    "category": "Morning Pulse",
+    "type": "metric",
+    "endpoint": "macro_inputs",
+    "staleTime": 60000,
+    "gridData": { "w": 40, "h": 5 }
+  },
+  "spread_drift_alerts": {
+    "name": "Spread Drift Alerts",
+    "description": "Pairs with z-score exceeding threshold from rolling mean",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "spread_drift_alerts",
+    "staleTime": 300000,
+    "gridData": { "w": 20, "h": 12 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "z_threshold",
+        "type": "number",
+        "label": "Z-Score Threshold",
+        "value": 1.5,
+        "min": 0.5,
+        "max": 3.0,
+        "step": 0.1
+      }
+    ]
+  },
+  "technical_alerts": {
+    "name": "Technical Signal Alerts",
+    "description": "RSI, MACD, SMA cross signals across universe",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "technical_alerts",
+    "staleTime": 300000,
+    "gridData": { "w": 20, "h": 12 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sector",
+        "optionsEndpoint": "/sub_sectors",
+        "value": "All"
+      }
+    ]
+  },
+  "corporate_actions_calendar": {
+    "name": "Corporate Actions Calendar",
+    "description": "Upcoming dividends and splits",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "corporate_actions_calendar",
+    "staleTime": 600000,
+    "gridData": { "w": 40, "h": 10 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "days_ahead",
+        "type": "number",
+        "label": "Days Ahead",
+        "value": 30,
+        "min": 7,
+        "max": 90,
+        "step": 7
+      }
+    ]
+  },
+  "factor_heatmap": {
+    "name": "Factor Exposure Heatmap",
+    "description": "Beta heatmap: tickers x factors, grouped by sub-sector",
+    "category": "Factor Monitor",
+    "type": "chart",
+    "endpoint": "factor_heatmap",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 18 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sector",
+        "optionsEndpoint": "/sub_sectors",
+        "value": "All"
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Lookback (days)",
+        "value": 90,
+        "min": 10,
+        "max": 504,
+        "step": 1
+      }
+    ]
+  },
+  "factor_bar": {
+    "name": "Single Stock Factor Betas",
+    "description": "Horizontal bar chart of factor exposures for one ticker",
+    "category": "Factor Monitor",
+    "type": "chart",
+    "endpoint": "factor_bar",
+    "staleTime": 300000,
+    "gridData": { "w": 20, "h": 14 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "/symbols",
+        "value": "PYPL"
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Lookback (days)",
+        "value": 90,
+        "min": 10,
+        "max": 504,
+        "step": 1
+      }
+    ]
+  },
+  "factor_drift": {
+    "name": "Factor Exposure Drift",
+    "description": "Time series of rolling beta for a selected ticker x factor",
+    "category": "Factor Monitor",
+    "type": "chart",
+    "endpoint": "factor_drift",
+    "staleTime": 300000,
+    "gridData": { "w": 20, "h": 14 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "/symbols",
+        "value": "PYPL"
+      },
+      {
+        "paramName": "factor",
+        "type": "endpoint",
+        "label": "Factor",
+        "optionsEndpoint": "/factors",
+        "value": "Mkt-RF"
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Lookback (days)",
+        "value": 252,
+        "min": 10,
+        "max": 504,
+        "step": 1
+      }
+    ]
+  },
+  "factor_zscore_alerts": {
+    "name": "Factor Drift Z-Score Alerts",
+    "description": "Tickers with factor betas exceeding threshold from 1yr mean",
+    "category": "Factor Monitor",
+    "type": "table",
+    "endpoint": "factor_zscore_alerts",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 12 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Lookback (days)",
+        "value": 90,
+        "min": 10,
+        "max": 504,
+        "step": 1
+      },
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sector",
+        "optionsEndpoint": "/sub_sectors",
+        "value": "All"
+      },
+      {
+        "paramName": "z_threshold",
+        "type": "number",
+        "label": "Z-Score Threshold",
+        "value": 1.5,
+        "min": 0.5,
+        "max": 3.0,
+        "step": 0.1
+      }
+    ]
+  },
+  "subsector_factor_exposure": {
+    "name": "Sub-Sector Avg Factor Exposure",
+    "description": "Equal-weighted avg betas by sub-sector",
+    "category": "Factor Monitor",
+    "type": "table",
+    "endpoint": "subsector_factor_exposure",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 12 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Lookback (days)",
+        "value": 90,
+        "min": 10,
+        "max": 504,
+        "step": 1
+      }
+    ]
+  },
+  "attribution_waterfall": {
+    "name": "Return Attribution Waterfall",
+    "description": "Factor contribution waterfall for a single stock",
+    "category": "Return Attribution",
+    "type": "chart",
+    "endpoint": "attribution_waterfall",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 15 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "/symbols",
+        "value": "PYPL"
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": "$currentDate-1M"
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": "$currentDate"
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      }
+    ]
+  },
+  "rolling_attribution": {
+    "name": "Rolling Attribution",
+    "description": "Stacked area chart of daily factor contributions",
+    "category": "Return Attribution",
+    "type": "chart",
+    "endpoint": "rolling_attribution",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 15 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "/symbols",
+        "value": "PYPL"
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Window (days)",
+        "value": 60,
+        "min": 10,
+        "max": 504,
+        "step": 1
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      }
+    ]
+  },
+  "subsector_attribution": {
+    "name": "Sub-Sector Attribution",
+    "description": "Factor contributions by sub-sector",
+    "category": "Return Attribution",
+    "type": "table",
+    "endpoint": "subsector_attribution",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 12 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": "$currentDate-1M"
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": "$currentDate"
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      }
+    ]
+  },
+  "attribution_scatter": {
+    "name": "Attribution Scatter",
+    "description": "Factor-explained vs total return scatter by ticker",
+    "category": "Return Attribution",
+    "type": "chart",
+    "endpoint": "attribution_scatter",
+    "staleTime": 300000,
+    "gridData": { "w": 20, "h": 15 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": "$currentDate-1M"
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": "$currentDate"
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      }
+    ]
+  },
+  "attribution_summary": {
+    "name": "Attribution Summary",
+    "description": "Total, factor-explained, idiosyncratic returns and R-squared",
+    "category": "Return Attribution",
+    "type": "table",
+    "endpoint": "attribution_summary",
+    "staleTime": 300000,
+    "gridData": { "w": 20, "h": 15 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": "$currentDate-1M"
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": "$currentDate"
+      },
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sector",
+        "optionsEndpoint": "/sub_sectors",
+        "value": "All"
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      }
+    ]
+  },
+  "subsector_perf_heatmap": {
+    "name": "Sub-Sector Performance Heatmap",
+    "description": "EW returns across time horizons",
+    "category": "Group Performance",
+    "type": "chart",
+    "endpoint": "subsector_perf_heatmap",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 14 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": "$currentDate-6M"
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": "$currentDate"
+      }
+    ]
+  },
+  "subsector_perf_bar": {
+    "name": "Sub-Sector Performance Bar",
+    "description": "EW return by sub-sector, sorted descending",
+    "category": "Group Performance",
+    "type": "chart",
+    "endpoint": "subsector_perf_bar",
+    "staleTime": 300000,
+    "gridData": { "w": 20, "h": 14 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": "$currentDate-1M"
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": "$currentDate"
+      }
+    ]
+  },
+  "intra_subsector_dispersion": {
+    "name": "Intra-Sub-Sector Dispersion",
+    "description": "Best/worst performers and dispersion within each sub-sector",
+    "category": "Group Performance",
+    "type": "table",
+    "endpoint": "intra_subsector_dispersion",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 12 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": "$currentDate-1M"
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": "$currentDate"
+      }
+    ]
+  },
+  "universe_scatter": {
+    "name": "Universe Return Scatter",
+    "description": "Return scatter colored by sub-sector across two date ranges",
+    "category": "Group Performance",
+    "type": "chart",
+    "endpoint": "universe_scatter",
+    "staleTime": 300000,
+    "gridData": { "w": 20, "h": 14 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "start_date_x",
+        "type": "date",
+        "label": "X-Axis Start",
+        "value": "$currentDate-1M"
+      },
+      {
+        "paramName": "start_date_y",
+        "type": "date",
+        "label": "Y-Axis Start",
+        "value": "$currentDate-3M"
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": "$currentDate"
+      }
+    ]
+  },
+  "rolling_momentum": {
+    "name": "Rolling Momentum Rankings",
+    "description": "Sub-sector momentum across multiple horizons from a start date",
+    "category": "Group Performance",
+    "type": "table",
+    "endpoint": "rolling_momentum",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 12 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": "$currentDate-6M"
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": "$currentDate"
+      }
+    ]
+  },
+  "cointegration_results": {
+    "name": "Cointegration Test Results",
+    "description": "Engle-Granger + ADF tests for all monitored pairs",
+    "category": "Pairs Lab",
+    "type": "table",
+    "endpoint": "cointegration_results",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 14 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sector",
+        "optionsEndpoint": "/sub_sectors",
+        "value": "All"
+      },
+      {
+        "paramName": "pval_threshold",
+        "type": "number",
+        "label": "p-value Threshold",
+        "value": 0.05,
+        "min": 0.001,
+        "max": 1.0,
+        "step": 0.01
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Lookback (days)",
+        "value": 252,
+        "min": 60,
+        "max": 504,
+        "step": 1
+      }
+    ]
+  },
+  "spread_chart": {
+    "name": "Spread Time Series",
+    "description": "Kalman-filtered spread with +/-2 sigma Bollinger bands",
+    "category": "Pairs Lab",
+    "type": "chart",
+    "endpoint": "spread_chart",
+    "staleTime": 300000,
+    "gridData": { "w": 20, "h": 14 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "pair",
+        "type": "endpoint",
+        "label": "Pair",
+        "optionsEndpoint": "/pairs",
+        "value": "V_MA"
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Lookback (days)",
+        "value": 252,
+        "min": 10,
+        "max": 504,
+        "step": 1
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      }
+    ]
+  },
+  "hedge_ratio_chart": {
+    "name": "Hedge Ratio Time Series",
+    "description": "Kalman vs Rolling OLS hedge ratio over time",
+    "category": "Pairs Lab",
+    "type": "chart",
+    "endpoint": "hedge_ratio_chart",
+    "staleTime": 300000,
+    "gridData": { "w": 20, "h": 14 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "pair",
+        "type": "endpoint",
+        "label": "Pair",
+        "optionsEndpoint": "/pairs",
+        "value": "V_MA"
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Lookback (days)",
+        "value": 252,
+        "min": 10,
+        "max": 504,
+        "step": 1
+      }
+    ]
+  },
+  "pair_metrics": {
+    "name": "Current Pair Metrics",
+    "description": "Spread, Z-Score, hedge ratio, half-life, correlation",
+    "category": "Pairs Lab",
+    "type": "metric",
+    "endpoint": "pair_metrics",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 5 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "pair",
+        "type": "endpoint",
+        "label": "Pair",
+        "optionsEndpoint": "/pairs",
+        "value": "V_MA"
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Lookback (days)",
+        "value": 252,
+        "min": 30,
+        "max": 504,
+        "step": 1
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          { "label": "Kalman Filter", "value": "kalman" },
+          { "label": "Rolling OLS", "value": "rolling_ols" },
+          { "label": "Fixed OLS", "value": "fixed_ols" }
+        ]
+      }
+    ]
+  },
+  "technical_confirmation": {
+    "name": "Technical Confirmation",
+    "description": "RSI, MACD, SMA for both legs of selected pair",
+    "category": "Pairs Lab",
+    "type": "table",
+    "endpoint": "technical_confirmation",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 8 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "pair",
+        "type": "endpoint",
+        "label": "Pair",
+        "optionsEndpoint": "/pairs",
+        "value": "V_MA"
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Lookback (days)",
+        "value": 90,
+        "min": 30,
+        "max": 252,
+        "step": 1
+      }
+    ]
+  },
+  "covariance_heatmap": {
+    "name": "Correlation Matrix",
+    "description": "Ledoit-Wolf shrinkage correlation heatmap",
+    "category": "Pairs Lab",
+    "type": "chart",
+    "endpoint": "covariance_heatmap",
+    "staleTime": 300000,
+    "gridData": { "w": 40, "h": 18 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sector",
+        "optionsEndpoint": "/sub_sectors",
+        "value": "All"
+      },
+      {
+        "paramName": "lookback",
+        "type": "number",
+        "label": "Lookback (days)",
+        "value": 252,
+        "min": 10,
+        "max": 504,
+        "step": 1
+      }
+    ]
+  },
+  "dividend_calendar": {
+    "name": "Dividend Calendar",
+    "description": "Upcoming ex-div dates with annualized yields",
+    "category": "Corporate Actions",
+    "type": "table",
+    "endpoint": "dividend_calendar",
+    "staleTime": 600000,
+    "gridData": { "w": 40, "h": 14 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "days_ahead",
+        "type": "number",
+        "label": "Days Ahead",
+        "value": 90,
+        "min": 7,
+        "max": 180,
+        "step": 7
+      },
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sector",
+        "optionsEndpoint": "/sub_sectors",
+        "value": "All"
+      }
+    ]
+  },
+  "split_history": {
+    "name": "Split History & Upcoming",
+    "description": "Historical and upcoming stock splits",
+    "category": "Corporate Actions",
+    "type": "table",
+    "endpoint": "split_history",
+    "staleTime": 600000,
+    "gridData": { "w": 20, "h": 14 },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sector",
+        "optionsEndpoint": "/sub_sectors",
+        "value": "All"
+      }
+    ]
+  },
+  "ipo_monitor": {
+    "name": "IPO Monitor",
+    "description": "Recent IPO listings",
+    "category": "Corporate Actions",
+    "type": "table",
+    "endpoint": "ipo_monitor",
+    "staleTime": 600000,
+    "gridData": { "w": 20, "h": 14 },
+    "params": [
+      {
+        "paramName": "since_date",
+        "type": "date",
+        "label": "IPOs Since",
+        "value": "$currentDate-1y"
+      },
+      {
+        "paramName": "limit",
+        "type": "number",
+        "label": "Max Results",
+        "value": 50,
+        "min": 10,
+        "max": 100,
+        "step": 10
+      }
+    ]
+  },
+  "universe_reference": {
+    "name": "Universe Reference Data",
+    "description": "Master universe with company details and sub-sector tags",
+    "category": "Corporate Actions",
+    "type": "table",
+    "endpoint": "universe_reference",
+    "staleTime": 600000,
+    "gridData": { "w": 40, "h": 14 },
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sector",
+        "optionsEndpoint": "/sub_sectors",
+        "value": "All"
+      }
+    ]
+  }
+}

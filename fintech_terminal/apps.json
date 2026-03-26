@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Fintech Equity Research Terminal",
+    "description": "Hedge-fund grade analytical hub: morning pulse, factor exposure, return attribution, group performance, pairs lab, corporate actions",
+    "img": "",
+    "img_dark": "",
+    "img_light": "",
+    "allowCustomization": true,
+    "prompts": [],
+    "groups": [
+      {"name": "Group 1", "type": "param", "paramName": "symbol", "defaultValue": "PYPL"},
+      {"name": "Group 2", "type": "param", "paramName": "beta_mode", "defaultValue": "kalman"},
+      {"name": "Group 3", "type": "param", "paramName": "period", "defaultValue": "1m"},
+      {"name": "Group 4", "type": "param", "paramName": "pair", "defaultValue": "V_MA"},
+      {"name": "Group 5", "type": "param", "paramName": "lookback", "defaultValue": "90"},
+      {"name": "Group 6", "type": "param", "paramName": "sub_sector", "defaultValue": "All"}
+    ],
+    "tabs": {
+      "morning_pulse": {
+        "id": "morning_pulse",
+        "name": "🌅 Morning Pulse",
+        "layout": [
+          {"i": "macro_inputs", "x": 0, "y": 0, "w": 40, "h": 5},
+          {"i": "universe_movers", "x": 0, "y": 5, "w": 40, "h": 14, "groups": ["Group 6"]},
+          {"i": "gainers_losers", "x": 0, "y": 19, "w": 20, "h": 14},
+          {"i": "spread_drift_alerts", "x": 20, "y": 19, "w": 20, "h": 12},
+          {"i": "technical_alerts", "x": 0, "y": 33, "w": 20, "h": 12},
+          {"i": "corporate_actions_calendar", "x": 20, "y": 31, "w": 20, "h": 10}
+        ]
+      },
+      "factor_monitor": {
+        "id": "factor_monitor",
+        "name": "📊 Factor Monitor",
+        "layout": [
+          {"i": "factor_heatmap", "x": 0, "y": 0, "w": 40, "h": 18, "groups": ["Group 2", "Group 5", "Group 6"]},
+          {"i": "factor_bar", "x": 0, "y": 18, "w": 20, "h": 14, "groups": ["Group 1", "Group 2", "Group 5"]},
+          {"i": "factor_drift", "x": 20, "y": 18, "w": 20, "h": 14, "groups": ["Group 1", "Group 2", "Group 5"]},
+          {"i": "factor_zscore_alerts", "x": 0, "y": 32, "w": 40, "h": 12, "groups": ["Group 2", "Group 5", "Group 6"]},
+          {"i": "subsector_factor_exposure", "x": 0, "y": 44, "w": 40, "h": 12, "groups": ["Group 2", "Group 5"]}
+        ]
+      },
+      "return_attribution": {
+        "id": "return_attribution",
+        "name": "📈 Return Attribution",
+        "layout": [
+          {"i": "attribution_waterfall", "x": 0, "y": 0, "w": 40, "h": 15, "groups": ["Group 1", "Group 2", "Group 3"]},
+          {"i": "rolling_attribution", "x": 0, "y": 15, "w": 40, "h": 15, "groups": ["Group 1", "Group 2", "Group 5"]},
+          {"i": "subsector_attribution", "x": 0, "y": 30, "w": 40, "h": 12, "groups": ["Group 2", "Group 3"]},
+          {"i": "attribution_scatter", "x": 0, "y": 42, "w": 20, "h": 15, "groups": ["Group 2", "Group 3"]},
+          {"i": "attribution_summary", "x": 20, "y": 42, "w": 20, "h": 15, "groups": ["Group 2", "Group 3", "Group 6"]}
+        ]
+      },
+      "group_performance": {
+        "id": "group_performance",
+        "name": "🏘️ Group Performance",
+        "layout": [
+          {"i": "subsector_perf_heatmap", "x": 0, "y": 0, "w": 40, "h": 14},
+          {"i": "subsector_perf_bar", "x": 0, "y": 14, "w": 20, "h": 14, "groups": ["Group 3"]},
+          {"i": "universe_scatter", "x": 20, "y": 14, "w": 20, "h": 14},
+          {"i": "intra_subsector_dispersion", "x": 0, "y": 28, "w": 40, "h": 12, "groups": ["Group 3"]},
+          {"i": "rolling_momentum", "x": 0, "y": 40, "w": 40, "h": 12}
+        ]
+      },
+      "pairs_lab": {
+        "id": "pairs_lab",
+        "name": "🔗 Pairs Lab",
+        "layout": [
+          {"i": "pair_metrics", "x": 0, "y": 0, "w": 40, "h": 5, "groups": ["Group 4"]},
+          {"i": "cointegration_results", "x": 0, "y": 5, "w": 40, "h": 14, "groups": ["Group 6"]},
+          {"i": "spread_chart", "x": 0, "y": 19, "w": 20, "h": 14, "groups": ["Group 4", "Group 5"]},
+          {"i": "hedge_ratio_chart", "x": 20, "y": 19, "w": 20, "h": 14, "groups": ["Group 4", "Group 5"]},
+          {"i": "technical_confirmation", "x": 0, "y": 33, "w": 40, "h": 8, "groups": ["Group 4"]},
+          {"i": "covariance_heatmap", "x": 0, "y": 41, "w": 40, "h": 18, "groups": ["Group 5", "Group 6"]}
+        ]
+      },
+      "corporate_actions": {
+        "id": "corporate_actions",
+        "name": "🏢 Corporate Actions",
+        "layout": [
+          {"i": "dividend_calendar", "x": 0, "y": 0, "w": 40, "h": 14},
+          {"i": "split_history", "x": 0, "y": 14, "w": 20, "h": 14},
+          {"i": "ipo_monitor", "x": 20, "y": 14, "w": 20, "h": 14},
+          {"i": "universe_reference", "x": 0, "y": 28, "w": 40, "h": 14}
+        ]
+      }
+    }
+  }
+]

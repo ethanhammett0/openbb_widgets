@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Fintech News Flow",
+    "description": "Aggregated RSS news across payments, banking, regulation, global fintech, and fraud/security — 43 curated feeds in one widget.",
+    "img": "",
+    "img_dark": "",
+    "img_light": "",
+    "allowCustomization": true,
+    "prompts": [],
+    "tabs": {
+      "": {
+        "id": "",
+        "name": "",
+        "layout": [
+          {
+            "i": "fintech_news",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 14
+          }
+        ]
+      }
+    },
+    "groups": []
+  }
+]
