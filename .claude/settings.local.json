@@ -14,7 +14,9 @@
       "Skill(openbb-app-builder:*)",
       "Skill(improve-openbb-skill)",
       "Bash(python:*)",
-      "Bash(uvicorn:*)"
+      "Bash(uvicorn:*)",
+      "Bash(cp -r \"C:/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/fintech_terminal\" \"C:/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/openBB_agents/.claude/worktrees/heuristic-khorana/\")",
+      "Bash(cp -r \"C:/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/fintech_news_flow\" \"C:/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/openBB_agents/.claude/worktrees/heuristic-khorana/\")"
     ]
   }
 }
