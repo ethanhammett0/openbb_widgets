@@ -1,0 +1,43 @@
+[
+  {
+    "metadata": {
+      "unique_id": "mem_7d3c2eb0",
+      "timestamp": 1766852862.3109322,
+      "source_tool": "google_search",
+      "source_args": {
+        "query": "TSAOG Orthopaedics RidgeWood Orthopaedic Center San Antonio news expansion"
+      },
+      "topic": "Property Context",
+      "summary": "External context on TSAOG RidgeWood Orthopaedic Center (ROC). Key features: 97k SF, includes ASC, research institute, bio skills lab, and Stryker mock OR. Part of OrthoLoneStar."
+    },
+    "value": [
+      {
+        "snippet": "Board-Certified Orthopedic Surgeon, Fellowship-Trained in Shoulder & Elbow. Ridgewood Orthopaedic Center 19138 US-281 N San Antonio, TX 78258",
+        "title": "Robert U. Hartzler | Shoulder & Elbow Surgeon San Antonio",
+        "published_date": null,
+        "author": "TSAOG Orthopaedics & Spine",
+        "source_domain": "www.tsaog.com",
+        "link": "https://www.tsaog.com/physicians/robert-u-hartzler/",
+        "file_format": null
+      },
+      {
+        "snippet": "The San Antonio Orthopaedic Group (TSAOG) RidgeWood Orthopaedic Center (ROC) ... The new center will offer appointments for multi-specialty orthopaedics\u00a0...",
+        "file_format": null,
+        "source_domain": "worthsa.com",
+        "link": "https://worthsa.com/portfolio/tsaog-ridgewood-orthopaedic-center/",
+        "published_date": null,
+        "title": "TSAOG RidgeWood Orthopaedic Center - Worth & Associates",
+        "author": "Worth & Associates"
+      },
+      {
+        "title": "RidgeWood Orthopaedic Center - The San Antonio Orthopaedic Group",
+        "published_date": "2025-08-28T14:28:03-05:00",
+        "link": "https://moregroup-inc.com/portfolio/ridgewood-orthopaedic-center/",
+        "snippet": "TSAOG Ridgewood includes outpatient surgery, urgent injury clinic, physical therapy, specialty hand practice, imaging services, and the John J. Hinchey\u00a0...",
+        "source_domain": "moregroup-inc.com",
+        "file_format": null,
+        "author": "MOREgroup"
+      }
+    ]
+  }
+]

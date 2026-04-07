@@ -1,0 +1,28 @@
+[
+  {
+    "metadata": {
+      "unique_id": "mem_2bd378ed",
+      "timestamp": 1766852252.2054923,
+      "source_tool": "Revista_get_property_stakeholders",
+      "source_args": {
+        "PropertyID": 738432
+      },
+      "topic": "Stakeholder Data",
+      "summary": "Stakeholder profile for Property 738432. Primary owner is Anchor Health Properties (institutional developer/operator). Other key stakeholders include Carlyle Group (REPE) and Worth & Associates (Developer)."
+    },
+    "value": [
+      {
+        "stakeholderName": "Anchor Health Properties",
+        "stakeholderType": "Owner"
+      },
+      {
+        "stakeholderType": "Owner",
+        "stakeholderName": "Carlyle Group"
+      },
+      {
+        "stakeholderType": "Developer",
+        "stakeholderName": "Worth & Associates"
+      }
+    ]
+  }
+]

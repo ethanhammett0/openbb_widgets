@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:didierlopes.com)",
+      "Bash(dir:*)",
+      "Bash(node --version:*)",
+      "Bash(npx:*)",
+      "Bash(where:*)",
+      "Bash(cmd /c \"node --version && npx --version\")",
+      "Bash(cmd /c \"node --version\")",
+      "Bash(echo:*)",
+      "Bash(test:*)",
+      "Skill(openbb-app-builder)",
+      "Skill(openbb-app-builder:*)",
+      "Skill(improve-openbb-skill)",
+      "Bash(python:*)",
+      "Bash(uvicorn:*)",
+      "Bash(python3:*)",
+      "WebFetch(domain:docs.openbb.co)",
+      "Bash(grep -h \"^@router.get\" routes_*.py)",
+      "WebSearch",
+      "Bash(ls -la routes_*.py)",
+      "Bash(find \"C:\\\\Users\\\\ehamm\\\\OneDrive\\\\Desktop\\\\Python Directory\\\\openbb_widgets\\\\fintech_terminal_vf\\\\OpenBB-develop \\(1\\)\" -type f -name \"*.py\" -o -name \"*.json\" -o -name \"*.md\" -o -name \"*.ts\")",
+      "Bash(find \"/c/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/fintech_terminal_vf/OpenBB-develop \\(1\\)\" -type f \\\\\\( -name \"*widget*\" -o -name \"*chart*\" -o -name \"*table*\" \\\\\\))",
+      "Bash(find \"/c/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/fintech_terminal_vf/OpenBB-develop \\(1\\)\" -type f -path \"*workspace*\")",
+      "Bash(find \"/c/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/fintech_terminal_vf/OpenBB-develop \\(1\\)\" -type f -name \"*widgets*\")",
+      "Bash(grep -E \"\\\\.\\(json|md\\)$\")",
+      "Bash(wc -l \"/c/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/fintech_terminal_vf/OpenBB-develop \\(1\\)/OpenBB-develop/openbb_platform/extensions/platform_api/tests/mock_widgets.json\")",
+      "Bash(find \"/c/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/fintech_terminal_vf/OpenBB-develop \\(1\\)\" -path \"*/extensions/*\" -name \"*.py\")",
+      "Bash(wc -l \"/c/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/fintech_terminal_vf/OpenBB-develop \\(1\\)/OpenBB-develop/openbb_platform/extensions/platform_api/openbb_platform_api/utils/openapi.py\")",
+      "Bash(find \"/c/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/fintech_terminal_vf/OpenBB-develop \\(1\\)\" -name \"*.md\" -type f)",
+      "Bash(xargs grep:*)",
+      "Bash(ls \"/c/Users/ehamm/OneDrive/Desktop/Python Directory/openbb_widgets/fintech_terminal_vf/OpenBB-develop \\(1\\)/OpenBB-develop\")",
+      "Bash(tasklist)",
+      "Bash(cmd.exe /c \"del \"\"C:\\\\Users\\\\ehamm\\\\OneDrive\\\\Desktop\\\\Python Directory\\\\openbb_widgets\\\\.git\\\\index.lock\"\"\")",
+      "Bash(cmd.exe /c \"del /f \"\"C:\\\\Users\\\\ehamm\\\\OneDrive\\\\Desktop\\\\Python Directory\\\\openbb_widgets\\\\.git\\\\index.lock\"\" && cd \"\"C:\\\\Users\\\\ehamm\\\\OneDrive\\\\Desktop\\\\Python Directory\\\\openbb_widgets\"\" && git add fintech_terminal_vf/\")",
+      "Bash(GIT_INDEX_FILE=.git/index2 git add fintech_terminal_vf/)"
+    ]
+  }
+}

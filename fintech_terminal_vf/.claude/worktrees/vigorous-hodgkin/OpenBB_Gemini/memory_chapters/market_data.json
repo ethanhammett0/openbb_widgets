@@ -1,0 +1,36 @@
+[
+  {
+    "metadata": {
+      "unique_id": "mem_c5137a8a",
+      "timestamp": 1766804531.935159,
+      "source_tool": "google_search",
+      "source_args": {
+        "query": "HRE Trends"
+      },
+      "topic": "Market Data",
+      "summary": "[HRE, Trends, 2024, Cap-Rates]"
+    },
+    "value": {
+      "data": "Big long JSON data about HRE..."
+    }
+  },
+  {
+    "metadata": {
+      "unique_id": "mem_4edf038f",
+      "timestamp": 1766852252.2129645,
+      "source_tool": "Revista_get_market_trends",
+      "source_args": {
+        "CBSACode": "41700"
+      },
+      "topic": "Market Data",
+      "summary": "San Antonio-New Braunfels MOB market trends showing increasing NNN rents (from ~$21.60 in 2018 to ~$26.41 in Q3 2025) and occupancy hovering around 89-90% for off-campus properties. Transaction volumes and PPSF have seen significant growth over the period."
+    },
+    "value": [
+      {
+        "cbsA_Name": "San Antonio-New Braunfels, TX",
+        "occupancy_TTM": 89.403,
+        "avg_NNN_Rent": 26.41
+      }
+    ]
+  }
+]

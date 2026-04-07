@@ -1,0 +1,265 @@
+{
+  "revista_search": {
+    "name": "Revista Search",
+    "description": "Finds IDs via Fuzzy Address Search.",
+    "category": "Revista",
+    "endpoint": "search",
+    "type": "table",
+    "gridData": {
+      "w": 40,
+      "h": 6
+    },
+    "params": [
+      {
+        "paramName": "query",
+        "value": "",
+        "label": "General Search",
+        "description": "Search by ID, Name, or Address",
+        "type": "text",
+        "required": false
+      },
+      {
+        "paramName": "property_name",
+        "value": "",
+        "label": "Property Name",
+        "description": "Search by Property Name (e.g. City MD)",
+        "type": "text",
+        "required": false
+      },
+      {
+        "paramName": "address",
+        "value": "",
+        "label": "Address",
+        "description": "Search by Address",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "property_id",
+            "headerName": "Property ID",
+            "width": 100,
+            "pinned": "left"
+          },
+          {
+            "field": "propertyName",
+            "headerName": "Property Name",
+            "width": 250,
+            "renderFn": "titleCase"
+          },
+          {
+            "field": "address",
+            "headerName": "Address",
+            "width": 200
+          },
+          {
+            "field": "city",
+            "headerName": "City",
+            "width": 120
+          },
+          {
+            "field": "stateProvince",
+            "headerName": "State",
+            "width": 80
+          },
+          {
+            "field": "propertyType",
+            "headerName": "Type",
+            "width": 150
+          },
+          {
+            "field": "zip",
+            "headerName": "Zip",
+            "width": 80,
+            "hide": true
+          }
+        ]
+      }
+    }
+  },
+  "scorecard": {
+    "name": "Scorecard",
+    "description": "Toggleable KPI views (Valuation/Ops/Physical).",
+    "category": "Revista",
+    "endpoint": "scorecard",
+    "type": "markdown",
+    "gridData": {
+      "w": 20,
+      "h": 8
+    },
+    "staleTime": 300000,
+    "params": [
+      {
+        "paramName": "property_id",
+        "value": "570571",
+        "label": "Property ID",
+        "description": "The property ID to display metrics for",
+        "type": "text",
+        "required": true
+      },
+      {
+        "paramName": "metric_view",
+        "value": "Physical",
+        "label": "Scorecard Type",
+        "description": "Strategic scorecard view",
+        "type": "text",
+        "options": [
+          {
+            "label": "Physical Asset",
+            "value": "Physical"
+          },
+          {
+            "label": "Valuation & Yield",
+            "value": "Valuation"
+          },
+          {
+            "label": "Operational Risk",
+            "value": "Operational"
+          },
+          {
+            "label": "Market Demand",
+            "value": "Market"
+          },
+          {
+            "label": "Transaction/Liquidity",
+            "value": "Transaction"
+          }
+        ],
+        "required": false
+      }
+    ]
+  },
+  "interactive_earth": {
+    "name": "Interactive Earth",
+    "description": "3D Click-and-Drag satellite exploration.",
+    "category": "Revista",
+    "endpoint": "earth",
+    "type": "html",
+    "gridData": {
+      "w": 20,
+      "h": 8
+    },
+    "params": [
+      {
+        "paramName": "property_id",
+        "value": "570571",
+        "label": "Property ID",
+        "description": "The property ID to display on map",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  "market_trends": {
+    "name": "Market Trends",
+    "description": "Dynamic Zoomable 5-Mile Trends.",
+    "category": "Revista",
+    "endpoint": "market_trends",
+    "type": "chart",
+    "gridData": {
+      "w": 40,
+      "h": 8
+    },
+    "staleTime": 300000,
+    "params": [
+      {
+        "paramName": "property_id",
+        "value": "570571",
+        "label": "Property ID",
+        "description": "The property ID to display market trends for",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  "market_balance": {
+    "name": "Market Balance",
+    "description": "Supply vs. Demand gauge.",
+    "category": "Revista",
+    "endpoint": "market_balance",
+    "type": "chart",
+    "gridData": {
+      "w": 20,
+      "h": 6
+    },
+    "staleTime": 300000,
+    "params": [
+      {
+        "paramName": "property_id",
+        "value": "570571",
+        "label": "Property ID",
+        "description": "The property ID to display market balance for",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  "activity_proxy": {
+    "name": "Activity Proxy",
+    "description": "Provider Density analysis.",
+    "category": "Revista",
+    "endpoint": "activity_proxy",
+    "type": "markdown",
+    "gridData": {
+      "w": 20,
+      "h": 6
+    },
+    "params": [
+      {
+        "paramName": "property_id",
+        "value": "570571",
+        "label": "Property ID",
+        "description": "The property ID to display activity proxy for",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  "benchmarker": {
+    "name": "Benchmarker",
+    "description": "Subject vs. Market Rent & Occupancy.",
+    "category": "Revista",
+    "endpoint": "benchmarker",
+    "type": "chart",
+    "gridData": {
+      "w": 20,
+      "h": 6
+    },
+    "staleTime": 300000,
+    "params": [
+      {
+        "paramName": "property_id",
+        "value": "570571",
+        "label": "Property ID",
+        "description": "The property ID to benchmark",
+        "type": "text",
+        "required": true
+      }
+    ]
+  },
+  "stakeholders": {
+    "name": "Stakeholders",
+    "description": "Owner, Sponsor & Developer details.",
+    "category": "Revista",
+    "endpoint": "stakeholders",
+    "type": "table",
+    "gridData": {
+      "w": 40,
+      "h": 10
+    },
+    "staleTime": 300000,
+    "params": [
+      {
+        "paramName": "property_id",
+        "value": "570571",
+        "label": "Property ID",
+        "description": "The property ID to display stakeholders for",
+        "type": "text",
+        "required": true
+      }
+    ]
+  }
+}

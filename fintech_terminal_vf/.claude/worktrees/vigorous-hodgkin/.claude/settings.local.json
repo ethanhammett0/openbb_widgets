@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:didierlopes.com)",
+      "Bash(dir:*)",
+      "Bash(node --version:*)",
+      "Bash(npx:*)",
+      "Bash(where:*)",
+      "Bash(cmd /c \"node --version && npx --version\")",
+      "Bash(cmd /c \"node --version\")",
+      "Bash(echo:*)",
+      "Bash(test:*)",
+      "Skill(openbb-app-builder)",
+      "Skill(openbb-app-builder:*)",
+      "Skill(improve-openbb-skill)",
+      "Bash(python:*)",
+      "Bash(uvicorn:*)",
+      "WebFetch(domain:docs.openbb.co)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)"
+    ]
+  }
+}

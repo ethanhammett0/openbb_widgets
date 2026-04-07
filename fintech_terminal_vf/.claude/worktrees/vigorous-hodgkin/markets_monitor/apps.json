@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Markets Monitor Dashboard",
+        "description": "Dashboard for monitoring real estate deal flow distribution.",
+        "allowCustomization": true,
+        "tabs": {
+            "overview": {
+                "id": "overview",
+                "name": "Overview",
+                "layout": [
+                    {
+                        "i": "dealFlowDistribution",
+                        "x": 0,
+                        "y": 0,
+                        "w": 40,
+                        "h": 20,
+                        "state": {
+                            "params": {
+                                "interval": "3 month",
+                                "metric": "spread"
+                            }
+                        }
+                    },
+                    {
+                        "i": "dealFlowScatter",
+                        "x": 0,
+                        "y": 20,
+                        "w": 40,
+                        "h": 20,
+                        "state": {
+                            "params": {
+                                "x_metric": "ltv",
+                                "y_metric": "spread"
+                            }
+                        }
+                    },
+                    {
+                        "i": "profitabilityRaincloud",
+                        "x": 0,
+                        "y": 40,
+                        "w": 40,
+                        "h": 20,
+                        "state": {
+                            "params": {
+                                "metric": "spread"
+                            }
+                        }
+                    },
+                    {
+                        "i": "dealRadar",
+                        "x": 0,
+                        "y": 60,
+                        "w": 40,
+                        "h": 20,
+                        "state": {
+                            "params": {
+                                "metrics": "spread,ltv,dscr,debt_yield,cap_rate"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "tokens": [
+            {
+                "token": "interval",
+                "defaultValue": "3 month"
+            }
+        ]
+    }
+]

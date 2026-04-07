@@ -1,0 +1,4 @@
+tranche_name,facility_type,tax_status,use_of_proceeds,original_principal,current_balance,unfunded_commitment,rate_type,base_index,spread_bps,floor_cap,all_in_rate,day_count,origination_date,maturity_date,amortization_type,io_period_months,extension_options,lien_position,ltv_ltc_limit,dscr_covenant,recourse
+Series 2025A,Senior Debt,Tax-Exempt,New Construction,125000000,125000000,75000000,Floating,SOFR,185,0.50%,2.35%,Actual/360,2025-01-15,2030-01-15,IO-to-Amort,24,Two 1-year options,1st Lien,65%,1.25x,Non-Recourse
+Tranche B - Acquisition,Mezzanine,Taxable,Acquisition,45000000,45000000,0,Fixed,,0,N/A,6.75%,30/360,2024-11-01,2029-11-01,Interest Only,60,None,2nd Lien,75%,1.15x,Limited/Burn-off
+Municipal Series 2024,Bond Issue,Tax-Exempt,Refinance,85000000,85000000,0,Fixed,MMD,125,N/A,3.85%,30/360,2024-09-15,2044-09-15,Fully Amortizing,0,N/A,1st Lien,N/A,N/A,Non-Recourse

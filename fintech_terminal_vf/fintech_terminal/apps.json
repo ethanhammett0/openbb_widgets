@@ -1,0 +1,407 @@
+[
+  {
+    "name": "Fintech Equity Research Terminal",
+    "description": "Institutional-grade equity research: morning pulse with TradingView charts, returns watchlist, advanced technical dashboard, factor attribution, group performance, pairs lab, SEC filings. Search any US stock via Polygon.",
+    "img": "",
+    "img_dark": "",
+    "img_light": "",
+    "allowCustomization": true,
+    "prompts": [],
+    "groups": [
+      {
+        "name": "Group 1",
+        "type": "param",
+        "paramName": "symbol",
+        "defaultValue": "AAPL"
+      },
+      {
+        "name": "Group 2",
+        "type": "param",
+        "paramName": "beta_mode",
+        "defaultValue": "kalman"
+      },
+      {
+        "name": "Group 3",
+        "type": "param",
+        "paramName": "pair",
+        "defaultValue": "V_MA"
+      },
+      {
+        "name": "Group 4",
+        "type": "param",
+        "paramName": "sub_sector",
+        "defaultValue": "All"
+      }
+    ],
+    "tabs": {
+      "morning_pulse": {
+        "id": "morning_pulse",
+        "name": "Morning Pulse",
+        "layout": [
+          {
+            "i": "macro_inputs",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 5,
+            "groups": []
+          },
+          {
+            "i": "returns_watchlist",
+            "x": 0,
+            "y": 5,
+            "w": 40,
+            "h": 16,
+            "groups": []
+          },
+          {
+            "i": "stock_chart",
+            "x": 0,
+            "y": 21,
+            "w": 20,
+            "h": 18,
+            "groups": [
+              "Group 1"
+            ]
+          },
+          {
+            "i": "universe_movers",
+            "x": 20,
+            "y": 21,
+            "w": 20,
+            "h": 18,
+            "groups": [
+              "Group 1",
+              "Group 4"
+            ]
+          },
+          {
+            "i": "technical_dashboard",
+            "x": 0,
+            "y": 39,
+            "w": 40,
+            "h": 14,
+            "groups": [
+              "Group 1"
+            ]
+          },
+          {
+            "i": "gainers_losers",
+            "x": 0,
+            "y": 53,
+            "w": 20,
+            "h": 12,
+            "groups": [
+              "Group 4"
+            ]
+          },
+          {
+            "i": "technical_alerts",
+            "x": 20,
+            "y": 53,
+            "w": 20,
+            "h": 12,
+            "groups": [
+              "Group 1",
+              "Group 4"
+            ]
+          },
+          {
+            "i": "corporate_actions_calendar",
+            "x": 0,
+            "y": 65,
+            "w": 40,
+            "h": 8,
+            "groups": [
+              "Group 4"
+            ]
+          }
+        ]
+      },
+      "factor_attribution": {
+        "id": "factor_attribution",
+        "name": "Factor & Attribution",
+        "layout": [
+          {
+            "i": "factor_heatmap",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 16,
+            "groups": [
+              "Group 2",
+              "Group 4"
+            ]
+          },
+          {
+            "i": "factor_bar",
+            "x": 0,
+            "y": 16,
+            "w": 20,
+            "h": 14,
+            "groups": [
+              "Group 1",
+              "Group 2"
+            ]
+          },
+          {
+            "i": "factor_drift",
+            "x": 20,
+            "y": 16,
+            "w": 20,
+            "h": 14,
+            "groups": [
+              "Group 1",
+              "Group 2"
+            ]
+          },
+          {
+            "i": "attribution_waterfall",
+            "x": 0,
+            "y": 30,
+            "w": 20,
+            "h": 14,
+            "groups": [
+              "Group 1",
+              "Group 2"
+            ]
+          },
+          {
+            "i": "rolling_attribution",
+            "x": 20,
+            "y": 30,
+            "w": 20,
+            "h": 14,
+            "groups": [
+              "Group 1",
+              "Group 2"
+            ]
+          },
+          {
+            "i": "factor_zscore_alerts",
+            "x": 0,
+            "y": 44,
+            "w": 40,
+            "h": 10,
+            "groups": [
+              "Group 1",
+              "Group 2",
+              "Group 4"
+            ]
+          },
+          {
+            "i": "attribution_summary",
+            "x": 0,
+            "y": 54,
+            "w": 40,
+            "h": 10,
+            "groups": [
+              "Group 1",
+              "Group 2",
+              "Group 4"
+            ]
+          },
+          {
+            "i": "attribution_scatter",
+            "x": 0,
+            "y": 64,
+            "w": 40,
+            "h": 14,
+            "groups": [
+              "Group 2"
+            ]
+          }
+        ]
+      },
+      "group_performance": {
+        "id": "group_performance",
+        "name": "Group Performance",
+        "layout": [
+          {
+            "i": "subsector_perf_heatmap",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 14,
+            "groups": []
+          },
+          {
+            "i": "subsector_perf_bar",
+            "x": 0,
+            "y": 14,
+            "w": 20,
+            "h": 14,
+            "groups": []
+          },
+          {
+            "i": "intra_subsector_dispersion",
+            "x": 20,
+            "y": 14,
+            "w": 20,
+            "h": 14,
+            "groups": []
+          },
+          {
+            "i": "universe_scatter",
+            "x": 0,
+            "y": 28,
+            "w": 40,
+            "h": 14,
+            "groups": []
+          }
+        ]
+      },
+      "pairs_lab": {
+        "id": "pairs_lab",
+        "name": "Pairs Lab",
+        "layout": [
+          {
+            "i": "pair_metrics",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 5,
+            "groups": [
+              "Group 3"
+            ]
+          },
+          {
+            "i": "cointegration_results",
+            "x": 0,
+            "y": 5,
+            "w": 40,
+            "h": 12,
+            "groups": [
+              "Group 4"
+            ]
+          },
+          {
+            "i": "normalized_price_chart",
+            "x": 0,
+            "y": 17,
+            "w": 20,
+            "h": 14,
+            "groups": [
+              "Group 3"
+            ]
+          },
+          {
+            "i": "spread_chart",
+            "x": 20,
+            "y": 17,
+            "w": 20,
+            "h": 14,
+            "groups": [
+              "Group 2",
+              "Group 3"
+            ]
+          },
+          {
+            "i": "hedge_ratio_chart",
+            "x": 0,
+            "y": 31,
+            "w": 20,
+            "h": 14,
+            "groups": [
+              "Group 3"
+            ]
+          },
+          {
+            "i": "rsi_divergence_chart",
+            "x": 20,
+            "y": 31,
+            "w": 20,
+            "h": 14,
+            "groups": [
+              "Group 3"
+            ]
+          },
+          {
+            "i": "spread_drift_alerts",
+            "x": 0,
+            "y": 45,
+            "w": 40,
+            "h": 8,
+            "groups": []
+          }
+        ]
+      },
+      "sec_fundamentals": {
+        "id": "sec_fundamentals",
+        "name": "SEC & Fundamentals",
+        "layout": [
+          {
+            "i": "sec_filing_metrics",
+            "x": 0,
+            "y": 0,
+            "w": 40,
+            "h": 5,
+            "groups": [
+              "Group 1"
+            ]
+          },
+          {
+            "i": "sec_filing_viewer",
+            "x": 0,
+            "y": 5,
+            "w": 40,
+            "h": 24,
+            "groups": [
+              "Group 1"
+            ]
+          },
+          {
+            "i": "sec_financial_snapshot",
+            "x": 0,
+            "y": 29,
+            "w": 40,
+            "h": 14,
+            "groups": [
+              "Group 1"
+            ]
+          },
+          {
+            "i": "sec_xbrl_chart",
+            "x": 0,
+            "y": 43,
+            "w": 20,
+            "h": 14,
+            "groups": [
+              "Group 1"
+            ]
+          },
+          {
+            "i": "sec_company_filings",
+            "x": 20,
+            "y": 43,
+            "w": 20,
+            "h": 14,
+            "groups": [
+              "Group 1"
+            ]
+          },
+          {
+            "i": "sec_8k_filings",
+            "x": 0,
+            "y": 57,
+            "w": 20,
+            "h": 12,
+            "groups": [
+              "Group 1"
+            ]
+          },
+          {
+            "i": "sec_insider_transactions",
+            "x": 20,
+            "y": 57,
+            "w": 20,
+            "h": 12,
+            "groups": [
+              "Group 1"
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

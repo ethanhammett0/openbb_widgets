@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openbb-revista"
+version = "0.1.0"
+description = "Revista Property Intelligence App for OpenBB Workspace"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "requests",
+    "plotly",
+    "pydantic",
+    "python-dotenv",
+    "aiohttp",
+    "fastapi",
+    "uvicorn",
+    "openbb-core"
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.entry-points."openbb_core_extension"]
+revista = "openbb_revista.router:router"
+
+[tool.setuptools]
+packages = ["openbb_revista"]

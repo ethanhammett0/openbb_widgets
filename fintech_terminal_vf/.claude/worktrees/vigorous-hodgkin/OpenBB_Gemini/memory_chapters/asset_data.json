@@ -1,0 +1,38 @@
+[
+  {
+    "metadata": {
+      "unique_id": "mem_0422f241",
+      "timestamp": 1766852237.9644785,
+      "source_tool": "Revista_get_property",
+      "source_args": {
+        "PropertyID": 738432
+      },
+      "topic": "Asset Data",
+      "summary": "Property details for TSAOG Orthopaedics (ID: 738432) in San Antonio, TX. 97k SF Class A MOB built in 2020."
+    },
+    "value": {
+      "squareFeet": 97000,
+      "yearBuilt": 2020,
+      "propertyID": 738432,
+      "propertyName": "TSAOG ORTHOPAEDICS"
+    }
+  },
+  {
+    "metadata": {
+      "unique_id": "mem_144c32e1",
+      "timestamp": 1766852252.204428,
+      "source_tool": "Revista_get_property",
+      "source_args": {
+        "PropertyID": 738432
+      },
+      "topic": "Asset Data",
+      "summary": "Comprehensive asset details for TSAOG ORTHOPAEDICS (PropertyID: 738432), a 97,000 SF Class A Medical Office Building in San Antonio, TX, built in 2020 and acquired by Anchor Health Properties/Carlyle Group for $57M ($588/SF)."
+    },
+    "value": {
+      "yearBuilt": 2020,
+      "propertyID": 738432,
+      "propertyName": "TSAOG ORTHOPAEDICS",
+      "propertyType": "Medical Office Building"
+    }
+  }
+]

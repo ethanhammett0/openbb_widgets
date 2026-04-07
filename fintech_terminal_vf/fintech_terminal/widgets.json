@@ -1,0 +1,3220 @@
+{
+  "macro_inputs": {
+    "name": "Macro Returns Monitor",
+    "description": "Macro market instruments and their performance across asset classes",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "macro_inputs",
+    "gridData": {
+      "w": 40,
+      "h": 5
+    },
+    "params": [
+      {
+        "paramName": "instruments",
+        "type": "endpoint",
+        "label": "Instruments",
+        "optionsEndpoint": "macro_instruments",
+        "multiSelect": true,
+        "value": "All"
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1D",
+        "style": {
+          "popupWidth": 350
+        }
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "instrument",
+            "headerName": "Instrument",
+            "cellDataType": "text"
+          },
+          {
+            "field": "asset_class",
+            "headerName": "Asset Class",
+            "cellDataType": "text"
+          },
+          {
+            "field": "price",
+            "headerName": "Price",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2
+          },
+          {
+            "field": "return_pct",
+            "headerName": "Return %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed"
+          },
+          {
+            "field": "period",
+            "headerName": "Period",
+            "cellDataType": "text"
+          }
+        ]
+      }
+    },
+    "staleTime": 60000
+  },
+  "universe_movers": {
+    "name": "Universe Pre-Market Movers",
+    "description": "Top moving stocks filtered by market cap and sub-sector",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "universe_movers",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sectors",
+        "optionsEndpoint": "sub_sectors",
+        "multiSelect": true,
+        "value": "All",
+        "style": {
+          "popupWidth": 400
+        }
+      },
+      {
+        "paramName": "min_mktcap_b",
+        "type": "number",
+        "label": "Min Market Cap (B)",
+        "value": 0,
+        "min": 0,
+        "max": 2000,
+        "step": 0.5
+      },
+      {
+        "paramName": "max_mktcap_b",
+        "type": "number",
+        "label": "Max Market Cap (B)",
+        "value": 2000,
+        "min": 0,
+        "max": 2000,
+        "step": 0.5
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "ticker",
+            "headerName": "Ticker",
+            "cellDataType": "text",
+            "pinned": "left",
+            "renderFn": "cellOnClick",
+            "renderFnParams": {
+              "actionType": "groupBy",
+              "groupBy": {
+                "paramName": "symbol"
+              }
+            }
+          },
+          {
+            "field": "sub_sector",
+            "headerName": "Sub-Sector",
+            "cellDataType": "text"
+          },
+          {
+            "field": "last_price",
+            "headerName": "Last Price",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2
+          },
+          {
+            "field": "pct_change",
+            "headerName": "% Change",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed"
+          },
+          {
+            "field": "volume",
+            "headerName": "Volume",
+            "cellDataType": "number",
+            "formatterFn": "int"
+          },
+          {
+            "field": "mktcap",
+            "headerName": "Market Cap",
+            "cellDataType": "text"
+          }
+        ]
+      }
+    },
+    "staleTime": 60000
+  },
+  "stock_chart": {
+    "name": "TradingView Chart",
+    "description": "Interactive TradingView chart \u00e2\u20ac\u201d search for any US stock. Supports candlestick, line, area with full technical analysis tools, drawing tools, and multi-timeframe analysis.",
+    "category": "Morning Pulse",
+    "type": "advanced_charting",
+    "endpoint": "/udf",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "data": {
+      "defaultSymbol": "AAPL",
+      "updateFrequency": 60000
+    },
+    "staleTime": 60000
+  },
+  "gainers_losers": {
+    "name": "Fintech Gainers / Losers",
+    "description": "Top gainers and losers by sub-sector and time period",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "gainers_losers",
+    "gridData": {
+      "w": 20,
+      "h": 12
+    },
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sectors",
+        "optionsEndpoint": "sub_sectors",
+        "multiSelect": true,
+        "value": "All",
+        "style": {
+          "popupWidth": 400
+        }
+      },
+      {
+        "paramName": "count",
+        "type": "number",
+        "label": "Count",
+        "value": 10,
+        "min": 5,
+        "max": 25,
+        "step": 5
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1D",
+        "style": {
+          "popupWidth": 350
+        }
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "ticker",
+            "headerName": "Ticker",
+            "cellDataType": "text",
+            "pinned": "left",
+            "renderFn": "cellOnClick",
+            "renderFnParams": {
+              "actionType": "groupBy",
+              "groupBy": {
+                "paramName": "symbol"
+              }
+            }
+          },
+          {
+            "field": "sub_sector",
+            "headerName": "Sub-Sector",
+            "cellDataType": "text"
+          },
+          {
+            "field": "pct_change",
+            "headerName": "% Change",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed"
+          },
+          {
+            "field": "volume",
+            "headerName": "Volume",
+            "cellDataType": "number",
+            "formatterFn": "int"
+          },
+          {
+            "field": "prev_close",
+            "headerName": "Prev Close",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2
+          },
+          {
+            "field": "current_price",
+            "headerName": "Current",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2
+          },
+          {
+            "field": "period",
+            "headerName": "Period",
+            "cellDataType": "text"
+          },
+          {
+            "field": "direction",
+            "headerName": "Direction",
+            "cellDataType": "text"
+          },
+          {
+            "field": "pct_change_raw",
+            "headerName": "Sort Key",
+            "cellDataType": "number",
+            "hide": true
+          }
+        ]
+      }
+    },
+    "staleTime": 60000
+  },
+  "technical_alerts": {
+    "name": "Technical Signal Alerts",
+    "description": "RSI, MACD, SMA cross signals with configurable thresholds",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "technical_alerts",
+    "staleTime": 300000,
+    "gridData": {
+      "w": 20,
+      "h": 12
+    },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sectors",
+        "optionsEndpoint": "sub_sectors",
+        "multiSelect": true,
+        "value": "All",
+        "style": {
+          "popupWidth": 400
+        }
+      },
+      {
+        "paramName": "signal_types",
+        "type": "text",
+        "label": "Signal Type",
+        "value": "all",
+        "options": [
+          {
+            "label": "All Signals",
+            "value": "all"
+          },
+          {
+            "label": "RSI Only",
+            "value": "rsi"
+          },
+          {
+            "label": "MACD Only",
+            "value": "macd"
+          },
+          {
+            "label": "SMA Cross Only",
+            "value": "sma"
+          }
+        ]
+      },
+      {
+        "paramName": "rsi_overbought",
+        "type": "number",
+        "label": "RSI Overbought",
+        "value": 70,
+        "min": 50,
+        "max": 95,
+        "step": 5
+      },
+      {
+        "paramName": "rsi_oversold",
+        "type": "number",
+        "label": "RSI Oversold",
+        "value": 30,
+        "min": 5,
+        "max": 50,
+        "step": 5
+      }
+    ],
+    "data": {
+      "table": {
+        "showAll": true,
+        "columnsDefs": [
+          {
+            "field": "ticker",
+            "headerName": "Ticker",
+            "cellDataType": "text",
+            "pinned": "left",
+            "renderFn": "cellOnClick",
+            "renderFnParams": {
+              "actionType": "groupBy",
+              "groupBy": {
+                "paramName": "symbol"
+              }
+            }
+          },
+          {
+            "field": "sub_sector",
+            "headerName": "Sub-Sector",
+            "cellDataType": "text"
+          },
+          {
+            "field": "signal_type",
+            "headerName": "Signal",
+            "cellDataType": "text"
+          },
+          {
+            "field": "signal_value",
+            "headerName": "Value",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2
+          },
+          {
+            "field": "threshold",
+            "headerName": "Threshold",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2
+          },
+          {
+            "field": "direction",
+            "headerName": "Direction",
+            "cellDataType": "text"
+          }
+        ]
+      }
+    }
+  },
+  "corporate_actions_calendar": {
+    "name": "Corporate Actions Calendar",
+    "description": "Corporate actions calendar including dividends, splits, and other events",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "corporate_actions_calendar",
+    "gridData": {
+      "w": 40,
+      "h": 8
+    },
+    "params": [
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      },
+      {
+        "paramName": "event_types",
+        "type": "endpoint",
+        "label": "Event Types",
+        "optionsEndpoint": "event_types",
+        "multiSelect": true,
+        "value": "All"
+      },
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sectors",
+        "optionsEndpoint": "sub_sectors",
+        "multiSelect": true,
+        "value": "All",
+        "style": {
+          "popupWidth": 400
+        }
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "ticker",
+            "headerName": "Ticker",
+            "cellDataType": "text",
+            "pinned": "left",
+            "renderFn": "cellOnClick",
+            "renderFnParams": {
+              "actionType": "groupBy",
+              "groupBy": {
+                "paramName": "symbol"
+              }
+            }
+          },
+          {
+            "field": "sub_sector",
+            "headerName": "Sub-Sector",
+            "cellDataType": "text"
+          },
+          {
+            "field": "event_type",
+            "headerName": "Event Type",
+            "cellDataType": "text"
+          },
+          {
+            "field": "event_date",
+            "headerName": "Event Date",
+            "cellDataType": "text"
+          },
+          {
+            "field": "pay_date",
+            "headerName": "Pay Date",
+            "cellDataType": "text"
+          },
+          {
+            "field": "detail",
+            "headerName": "Detail",
+            "cellDataType": "text"
+          },
+          {
+            "field": "yield_ann",
+            "headerName": "Annual Yield %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed"
+          }
+        ]
+      }
+    },
+    "staleTime": 300000
+  },
+  "factor_heatmap": {
+    "name": "Factor Exposure Heatmap",
+    "description": "Factor exposure heatmap across the universe",
+    "category": "Factor & Attribution",
+    "type": "chart",
+    "endpoint": "factor_heatmap",
+    "gridData": {
+      "w": 40,
+      "h": 16
+    },
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sectors",
+        "optionsEndpoint": "sub_sectors",
+        "multiSelect": true,
+        "value": "All",
+        "style": {
+          "popupWidth": 400
+        }
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          {
+            "label": "Kalman Filter",
+            "value": "kalman"
+          },
+          {
+            "label": "Rolling OLS",
+            "value": "rolling"
+          }
+        ]
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "3M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      },
+      {
+        "paramName": "max_tickers",
+        "type": "number",
+        "label": "Max Tickers",
+        "value": 15,
+        "min": 5,
+        "max": 50,
+        "step": 5
+      }
+    ],
+    "staleTime": 300000
+  },
+  "factor_bar": {
+    "name": "Factor Exposure Bar",
+    "description": "Factor exposures for a single stock",
+    "category": "Factor & Attribution",
+    "type": "chart",
+    "endpoint": "factor_bar",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          {
+            "label": "Kalman Filter",
+            "value": "kalman"
+          },
+          {
+            "label": "Rolling OLS",
+            "value": "rolling"
+          }
+        ]
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "3M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      }
+    ],
+    "staleTime": 300000
+  },
+  "factor_drift": {
+    "name": "Factor Exposure Drift",
+    "description": "Factor beta drift over time",
+    "category": "Factor & Attribution",
+    "type": "chart",
+    "endpoint": "factor_drift",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "factor",
+        "type": "endpoint",
+        "label": "Factor",
+        "optionsEndpoint": "factors",
+        "value": "Mkt-RF"
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          {
+            "label": "Kalman Filter",
+            "value": "kalman"
+          },
+          {
+            "label": "Rolling OLS",
+            "value": "rolling"
+          }
+        ]
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1Y",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      }
+    ],
+    "staleTime": 300000
+  },
+  "attribution_waterfall": {
+    "name": "Return Attribution Waterfall",
+    "description": "Attribution waterfall showing return decomposition",
+    "category": "Factor & Attribution",
+    "type": "chart",
+    "endpoint": "attribution_waterfall",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          {
+            "label": "Kalman Filter",
+            "value": "kalman"
+          },
+          {
+            "label": "Rolling OLS",
+            "value": "rolling"
+          }
+        ]
+      }
+    ],
+    "staleTime": 300000
+  },
+  "rolling_attribution": {
+    "name": "Rolling Attribution",
+    "description": "Rolling attribution analysis over time",
+    "category": "Factor & Attribution",
+    "type": "chart",
+    "endpoint": "rolling_attribution",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "3M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          {
+            "label": "Kalman Filter",
+            "value": "kalman"
+          },
+          {
+            "label": "Rolling OLS",
+            "value": "rolling"
+          }
+        ]
+      }
+    ],
+    "staleTime": 300000
+  },
+  "factor_zscore_alerts": {
+    "name": "Factor Z-Score Alerts",
+    "description": "Factor z-score alerts and anomalies",
+    "category": "Factor & Attribution",
+    "type": "table",
+    "endpoint": "factor_zscore_alerts",
+    "gridData": {
+      "w": 40,
+      "h": 10
+    },
+    "params": [
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          {
+            "label": "Kalman Filter",
+            "value": "kalman"
+          },
+          {
+            "label": "Rolling OLS",
+            "value": "rolling"
+          }
+        ]
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "3M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      },
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sectors",
+        "optionsEndpoint": "sub_sectors",
+        "multiSelect": true,
+        "value": "All",
+        "style": {
+          "popupWidth": 400
+        }
+      },
+      {
+        "paramName": "z_threshold",
+        "type": "number",
+        "label": "Z-Score Threshold",
+        "value": 1.5,
+        "min": 0.5,
+        "max": 3.0,
+        "step": 0.25
+      },
+      {
+        "paramName": "max_tickers",
+        "type": "number",
+        "label": "Max Tickers",
+        "value": 15,
+        "min": 5,
+        "max": 50,
+        "step": 5
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "ticker",
+            "headerName": "Ticker",
+            "cellDataType": "text",
+            "pinned": "left",
+            "renderFn": "cellOnClick",
+            "renderFnParams": {
+              "actionType": "groupBy",
+              "groupBy": {
+                "paramName": "symbol"
+              }
+            }
+          },
+          {
+            "field": "sub_sector",
+            "headerName": "Sub-Sector",
+            "cellDataType": "text"
+          },
+          {
+            "field": "factor",
+            "headerName": "Factor",
+            "cellDataType": "text"
+          },
+          {
+            "field": "current_beta",
+            "headerName": "Current Beta",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 3
+          },
+          {
+            "field": "mean_beta_1yr",
+            "headerName": "Mean Beta (1Y)",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 3
+          },
+          {
+            "field": "z_score",
+            "headerName": "Z-Score",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2,
+            "renderFn": "columnColor",
+            "renderFnParams": {
+              "colorRules": [
+                {
+                  "condition": "gte",
+                  "value": 2.0,
+                  "color": "#FF3B30",
+                  "fill": true
+                },
+                {
+                  "condition": "gte",
+                  "value": 1.5,
+                  "color": "#FF9500",
+                  "fill": false
+                },
+                {
+                  "condition": "lte",
+                  "value": -2.0,
+                  "color": "#FF3B30",
+                  "fill": true
+                },
+                {
+                  "condition": "lte",
+                  "value": -1.5,
+                  "color": "#FF9500",
+                  "fill": false
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "staleTime": 300000,
+    "runButton": true
+  },
+  "attribution_summary": {
+    "name": "Attribution Summary",
+    "description": "Attribution summary across the universe",
+    "category": "Factor & Attribution",
+    "type": "table",
+    "endpoint": "attribution_summary",
+    "gridData": {
+      "w": 40,
+      "h": 10
+    },
+    "params": [
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      },
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sectors",
+        "optionsEndpoint": "sub_sectors",
+        "multiSelect": true,
+        "value": "All",
+        "style": {
+          "popupWidth": 400
+        }
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          {
+            "label": "Kalman Filter",
+            "value": "kalman"
+          },
+          {
+            "label": "Rolling OLS",
+            "value": "rolling"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "ticker",
+            "headerName": "Ticker",
+            "cellDataType": "text",
+            "pinned": "left",
+            "renderFn": "cellOnClick",
+            "renderFnParams": {
+              "actionType": "groupBy",
+              "groupBy": {
+                "paramName": "symbol"
+              }
+            }
+          },
+          {
+            "field": "sub_sector",
+            "headerName": "Sub-Sector",
+            "cellDataType": "text"
+          },
+          {
+            "field": "total_return",
+            "headerName": "Total Return %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed"
+          },
+          {
+            "field": "factor_explained",
+            "headerName": "Factor Explained %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed"
+          },
+          {
+            "field": "idiosyncratic",
+            "headerName": "Idiosyncratic %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed"
+          },
+          {
+            "field": "r_squared",
+            "headerName": "R\u00b2",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 3
+          }
+        ]
+      }
+    },
+    "staleTime": 300000
+  },
+  "attribution_scatter": {
+    "name": "Attribution Scatter",
+    "description": "Scatter plot of factor explained vs idiosyncratic return",
+    "category": "Factor & Attribution",
+    "type": "chart",
+    "endpoint": "attribution_scatter",
+    "gridData": {
+      "w": 40,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          {
+            "label": "Kalman Filter",
+            "value": "kalman"
+          },
+          {
+            "label": "Rolling OLS",
+            "value": "rolling"
+          }
+        ]
+      }
+    ],
+    "staleTime": 300000
+  },
+  "subsector_perf_heatmap": {
+    "name": "Sub-Sector Performance Heatmap",
+    "description": "Sub-sector performance heatmap across multiple horizons",
+    "category": "Group Performance",
+    "type": "chart",
+    "endpoint": "subsector_perf_heatmap",
+    "gridData": {
+      "w": 40,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "6M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      }
+    ],
+    "staleTime": 300000
+  },
+  "subsector_perf_bar": {
+    "name": "Sub-Sector Performance Bar",
+    "description": "Sub-sector performance bar chart",
+    "category": "Group Performance",
+    "type": "chart",
+    "endpoint": "subsector_perf_bar",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      }
+    ],
+    "staleTime": 300000
+  },
+  "intra_subsector_dispersion": {
+    "name": "Intra-Sub-Sector Dispersion",
+    "description": "Dispersion of returns within sub-sectors",
+    "category": "Group Performance",
+    "type": "table",
+    "endpoint": "intra_subsector_dispersion",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "sub_sector",
+            "headerName": "Sub-Sector",
+            "cellDataType": "text",
+            "pinned": "left"
+          },
+          {
+            "field": "best_ticker",
+            "headerName": "Best",
+            "cellDataType": "text"
+          },
+          {
+            "field": "best_return",
+            "headerName": "Best Ret %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed"
+          },
+          {
+            "field": "worst_ticker",
+            "headerName": "Worst",
+            "cellDataType": "text"
+          },
+          {
+            "field": "worst_return",
+            "headerName": "Worst Ret %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed"
+          },
+          {
+            "field": "ew_return",
+            "headerName": "EW Ret %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed"
+          },
+          {
+            "field": "dispersion",
+            "headerName": "Dispersion",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2,
+            "renderFn": "columnColor",
+            "renderFnParams": {
+              "colorRules": [
+                {
+                  "condition": "gte",
+                  "value": 10.0,
+                  "color": "#FF3B30",
+                  "fill": true
+                },
+                {
+                  "condition": "gte",
+                  "value": 5.0,
+                  "color": "#FF9500",
+                  "fill": false
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "staleTime": 300000
+  },
+  "universe_scatter": {
+    "name": "Universe Performance Scatter",
+    "description": "Scatter plot of returns across different time horizons",
+    "category": "Group Performance",
+    "type": "chart",
+    "endpoint": "universe_scatter",
+    "gridData": {
+      "w": 40,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "period_x",
+        "type": "endpoint",
+        "label": "X-Axis Period",
+        "optionsEndpoint": "period_options",
+        "value": "1M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "period_y",
+        "type": "endpoint",
+        "label": "Y-Axis Period",
+        "optionsEndpoint": "period_options",
+        "value": "3M",
+        "style": {
+          "popupWidth": 350
+        }
+      }
+    ],
+    "staleTime": 300000
+  },
+  "pair_metrics": {
+    "name": "Pair Metrics",
+    "description": "Metrics for a selected pair trade",
+    "category": "Pairs Lab",
+    "type": "metric",
+    "endpoint": "pair_metrics",
+    "gridData": {
+      "w": 40,
+      "h": 5
+    },
+    "params": [
+      {
+        "paramName": "pair_mode",
+        "type": "text",
+        "label": "Pair Mode",
+        "value": "preset",
+        "options": [
+          {
+            "label": "Preset",
+            "value": "preset"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
+        ]
+      },
+      {
+        "paramName": "pair",
+        "type": "endpoint",
+        "label": "Pair",
+        "optionsEndpoint": "pairs",
+        "value": "V_MA"
+      },
+      {
+        "paramName": "leg_a",
+        "type": "endpoint",
+        "label": "Leg A",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "leg_b",
+        "type": "endpoint",
+        "label": "Leg B",
+        "optionsEndpoint": "stock_search",
+        "value": "SQ",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1Y",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          {
+            "label": "Kalman Filter",
+            "value": "kalman"
+          },
+          {
+            "label": "Rolling OLS",
+            "value": "rolling"
+          }
+        ]
+      }
+    ],
+    "staleTime": 300000
+  },
+  "cointegration_results": {
+    "name": "Cointegration Results",
+    "description": "Cointegration test results for pairs",
+    "category": "Pairs Lab",
+    "type": "table",
+    "endpoint": "cointegration_results",
+    "gridData": {
+      "w": 40,
+      "h": 12
+    },
+    "params": [
+      {
+        "paramName": "sub_sector",
+        "type": "endpoint",
+        "label": "Sub-Sectors",
+        "optionsEndpoint": "sub_sectors",
+        "multiSelect": true,
+        "value": "All",
+        "style": {
+          "popupWidth": 400
+        }
+      },
+      {
+        "paramName": "pval_threshold",
+        "type": "number",
+        "label": "P-Value Threshold",
+        "value": 0.05,
+        "min": 0.001,
+        "max": 1.0,
+        "step": 0.01
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1Y",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      },
+      {
+        "paramName": "pair_mode",
+        "type": "text",
+        "label": "Pair Mode",
+        "value": "preset",
+        "options": [
+          {
+            "label": "Preset",
+            "value": "preset"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
+        ]
+      },
+      {
+        "paramName": "leg_a",
+        "type": "endpoint",
+        "label": "Leg A",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "leg_b",
+        "type": "endpoint",
+        "label": "Leg B",
+        "optionsEndpoint": "stock_search",
+        "value": "SQ",
+        "style": {
+          "popupWidth": 450
+        }
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "pair",
+            "headerName": "Pair",
+            "cellDataType": "text",
+            "pinned": "left"
+          },
+          {
+            "field": "sub_sector",
+            "headerName": "Sub-Sector",
+            "cellDataType": "text"
+          },
+          {
+            "field": "eg_pvalue",
+            "headerName": "EG P-Value",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 4
+          },
+          {
+            "field": "adf_stat",
+            "headerName": "ADF Statistic",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 3
+          },
+          {
+            "field": "cointegrated",
+            "headerName": "Cointegrated",
+            "cellDataType": "text"
+          },
+          {
+            "field": "hedge_ratio",
+            "headerName": "Hedge Ratio",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 4
+          },
+          {
+            "field": "z_score",
+            "headerName": "Z-Score",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2,
+            "renderFn": "columnColor",
+            "renderFnParams": {
+              "colorRules": [
+                {
+                  "condition": "gte",
+                  "value": 2.0,
+                  "color": "#FF3B30",
+                  "fill": true
+                },
+                {
+                  "condition": "gte",
+                  "value": 1.5,
+                  "color": "#FF9500",
+                  "fill": false
+                },
+                {
+                  "condition": "lte",
+                  "value": -2.0,
+                  "color": "#FF3B30",
+                  "fill": true
+                },
+                {
+                  "condition": "lte",
+                  "value": -1.5,
+                  "color": "#FF9500",
+                  "fill": false
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "staleTime": 300000
+  },
+  "normalized_price_chart": {
+    "name": "Normalized Price Chart",
+    "description": "Normalized price chart for pair comparison",
+    "category": "Pairs Lab",
+    "type": "chart",
+    "endpoint": "normalized_price_chart",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "pair_mode",
+        "type": "text",
+        "label": "Pair Mode",
+        "value": "preset",
+        "options": [
+          {
+            "label": "Preset",
+            "value": "preset"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
+        ]
+      },
+      {
+        "paramName": "pair",
+        "type": "endpoint",
+        "label": "Pair",
+        "optionsEndpoint": "pairs",
+        "value": "V_MA"
+      },
+      {
+        "paramName": "leg_a",
+        "type": "endpoint",
+        "label": "Leg A",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "leg_b",
+        "type": "endpoint",
+        "label": "Leg B",
+        "optionsEndpoint": "stock_search",
+        "value": "SQ",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1Y",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      }
+    ],
+    "staleTime": 300000
+  },
+  "spread_chart": {
+    "name": "Spread Chart",
+    "description": "Spread chart for pair trading analysis",
+    "category": "Pairs Lab",
+    "type": "chart",
+    "endpoint": "spread_chart",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "pair_mode",
+        "type": "text",
+        "label": "Pair Mode",
+        "value": "preset",
+        "options": [
+          {
+            "label": "Preset",
+            "value": "preset"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
+        ]
+      },
+      {
+        "paramName": "pair",
+        "type": "endpoint",
+        "label": "Pair",
+        "optionsEndpoint": "pairs",
+        "value": "V_MA"
+      },
+      {
+        "paramName": "leg_a",
+        "type": "endpoint",
+        "label": "Leg A",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "leg_b",
+        "type": "endpoint",
+        "label": "Leg B",
+        "optionsEndpoint": "stock_search",
+        "value": "SQ",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1Y",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      },
+      {
+        "paramName": "beta_mode",
+        "type": "text",
+        "label": "Beta Mode",
+        "value": "kalman",
+        "options": [
+          {
+            "label": "Kalman Filter",
+            "value": "kalman"
+          },
+          {
+            "label": "Rolling OLS",
+            "value": "rolling"
+          }
+        ]
+      }
+    ],
+    "staleTime": 300000
+  },
+  "hedge_ratio_chart": {
+    "name": "Hedge Ratio Chart",
+    "description": "Hedge ratio evolution over time",
+    "category": "Pairs Lab",
+    "type": "chart",
+    "endpoint": "hedge_ratio_chart",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "pair_mode",
+        "type": "text",
+        "label": "Pair Mode",
+        "value": "preset",
+        "options": [
+          {
+            "label": "Preset",
+            "value": "preset"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
+        ]
+      },
+      {
+        "paramName": "pair",
+        "type": "endpoint",
+        "label": "Pair",
+        "optionsEndpoint": "pairs",
+        "value": "V_MA"
+      },
+      {
+        "paramName": "leg_a",
+        "type": "endpoint",
+        "label": "Leg A",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "leg_b",
+        "type": "endpoint",
+        "label": "Leg B",
+        "optionsEndpoint": "stock_search",
+        "value": "SQ",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "1Y",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      }
+    ],
+    "staleTime": 300000
+  },
+  "rsi_divergence_chart": {
+    "name": "RSI Divergence Chart",
+    "description": "RSI divergence analysis for pair trading",
+    "category": "Pairs Lab",
+    "type": "chart",
+    "endpoint": "rsi_divergence_chart",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "pair_mode",
+        "type": "text",
+        "label": "Pair Mode",
+        "value": "preset",
+        "options": [
+          {
+            "label": "Preset",
+            "value": "preset"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
+        ]
+      },
+      {
+        "paramName": "pair",
+        "type": "endpoint",
+        "label": "Pair",
+        "optionsEndpoint": "pairs",
+        "value": "V_MA"
+      },
+      {
+        "paramName": "leg_a",
+        "type": "endpoint",
+        "label": "Leg A",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "leg_b",
+        "type": "endpoint",
+        "label": "Leg B",
+        "optionsEndpoint": "stock_search",
+        "value": "SQ",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "3M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      }
+    ],
+    "staleTime": 300000
+  },
+  "spread_drift_alerts": {
+    "name": "Spread Drift Alerts",
+    "description": "Alerts for spread drift and mean reversion opportunities",
+    "category": "Pairs Lab",
+    "type": "table",
+    "endpoint": "spread_drift_alerts",
+    "gridData": {
+      "w": 40,
+      "h": 8
+    },
+    "params": [
+      {
+        "paramName": "z_threshold",
+        "type": "number",
+        "label": "Z-Score Threshold",
+        "value": 1.5,
+        "min": 0.5,
+        "max": 3.0,
+        "step": 0.25
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "pair",
+            "headerName": "Pair",
+            "cellDataType": "text",
+            "pinned": "left"
+          },
+          {
+            "field": "z_score",
+            "headerName": "Z-Score",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2,
+            "renderFn": "columnColor",
+            "renderFnParams": {
+              "colorRules": [
+                {
+                  "condition": "gte",
+                  "value": 2.0,
+                  "color": "#FF3B30",
+                  "fill": true
+                },
+                {
+                  "condition": "gte",
+                  "value": 1.5,
+                  "color": "#FF9500",
+                  "fill": false
+                },
+                {
+                  "condition": "lte",
+                  "value": -2.0,
+                  "color": "#FF3B30",
+                  "fill": true
+                },
+                {
+                  "condition": "lte",
+                  "value": -1.5,
+                  "color": "#FF9500",
+                  "fill": false
+                }
+              ]
+            }
+          },
+          {
+            "field": "spread",
+            "headerName": "Spread",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 4
+          },
+          {
+            "field": "mean_60d",
+            "headerName": "60D Mean",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 4
+          },
+          {
+            "field": "hedge_ratio",
+            "headerName": "Hedge Ratio",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 4
+          }
+        ]
+      }
+    },
+    "staleTime": 60000,
+    "runButton": true
+  },
+  "sec_filing_metrics": {
+    "name": "Filing Overview Metrics",
+    "description": "Key metrics from SEC filings",
+    "category": "SEC & Fundamentals",
+    "type": "metric",
+    "endpoint": "sec_filing_metrics",
+    "gridData": {
+      "w": 40,
+      "h": 5
+    },
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      }
+    ],
+    "staleTime": 300000
+  },
+  "sec_filing_viewer": {
+    "name": "SEC Filing Viewer",
+    "description": "View SEC EDGAR filings inline. Filter by symbol, form type, and date range. The left panel lists available filings \u00e2\u20ac\u201d click any to render it as a PDF. Supports 10-K, 10-Q, 8-K, DEF 14A, and S-1 filings.",
+    "category": "SEC & Fundamentals",
+    "type": "multi_file_viewer",
+    "endpoint": "sec_filing_document",
+    "gridData": {
+      "w": 40,
+      "h": 24
+    },
+    "staleTime": 300000,
+    "params": [
+      {
+        "paramName": "filing",
+        "type": "endpoint",
+        "label": "Filing",
+        "description": "Select one or more filings to view.",
+        "optionsEndpoint": "sec_filing_options",
+        "optionsParams": {
+          "symbol": "$symbol",
+          "forms": "$forms",
+          "start_date": "$start_date",
+          "end_date": "$end_date"
+        },
+        "show": false,
+        "value": [],
+        "multiSelect": true,
+        "roles": [
+          "fileSelector"
+        ]
+      },
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "forms",
+        "type": "text",
+        "label": "Form Type",
+        "value": "All",
+        "options": [
+          {
+            "label": "All Forms",
+            "value": "All"
+          },
+          {
+            "label": "10-K (Annual)",
+            "value": "10-K"
+          },
+          {
+            "label": "10-Q (Quarterly)",
+            "value": "10-Q"
+          },
+          {
+            "label": "8-K (Current)",
+            "value": "8-K"
+          },
+          {
+            "label": "DEF 14A (Proxy)",
+            "value": "DEF 14A"
+          },
+          {
+            "label": "S-1 (Registration)",
+            "value": "S-1"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "From Date",
+        "value": "$currentDate-1y"
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "To Date",
+        "value": "$currentDate"
+      }
+    ]
+  },
+  "sec_financial_snapshot": {
+    "name": "Financial Snapshot (XBRL)",
+    "description": "Financial snapshot from SEC filings",
+    "category": "SEC & Fundamentals",
+    "type": "table",
+    "endpoint": "sec_financial_snapshot",
+    "gridData": {
+      "w": 40,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "concept",
+            "headerName": "Concept",
+            "cellDataType": "text",
+            "pinned": "left"
+          },
+          {
+            "field": "value",
+            "headerName": "Value",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2
+          },
+          {
+            "field": "period",
+            "headerName": "Period",
+            "cellDataType": "text"
+          },
+          {
+            "field": "filed_date",
+            "headerName": "Filed Date",
+            "cellDataType": "text"
+          },
+          {
+            "field": "form",
+            "headerName": "Form",
+            "cellDataType": "text"
+          }
+        ]
+      }
+    },
+    "staleTime": 300000
+  },
+  "sec_xbrl_chart": {
+    "name": "XBRL Concept Chart",
+    "description": "XBRL concept chart from SEC filings",
+    "category": "SEC & Fundamentals",
+    "type": "chart",
+    "endpoint": "sec_xbrl_chart",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "concept",
+        "type": "endpoint",
+        "label": "Concept",
+        "optionsEndpoint": "sec_xbrl_concepts",
+        "value": "us-gaap/Revenues"
+      }
+    ],
+    "staleTime": 300000
+  },
+  "sec_company_filings": {
+    "name": "Company Filing History",
+    "description": "List of company SEC filings",
+    "category": "SEC & Fundamentals",
+    "type": "table",
+    "endpoint": "sec_company_filings",
+    "gridData": {
+      "w": 20,
+      "h": 14
+    },
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "forms",
+        "type": "endpoint",
+        "label": "Form Types",
+        "optionsEndpoint": "sec_form_types",
+        "multiSelect": true,
+        "value": "All",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "limit",
+        "type": "number",
+        "label": "Limit",
+        "value": 50,
+        "min": 10,
+        "max": 200,
+        "step": 10
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "form_type",
+            "headerName": "Form Type",
+            "cellDataType": "text",
+            "pinned": "left"
+          },
+          {
+            "field": "filed_date",
+            "headerName": "Filed Date",
+            "cellDataType": "text"
+          },
+          {
+            "field": "period_of_report",
+            "headerName": "Period of Report",
+            "cellDataType": "text"
+          },
+          {
+            "field": "description",
+            "headerName": "Description",
+            "cellDataType": "text"
+          },
+          {
+            "field": "filing_url",
+            "headerName": "Filing URL",
+            "cellDataType": "text"
+          }
+        ]
+      }
+    },
+    "staleTime": 300000
+  },
+  "sec_8k_filings": {
+    "name": "8-K Event Filings",
+    "description": "8-K filings for current events",
+    "category": "SEC & Fundamentals",
+    "type": "table",
+    "endpoint": "sec_8k_filings",
+    "gridData": {
+      "w": 20,
+      "h": 12
+    },
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "event_type",
+        "type": "endpoint",
+        "label": "Event Types",
+        "optionsEndpoint": "sec_8k_events",
+        "multiSelect": true,
+        "value": "All",
+        "style": {
+          "popupWidth": 500
+        }
+      },
+      {
+        "paramName": "limit",
+        "type": "number",
+        "label": "Limit",
+        "value": 25,
+        "min": 10,
+        "max": 100,
+        "step": 10
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "filed_date",
+            "headerName": "Filed Date",
+            "cellDataType": "text",
+            "pinned": "left"
+          },
+          {
+            "field": "event_items",
+            "headerName": "Event Items",
+            "cellDataType": "text"
+          },
+          {
+            "field": "description",
+            "headerName": "Description",
+            "cellDataType": "text"
+          },
+          {
+            "field": "filing_url",
+            "headerName": "Filing URL",
+            "cellDataType": "text"
+          }
+        ]
+      }
+    },
+    "staleTime": 300000
+  },
+  "sec_insider_transactions": {
+    "name": "Insider Transactions",
+    "description": "Insider transactions from SEC filings",
+    "category": "SEC & Fundamentals",
+    "type": "table",
+    "endpoint": "sec_insider_transactions",
+    "gridData": {
+      "w": 20,
+      "h": 12
+    },
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Symbol",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "limit",
+        "type": "number",
+        "label": "Limit",
+        "value": 30,
+        "min": 10,
+        "max": 100,
+        "step": 10
+      }
+    ],
+    "data": {
+      "table": {
+        "columnsDefs": [
+          {
+            "field": "filed_date",
+            "headerName": "Filed Date",
+            "cellDataType": "text",
+            "pinned": "left"
+          },
+          {
+            "field": "owner_name",
+            "headerName": "Owner Name",
+            "cellDataType": "text"
+          },
+          {
+            "field": "transaction_type",
+            "headerName": "Transaction Type",
+            "cellDataType": "text"
+          },
+          {
+            "field": "shares",
+            "headerName": "Shares",
+            "cellDataType": "number",
+            "formatterFn": "int"
+          },
+          {
+            "field": "price_per_share",
+            "headerName": "Price/Share",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2
+          },
+          {
+            "field": "total_value",
+            "headerName": "Total Value",
+            "cellDataType": "number",
+            "formatterFn": "int"
+          },
+          {
+            "field": "ownership_type",
+            "headerName": "Ownership",
+            "cellDataType": "text"
+          }
+        ]
+      }
+    },
+    "staleTime": 300000
+  },
+  "returns_watchlist": {
+    "name": "Returns Watchlist",
+    "description": "Dynamic multi-window returns watchlist with sparklines and company hover cards. Select any stocks and choose which return windows to display as columns.",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "returns_watchlist",
+    "gridData": {
+      "w": 40,
+      "h": 16
+    },
+    "params": [
+      {
+        "paramName": "symbols",
+        "type": "endpoint",
+        "label": "Watchlist",
+        "description": "Search and select stocks for the watchlist",
+        "optionsEndpoint": "stock_search",
+        "multiSelect": true,
+        "value": "AAPL,MSFT,GOOGL,AMZN,NVDA,TSLA,META,V,MA,PYPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "windows",
+        "type": "endpoint",
+        "label": "Return Windows",
+        "description": "Select which return windows to show as columns",
+        "optionsEndpoint": "return_windows",
+        "multiSelect": true,
+        "value": "1D,5D,1M,3M,YTD",
+        "style": {
+          "popupWidth": 300
+        }
+      }
+    ],
+    "data": {
+      "table": {
+        "showAll": true,
+        "enableCharts": true,
+        "columnsDefs": [
+          {
+            "field": "ticker",
+            "headerName": "Ticker",
+            "cellDataType": "text",
+            "pinned": "left",
+            "width": 120,
+            "renderFn": "hoverCard",
+            "renderFnParams": {
+              "hoverCard": {
+                "cellField": "value",
+                "title": "{value}",
+                "markdown": "{description}"
+              }
+            }
+          },
+          {
+            "field": "company",
+            "headerName": "Company",
+            "cellDataType": "text",
+            "width": 160
+          },
+          {
+            "field": "price",
+            "headerName": "Price",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2,
+            "width": 90
+          },
+          {
+            "field": "mktcap",
+            "headerName": "Mkt Cap",
+            "cellDataType": "text",
+            "width": 90
+          },
+          {
+            "field": "ret_1D",
+            "headerName": "1D %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed",
+            "width": 80
+          },
+          {
+            "field": "ret_5D",
+            "headerName": "5D %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed",
+            "width": 80
+          },
+          {
+            "field": "ret_1M",
+            "headerName": "1M %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed",
+            "width": 80
+          },
+          {
+            "field": "ret_3M",
+            "headerName": "3M %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed",
+            "width": 80
+          },
+          {
+            "field": "ret_6M",
+            "headerName": "6M %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed",
+            "width": 80,
+            "hide": true
+          },
+          {
+            "field": "ret_1Y",
+            "headerName": "1Y %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed",
+            "width": 80,
+            "hide": true
+          },
+          {
+            "field": "ret_YTD",
+            "headerName": "YTD %",
+            "cellDataType": "number",
+            "formatterFn": "percent",
+            "decimalPlaces": 2,
+            "renderFn": "greenRed",
+            "width": 80
+          },
+          {
+            "field": "price_sparkline",
+            "headerName": "30D Trend",
+            "width": 160,
+            "sparkline": {
+              "type": "line",
+              "options": {
+                "stroke": "#3B82F6",
+                "strokeWidth": 2,
+                "markers": {
+                  "enabled": false
+                },
+                "pointsOfInterest": {
+                  "maximum": {
+                    "fill": "#22c55e",
+                    "stroke": "#16a34a",
+                    "size": 4
+                  },
+                  "minimum": {
+                    "fill": "#ef4444",
+                    "stroke": "#dc2626",
+                    "size": 4
+                  }
+                }
+              }
+            }
+          },
+          {
+            "field": "rsi_14",
+            "headerName": "RSI(14)",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 1,
+            "width": 80,
+            "renderFn": "columnColor",
+            "renderFnParams": {
+              "colorRules": [
+                {
+                  "condition": "gte",
+                  "value": 70,
+                  "color": "#FF3B30",
+                  "fill": true
+                },
+                {
+                  "condition": "lte",
+                  "value": 30,
+                  "color": "#00E396",
+                  "fill": true
+                }
+              ]
+            }
+          },
+          {
+            "field": "volume",
+            "headerName": "Volume",
+            "cellDataType": "number",
+            "formatterFn": "int",
+            "width": 100
+          },
+          {
+            "field": "mktcap_raw",
+            "headerName": "Market Cap Raw",
+            "cellDataType": "number",
+            "hide": true
+          }
+        ]
+      }
+    },
+    "staleTime": 60000
+  },
+  "technical_dashboard": {
+    "name": "Technical Indicator Dashboard",
+    "description": "Advanced multi-indicator technical analysis for a single stock. Select from 14 indicators across Momentum, Trend, Volatility, and Volume categories.",
+    "category": "Morning Pulse",
+    "type": "table",
+    "endpoint": "technical_dashboard",
+    "gridData": {
+      "w": 40,
+      "h": 14
+    },
+    "runButton": true,
+    "params": [
+      {
+        "paramName": "symbol",
+        "type": "endpoint",
+        "label": "Stock",
+        "description": "Search for any US stock",
+        "optionsEndpoint": "stock_search",
+        "value": "AAPL",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "indicators",
+        "type": "endpoint",
+        "label": "Indicators",
+        "description": "Select technical indicators to analyze",
+        "optionsEndpoint": "indicator_options",
+        "multiSelect": true,
+        "value": "rsi_14,macd_std,sma_50,sma_200,bbands_20,atr_14",
+        "style": {
+          "popupWidth": 450
+        }
+      },
+      {
+        "paramName": "period",
+        "type": "endpoint",
+        "label": "Period",
+        "optionsEndpoint": "period_options",
+        "value": "6M",
+        "style": {
+          "popupWidth": 350
+        }
+      },
+      {
+        "paramName": "custom_range",
+        "type": "text",
+        "label": "Custom Range",
+        "value": "false",
+        "options": [
+          {
+            "label": "Off",
+            "value": "false"
+          },
+          {
+            "label": "On",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "paramName": "start_date",
+        "type": "date",
+        "label": "Start Date",
+        "value": ""
+      },
+      {
+        "paramName": "end_date",
+        "type": "date",
+        "label": "End Date",
+        "value": ""
+      }
+    ],
+    "data": {
+      "table": {
+        "showAll": true,
+        "columnsDefs": [
+          {
+            "field": "indicator",
+            "headerName": "Indicator",
+            "cellDataType": "text",
+            "pinned": "left",
+            "width": 160,
+            "renderFn": "hoverCard",
+            "renderFnParams": {
+              "hoverCard": {
+                "cellField": "indicator",
+                "title": "{indicator}",
+                "markdown": "**Category:** {category}\n\n**Detail:** {detail}"
+              }
+            }
+          },
+          {
+            "field": "category",
+            "headerName": "Category",
+            "cellDataType": "text",
+            "width": 100,
+            "renderFn": "columnColor",
+            "renderFnParams": {
+              "colorRules": [
+                {
+                  "condition": "contains",
+                  "value": "Momentum",
+                  "color": "#8B5CF6",
+                  "fill": true
+                },
+                {
+                  "condition": "contains",
+                  "value": "Trend",
+                  "color": "#3B82F6",
+                  "fill": true
+                },
+                {
+                  "condition": "contains",
+                  "value": "Volatility",
+                  "color": "#F59E0B",
+                  "fill": true
+                },
+                {
+                  "condition": "contains",
+                  "value": "Volume",
+                  "color": "#10B981",
+                  "fill": true
+                },
+                {
+                  "condition": "contains",
+                  "value": "Regime",
+                  "color": "#EC4899",
+                  "fill": true
+                }
+              ]
+            }
+          },
+          {
+            "field": "current_value",
+            "headerName": "Value",
+            "cellDataType": "number",
+            "formatterFn": "none",
+            "decimalPlaces": 2,
+            "width": 100
+          },
+          {
+            "field": "zone",
+            "headerName": "Zone",
+            "cellDataType": "text",
+            "width": 120,
+            "renderFn": "columnColor",
+            "renderFnParams": {
+              "colorRules": [
+                {
+                  "condition": "contains",
+                  "value": "Overbought",
+                  "color": "#FF3B30",
+                  "fill": true
+                },
+                {
+                  "condition": "contains",
+                  "value": "Oversold",
+                  "color": "#00E396",
+                  "fill": true
+                },
+                {
+                  "condition": "contains",
+                  "value": "Bullish",
+                  "color": "#00E396",
+                  "fill": false
+                },
+                {
+                  "condition": "contains",
+                  "value": "Bearish",
+                  "color": "#FF3B30",
+                  "fill": false
+                },
+                {
+                  "condition": "contains",
+                  "value": "Above",
+                  "color": "#00E396",
+                  "fill": false
+                },
+                {
+                  "condition": "contains",
+                  "value": "Below",
+                  "color": "#FF3B30",
+                  "fill": false
+                },
+                {
+                  "condition": "contains",
+                  "value": "Golden",
+                  "color": "#00E396",
+                  "fill": true
+                },
+                {
+                  "condition": "contains",
+                  "value": "Death",
+                  "color": "#FF3B30",
+                  "fill": true
+                }
+              ]
+            }
+          },
+          {
+            "field": "signal",
+            "headerName": "Interpretation",
+            "cellDataType": "text",
+            "width": 300
+          },
+          {
+            "field": "sparkline",
+            "headerName": "30D Chart",
+            "width": 160,
+            "sparkline": {
+              "type": "line",
+              "options": {
+                "stroke": "#3B82F6",
+                "strokeWidth": 2,
+                "markers": {
+                  "enabled": false
+                }
+              }
+            }
+          },
+          {
+            "field": "detail",
+            "headerName": "Detail",
+            "cellDataType": "text",
+            "hide": true
+          },
+          {
+            "field": "upper_band",
+            "headerName": "Upper Band",
+            "cellDataType": "number",
+            "hide": true
+          },
+          {
+            "field": "lower_band",
+            "headerName": "Lower Band",
+            "cellDataType": "number",
+            "hide": true
+          }
+        ]
+      }
+    },
+    "staleTime": 300000
+  }
+}

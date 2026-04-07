@@ -1,0 +1,11 @@
+[project]
+name = "propublica-mcp-server"
+version = "0.1.0"
+description = "MCP Server for ProPublica Nonprofit Explorer API"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "httpx",
+    "python-dotenv",
+    "openbb-mcp-server"
+]

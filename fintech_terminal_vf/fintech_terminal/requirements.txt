@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+httpx
+pandas
+numpy
+plotly
+statsmodels
+scikit-learn
+pykalman
+cachetools
+pandas-datareader
+python-dotenv
+weasyprint

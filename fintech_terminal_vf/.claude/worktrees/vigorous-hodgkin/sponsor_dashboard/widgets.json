@@ -1,0 +1,131 @@
+{
+    "Sponsor Asset List": {
+        "type": "table",
+        "description": "List of assets filtered by sponsor.",
+        "endpoint": "revista/properties",
+        "gridData": {
+            "w": 20,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "sponsor",
+                "label": "Sponsor",
+                "type": "endpoint",
+                "value": "revista/sponsors",
+                "ui": "dropdown"
+            }
+        ],
+        "data": {
+            "columns": [
+                {
+                    "headerName": "Property Name",
+                    "field": "Property Name",
+                    "pinned": "left",
+                    "cellStyle": {
+                        "color": "#66b2ff",
+                        "cursor": "pointer"
+                    },
+                    "renderFn": "cellOnClick",
+                    "actionType": "groupBy",
+                    "groupByParamName": "property_id"
+                },
+                {
+                    "headerName": "City",
+                    "field": "City"
+                },
+                {
+                    "headerName": "State",
+                    "field": "State"
+                },
+                {
+                    "headerName": "Status",
+                    "field": "Construction Status",
+                    "renderFn": "columnColor",
+                    "colorField": "_Construction Status_color"
+                },
+                {
+                    "headerName": "Value",
+                    "field": "Construction Value",
+                    "type": "rightAligned"
+                },
+                {
+                    "headerName": "Property ID",
+                    "field": "property_id",
+                    "hide": true
+                }
+            ]
+        },
+        "staleTime": 300000,
+        "refetchInterval": 0
+    },
+    "Credit Scorecard": {
+        "type": "metric",
+        "description": "Key metrics for the selected property.",
+        "endpoint": "revista/scorecard",
+        "gridData": {
+            "w": 20,
+            "h": 4
+        },
+        "params": [
+            {
+                "paramName": "property_id",
+                "label": "Property ID",
+                "type": "text",
+                "source": "group"
+            }
+        ],
+        "staleTime": 300000,
+        "refetchInterval": 0
+    },
+    "Deal Narrative": {
+        "type": "markdown",
+        "description": "Narrative description of the deal.",
+        "endpoint": "revista/narrative",
+        "gridData": {
+            "w": 10,
+            "h": 10
+        },
+        "params": [
+            {
+                "paramName": "property_id",
+                "label": "Property ID",
+                "type": "text",
+                "source": "group"
+            }
+        ],
+        "staleTime": 300000,
+        "refetchInterval": 0
+    },
+    "Stakeholder Map": {
+        "type": "table",
+        "description": "Key stakeholders involved in the project.",
+        "endpoint": "revista/stakeholders",
+        "gridData": {
+            "w": 10,
+            "h": 10
+        },
+        "params": [
+            {
+                "paramName": "property_id",
+                "label": "Property ID",
+                "type": "text",
+                "source": "group"
+            }
+        ],
+        "data": {
+            "columns": [
+                {
+                    "headerName": "Role",
+                    "field": "Role"
+                },
+                {
+                    "headerName": "Entity",
+                    "field": "Entity"
+                }
+            ]
+        },
+        "staleTime": 300000,
+        "refetchInterval": 0
+    }
+}

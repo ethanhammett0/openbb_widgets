@@ -1,0 +1,351 @@
+Deal_ID,Deal_Name,Sponsor,Structure,Deal_Type,Closing_Date,Aggregate_Loan_Amount,Aggregate_Valuation,LTV,Interest_Rate,Spread_bps,Maturity_Date,Term_Months,LTC,Cap_Rate,Debt_Yield,DSCR,Total_Cost,NOI
+HRE-2024-100,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Construction,2024-09-02,8100000,14500000,0.56,0.0929,435,2027-08-18,36,0.54,0.09,0.1611,1.73,15019679,1305000
+HRE-2024-101,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Acquisition,2024-10-16,20900000,32700000,0.64,0.0865,375,2034-08-25,120,0.6,0.08,0.1252,1.45,34870940,2616000
+HRE-2024-102,Beacon Capital Medical Office Portfolio,Beacon Capital,Portfolio,Acquisition,2025-02-25,35200000,54200000,0.65,0.0815,331,2035-01-04,120,0.66,0.079,0.1216,1.49,53127898,4281800
+HRE-2024-103,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Refinance,2024-11-24,9100000,12600000,0.72,0.123,737,2031-10-19,84,0.78,0.115,0.1592,1.29,11684438,1449000
+HRE-2024-104,Apex Healthcare Skilled Nursing Portfolio,Apex Healthcare,Portfolio,Acquisition,2025-06-11,48000000,63200000,0.76,0.1107,633,2035-04-20,120,0.7,0.1079,0.1421,1.28,68122537,6819280
+HRE-2024-105,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Acquisition,2024-09-09,10100000,11900000,0.85,0.1246,740,2034-07-19,120,0.93,0.115,0.1355,1.09,10823803,1368500
+HRE-2024-106,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-01-11,13600000,17400000,0.78,0.1285,764,2030-12-05,84,0.74,0.115,0.1471,1.14,18407228,2001000
+HRE-2024-107,Apex Healthcare Skilled Nursing Facility,Apex Healthcare,Single Asset,Refinance,2024-08-21,20900000,28200000,0.74,0.1068,567,2029-07-26,60,0.75,0.1036,0.1398,1.31,27733030,2921520
+HRE-2024-108,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Refinance,2024-11-09,9300000,15000000,0.62,0.0922,429,2034-09-18,120,0.58,0.0809,0.1305,1.42,16091924,1213500
+HRE-2024-109,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Refinance,2025-05-20,37200000,56300000,0.66,0.0801,321,2032-04-13,84,0.65,0.08,0.1211,1.51,56827495,4504000
+HRE-2024-110,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Acquisition,2024-09-16,20100000,24800000,0.81,0.122,721,2034-07-26,120,0.85,0.1132,0.1397,1.14,23631910,2807360
+HRE-2024-111,Silver Care Partners Medical Office Portfolio,Silver Care Partners,Portfolio,Refinance,2024-10-01,27100000,44400000,0.61,0.0809,319,2029-09-05,60,0.59,0.08,0.1311,1.62,45936385,3552000
+HRE-2024-112,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2024-03-15,16300000,23900000,0.68,0.0988,466,2029-02-17,60,0.65,0.09,0.132,1.34,25135782,2151000
+HRE-2024-113,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Acquisition,2025-07-28,9900000,15400000,0.64,0.0929,469,2035-06-06,120,0.69,0.0882,0.1372,1.48,14279315,1358280
+HRE-2024-114,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2025-03-17,39400000,58000000,0.68,0.1003,528,2032-02-09,84,0.71,0.09,0.1325,1.32,55276525,5220000
+HRE-2024-115,Midwest Health Ops Life Science Facility,Midwest Health Ops,Single Asset,Refinance,2024-01-17,10100000,18400000,0.55,0.0943,422,2030-12-11,84,0.6,0.085,0.1549,1.64,16696586,1564000
+HRE-2024-116,Silver Care Partners Life Science Facility,Silver Care Partners,Single Asset,Refinance,2025-04-29,5900000,12500000,0.47,0.0793,311,2030-04-03,60,0.46,0.0646,0.1369,1.73,12705736,807500
+HRE-2024-117,Midwest Health Ops Senior Housing Portfolio,Midwest Health Ops,Portfolio,Acquisition,2024-11-30,17200000,27700000,0.62,0.0955,462,2029-11-04,60,0.57,0.09,0.1449,1.52,30053017,2493000
+HRE-2024-118,Silver Care Partners Medical Office Portfolio,Silver Care Partners,Portfolio,Acquisition,2024-02-20,35300000,57000000,0.62,0.0846,325,2029-01-24,60,0.65,0.08,0.1292,1.53,54280327,4560000
+HRE-2024-119,Apex Healthcare Skilled Nursing Facility,Apex Healthcare,Single Asset,Acquisition,2024-11-25,22300000,27200000,0.82,0.1209,724,2031-10-20,84,0.75,0.115,0.1403,1.16,29636243,3128000
+HRE-2024-120,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Construction,2024-09-23,6600000,11800000,0.56,0.0876,385,2027-09-08,36,0.54,0.08,0.143,1.63,12284592,944000
+HRE-2024-121,Silver Care Partners Senior Housing Portfolio,Silver Care Partners,Portfolio,Acquisition,2024-02-25,65600000,99400000,0.66,0.0934,416,2031-01-19,84,0.63,0.09,0.1364,1.46,103761209,8946000
+HRE-2024-122,Silver Care Partners Life Science Portfolio,Silver Care Partners,Portfolio,Refinance,2024-10-26,43800000,87500000,0.5,0.0904,419,2031-09-20,84,0.46,0.0825,0.1648,1.82,95791090,7218750
+HRE-2024-123,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2025-09-20,9400000,13000000,0.72,0.0809,343,2032-08-14,84,0.71,0.0736,0.1018,1.26,13299763,956800
+HRE-2024-124,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2025-04-04,7400000,11700000,0.63,0.0794,307,2030-03-09,60,0.67,0.0691,0.1093,1.38,10976097,808469
+HRE-2024-125,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Refinance,2025-03-31,4700000,8000000,0.59,0.0909,441,2032-02-23,84,0.6,0.09,0.1532,1.69,7776859,720000
+HRE-2024-126,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Refinance,2024-02-29,4900000,8000000,0.61,0.0909,378,2034-01-07,120,0.65,0.088,0.1437,1.58,7503703,704000
+HRE-2024-127,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2025-11-15,16500000,23200000,0.71,0.0864,411,2030-10-20,60,0.66,0.0758,0.1066,1.23,25186083,1758560
+HRE-2024-128,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2025-03-03,12700000,18900000,0.67,0.0911,422,2032-01-26,84,0.63,0.0893,0.1329,1.46,20068235,1687770
+HRE-2024-129,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2024-10-06,14200000,20900000,0.68,0.0878,385,2034-08-15,120,0.71,0.08,0.1177,1.34,19966961,1672000
+HRE-2024-130,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Acquisition,2025-07-21,14300000,17200000,0.83,0.128,814,2032-06-14,84,0.9,0.115,0.1383,1.08,15823897,1978000
+HRE-2024-131,Midwest Health Ops Life Science Facility,Midwest Health Ops,Single Asset,Construction,2025-02-21,5300000,12400000,0.43,0.0932,441,2028-02-06,36,0.4,0.0844,0.1975,2.12,13145895,1046560
+HRE-2024-132,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2024-12-29,15200000,22400000,0.68,0.0877,387,2031-11-23,84,0.65,0.08,0.1179,1.34,23446605,1792000
+HRE-2024-133,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Acquisition,2025-01-14,22100000,29500000,0.75,0.0859,371,2029-12-19,60,0.71,0.08,0.1068,1.24,30944126,2360000
+HRE-2024-134,Apex Healthcare Skilled Nursing Facility,Apex Healthcare,Single Asset,Acquisition,2024-07-15,24000000,30400000,0.79,0.1203,694,2029-06-19,60,0.84,0.115,0.1457,1.21,28637881,3496000
+HRE-2024-135,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Construction,2025-07-08,7700000,14300000,0.54,0.0947,477,2028-06-22,36,0.57,0.09,0.1671,1.76,13573357,1287000
+HRE-2024-136,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2024-10-02,10500000,16400000,0.64,0.0805,313,2034-08-11,120,0.66,0.08,0.125,1.55,16018408,1312000
+HRE-2024-137,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2025-06-19,11400000,16000000,0.71,0.085,390,2030-05-24,60,0.79,0.08,0.1123,1.32,14451241,1280000
+HRE-2024-138,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Construction,2024-08-14,14000000,23000000,0.61,0.0848,353,2027-07-30,36,0.62,0.08,0.1314,1.55,22705748,1840000
+HRE-2024-139,Silver Care Partners Life Science Facility,Silver Care Partners,Single Asset,Refinance,2025-09-24,6600000,12700000,0.52,0.0865,405,2032-08-18,84,0.53,0.0827,0.1591,1.84,12423533,1050290
+HRE-2024-140,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Refinance,2025-02-21,8600000,14500000,0.59,0.0839,350,2030-01-26,60,0.59,0.08,0.1349,1.61,14559402,1160000
+HRE-2024-141,Beacon Capital Skilled Nursing Portfolio,Beacon Capital,Portfolio,Acquisition,2024-03-03,40100000,51400000,0.78,0.1215,697,2031-01-26,84,0.81,0.115,0.1474,1.21,49338495,5911000
+HRE-2024-142,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2025-10-24,5000000,8000000,0.63,0.0709,263,2032-09-17,84,0.62,0.0647,0.1035,1.46,8016176,517599
+HRE-2024-143,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Acquisition,2024-06-02,16400000,23800000,0.69,0.0879,368,2029-05-07,60,0.74,0.08,0.1161,1.32,22310598,1904000
+HRE-2024-144,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-07-29,12800000,17100000,0.75,0.0969,504,2030-07-03,60,0.82,0.0896,0.1197,1.24,15668413,1532160
+HRE-2024-145,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Refinance,2024-07-29,14100000,23900000,0.59,0.0779,268,2034-06-07,120,0.57,0.0705,0.1195,1.53,24602754,1684949
+HRE-2024-146,Beacon Capital Medical Office Portfolio,Beacon Capital,Portfolio,Refinance,2024-07-21,47900000,71500000,0.67,0.0817,312,2031-06-15,84,0.7,0.0726,0.1084,1.33,68728830,5190900
+HRE-2024-147,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Refinance,2024-06-01,18200000,30900000,0.59,0.0835,319,2031-04-26,84,0.57,0.0736,0.125,1.5,31838003,2274240
+HRE-2024-148,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Refinance,2024-04-04,24300000,39900000,0.61,0.0825,316,2029-03-09,60,0.59,0.0727,0.1194,1.45,40956818,2900730
+HRE-2024-149,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2024-07-17,7400000,11900000,0.62,0.0859,355,2031-06-11,84,0.61,0.08,0.1286,1.5,12042692,952000
+HRE-2024-150,Silver Care Partners Skilled Nursing Facility,Silver Care Partners,Single Asset,Acquisition,2025-11-25,9400000,12500000,0.75,0.1128,684,2030-10-30,60,0.79,0.1067,0.1419,1.26,11896868,1333750
+HRE-2024-151,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-09-05,21400000,28500000,0.75,0.098,518,2035-07-15,120,0.76,0.0882,0.1175,1.2,28133964,2513700
+HRE-2024-152,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-12-29,19600000,26100000,0.75,0.117,682,2034-11-07,120,0.72,0.115,0.1531,1.31,27121353,3001500
+HRE-2024-153,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Acquisition,2024-09-29,24400000,35300000,0.69,0.0884,390,2029-09-03,60,0.69,0.08,0.1157,1.31,35122695,2824000
+HRE-2024-154,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Acquisition,2025-09-11,8700000,11500000,0.76,0.1131,665,2032-08-05,84,0.83,0.115,0.152,1.34,10450624,1322500
+HRE-2024-155,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2024-01-08,13800000,23800000,0.58,0.0861,331,2028-12-12,60,0.56,0.08,0.138,1.6,24805161,1904000
+HRE-2024-156,Apex Healthcare Life Science Facility,Apex Healthcare,Single Asset,Acquisition,2024-12-21,13900000,21400000,0.65,0.0812,332,2034-10-30,120,0.69,0.0689,0.1061,1.31,20177902,1474460
+HRE-2024-157,Silver Care Partners Life Science Portfolio,Silver Care Partners,Portfolio,Refinance,2025-10-04,18500000,36200000,0.51,0.0895,434,2035-08-13,120,0.53,0.085,0.1663,1.86,34998788,3077000
+HRE-2024-158,Beacon Capital Senior Housing Portfolio,Beacon Capital,Portfolio,Acquisition,2025-07-14,18400000,27500000,0.67,0.0906,436,2032-06-07,84,0.68,0.0859,0.1284,1.42,27186985,2362250
+HRE-2024-159,Silver Care Partners Life Science Portfolio,Silver Care Partners,Portfolio,Acquisition,2024-10-03,30000000,49200000,0.61,0.0888,383,2034-08-12,120,0.58,0.0749,0.1228,1.38,51525480,3685079
+HRE-2024-160,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Refinance,2024-07-10,8900000,15100000,0.59,0.0774,276,2031-06-04,84,0.63,0.0763,0.1295,1.67,14176489,1152130
+HRE-2024-161,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-07-22,5800000,8300000,0.7,0.0929,454,2030-06-26,60,0.7,0.09,0.1288,1.39,8341483,747000
+HRE-2024-162,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-09-02,12800000,17100000,0.75,0.1256,746,2029-08-07,60,0.82,0.115,0.1536,1.22,15640756,1966500
+HRE-2024-163,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-08-28,19900000,29200000,0.68,0.0939,486,2035-07-07,120,0.67,0.0725,0.1064,1.13,29909990,2117000
+HRE-2024-164,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2025-07-10,12500000,17800000,0.7,0.0816,351,2032-06-03,84,0.66,0.08,0.1139,1.4,18884935,1424000
+HRE-2024-165,Midwest Health Ops Senior Housing Portfolio,Midwest Health Ops,Portfolio,Construction,2024-10-16,13000000,24000000,0.54,0.0983,481,2027-10-01,36,0.51,0.09,0.1662,1.69,25282777,2160000
+HRE-2024-166,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Acquisition,2024-02-19,20000000,29400000,0.68,0.1061,530,2033-12-28,120,0.66,0.09,0.1323,1.25,30446973,2646000
+HRE-2024-167,Apex Healthcare Senior Housing Portfolio,Apex Healthcare,Portfolio,Acquisition,2024-07-07,35000000,49300000,0.71,0.0991,479,2029-06-11,60,0.66,0.0857,0.1207,1.22,53424891,4225010
+HRE-2024-168,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Acquisition,2024-11-09,35100000,50100000,0.7,0.0848,359,2031-10-04,84,0.7,0.0742,0.1059,1.25,50386115,3717420
+HRE-2024-169,Apex Healthcare Skilled Nursing Facility,Apex Healthcare,Single Asset,Acquisition,2024-01-15,16400000,19800000,0.83,0.1259,728,2028-12-19,60,0.82,0.115,0.1388,1.1,19928870,2277000
+HRE-2024-170,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Acquisition,2024-03-23,11800000,18500000,0.64,0.0823,308,2029-02-25,60,0.68,0.0793,0.1243,1.51,17426327,1467050
+HRE-2024-171,Midwest Health Ops Life Science Portfolio,Midwest Health Ops,Portfolio,Refinance,2025-10-31,33300000,70900000,0.47,0.0834,379,2035-09-09,120,0.45,0.0653,0.139,1.67,74672805,4629770
+HRE-2024-172,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2024-05-29,9400000,15000000,0.63,0.0884,364,2029-05-03,60,0.59,0.08,0.1277,1.44,15926418,1200000
+HRE-2024-173,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Refinance,2024-06-21,67600000,105600000,0.64,0.0885,371,2031-05-16,84,0.64,0.08,0.125,1.41,106227753,8448000
+HRE-2024-174,Midwest Health Ops Senior Housing Portfolio,Midwest Health Ops,Portfolio,Acquisition,2025-02-26,26800000,43300000,0.62,0.0825,347,2030-01-31,60,0.63,0.0731,0.1181,1.43,42809340,3165230
+HRE-2024-175,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-12-09,11800000,18100000,0.65,0.0918,437,2029-11-13,60,0.66,0.0787,0.1207,1.32,17997587,1424470
+HRE-2024-176,Silver Care Partners Medical Office Portfolio,Silver Care Partners,Portfolio,Acquisition,2024-01-31,34600000,54100000,0.64,0.0918,386,2029-01-04,60,0.61,0.08,0.1251,1.36,56936218,4328000
+HRE-2024-177,Silver Care Partners Skilled Nursing Portfolio,Silver Care Partners,Portfolio,Refinance,2024-05-07,21800000,33500000,0.65,0.1097,583,2029-04-11,60,0.66,0.1018,0.1564,1.43,32965297,3410300
+HRE-2024-178,Silver Care Partners Skilled Nursing Portfolio,Silver Care Partners,Portfolio,Acquisition,2024-04-18,77300000,103100000,0.75,0.1235,727,2031-03-13,84,0.7,0.1126,0.1502,1.22,109774016,11609060
+HRE-2024-179,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-06-02,8900000,13100000,0.68,0.0948,484,2030-05-07,60,0.64,0.09,0.1325,1.4,13903196,1179000
+HRE-2024-180,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Refinance,2025-06-20,49400000,70500000,0.7,0.0838,366,2032-05-14,84,0.73,0.08,0.1142,1.36,67346847,5640000
+HRE-2024-181,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Acquisition,2024-07-24,44600000,66500000,0.67,0.0918,412,2031-06-18,84,0.74,0.08,0.1193,1.3,60476724,5320000
+HRE-2024-182,Apex Healthcare Life Science Portfolio,Apex Healthcare,Portfolio,Refinance,2025-01-28,37200000,66400000,0.56,0.0856,366,2030-01-02,60,0.61,0.0764,0.1364,1.59,60525233,5072960
+HRE-2024-183,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Refinance,2025-10-26,10900000,18500000,0.59,0.0855,402,2032-09-19,84,0.59,0.0782,0.1327,1.55,18354082,1446700
+HRE-2024-184,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Construction,2024-02-29,15500000,26800000,0.58,0.0943,429,2027-02-13,36,0.54,0.09,0.1556,1.65,28744926,2412000
+HRE-2024-185,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2025-05-27,23900000,32800000,0.73,0.0894,424,2035-04-05,120,0.69,0.08,0.1098,1.23,34573615,2624000
+HRE-2024-186,Beacon Capital Senior Housing Portfolio,Beacon Capital,Portfolio,Refinance,2025-10-23,17300000,27500000,0.63,0.082,357,2030-09-27,60,0.66,0.0753,0.1197,1.46,26115141,2070750
+HRE-2024-187,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2025-06-23,12000000,19000000,0.63,0.0845,383,2035-05-02,120,0.6,0.08,0.1267,1.5,20052433,1520000
+HRE-2024-188,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Refinance,2025-06-18,49400000,85100000,0.58,0.0807,347,2030-05-23,60,0.56,0.0696,0.1199,1.49,88424376,5922960
+HRE-2024-189,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2024-03-30,10300000,17800000,0.58,0.0856,335,2034-02-06,120,0.57,0.08,0.1383,1.62,17934030,1424000
+HRE-2024-190,Silver Care Partners Senior Housing Portfolio,Silver Care Partners,Portfolio,Acquisition,2024-07-02,64700000,98100000,0.66,0.0884,371,2029-06-06,60,0.7,0.0877,0.133,1.5,93087099,8603370
+HRE-2024-191,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Refinance,2024-02-21,6100000,10400000,0.59,0.0865,334,2033-12-30,120,0.56,0.08,0.1364,1.58,10854982,832000
+HRE-2024-192,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2024-08-06,6100000,8900000,0.69,0.0876,365,2029-07-11,60,0.74,0.08,0.1167,1.33,8234909,712000
+HRE-2024-193,Apex Healthcare Skilled Nursing Facility,Apex Healthcare,Single Asset,Refinance,2024-10-13,12400000,16100000,0.77,0.1068,566,2029-09-17,60,0.73,0.1076,0.1397,1.31,16912094,1732360
+HRE-2024-194,Apex Healthcare Senior Housing Portfolio,Apex Healthcare,Portfolio,Refinance,2025-04-05,46100000,67800000,0.68,0.0864,394,2035-02-12,120,0.64,0.086,0.1265,1.46,72467026,5830799
+HRE-2024-195,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Acquisition,2024-07-26,14600000,20300000,0.72,0.0968,459,2034-06-04,120,0.75,0.09,0.1251,1.29,19344465,1827000
+HRE-2024-196,Midwest Health Ops Skilled Nursing Portfolio,Midwest Health Ops,Portfolio,Construction,2025-07-28,15600000,24300000,0.64,0.1105,643,2028-07-12,36,0.68,0.1115,0.1737,1.57,22979994,2709450
+HRE-2024-197,Beacon Capital Medical Office Portfolio,Beacon Capital,Portfolio,Refinance,2025-03-19,33300000,52800000,0.63,0.0831,351,2035-01-26,120,0.65,0.08,0.1268,1.53,51005423,4224000
+HRE-2024-198,Silver Care Partners Life Science Facility,Silver Care Partners,Single Asset,Acquisition,2025-08-27,5900000,11300000,0.52,0.0861,404,2030-08-01,60,0.56,0.0755,0.1446,1.68,10630047,853150
+HRE-2024-199,Apex Healthcare Senior Housing Portfolio,Apex Healthcare,Portfolio,Acquisition,2024-05-24,25300000,35700000,0.71,0.0966,462,2031-04-18,84,0.67,0.0872,0.123,1.27,37971389,3113040
+HRE-2024-200,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Acquisition,2024-06-09,21600000,33800000,0.64,0.0892,390,2029-05-14,60,0.63,0.08,0.1252,1.4,34484120,2704000
+HRE-2024-201,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Acquisition,2024-02-04,6400000,9400000,0.68,0.0938,421,2029-01-08,60,0.73,0.08,0.1175,1.25,8732256,752000
+HRE-2024-202,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Refinance,2024-05-25,4900000,8100000,0.61,0.081,306,2031-04-19,84,0.67,0.08,0.1322,1.63,7345498,648000
+HRE-2024-203,Beacon Capital Medical Office Portfolio,Beacon Capital,Portfolio,Construction,2025-01-09,33200000,56300000,0.59,0.0909,425,2027-12-25,36,0.54,0.08,0.1357,1.49,60993061,4504000
+HRE-2024-204,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2025-09-02,15900000,22700000,0.7,0.0813,351,2030-08-07,60,0.68,0.08,0.1142,1.4,23323947,1816000
+HRE-2024-205,Apex Healthcare Life Science Facility,Apex Healthcare,Single Asset,Acquisition,2024-05-25,18500000,31900000,0.58,0.0791,278,2029-04-29,60,0.64,0.0611,0.1054,1.33,28720760,1949090
+HRE-2024-206,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2025-08-18,7100000,10800000,0.66,0.0792,332,2030-07-23,60,0.67,0.08,0.1217,1.54,10608897,864000
+HRE-2024-207,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Construction,2024-10-20,23800000,41100000,0.58,0.0901,406,2027-10-05,36,0.56,0.08,0.1382,1.53,42837651,3288000
+HRE-2024-208,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Construction,2024-11-09,6400000,10100000,0.63,0.094,447,2027-10-25,36,0.64,0.08,0.1263,1.34,9993531,808000
+HRE-2024-209,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Refinance,2025-02-11,15800000,26400000,0.6,0.0841,355,2032-01-06,84,0.66,0.0818,0.1367,1.63,23779717,2159520
+HRE-2024-210,Apex Healthcare Life Science Facility,Apex Healthcare,Single Asset,Acquisition,2024-08-15,32600000,53400000,0.61,0.099,487,2034-06-24,120,0.64,0.0849,0.1391,1.4,51261143,4533660
+HRE-2024-211,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2024-07-17,6200000,10300000,0.6,0.0811,315,2031-06-11,84,0.59,0.0699,0.1161,1.43,10464421,719970
+HRE-2024-212,Midwest Health Ops Life Science Facility,Midwest Health Ops,Single Asset,Acquisition,2024-05-19,10900000,19400000,0.56,0.0923,414,2031-04-13,84,0.55,0.0784,0.1395,1.51,19858050,1520960
+HRE-2024-213,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Refinance,2024-08-28,14400000,23300000,0.62,0.0869,372,2031-07-23,84,0.62,0.08,0.1294,1.49,23365890,1864000
+HRE-2024-214,Beacon Capital Life Science Facility,Beacon Capital,Single Asset,Acquisition,2024-12-03,7300000,11700000,0.62,0.0799,318,2031-10-28,84,0.57,0.0785,0.1258,1.57,12750391,918450
+HRE-2024-215,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2024-07-06,9300000,14600000,0.64,0.0882,366,2029-06-10,60,0.69,0.08,0.1256,1.42,13500216,1168000
+HRE-2024-216,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Refinance,2025-05-27,21100000,27800000,0.76,0.1048,577,2030-05-01,60,0.76,0.0945,0.1245,1.19,27814817,2627100
+HRE-2024-217,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Acquisition,2024-11-29,24900000,38900000,0.64,0.0866,371,2029-11-03,60,0.6,0.08,0.125,1.44,41279714,3112000
+HRE-2024-218,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Construction,2025-05-09,29000000,56900000,0.51,0.0871,408,2028-04-23,36,0.52,0.0762,0.1495,1.72,55741014,4335780
+HRE-2024-219,Apex Healthcare Skilled Nursing Portfolio,Apex Healthcare,Portfolio,Acquisition,2024-08-23,21900000,28800000,0.76,0.1145,644,2034-07-02,120,0.83,0.115,0.1512,1.32,26357247,3312000
+HRE-2024-220,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Refinance,2025-04-01,8800000,13800000,0.64,0.0945,464,2032-02-24,84,0.59,0.09,0.1411,1.49,14823750,1242000
+HRE-2024-221,Midwest Health Ops Life Science Facility,Midwest Health Ops,Single Asset,Refinance,2024-01-29,7900000,16100000,0.49,0.081,285,2030-12-23,84,0.46,0.0733,0.1494,1.84,17043821,1180130
+HRE-2024-222,Midwest Health Ops Life Science Facility,Midwest Health Ops,Single Asset,Refinance,2024-03-18,20300000,39800000,0.51,0.1018,489,2029-02-20,60,0.51,0.085,0.1667,1.64,39856359,3383000
+HRE-2024-223,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Refinance,2024-03-29,9700000,15900000,0.61,0.0879,359,2029-03-03,60,0.66,0.0856,0.1403,1.6,14798865,1361040
+HRE-2024-224,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2024-09-27,14300000,19800000,0.72,0.092,426,2031-08-22,84,0.68,0.08,0.1108,1.2,20991999,1584000
+HRE-2024-225,Midwest Health Ops Skilled Nursing Portfolio,Midwest Health Ops,Portfolio,Acquisition,2025-05-30,14100000,18500000,0.76,0.1219,741,2035-04-08,120,0.7,0.115,0.1509,1.24,20246541,2127500
+HRE-2024-226,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2024-07-06,10700000,15800000,0.68,0.0845,331,2031-05-31,84,0.74,0.08,0.1181,1.4,14460587,1264000
+HRE-2024-227,Silver Care Partners Life Science Facility,Silver Care Partners,Single Asset,Acquisition,2025-07-21,17900000,34400000,0.52,0.0947,474,2030-06-25,60,0.51,0.0775,0.1489,1.57,35188001,2666000
+HRE-2024-228,Silver Care Partners Life Science Portfolio,Silver Care Partners,Portfolio,Acquisition,2024-11-06,45900000,79200000,0.58,0.0842,357,2031-10-01,84,0.55,0.0766,0.1322,1.57,83706027,6066720
+HRE-2024-229,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2024-07-10,11700000,21200000,0.55,0.0824,321,2034-05-19,120,0.57,0.0772,0.1399,1.7,20415943,1636640
+HRE-2024-230,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Acquisition,2024-07-24,11200000,17200000,0.65,0.099,494,2029-06-28,60,0.6,0.09,0.1382,1.4,18794259,1548000
+HRE-2024-231,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Acquisition,2025-02-27,16600000,24000000,0.69,0.0903,424,2032-01-22,84,0.69,0.0823,0.119,1.32,24092267,1975200
+HRE-2024-232,Silver Care Partners Life Science Portfolio,Silver Care Partners,Portfolio,Acquisition,2025-04-23,15300000,27900000,0.55,0.0873,403,2035-03-02,120,0.52,0.0672,0.1225,1.4,29196869,1874880
+HRE-2024-233,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2025-04-20,11300000,16200000,0.7,0.0848,370,2032-03-14,84,0.7,0.08,0.1147,1.35,16118142,1296000
+HRE-2024-234,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2025-02-26,13200000,18400000,0.72,0.08,323,2032-01-21,84,0.67,0.08,0.1115,1.39,19751451,1472000
+HRE-2024-235,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2025-11-12,7100000,9900000,0.72,0.0863,420,2030-10-17,60,0.66,0.08,0.1115,1.29,10709251,792000
+HRE-2024-236,Silver Care Partners Senior Housing Portfolio,Silver Care Partners,Portfolio,Refinance,2025-06-11,37100000,70000000,0.53,0.0902,428,2035-04-20,120,0.49,0.09,0.1698,1.88,75658557,6300000
+HRE-2024-237,Apex Healthcare Life Science Facility,Apex Healthcare,Single Asset,Acquisition,2024-07-31,10100000,18400000,0.55,0.0793,288,2029-07-05,60,0.57,0.0693,0.1262,1.59,17805782,1275120
+HRE-2024-238,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-07-04,8300000,13000000,0.64,0.0979,467,2034-05-13,120,0.63,0.0893,0.1399,1.43,13231994,1160900
+HRE-2024-239,Silver Care Partners Senior Housing Portfolio,Silver Care Partners,Portfolio,Acquisition,2024-07-12,19400000,26900000,0.72,0.1045,537,2029-06-16,60,0.72,0.09,0.1248,1.19,27054091,2421000
+HRE-2024-240,Beacon Capital Medical Office Portfolio,Beacon Capital,Portfolio,Refinance,2024-10-08,37100000,57100000,0.65,0.0819,315,2031-09-02,84,0.6,0.08,0.1231,1.5,61908892,4568000
+HRE-2024-241,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Refinance,2024-06-11,22600000,33200000,0.68,0.099,489,2034-04-20,120,0.74,0.09,0.1322,1.34,30456218,2988000
+HRE-2024-242,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Refinance,2025-10-08,6000000,9500000,0.63,0.0914,452,2032-09-01,84,0.69,0.0805,0.1275,1.39,8716398,764750
+HRE-2024-243,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Refinance,2025-05-05,13500000,21800000,0.62,0.0948,465,2030-04-09,60,0.6,0.09,0.1453,1.53,22600272,1962000
+HRE-2024-244,Apex Healthcare Skilled Nursing Facility,Apex Healthcare,Single Asset,Acquisition,2024-04-26,6500000,8000000,0.81,0.1214,708,2031-03-21,84,0.74,0.115,0.1415,1.17,8758263,920000
+HRE-2024-245,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-05-14,8800000,12500000,0.7,0.088,402,2035-03-23,120,0.69,0.0706,0.1003,1.14,12661942,882500
+HRE-2024-246,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2025-05-06,7800000,11200000,0.7,0.0883,414,2030-04-10,60,0.68,0.08,0.1149,1.3,11464490,896000
+HRE-2024-247,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Refinance,2024-01-31,57000000,87700000,0.65,0.0912,385,2030-12-25,84,0.68,0.08,0.1231,1.35,83326722,7016000
+HRE-2024-248,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Refinance,2025-02-26,7600000,13400000,0.57,0.0946,462,2032-01-21,84,0.52,0.09,0.1587,1.68,14620309,1206000
+HRE-2024-249,Midwest Health Ops Senior Housing Portfolio,Midwest Health Ops,Portfolio,Construction,2024-02-17,27500000,50000000,0.55,0.102,494,2027-02-01,36,0.53,0.0893,0.1624,1.59,52348724,4465000
+HRE-2024-250,Silver Care Partners Senior Housing Portfolio,Silver Care Partners,Portfolio,Refinance,2024-02-26,39900000,60500000,0.66,0.0941,427,2034-01-04,120,0.65,0.0861,0.1306,1.39,61195079,5209050
+HRE-2024-251,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Construction,2024-05-22,21100000,35200000,0.6,0.0992,490,2027-05-07,36,0.57,0.0883,0.1473,1.48,36875322,3108160
+HRE-2024-252,Apex Healthcare Senior Housing Portfolio,Apex Healthcare,Portfolio,Refinance,2025-03-01,23900000,34700000,0.69,0.0951,464,2030-02-03,60,0.72,0.0872,0.1266,1.33,33039257,3025840
+HRE-2024-253,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Refinance,2024-04-25,14600000,23200000,0.63,0.1124,603,2034-03-04,120,0.63,0.1097,0.1743,1.55,23261994,2545040
+HRE-2024-254,Silver Care Partners Skilled Nursing Facility,Silver Care Partners,Single Asset,Acquisition,2024-08-20,8900000,11700000,0.76,0.1189,677,2029-07-25,60,0.77,0.115,0.1512,1.27,11524869,1345500
+HRE-2024-255,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Construction,2024-07-02,17500000,29700000,0.59,0.0992,488,2027-06-17,36,0.65,0.09,0.1527,1.54,26929857,2673000
+HRE-2024-256,Midwest Health Ops Life Science Facility,Midwest Health Ops,Single Asset,Construction,2025-08-30,10700000,22800000,0.47,0.0991,520,2028-08-14,36,0.45,0.0846,0.1803,1.82,23678848,1928879
+HRE-2024-257,Silver Care Partners Medical Office Portfolio,Silver Care Partners,Portfolio,Refinance,2024-09-27,26800000,47100000,0.57,0.0854,361,2029-09-01,60,0.62,0.08,0.1406,1.65,43207564,3768000
+HRE-2024-258,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2025-11-21,12700000,17600000,0.72,0.0801,348,2032-10-15,84,0.8,0.0765,0.106,1.32,15848571,1346400
+HRE-2024-259,Apex Healthcare Skilled Nursing Facility,Apex Healthcare,Single Asset,Refinance,2025-03-17,11800000,15300000,0.77,0.1088,617,2035-01-24,120,0.76,0.0951,0.1233,1.13,15440676,1455030
+HRE-2024-260,Silver Care Partners Life Science Facility,Silver Care Partners,Single Asset,Acquisition,2024-03-12,5400000,10200000,0.53,0.0871,352,2029-02-14,60,0.5,0.0738,0.1394,1.6,10709950,752760
+HRE-2024-261,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Acquisition,2025-06-16,8800000,13600000,0.65,0.0852,383,2030-05-21,60,0.67,0.08,0.1236,1.45,13144831,1088000
+HRE-2024-262,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Refinance,2024-04-15,38400000,56500000,0.68,0.0879,362,2034-02-22,120,0.72,0.08,0.1177,1.34,53094957,4520000
+HRE-2024-263,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2024-05-12,20500000,33600000,0.61,0.0864,353,2031-04-06,84,0.65,0.0783,0.1283,1.49,31675510,2630880
+HRE-2024-264,Apex Healthcare Skilled Nursing Portfolio,Apex Healthcare,Portfolio,Acquisition,2025-10-21,36700000,45900000,0.8,0.1066,620,2030-09-25,60,0.74,0.0934,0.1168,1.1,49396941,4287060
+HRE-2024-265,Silver Care Partners Medical Office Portfolio,Silver Care Partners,Portfolio,Refinance,2024-07-20,25600000,42600000,0.6,0.0842,334,2034-05-29,120,0.6,0.0749,0.1246,1.48,42712997,3190739
+HRE-2024-266,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-12-18,10200000,13300000,0.77,0.1186,699,2029-11-22,60,0.74,0.113,0.1473,1.24,13822307,1502900
+HRE-2024-267,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2025-04-12,12400000,18800000,0.66,0.0957,473,2032-03-06,84,0.64,0.09,0.1365,1.43,19376268,1692000
+HRE-2024-268,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Refinance,2025-09-15,12200000,19400000,0.63,0.0802,339,2032-08-09,84,0.69,0.0835,0.1328,1.66,17610005,1619900
+HRE-2024-269,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-05-20,26400000,40000000,0.66,0.0917,455,2035-03-29,120,0.62,0.0893,0.1353,1.48,42728345,3572000
+HRE-2024-270,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-07-04,20200000,28000000,0.72,0.1054,554,2034-05-13,120,0.76,0.0991,0.1374,1.3,26561709,2774800
+HRE-2024-271,Apex Healthcare Senior Housing Portfolio,Apex Healthcare,Portfolio,Acquisition,2024-02-13,64900000,99900000,0.65,0.0976,457,2031-01-07,84,0.7,0.09,0.1385,1.42,92948881,8991000
+HRE-2024-272,Apex Healthcare Senior Housing Portfolio,Apex Healthcare,Portfolio,Acquisition,2024-12-12,53700000,78900000,0.68,0.0882,386,2031-11-06,84,0.68,0.0861,0.1265,1.43,79101375,6793290
+HRE-2024-273,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-11-06,20200000,29300000,0.69,0.0984,528,2030-10-11,60,0.65,0.0857,0.1243,1.26,31103798,2511010
+HRE-2024-274,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2025-04-03,19700000,27700000,0.71,0.0813,334,2032-02-26,84,0.66,0.08,0.1125,1.38,29895744,2216000
+HRE-2024-275,Beacon Capital Senior Housing Portfolio,Beacon Capital,Portfolio,Acquisition,2025-01-01,74100000,109000000,0.68,0.0972,481,2029-12-06,60,0.7,0.0833,0.1225,1.26,106474275,9079700
+HRE-2024-276,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Refinance,2024-10-06,11900000,19200000,0.62,0.0814,317,2034-08-15,120,0.61,0.0752,0.1213,1.49,19578230,1443840
+HRE-2024-277,Midwest Health Ops Life Science Facility,Midwest Health Ops,Single Asset,Acquisition,2024-10-27,8200000,15500000,0.53,0.0966,463,2029-10-01,60,0.53,0.085,0.1607,1.66,15407899,1317500
+HRE-2024-278,Apex Healthcare Skilled Nursing Portfolio,Apex Healthcare,Portfolio,Acquisition,2024-11-10,51000000,65400000,0.78,0.1045,558,2034-09-19,120,0.82,0.1062,0.1362,1.3,61832912,6945480
+HRE-2024-279,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2024-06-26,7600000,11300000,0.67,0.0861,351,2031-05-21,84,0.7,0.0784,0.1166,1.35,10781590,885920
+HRE-2024-280,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Refinance,2025-01-03,35200000,60700000,0.58,0.0764,274,2034-11-12,120,0.58,0.0626,0.1079,1.41,60747418,3799820
+HRE-2024-281,Silver Care Partners Skilled Nursing Facility,Silver Care Partners,Single Asset,Acquisition,2024-11-10,16500000,22000000,0.75,0.1168,684,2031-10-05,84,0.68,0.1114,0.1485,1.27,24101448,2450800
+HRE-2024-282,Apex Healthcare Skilled Nursing Portfolio,Apex Healthcare,Portfolio,Construction,2024-10-23,27100000,37700000,0.72,0.1172,674,2027-10-08,36,0.69,0.1128,0.1569,1.34,39250220,4252560
+HRE-2024-283,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2025-07-05,16200000,23500000,0.69,0.0848,374,2032-05-29,84,0.74,0.0773,0.1121,1.32,21819832,1816549
+HRE-2024-284,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2025-08-13,10300000,16300000,0.63,0.0825,362,2032-07-07,84,0.63,0.078,0.1234,1.5,16226315,1271400
+HRE-2024-285,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Refinance,2025-09-20,9000000,13000000,0.69,0.0848,392,2032-08-14,84,0.68,0.08,0.1156,1.36,13308749,1040000
+HRE-2024-286,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Acquisition,2025-05-11,29500000,36400000,0.81,0.11,633,2032-04-04,84,0.87,0.1032,0.1273,1.16,34036947,3756480
+HRE-2024-287,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Acquisition,2024-05-29,14300000,20400000,0.7,0.0956,451,2031-04-23,84,0.68,0.09,0.1284,1.34,20914965,1836000
+HRE-2024-288,Apex Healthcare Skilled Nursing Facility,Apex Healthcare,Single Asset,Acquisition,2024-01-06,24300000,29600000,0.82,0.123,711,2030-11-30,84,0.78,0.1128,0.1374,1.12,31113604,3338880
+HRE-2024-289,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2024-12-21,5100000,8000000,0.64,0.0866,368,2034-10-30,120,0.68,0.08,0.1255,1.45,7540318,640000
+HRE-2024-290,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2024-05-19,13100000,19300000,0.68,0.088,378,2031-04-13,84,0.64,0.0782,0.1152,1.31,20385083,1509260
+HRE-2024-291,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Acquisition,2024-02-13,14400000,17600000,0.82,0.1203,685,2033-12-22,120,0.77,0.1148,0.1403,1.17,18659195,2020480
+HRE-2024-292,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2024-07-11,11000000,17800000,0.62,0.0834,336,2034-05-20,120,0.67,0.0766,0.124,1.49,16358642,1363480
+HRE-2024-293,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2025-01-12,18900000,27800000,0.68,0.0812,325,2029-12-17,60,0.73,0.08,0.1177,1.45,26044164,2224000
+HRE-2024-294,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-05-20,10500000,15400000,0.68,0.0972,456,2029-04-24,60,0.7,0.09,0.132,1.36,15029335,1386000
+HRE-2024-295,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-03-19,12400000,16500000,0.75,0.1189,666,2029-02-21,60,0.73,0.115,0.153,1.29,16994297,1897500
+HRE-2024-296,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2025-07-13,5700000,8400000,0.68,0.0834,370,2035-05-22,120,0.66,0.08,0.1179,1.41,8625612,672000
+HRE-2024-297,Midwest Health Ops Life Science Portfolio,Midwest Health Ops,Portfolio,Construction,2025-07-24,26400000,65900000,0.4,0.0971,501,2028-07-08,36,0.44,0.085,0.2122,2.19,60474189,5601500
+HRE-2024-298,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Refinance,2024-10-06,12700000,20500000,0.62,0.0858,364,2034-08-15,120,0.65,0.0768,0.124,1.44,19509982,1574399
+HRE-2024-299,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Refinance,2025-05-24,30900000,49000000,0.63,0.0817,352,2030-04-28,60,0.61,0.08,0.1269,1.55,50585160,3920000
+HRE-2024-300,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2024-10-14,17500000,25800000,0.68,0.087,368,2029-09-18,60,0.66,0.08,0.1179,1.36,26465058,2064000
+HRE-2024-301,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Construction,2024-03-10,50700000,92200000,0.55,0.1014,488,2027-02-23,36,0.57,0.09,0.1637,1.61,88821984,8298000
+HRE-2024-302,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Acquisition,2025-09-30,10100000,12800000,0.79,0.1061,601,2032-08-24,84,0.84,0.0973,0.1233,1.16,12075827,1245440
+HRE-2024-303,Beacon Capital Medical Office Portfolio,Beacon Capital,Portfolio,Refinance,2024-07-07,55900000,84700000,0.66,0.0814,316,2029-06-11,60,0.69,0.0786,0.1191,1.46,80678737,6657420
+HRE-2024-304,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Refinance,2025-07-29,18000000,31600000,0.57,0.0875,412,2032-06-22,84,0.54,0.0808,0.1418,1.62,33448308,2553280
+HRE-2024-305,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Construction,2025-07-06,4800000,8000000,0.6,0.0924,449,2028-06-20,36,0.56,0.08,0.1333,1.44,8537587,640000
+HRE-2024-306,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Acquisition,2024-02-26,39800000,47400000,0.84,0.1278,757,2029-01-30,60,0.88,0.115,0.137,1.07,45015280,5451000
+HRE-2024-307,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Acquisition,2025-08-20,24200000,37300000,0.65,0.0861,394,2032-07-14,84,0.7,0.08,0.1233,1.43,34348319,2984000
+HRE-2024-308,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Construction,2024-11-06,10800000,16400000,0.66,0.0927,432,2027-10-22,36,0.69,0.08,0.1215,1.31,15585835,1312000
+HRE-2024-309,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Acquisition,2024-01-29,7900000,11600000,0.68,0.1037,503,2030-12-23,84,0.73,0.09,0.1322,1.27,10762954,1044000
+HRE-2024-310,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2024-07-20,16400000,22400000,0.73,0.095,442,2031-06-14,84,0.74,0.09,0.1229,1.29,22290696,2016000
+HRE-2024-311,Midwest Health Ops Senior Housing Portfolio,Midwest Health Ops,Portfolio,Refinance,2024-12-13,42300000,67200000,0.63,0.0852,354,2034-10-22,120,0.62,0.0827,0.1314,1.54,68051583,5557440
+HRE-2024-312,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-09-14,5400000,8000000,0.68,0.096,462,2031-08-09,84,0.63,0.09,0.1333,1.39,8509625,720000
+HRE-2024-313,Beacon Capital Medical Office Portfolio,Beacon Capital,Portfolio,Construction,2024-06-23,27900000,50800000,0.55,0.0913,409,2027-06-08,36,0.56,0.08,0.1457,1.6,49859971,4064000
+HRE-2024-314,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Acquisition,2025-03-20,8700000,14300000,0.61,0.0794,320,2035-01-27,120,0.64,0.0759,0.1248,1.57,13681895,1085370
+HRE-2024-315,Beacon Capital Life Science Facility,Beacon Capital,Single Asset,Acquisition,2024-06-25,17000000,29900000,0.57,0.0967,457,2034-05-04,120,0.57,0.085,0.1495,1.55,29953256,2541500
+HRE-2024-316,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Acquisition,2025-01-29,11400000,14300000,0.8,0.1236,756,2031-12-24,84,0.74,0.1042,0.1307,1.06,15392835,1490060
+HRE-2024-317,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Refinance,2025-04-17,15000000,25800000,0.58,0.0932,465,2032-03-11,84,0.57,0.0861,0.1481,1.59,26263283,2221380
+HRE-2024-318,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Construction,2024-12-03,43000000,78100000,0.55,0.0911,416,2027-11-18,36,0.59,0.08,0.1453,1.59,72569324,6248000
+HRE-2024-319,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2025-04-04,10200000,17300000,0.59,0.0804,331,2032-02-27,84,0.54,0.0782,0.1326,1.65,18742357,1352860
+HRE-2024-320,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2024-02-07,12100000,18400000,0.66,0.0864,342,2029-01-11,60,0.65,0.0796,0.121,1.4,18669444,1464640
+HRE-2024-321,Midwest Health Ops Life Science Facility,Midwest Health Ops,Single Asset,Refinance,2024-01-08,4900000,8900000,0.55,0.1013,493,2033-11-16,120,0.57,0.085,0.1544,1.52,8530089,756500
+HRE-2024-322,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2025-03-05,9500000,15300000,0.62,0.0855,368,2032-01-28,84,0.64,0.08,0.1288,1.51,14766889,1224000
+HRE-2024-323,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Construction,2025-09-21,20800000,34100000,0.61,0.0879,428,2028-09-05,36,0.56,0.08,0.1312,1.49,37324945,2728000
+HRE-2024-324,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2025-05-11,10800000,16100000,0.67,0.0839,375,2032-04-04,84,0.64,0.0778,0.116,1.38,16758239,1252580
+HRE-2024-325,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-06-04,8200000,13200000,0.62,0.0893,380,2034-04-13,120,0.68,0.0896,0.1442,1.62,12010085,1182720
+HRE-2024-326,Silver Care Partners Medical Office Portfolio,Silver Care Partners,Portfolio,Construction,2025-01-18,34500000,62700000,0.55,0.0877,389,2028-01-03,36,0.56,0.08,0.1454,1.66,61914801,5016000
+HRE-2024-327,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2025-08-09,6900000,10600000,0.65,0.0786,323,2032-07-03,84,0.7,0.0744,0.1143,1.45,9905884,788639
+HRE-2024-328,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Refinance,2024-04-17,17000000,25400000,0.67,0.0932,414,2031-03-12,84,0.63,0.08,0.1195,1.28,27175177,2032000
+HRE-2024-329,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Refinance,2024-12-28,25600000,45800000,0.56,0.0932,437,2029-12-02,60,0.51,0.09,0.161,1.73,50036061,4122000
+HRE-2024-330,Beacon Capital Medical Office Portfolio,Beacon Capital,Portfolio,Construction,2025-03-11,30400000,50600000,0.6,0.0823,345,2028-02-24,36,0.59,0.08,0.1332,1.62,51552955,4048000
+HRE-2024-331,Beacon Capital Senior Housing Portfolio,Beacon Capital,Portfolio,Acquisition,2024-09-10,19500000,27900000,0.7,0.1003,508,2031-08-05,84,0.69,0.09,0.1288,1.28,28278301,2511000
+HRE-2024-332,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Refinance,2025-02-06,12100000,18400000,0.66,0.0917,428,2030-01-11,60,0.61,0.09,0.1369,1.49,19849411,1656000
+HRE-2024-333,Silver Care Partners Skilled Nursing Portfolio,Silver Care Partners,Portfolio,Refinance,2024-02-14,35100000,48100000,0.73,0.1064,551,2033-12-23,120,0.7,0.0973,0.1333,1.25,50211937,4680130
+HRE-2024-334,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Acquisition,2024-01-17,10000000,12300000,0.81,0.121,684,2033-11-25,120,0.78,0.115,0.1414,1.17,12821822,1414500
+HRE-2024-335,Silver Care Partners Medical Office Portfolio,Silver Care Partners,Portfolio,Acquisition,2024-11-23,28900000,45100000,0.64,0.0862,368,2029-10-28,60,0.61,0.08,0.1248,1.45,47426407,3608000
+HRE-2024-336,Midwest Health Ops Senior Housing Portfolio,Midwest Health Ops,Portfolio,Acquisition,2025-08-09,21800000,34000000,0.64,0.0949,489,2035-06-18,120,0.63,0.0883,0.1377,1.45,34803441,3002200
+HRE-2024-337,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Refinance,2024-09-21,4600000,8300000,0.55,0.096,458,2034-07-31,120,0.61,0.0888,0.1602,1.67,7591921,737040
+HRE-2024-338,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Refinance,2025-07-16,11200000,17200000,0.65,0.0878,410,2030-06-20,60,0.7,0.09,0.1382,1.57,16038021,1548000
+HRE-2024-339,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Refinance,2025-06-09,7600000,12100000,0.63,0.0815,337,2032-05-03,84,0.68,0.0711,0.1132,1.39,11126979,860310
+HRE-2024-340,Beacon Capital Life Science Facility,Beacon Capital,Single Asset,Refinance,2024-02-05,6400000,11600000,0.55,0.0818,302,2029-01-09,60,0.53,0.0715,0.1296,1.58,12130598,829399
+HRE-2024-341,Beacon Capital Life Science Portfolio,Beacon Capital,Portfolio,Refinance,2025-01-04,13800000,24200000,0.57,0.0785,298,2029-12-09,60,0.55,0.0738,0.1294,1.65,25268801,1785960
+HRE-2024-342,Silver Care Partners Life Science Facility,Silver Care Partners,Single Asset,Refinance,2025-07-02,14900000,27600000,0.54,0.0827,369,2032-05-26,84,0.54,0.0746,0.1382,1.67,27452037,2058960
+HRE-2024-343,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2025-06-24,16400000,24500000,0.67,0.0799,338,2032-05-18,84,0.66,0.08,0.1195,1.5,24889629,1960000
+HRE-2024-344,Midwest Health Ops Senior Housing Portfolio,Midwest Health Ops,Portfolio,Acquisition,2024-03-10,70100000,109500000,0.64,0.0998,471,2029-02-12,60,0.7,0.09,0.1406,1.41,100569043,9855000
+HRE-2024-345,Apex Healthcare Life Science Facility,Apex Healthcare,Single Asset,Refinance,2025-08-31,13500000,22900000,0.59,0.0974,513,2035-07-10,120,0.59,0.085,0.1442,1.48,22808276,1946500
+HRE-2024-346,Silver Care Partners Life Science Facility,Silver Care Partners,Single Asset,Acquisition,2024-01-27,23600000,42900000,0.55,0.0862,328,2033-12-05,120,0.51,0.0718,0.1305,1.51,46537295,3080220
+HRE-2024-347,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Refinance,2024-11-10,11600000,16800000,0.69,0.0842,347,2031-10-05,84,0.68,0.08,0.1159,1.38,17005170,1344000
+HRE-2024-348,Silver Care Partners Life Science Facility,Silver Care Partners,Single Asset,Refinance,2024-05-21,17400000,32900000,0.53,0.0865,350,2031-04-15,84,0.57,0.0737,0.1394,1.61,30792082,2424730
+HRE-2024-349,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Refinance,2025-04-27,21200000,28600000,0.74,0.1162,690,2030-04-01,60,0.7,0.1088,0.1468,1.26,30184708,3111680
+HRE-2024-350,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Refinance,2024-07-26,6400000,9900000,0.65,0.0867,365,2034-06-04,120,0.62,0.08,0.1237,1.43,10330277,792000
+HRE-2024-351,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Refinance,2024-03-04,7100000,10600000,0.67,0.0919,402,2034-01-11,120,0.63,0.08,0.1194,1.3,11303028,848000
+HRE-2024-352,Midwest Health Ops Senior Housing Portfolio,Midwest Health Ops,Portfolio,Acquisition,2025-11-17,43800000,68400000,0.64,0.0954,508,2032-10-11,84,0.7,0.0859,0.1341,1.41,62597020,5875560
+HRE-2024-353,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2025-03-31,23300000,33700000,0.69,0.0818,337,2032-02-23,84,0.76,0.08,0.1157,1.41,30716271,2696000
+HRE-2024-354,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Refinance,2024-01-13,10700000,16200000,0.66,0.0845,317,2030-12-07,84,0.72,0.08,0.1211,1.43,14957296,1296000
+HRE-2024-355,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2024-08-28,17500000,25700000,0.68,0.0863,363,2029-08-02,60,0.66,0.0792,0.1163,1.35,26596204,2035440
+HRE-2024-356,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2025-09-21,14300000,21100000,0.68,0.0795,327,2030-08-26,60,0.75,0.08,0.118,1.48,19148518,1688000
+HRE-2024-357,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Acquisition,2025-09-14,15900000,26100000,0.61,0.0808,350,2035-07-24,120,0.58,0.0731,0.12,1.49,27498373,1907910
+HRE-2024-358,Beacon Capital Medical Office Portfolio,Beacon Capital,Portfolio,Construction,2024-05-29,81400000,129200000,0.63,0.0925,407,2027-05-14,36,0.58,0.08,0.127,1.37,141402833,10336000
+HRE-2024-359,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-11-20,13700000,19600000,0.7,0.0917,459,2035-09-29,120,0.75,0.09,0.1288,1.4,18167114,1764000
+HRE-2024-360,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2024-07-27,15900000,26100000,0.61,0.0823,317,2034-06-05,120,0.64,0.08,0.1313,1.6,24985274,2088000
+HRE-2024-361,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Refinance,2024-09-22,10800000,18600000,0.58,0.0884,376,2034-08-01,120,0.56,0.0763,0.1314,1.49,19442581,1419180
+HRE-2024-362,Apex Healthcare Skilled Nursing Portfolio,Apex Healthcare,Portfolio,Acquisition,2025-05-11,39100000,52900000,0.74,0.1099,619,2030-04-15,60,0.81,0.1042,0.141,1.28,48300302,5512180
+HRE-2024-363,Beacon Capital Skilled Nursing Portfolio,Beacon Capital,Portfolio,Acquisition,2024-04-07,69600000,89200000,0.78,0.1221,705,2031-03-02,84,0.8,0.115,0.1474,1.21,86852426,10258000
+HRE-2024-364,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Refinance,2024-01-30,26100000,39500000,0.66,0.0991,469,2029-01-03,60,0.67,0.09,0.1362,1.37,39007278,3555000
+HRE-2024-365,Midwest Health Ops Senior Housing Portfolio,Midwest Health Ops,Portfolio,Acquisition,2025-07-27,61900000,92400000,0.67,0.0953,487,2032-06-20,84,0.67,0.0886,0.1323,1.39,91873843,8186640
+HRE-2024-366,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-06-29,12700000,18200000,0.7,0.0879,419,2035-05-08,120,0.7,0.0815,0.1168,1.33,18075584,1483300
+HRE-2024-367,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2024-04-15,11200000,16000000,0.7,0.0995,474,2034-02-22,120,0.73,0.09,0.1286,1.29,15326792,1440000
+HRE-2024-368,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Construction,2024-05-06,19900000,33100000,0.6,0.0881,364,2027-04-21,36,0.57,0.08,0.1331,1.51,34717235,2648000
+HRE-2024-369,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Construction,2025-05-21,5600000,9200000,0.61,0.0909,428,2028-05-05,36,0.61,0.0778,0.1278,1.41,9175749,715760
+HRE-2024-370,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2024-10-15,13300000,20800000,0.64,0.0842,340,2034-08-24,120,0.6,0.0774,0.121,1.44,22250178,1609920
+HRE-2024-371,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-02-25,9900000,15700000,0.63,0.0883,370,2034-01-03,120,0.59,0.0836,0.1326,1.5,16870855,1312520
+HRE-2024-372,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Refinance,2025-02-09,10800000,18300000,0.59,0.0851,363,2032-01-04,84,0.54,0.078,0.1322,1.55,20125868,1427400
+HRE-2024-373,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Acquisition,2025-02-17,7700000,10900000,0.71,0.0964,484,2032-01-12,84,0.74,0.09,0.1274,1.32,10382407,981000
+HRE-2024-374,Beacon Capital Life Science Facility,Beacon Capital,Single Asset,Construction,2024-09-18,19600000,39100000,0.5,0.0839,343,2027-09-03,36,0.52,0.074,0.1476,1.76,37694457,2893400
+HRE-2024-375,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2025-02-18,17800000,30100000,0.59,0.0754,281,2030-01-23,60,0.59,0.0685,0.1158,1.54,30196484,2061850
+HRE-2024-376,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Acquisition,2024-01-06,8400000,12300000,0.68,0.0924,390,2028-12-10,60,0.65,0.08,0.1171,1.27,12913572,984000
+HRE-2024-377,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Construction,2024-12-25,16300000,27100000,0.6,0.1017,538,2027-12-10,36,0.56,0.09,0.1496,1.47,29220825,2439000
+HRE-2024-378,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2025-02-09,12100000,18300000,0.66,0.0838,349,2034-12-19,120,0.69,0.08,0.121,1.44,17635477,1464000
+HRE-2024-379,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Refinance,2024-09-23,7400000,12800000,0.58,0.0798,308,2029-08-28,60,0.6,0.0701,0.1213,1.52,12370769,897280
+HRE-2024-380,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Refinance,2025-02-22,20500000,31100000,0.66,0.0888,410,2032-01-17,84,0.71,0.084,0.1274,1.44,29040247,2612400
+HRE-2024-381,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Refinance,2024-05-31,22400000,37900000,0.59,0.0917,416,2029-05-05,60,0.54,0.0871,0.1474,1.61,41519378,3301090
+HRE-2024-382,Apex Healthcare Skilled Nursing Facility,Apex Healthcare,Single Asset,Acquisition,2025-09-03,6400000,8000000,0.8,0.1208,744,2035-07-13,120,0.87,0.115,0.1437,1.19,7394207,920000
+HRE-2024-383,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2025-10-04,8000000,12500000,0.64,0.0803,338,2035-08-13,120,0.68,0.0792,0.1237,1.54,11716365,990000
+HRE-2024-384,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Refinance,2025-10-13,17100000,22200000,0.77,0.1069,617,2030-09-17,60,0.74,0.0952,0.1236,1.16,23153927,2113440
+HRE-2024-385,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Refinance,2024-09-23,7400000,11800000,0.63,0.0798,299,2031-08-18,84,0.6,0.0784,0.125,1.57,12336441,925120
+HRE-2024-386,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Acquisition,2024-11-03,9600000,15800000,0.61,0.0778,292,2034-09-12,120,0.59,0.0683,0.1124,1.44,16149649,1079140
+HRE-2024-387,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2025-10-28,18100000,29200000,0.62,0.0783,330,2035-09-06,120,0.57,0.0672,0.1084,1.38,31697600,1962239
+HRE-2024-388,Beacon Capital Life Science Portfolio,Beacon Capital,Portfolio,Acquisition,2024-08-17,49000000,83000000,0.59,0.0897,392,2031-07-12,84,0.55,0.0838,0.1419,1.58,89853978,6955400
+HRE-2024-389,Apex Healthcare Senior Housing Portfolio,Apex Healthcare,Portfolio,Acquisition,2024-04-23,51600000,70700000,0.73,0.1051,529,2031-03-18,84,0.69,0.09,0.1233,1.17,74249738,6363000
+HRE-2024-390,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Acquisition,2025-10-04,26700000,40400000,0.66,0.0809,346,2035-08-13,120,0.62,0.0744,0.1126,1.39,43252609,3005759
+HRE-2024-391,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2025-10-03,15600000,25100000,0.62,0.0861,408,2030-09-07,60,0.66,0.0768,0.1236,1.44,23630943,1927679
+HRE-2024-392,Beacon Capital Life Science Portfolio,Beacon Capital,Portfolio,Acquisition,2025-03-31,23400000,39700000,0.59,0.0979,511,2035-02-07,120,0.58,0.0842,0.1429,1.46,40588705,3342740
+HRE-2024-393,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2024-03-09,9700000,15700000,0.62,0.0847,333,2031-02-01,84,0.59,0.08,0.1295,1.53,16419483,1256000
+HRE-2024-394,Apex Healthcare Life Science Portfolio,Apex Healthcare,Portfolio,Acquisition,2024-04-27,22600000,38300000,0.59,0.0948,443,2029-04-01,60,0.64,0.085,0.144,1.52,35538371,3255500
+HRE-2024-395,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Refinance,2025-11-17,7800000,11300000,0.69,0.0939,486,2032-10-11,84,0.73,0.09,0.1304,1.39,10704461,1017000
+HRE-2024-396,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2024-01-09,5900000,8900000,0.66,0.0898,368,2028-12-13,60,0.71,0.08,0.1207,1.34,8318314,712000
+HRE-2024-397,Beacon Capital Life Science Portfolio,Beacon Capital,Portfolio,Refinance,2025-03-13,41200000,74900000,0.55,0.0898,425,2032-02-05,84,0.6,0.0774,0.1407,1.57,68110249,5797260
+HRE-2024-398,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Acquisition,2025-09-11,20800000,28500000,0.73,0.086,402,2030-08-16,60,0.7,0.08,0.1096,1.27,29683150,2280000
+HRE-2024-399,Midwest Health Ops Senior Housing Portfolio,Midwest Health Ops,Portfolio,Construction,2025-11-12,33500000,65600000,0.51,0.0962,514,2028-10-27,36,0.49,0.0866,0.1696,1.76,68213098,5680960
+HRE-2024-400,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Construction,2025-04-29,5600000,9700000,0.58,0.0898,432,2028-04-13,36,0.53,0.08,0.1386,1.54,10512845,776000
+HRE-2024-401,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Acquisition,2024-03-30,16700000,24500000,0.68,0.0909,399,2031-02-22,84,0.75,0.08,0.1174,1.29,22409073,1960000
+HRE-2024-402,Silver Care Partners Medical Office Facility,Silver Care Partners,Single Asset,Acquisition,2024-12-24,19400000,28900000,0.67,0.0902,409,2034-11-02,120,0.73,0.08,0.1192,1.32,26603008,2312000
+HRE-2024-403,Midwest Health Ops Skilled Nursing Portfolio,Midwest Health Ops,Portfolio,Refinance,2025-08-04,38800000,55400000,0.7,0.0997,540,2035-06-13,120,0.7,0.0935,0.1335,1.34,55359247,5179900
+HRE-2024-404,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Refinance,2025-01-08,4600000,8000000,0.57,0.0823,343,2034-11-17,120,0.53,0.0828,0.144,1.75,8696192,662400
+HRE-2024-405,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Acquisition,2025-09-22,21200000,30300000,0.7,0.0811,346,2032-08-16,84,0.7,0.0763,0.1091,1.34,30306601,2311890
+HRE-2024-406,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2025-09-10,8800000,13700000,0.64,0.0798,343,2030-08-15,60,0.65,0.0693,0.1079,1.35,13643247,949410
+HRE-2024-407,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2025-03-07,17600000,26600000,0.66,0.0758,284,2030-02-09,60,0.67,0.0715,0.1081,1.43,26441930,1901899
+HRE-2024-408,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Construction,2024-08-21,7000000,11400000,0.61,0.0897,394,2027-08-06,36,0.6,0.08,0.1303,1.45,11739144,912000
+HRE-2024-409,Beacon Capital Life Science Facility,Beacon Capital,Single Asset,Acquisition,2024-07-06,31600000,52700000,0.6,0.0953,452,2029-06-10,60,0.6,0.0823,0.1373,1.44,53047598,4337210
+HRE-2024-410,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Refinance,2024-04-01,15000000,23800000,0.63,0.0821,294,2031-02-24,84,0.69,0.076,0.1206,1.47,21673012,1808800
+HRE-2024-411,Apex Healthcare Life Science Portfolio,Apex Healthcare,Portfolio,Refinance,2025-07-19,21700000,39500000,0.55,0.0994,525,2032-06-12,84,0.57,0.085,0.1547,1.56,38142688,3357500
+HRE-2024-412,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Refinance,2024-09-07,6600000,11500000,0.57,0.0823,332,2031-08-02,84,0.62,0.08,0.1394,1.69,10562658,920000
+HRE-2024-413,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2025-09-22,18900000,31500000,0.6,0.081,348,2035-08-01,120,0.61,0.079,0.1317,1.63,31232296,2488500
+HRE-2024-414,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-07-10,13900000,18300000,0.76,0.1216,709,2034-05-19,120,0.83,0.115,0.1514,1.25,16839638,2104500
+HRE-2024-415,Apex Healthcare Medical Office Portfolio,Apex Healthcare,Portfolio,Construction,2025-04-18,34600000,56700000,0.61,0.0884,411,2028-04-02,36,0.66,0.08,0.1311,1.48,52456196,4536000
+HRE-2024-416,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Construction,2025-08-16,4900000,8200000,0.6,0.096,496,2028-07-31,36,0.59,0.09,0.1506,1.57,8280423,738000
+HRE-2024-417,Beacon Capital Skilled Nursing Facility,Beacon Capital,Single Asset,Acquisition,2024-05-24,15100000,18900000,0.8,0.1136,621,2034-04-02,120,0.8,0.1053,0.1318,1.16,18900361,1990170
+HRE-2024-418,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Construction,2024-10-01,15500000,28100000,0.55,0.0982,485,2027-09-16,36,0.57,0.09,0.1632,1.66,27244982,2529000
+HRE-2024-419,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-04-30,34000000,45400000,0.75,0.1123,610,2029-04-04,60,0.78,0.109,0.1455,1.3,43439896,4948600
+HRE-2024-420,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Refinance,2025-03-20,5400000,8600000,0.63,0.0839,357,2030-02-22,60,0.64,0.0866,0.1379,1.64,8393845,744760
+HRE-2024-421,Midwest Health Ops Medical Office Portfolio,Midwest Health Ops,Portfolio,Acquisition,2025-05-01,26800000,38800000,0.69,0.0879,397,2032-03-25,84,0.68,0.08,0.1158,1.32,39698776,3104000
+HRE-2024-422,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2025-03-09,14800000,20800000,0.71,0.0861,385,2032-02-01,84,0.75,0.08,0.1124,1.31,19690950,1664000
+HRE-2024-423,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Acquisition,2025-08-19,7000000,11000000,0.64,0.0835,372,2035-06-28,120,0.58,0.076,0.1194,1.43,11978874,836000
+HRE-2024-424,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2024-02-17,8500000,13300000,0.64,0.0886,369,2029-01-21,60,0.65,0.08,0.1252,1.41,13158679,1064000
+HRE-2024-425,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Refinance,2024-07-07,16800000,26200000,0.64,0.09,385,2034-05-16,120,0.7,0.09,0.1404,1.56,24112922,2358000
+HRE-2024-426,Silver Care Partners Medical Office Portfolio,Silver Care Partners,Portfolio,Refinance,2024-09-01,32600000,51000000,0.64,0.082,311,2034-07-11,120,0.69,0.0792,0.1239,1.51,47325750,4039200
+HRE-2024-427,Midwest Health Ops Skilled Nursing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-03-12,10500000,13700000,0.77,0.119,666,2031-02-04,84,0.72,0.1139,0.1486,1.25,14519621,1560430
+HRE-2024-428,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2024-06-07,13000000,19100000,0.68,0.0932,412,2031-05-02,84,0.65,0.08,0.1175,1.26,20141499,1528000
+HRE-2024-429,Beacon Capital Life Science Portfolio,Beacon Capital,Portfolio,Refinance,2025-10-25,84800000,151400000,0.56,0.0865,408,2032-09-18,84,0.62,0.0765,0.1366,1.58,137240612,11582100
+HRE-2024-430,Apex Healthcare Life Science Facility,Apex Healthcare,Single Asset,Acquisition,2024-05-26,16400000,26100000,0.63,0.0982,461,2031-04-20,84,0.61,0.085,0.1353,1.38,26735406,2218500
+HRE-2024-431,Apex Healthcare Medical Office Facility,Apex Healthcare,Single Asset,Acquisition,2024-06-10,6400000,9400000,0.68,0.0875,364,2034-04-19,120,0.7,0.08,0.1175,1.34,9084672,752000
+HRE-2024-432,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Refinance,2025-04-19,6200000,9000000,0.69,0.0927,456,2032-03-13,84,0.73,0.09,0.1306,1.41,8493360,810000
+HRE-2024-433,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Acquisition,2024-11-20,7300000,9900000,0.74,0.0876,382,2034-09-29,120,0.71,0.08,0.1085,1.24,10326151,792000
+HRE-2024-434,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Refinance,2024-09-04,11400000,16700000,0.68,0.091,417,2031-07-30,84,0.71,0.09,0.1318,1.45,16107068,1503000
+HRE-2024-435,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-01-03,19500000,30000000,0.65,0.0871,386,2029-12-08,60,0.65,0.0797,0.1226,1.41,29803769,2391000
+HRE-2024-436,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2025-01-31,20200000,31100000,0.65,0.0802,318,2030-01-05,60,0.62,0.08,0.1232,1.54,32647368,2488000
+HRE-2024-437,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2024-09-24,6600000,10400000,0.63,0.0856,352,2034-08-03,120,0.61,0.0746,0.1176,1.37,10855300,775840
+HRE-2024-438,Beacon Capital Medical Office Facility,Beacon Capital,Single Asset,Refinance,2025-02-27,15800000,22600000,0.7,0.0847,364,2035-01-06,120,0.76,0.08,0.1144,1.35,20833234,1808000
+HRE-2024-439,Midwest Health Ops Medical Office Facility,Midwest Health Ops,Single Asset,Acquisition,2024-11-22,24600000,36700000,0.67,0.0865,377,2031-10-17,84,0.66,0.08,0.1193,1.38,37064422,2936000
+HRE-2024-440,Silver Care Partners Senior Housing Portfolio,Silver Care Partners,Portfolio,Acquisition,2024-08-20,31000000,46300000,0.67,0.0994,483,2029-07-25,60,0.68,0.09,0.1344,1.35,45393395,4167000
+HRE-2024-441,Apex Healthcare Skilled Nursing Portfolio,Apex Healthcare,Portfolio,Refinance,2024-09-18,24800000,34900000,0.71,0.1044,539,2031-08-13,84,0.77,0.1009,0.142,1.36,32407078,3521410
+HRE-2024-442,Silver Care Partners Senior Housing Facility,Silver Care Partners,Single Asset,Refinance,2025-03-06,5100000,9000000,0.57,0.0839,349,2030-02-08,60,0.58,0.0894,0.1578,1.88,8774300,804599
+HRE-2024-443,Midwest Health Ops Senior Housing Facility,Midwest Health Ops,Single Asset,Acquisition,2025-05-04,21800000,32000000,0.68,0.0885,419,2035-03-13,120,0.63,0.0827,0.1214,1.37,34498498,2646400
+HRE-2024-444,Silver Care Partners Skilled Nursing Facility,Silver Care Partners,Single Asset,Acquisition,2024-02-08,29000000,34900000,0.83,0.1193,667,2029-01-12,60,0.9,0.1084,0.1305,1.09,32372232,3783160
+HRE-2024-445,Apex Healthcare Senior Housing Facility,Apex Healthcare,Single Asset,Refinance,2024-07-07,5100000,8000000,0.64,0.0901,386,2034-05-16,120,0.61,0.084,0.1318,1.46,8337612,672000
+HRE-2024-446,Apex Healthcare Life Science Facility,Apex Healthcare,Single Asset,Acquisition,2025-03-01,10400000,17900000,0.58,0.0869,387,2035-01-08,120,0.54,0.0711,0.1224,1.41,19233694,1272690
+HRE-2024-447,Midwest Health Ops Life Science Portfolio,Midwest Health Ops,Portfolio,Acquisition,2025-05-31,38800000,69300000,0.56,0.0936,464,2035-04-09,120,0.51,0.0797,0.1424,1.52,76182651,5523209
+HRE-2024-448,Midwest Health Ops Life Science Facility,Midwest Health Ops,Single Asset,Refinance,2025-10-05,13600000,26100000,0.52,0.0864,417,2035-08-14,120,0.56,0.079,0.1516,1.75,24099970,2061900
+HRE-2024-449,Beacon Capital Senior Housing Facility,Beacon Capital,Single Asset,Acquisition,2025-09-16,13100000,17900000,0.73,0.1021,564,2032-08-10,84,0.74,0.09,0.123,1.2,17729313,1611000

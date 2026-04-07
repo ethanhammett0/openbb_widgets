@@ -1,0 +1,4 @@
+  const [expandedPreviews, setExpandedPreviews] = useState<Set<string>>(new Set());
+  const [resolvedNotes, setResolvedNotes] = useState<Set<string>>(new Set());
+  const togglePreviewExpansion = (noteId: string) => { setExpandedPreviews(prev => { const newSet = new Set(prev); if (newSet.has(noteId)) { newSet.delete(noteId); } else { newSet.add(noteId); } return newSet; }); };
+  const toggleResolveNote = (noteId: string) => { setResolvedNotes(prev => { const newSet = new Set(prev); if (newSet.has(noteId)) { newSet.delete(noteId); } else { newSet.add(noteId); } return newSet; }); };

@@ -1,0 +1,71 @@
+{
+    "rentRollAnalysis": {
+        "type": "chart",
+        "name": "Rent Roll Expiration",
+        "description": "Visualize lease expirations and cashflow decay over time for selected portfolios.",
+        "category": "Portfolio Review",
+        "endpoint": "cashflow",
+        "gridData": {
+            "w": 30,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "portfolio",
+                "label": "Select Portfolio",
+                "type": "endpoint",
+                "value": null,
+                "optionsEndpoint": "/portfolios",
+                "multiSelect": false,
+                "description": "Choose a portfolio to analyze."
+            },
+            {
+                "paramName": "buildings",
+                "label": "Select Buildings",
+                "type": "endpoint",
+                "value": [],
+                "optionsEndpoint": "/buildings",
+                "multiSelect": true,
+                "description": "Select specific buildings within the portfolio."
+            },
+            {
+                "paramName": "group_by_tenant",
+                "label": "Group by Tenant",
+                "type": "boolean",
+                "value": true,
+                "description": "Toggle to group cashflows by Tenant (True) or Building (False)."
+            }
+        ]
+    },
+    "rentRollTable": {
+        "type": "table",
+        "name": "Rent Roll Data",
+        "description": "Detailed lease data table for deep analysis.",
+        "category": "Portfolio Review",
+        "endpoint": "rent_roll",
+        "gridData": {
+            "w": 30,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "portfolio",
+                "label": "Select Portfolio",
+                "type": "endpoint",
+                "value": null,
+                "optionsEndpoint": "/portfolios",
+                "multiSelect": false,
+                "description": "Choose a portfolio."
+            },
+            {
+                "paramName": "buildings",
+                "label": "Select Buildings",
+                "type": "endpoint",
+                "value": [],
+                "optionsEndpoint": "/buildings",
+                "multiSelect": true,
+                "description": "Select specific buildings within the portfolio."
+            },
+        ]
+    }
+}

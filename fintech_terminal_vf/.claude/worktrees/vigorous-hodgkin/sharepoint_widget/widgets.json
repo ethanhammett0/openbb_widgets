@@ -1,0 +1,63 @@
+{
+    "sharepoint_viewer": {
+        "name": "SharePoint Multi-PDF Viewer",
+        "description": "View and manage PDFs from SharePoint deals and folders.",
+        "category": "SharePoint",
+        "type": "multi_file_viewer",
+        "endpoint": "documents",
+        "gridData": {
+            "w": 30,
+            "h": 15
+        },
+        "params": [
+            {
+                "paramName": "portfolio",
+                "label": "Portfolio",
+                "type": "text",
+                "multiSelect": true,
+                "options": [
+                    {
+                        "label": "Real Estate",
+                        "value": "real_estate"
+                    },
+                    {
+                        "label": "Corporate",
+                        "value": "corporate"
+                    },
+                    {
+                        "label": "Project Finance",
+                        "value": "project_finance"
+                    }
+                ],
+                "value": [
+                    "real_estate"
+                ],
+                "description": "Select Portfolio(s)"
+            },
+            {
+                "paramName": "deal_id",
+                "label": "Deal",
+                "type": "search",
+                "optionsEndpoint": "deals",
+                "value": "deal_alpha",
+                "description": "Search for a Deal"
+            },
+            {
+                "paramName": "filename",
+                "label": "Widgets (Files)",
+                "type": "endpoint",
+                "optionsEndpoint": "files_list",
+                "optionsParams": {
+                    "deal_id": "$deal_id",
+                    "portfolio": "$portfolio"
+                },
+                "multiSelect": true,
+                "roles": [
+                    "fileSelector"
+                ],
+                "value": [],
+                "description": "Select Files to View"
+            }
+        ]
+    }
+}
